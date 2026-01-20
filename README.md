@@ -1,4 +1,7 @@
-# CLS CMC Legal Benchmark
+---
+{}
+---
+# VLegal-Bench
 
 A comprehensive Vietnamese legal benchmark dataset for evaluating Large Language Models (LLMs) on various legal NLP tasks.
 
