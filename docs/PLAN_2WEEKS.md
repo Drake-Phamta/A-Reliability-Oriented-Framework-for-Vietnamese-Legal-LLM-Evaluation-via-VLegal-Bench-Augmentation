@@ -236,19 +236,20 @@ Member B:    Calibration → Annotation Batch1 → Batch2 → IAA
 Member C:           Section 2 → Section 5 (đợi results) → Section 6 → Review
 ```
 
-## Rủi ro & Mitigation
+## Rủi ro & Mitigation (KHÔNG giảm scope)
 
 | Rủi ro | Mitigation |
 |--------|-----------|
-| API rate limit | Chạy batch_size=1, tăng delay |
-| Fine-tune quá lâu | Giảm epochs xuống 2, giảm samples |
-| Annotation chậm | Giảm 250→150 samples/task |
-| GPU không đủ | Dùng smaller model (1.5B thay vì 7B) |
+| API rate limit | batch_size=1, tăng delay, chạy đêm |
+| Fine-tune quá lâu | Chạy overnight, dùng LoRA rank nhỏ hơn (r=4) |
+| Annotation chậm | Chia đều 2 người, mỗi người 3 tasks song song |
+| GPU không đủ | Dùng Qwen2.5-1.5B nếu 7B quá nặng |
+| Member C chờ results | Draft trước Section 5/6 bằng placeholder, điền số liệu sau |
 
-## Giảm scope nếu cần
+## Tối ưu tốc độ (KHÔNG cắt nội dung)
 
-Nếu quá gấp:
-- Giảm samples/task: 250 → 150 (tổng 900 thay vì 1500)
-- Chỉ chạy 3 baselines: 1a, 1b, proposed (bỏ 2a, 2b)
-- Fine-tune 1 epoch thay vì 3
-- Bỏ 1-2 case studies
+1. **Experiments chạy overnight**: Member A set batch chạy đêm, sáng check results
+2. **Annotation 2 người song song**: Mỗi người 3 tasks, không chờ nhau
+3. **Member C viết draft trước**: Section 5/6 viết cấu trúc + phân tích placeholder, đợi results chỉ cần điền số
+4. **Fine-tune chạy nền**: Dùng `--gradient_accumulation 8` để giảm thời gian
+5. **Evaluate tự động**: Sau mỗi baseline xong, chạy evaluate ngay
