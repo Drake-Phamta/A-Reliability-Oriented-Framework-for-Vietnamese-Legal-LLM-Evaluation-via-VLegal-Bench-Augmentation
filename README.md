@@ -5,7 +5,7 @@
 
 A comprehensive Vietnamese legal benchmark dataset for evaluating Large Language Models (LLMs) on various legal NLP tasks.
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Dataset Structure](#dataset-structure)
@@ -13,10 +13,11 @@ A comprehensive Vietnamese legal benchmark dataset for evaluating Large Language
 - [Installation](#installation)
 - [Usage](#usage)
 - [Evaluation](#evaluation)
+- [Reliability Framework](#reliability-framework)
 
 ---
 
-## 🎯 Overview
+## Overview
 
 This benchmark contains 22 legal tasks organized into 5 main categories, covering key aspects of legal language understanding and generation in Vietnamese. Task 5.3 is divided into 2 subtasks with separate folders. Each task folder contains:
 - **Dataset file(s)**: `.jsonl` format containing questions and ground truth answers
@@ -24,7 +25,7 @@ This benchmark contains 22 legal tasks organized into 5 main categories, coverin
 
 ---
 
-## 📁 Dataset Structure
+## Dataset Structure
 
 ```
 vlegal-bench/
@@ -56,7 +57,7 @@ vlegal-bench/
 
 ---
 
-## 📚 Task Categories
+## Task Categories
 
 ### Category 1: Recognition & Recall
 - **1.1**: Legal Entity Recognition 
@@ -92,24 +93,35 @@ vlegal-bench/
 
 ---
 
-## 🛠️ Installation
+## Installation
 
 ### Environment Setup
 
 ```bash
-pip install uv
-uv venv .venv 
-source .venv/bin/activate
-uv sync
+# Clone repository
+git clone https://github.com/Drake-Phamta/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation.git
+cd A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation
+
+# Quick setup (Windows)
+setup.bat
+
+# Quick setup (Linux/Mac)
+bash setup.sh
+
+# Manual setup
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+# or: venv\Scripts\activate  # Windows
+pip install -r requirements.txt
 ```
 
 ### Configure Environment Variables
 
-Create your own .env file according to .env_example
+Create your own `.env` file according to `.env.example`
 
 ---
 
-## 🚀 Usage
+## Usage
 
 ### Option 1: Using Local VLLM Server
 
@@ -140,6 +152,20 @@ bash infer.sh
 USE_REMOVE_CONTENT=true bash infer.sh
 ```
 
+### Option 3: Using Experiment Runner
+
+```bash
+# Run specific system
+python tools/run_experiments.py --model <model_name> --system baseline_1a
+
+# Run all systems
+python tools/run_experiments.py --model <model_name> --all
+
+# Fine-tune with LoRA
+python tools/finetune_lora.py --model <model_name> --mode baseline_3
+python tools/finetune_lora.py --model <model_name> --mode proposed
+```
+
 ### Configuration Parameters
 
 Edit the following variables in `infer.sh`:
@@ -148,10 +174,11 @@ Edit the following variables in `infer.sh`:
 - `BATCH_SIZE`: Number of samples per batch (default: 1)
 - `MAX_MODEL_LEN`: Maximum context length (default: 32768)
 - `USE_REMOVE_CONTENT`: Use content-removed dataset variant (true/false)
+- `PROMPT_MODE`: Prompt variant (zero_shot, fewshot, reasoning, reliability)
 
 ---
 
-## 📊 Evaluation
+## Evaluation
 
 The evaluation is automatically performed after inference. Metrics vary by task type:
 
@@ -182,8 +209,45 @@ results = metrics.eval()
 print(results)
 ```
 
+---
 
-## 🤝 Contributing
+## Reliability Framework
+
+This repository includes a reliability-oriented evaluation framework extending VLegal-Bench with:
+
+### Reliability Metrics
+- **CitAcc**: Citation Accuracy - correctness of legal document citations
+- **RAS**: Recency-Aware Score - temporal validity weighting
+- **RAR**: Recency-Aware Recall - temporally weighted recall
+- **ESR**: Evidence Support Rate - proportion supported by evidence
+- **UCR**: Unsupported Claim Rate - proportion of unsupported claims
+- **AbsAcc**: Abstention Accuracy - correct refusal when uncertain
+
+### Tools
+
+| Tool | Description |
+|------|-------------|
+| `tools/run_experiments.py` | Run experiments across 6 systems and 22 tasks |
+| `tools/evaluate_experiments.py` | Compute metrics and generate tables |
+| `tools/generate_tables.py` | Generate LaTeX tables for paper |
+| `tools/finetune_lora.py` | LoRA fine-tuning for baseline and proposed models |
+| `tools/annotation_tool.py` | CLI tool for reliability annotation |
+| `tools/calculate_iaa.py` | Inter-Annotator Agreement calculation |
+| `tools/create_annotation_subset.py` | Create annotation subsets |
+| `tools/verify_experiments.py` | Verify experiment outputs |
+| `tools/progress.py` | Track progress across all workstreams |
+| `tools/generate_figure1.py` | Generate framework diagram |
+
+### Documentation
+
+- `TEAM_GUIDE.md` - Team workflow and task assignments
+- `docs/PLAN_2WEEKS.md` - 2-week sprint plan
+- `docs/annotation_guideline.md` - Annotation guidelines
+- `docs/GITHUB_ISSUES.md` - GitHub issue templates
+
+---
+
+## Contributing
 
 When adding new tasks or modifying existing ones:
 1. Maintain the folder structure `X.Y/`
@@ -193,17 +257,17 @@ When adding new tasks or modifying existing ones:
 
 ---
 
-## 📄 License
+## License
 
 Please refer to the repository license for usage terms and conditions.
 
 ---
 
-## 📧 Contact
+## Contact
 
 For questions or issues, please open an issue in the repository or contact the maintainers.
 
-## 📧 Citation
+## Citation
 
 ```
 @misc{dong2025vlegalbenchcognitivelygroundedbenchmark,
