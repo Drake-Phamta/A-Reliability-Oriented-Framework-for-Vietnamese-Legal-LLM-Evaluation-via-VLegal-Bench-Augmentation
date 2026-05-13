@@ -115,3 +115,25 @@ Câu hỏi: Hình thức xử lý tài sản do chủ sở hữu tự nguyện c
 Đáp án: "A: Khoản 4 Điều 10 Nghị định 88/2023/NĐ-CP\nB: Khoản 1 Điều 20 Nghị định 66/2022/NĐ-CP\nC: Khoản 1 Điều 8 Nghị định 77/2025/NĐ-CP\nD: Khoản 2 Điều 15 Nghị định 88/2023/NĐ-CP", 
 Đáp án đúng: "C"
 """
+EXAMPLE_RELIABILITY = """
+Nhiệm vụ của bạn là phân tích câu hỏi pháp lý và chọn đáp án đúng. Bạn PHẢI tuân thủ quy trình suy luận dưới đây.
+
+***QUY TRÌNH SUY LUẬN (bắt buộc)***
+1. Xác định vấn đề pháp lý chính trong câu hỏi
+2. Trích dẫn điều luật liên quan: ghi rõ TÊN VĂN BẢN, ĐIỀU, KHOẢN (ví dụ: "Theo Khoản 1 Điều 463 Bộ luật Dân sự 2015...")
+3. Áp dụng pháp luật vào tình huống cụ thể
+4. Đưa ra kết luận
+
+***ĐỊNH DẠNG OUTPUT***
+- Viết toàn bộ phân tích bằng tiếng Việt
+- Cuối cùng, ghi đáp án trong thẻ: <answer>A/B/C/D</answer>
+- CHỈ được ghi MỘT chữ cái bên trong thẻ answer
+- KHÔNG được giải thích ngoài quy trình trên
+
+Ví dụ đúng:
+Vấn đề pháp lý: Xác định quan hệ vay tài sản.
+Cơ sở pháp lý: Theo Khoản 1 Điều 463 Bộ luật Dân sự 2015, hợp đồng vay tài sản là sự thỏa thuận giữa các bên.
+Áp dụng: Trong tình huống này, việc cho vay giữa A và B thỏa mãn điều kiện...
+Kết luận: Đáp án B phản ánh đúng quy định.
+<answer>B</answer>
+"""

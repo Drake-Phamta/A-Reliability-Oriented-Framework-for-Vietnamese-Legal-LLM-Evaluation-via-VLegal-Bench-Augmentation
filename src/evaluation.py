@@ -320,7 +320,7 @@ class Prediction:
         elif self.task in ["4_1", "4_3", "4_2"]:
             return raw_output.strip()
     
-    def parse_output_with_reasoning(self, raw_output: str, max_retries: int=3) -> str: 
+    def parse_output_with_reasoning(self, raw_output: str, max_retries: int=3) -> str:
         """
         Parse raw model output to extract the final answer (with reasoning). For each task, need to customized this method.
         Args:
@@ -329,19 +329,42 @@ class Prediction:
             str: Parsed final answer.
         """
         for attempt in range(max_retries):
-            # Extract content within <output> ... </output>. 
+            # Extract content within <output> ... </output>.
             try:
                 match = re.search(r'<output>(.*?)</output>', raw_output, re.DOTALL | re.IGNORECASE)
                 if match:
-                    extracted = match.group(1).capitalize()
+                    extracted = match.group(1).strip()
                     logging.warning(f"Extracted '{extracted}' from response: {raw_output}")
                     return self.parse_output(extracted)
-                else: 
+                else:
                     logging.warning(f"Attempt {attempt + 1}: Could not find <output> tags in response, retrying...")
             except Exception as e:
                 logging.error(f"Attempt {attempt + 1} failed: {str(e)}")
         logging.error(f"Fail to parse output after {max_retries} attempts")
         return None
+
+    def parse_answer_tag(self, raw_output: str) -> str:
+        """
+        Parse <answer>...</answer> tags from reliability prompt mode.
+        Args:
+            raw_output (str): Raw output string from the model.
+        Returns:
+            str: Parsed final answer.
+        """
+        match = re.search(r'<answer>(.*?)</answer>', raw_output, re.DOTALL | re.IGNORECASE)
+        if match:
+            extracted = match.group(1).strip()
+            logging.warning(f"Extracted from <answer> tag: '{extracted}'")
+            return self.parse_output(extracted)
+        # Fallback: try <output> tag
+        match = re.search(r'<output>(.*?)</output>', raw_output, re.DOTALL | re.IGNORECASE)
+        if match:
+            extracted = match.group(1).strip()
+            logging.warning(f"Fallback: extracted from <output> tag: '{extracted}'")
+            return self.parse_output(extracted)
+        # Fallback: try direct parse
+        logging.warning(f"No <answer> or <output> tags found, trying direct parse")
+        return self.parse_output(raw_output)
 
     def parse_thinking(self, raw_output: str, max_retries: int=3) -> str: 
         """

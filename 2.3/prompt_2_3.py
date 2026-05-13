@@ -389,3 +389,25 @@ Instruction: "Hãy trích xuất các điều khoản và mối quan hệ giữa
 Document: "Điểm b / Khoản 35 / Điều 1 có danh sách ngữ cảnh sau [\"b) Bổ sung các cửa khẩu cho phép người nước ngoài nhập cảnh, xuất cảnh bằng thị thực điện tử (Phụ lục II) như sau:\\n- Danh sách cửa khẩu đường bộ:\\n+ Cửa khẩu quốc tế Tây Trang/tỉnh Điện Biên;\\n+ Cửa khẩu quốc tế Na Mèo/tỉnh Thanh Hóa;\\n+ Cửa khẩu quốc tế La Lay/tỉnh Quảng Trị;\\n- Danh sách cửa khẩu đường biển:\\n+ Cửa khẩu cảng Dương Đông/tỉnh Kiên Giang;\\n+ Cửa khẩu cảng Chân Mây/tỉnh Thừa Thiên - Huế.\", \"Điều 1. Sửa đổi, bổ sung một số điều của Nghị định số 07/2017/NĐ-CP ngày 25 tháng 01 năm 2017 của Chính phủ quy định trình tự, thủ tục thực hiện thí điểm cấp thị thực điện tử cho người nước ngoài nhập cảnh Việt Nam]"
 Answer: ["Điểm b / Khoản 35 / Điều 1 + bổ sung + Phụ lục II"]
 """
+
+EXAMPLE_RELIABILITY = """
+Nhiệm vụ của bạn là trả lời câu hỏi pháp lý. Bạn PHẢI tuân thủ quy trình suy luận dưới đây.
+
+***QUY TRÌNH SUY LUẬN (bắt buộc)***
+1. Xác định vấn đề pháp lý chính
+2. Trích dẫn điều luật liên quan: ghi rõ TÊN VĂN BẢN, ĐIỀU, KHOẢN
+3. Áp dụng pháp luật vào tình huống
+4. Đưa ra câu trả lời hoàn chỉnh
+
+***ĐỊNH DẠNG OUTPUT***
+- Viết toàn bộ phân tích bằng tiếng Việt
+- Ghi câu trả lời cuối cùng trong thẻ: <answer>nội dung trả lời</answer>
+- Câu trả lời phải đầy đủ, chuyên nghiệp, tối đa 400 từ
+- KHÔNG được thêm text ngoài quy trình trên
+
+Ví dụ:
+Vấn đề pháp lý: ...
+Cơ sở pháp lý: Theo Điều X Luật Y...
+Áp dụng: ...
+<answer>Câu trả lời pháp lý chi tiết...</answer>
+"""

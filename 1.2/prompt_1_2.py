@@ -69,3 +69,58 @@ Question: “What are the guidelines in Official Dispatch No. 8935/BNV-CTTN&BĐG
 Answer: A. Business B. Securities C. Civil Rights D. Legal Services
 Ground truth: C
 """
+
+EXAMPLE_REASONING = """
+Nhiệm vụ của bạn là đọc câu hỏi và xác định lĩnh vực pháp lý mà câu hỏi thuộc về, rồi chọn đáp án đúng (A, B, C, D, E hoặc F). Để trả lời được câu hỏi, bạn phải suy nghĩ và đưa ra lập luận cho câu trả lời.
+
+***ĐỊNH DẠNG CỦA OUTPUT***
+1. OUTPUT cho THINKING
+- Hãy viết toàn bộ phần suy luận chi tiết nằm giữa 2 thẻ <think> và </think>. Đây là nơi bạn phân tích câu hỏi và xác định lĩnh vực.
+- KHÔNG được để trống phần suy luận.
+- KHÔNG được viết nội dung suy luận nằm bên ngoài 2 thẻ.
+
+2. OUTPUT cho ANSWER
+- Chỉ đưa ra 1 ký tự duy nhất từ tập {A, B, C, D, E, F} và viết vào giữa 2 thẻ <output> và </output>
+- KHÔNG được kèm theo bất kỳ từ ngữ, ký tự hoặc giải thích nào khác ở phần này.
+- KHÔNG được viết câu kiểu "Đáp án là A".
+- KHÔNG được viết lại câu hỏi.
+
+**YÊU CẦU TUÂN THỦ NGHIÊM NGẶT**:
+- Nội dung thinking và câu trả lời phải được viết trong các thẻ tương ứng, không được viết bên ngoài.
+- Nội dung answer phải nằm trong 2 thẻ <output> và </output>.
+- Nội dung của thinking và answer không được để trống.
+- Không được đổi tên thẻ hoặc thêm thẻ mới.
+- Không được dùng ký tự khác ngoài A/B/C/D/E/F bên trong 2 thẻ <output> và </output>.
+- Định dạng phải chính xác tuyệt đối.
+
+***Các ví dụ đúng***:
+<think>Suy nghĩ của bạn...</think>
+<output>A</output>
+***Các ví dụ sai:***
+1) Đáp án là A
+<output>A – tôi chọn đáp án này</output>
+2) A
+"""
+
+EXAMPLE_RELIABILITY = """
+Nhiệm vụ của bạn là phân tích câu hỏi pháp lý và chọn đáp án đúng. Bạn PHẢI tuân thủ quy trình suy luận dưới đây.
+
+***QUY TRÌNH SUY LUẬN (bắt buộc)***
+1. Xác định vấn đề pháp lý chính trong câu hỏi
+2. Trích dẫn điều luật liên quan: ghi rõ TÊN VĂN BẢN, ĐIỀU, KHOẢN (ví dụ: "Theo Khoản 1 Điều 463 Bộ luật Dân sự 2015...")
+3. Áp dụng pháp luật vào tình huống cụ thể
+4. Đưa ra kết luận
+
+***ĐỊNH DẠNG OUTPUT***
+- Viết toàn bộ phân tích bằng tiếng Việt
+- Cuối cùng, ghi đáp án trong thẻ: <answer>A/B/C/D</answer>
+- CHỈ được ghi MỘT chữ cái bên trong thẻ answer
+- KHÔNG được giải thích ngoài quy trình trên
+
+Ví dụ đúng:
+Vấn đề pháp lý: Xác định quan hệ vay tài sản.
+Cơ sở pháp lý: Theo Khoản 1 Điều 463 Bộ luật Dân sự 2015, hợp đồng vay tài sản là sự thỏa thuận giữa các bên.
+Áp dụng: Trong tình huống này, việc cho vay giữa A và B thỏa mãn điều kiện...
+Kết luận: Đáp án B phản ánh đúng quy định.
+<answer>B</answer>
+"""

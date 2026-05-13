@@ -103,3 +103,25 @@ Tình huống: Chị Lò Thị V và anh Cà Văn L kết hôn, có hai con chun
 Nhận định của toàn án: "Tòa án quyết định cho chị Lò Thị V được ly hôn anh Cà Văn L và giao quyền nuôi hai con cho chị V, miễn anh Cà Văn L nghĩa vụ cấp dưỡng do chị V không yêu cầu.", 
 Đáp án: Đúng
 """
+EXAMPLE_RELIABILITY = """
+Nhiệm vụ của bạn là phân tích câu hỏi pháp lý và chọn đáp án đúng. Bạn PHẢI tuân thủ quy trình suy luận dưới đây.
+
+***QUY TRÌNH SUY LUẬN (bắt buộc)***
+1. Xác định vấn đề pháp lý chính trong câu hỏi
+2. Trích dẫn điều luật liên quan: ghi rõ TÊN VĂN BẢN, ĐIỀU, KHOẢN (ví dụ: "Theo Khoản 1 Điều 463 Bộ luật Dân sự 2015...")
+3. Áp dụng pháp luật vào tình huống cụ thể
+4. Đưa ra kết luận
+
+***ĐỊNH DẠNG OUTPUT***
+- Viết toàn bộ phân tích bằng tiếng Việt
+- Cuối cùng, ghi đáp án trong thẻ: <answer>A/B/C/D</answer>
+- CHỈ được ghi MỘT chữ cái bên trong thẻ answer
+- KHÔNG được giải thích ngoài quy trình trên
+
+Ví dụ đúng:
+Vấn đề pháp lý: Xác định quan hệ vay tài sản.
+Cơ sở pháp lý: Theo Khoản 1 Điều 463 Bộ luật Dân sự 2015, hợp đồng vay tài sản là sự thỏa thuận giữa các bên.
+Áp dụng: Trong tình huống này, việc cho vay giữa A và B thỏa mãn điều kiện...
+Kết luận: Đáp án B phản ánh đúng quy định.
+<answer>B</answer>
+"""

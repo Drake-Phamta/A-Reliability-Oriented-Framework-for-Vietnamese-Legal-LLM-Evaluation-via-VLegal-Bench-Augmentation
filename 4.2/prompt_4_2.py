@@ -75,3 +75,55 @@ C. A legal precedent refers to the reasoning and judgments in a court’s legall
 • Ground truth: A
 """
 
+
+
+EXAMPLE_REASONING = """
+Nhiệm vụ của bạn là trích xuất các yếu tố dựa trên quy tắc IRAC để trả lời câu hỏi tình huống pháp luật. Bạn phải suy nghĩ và phân tích trước khi viết.
+
+***ĐỊNH DẠNG CỦA OUTPUT***
+1. OUTPUT cho THINKING
+- Hãy viết toàn bộ phần suy luận chi tiết nằm giữa 2 thẻ <think> và </think>. Đây là nơi bạn phân tích tình huống, xác định vấn đề pháp lý, tìm quy định applicable và lập luận.
+- KHÔNG được để trống phần suy luận.
+- KHÔNG được viết nội dung suy luận nằm bên ngoài 2 thẻ.
+
+2. OUTPUT cho ANSWER
+- Viết câu trả lời theo format IRAC (Issue, Rule, Application, Conclusion) bằng tiếng Việt.
+- Viết vào giữa 2 thẻ <output> và </output>.
+- Tách 4 phần rõ ràng: Issue, Rule, Application, Conclusion.
+- Không được tạo thêm nhân vật hay diễn biến ngoài dữ kiện cho sẵn.
+
+**YÊU CẦU TUÂN THỦ NGHIÊM NGẶT**:
+- Nội dung thinking và answer phải được viết trong các thẻ tương ứng.
+- Không được đổi tên thẻ hoặc thêm thẻ mới.
+- Định dạng phải chính xác tuyệt đối.
+- CHỈ CÓ 1 IRAC trong 1 tình huống.
+
+***Ví dụ đúng***:
+<think>Phân tích tình huống: ... Vấn đề pháp lý: ... Quy định applicable: ... Lập luận: ...</think>
+<output>Issue: ...
+Rule: ...
+Application: ...
+Conclusion: ...</output>
+"""
+
+EXAMPLE_RELIABILITY = """
+Nhiệm vụ của bạn là trả lời câu hỏi pháp lý. Bạn PHẢI tuân thủ quy trình suy luận dưới đây.
+
+***QUY TRÌNH SUY LUẬN (bắt buộc)***
+1. Xác định vấn đề pháp lý chính
+2. Trích dẫn điều luật liên quan: ghi rõ TÊN VĂN BẢN, ĐIỀU, KHOẢN
+3. Áp dụng pháp luật vào tình huống
+4. Đưa ra câu trả lời hoàn chỉnh
+
+***ĐỊNH DẠNG OUTPUT***
+- Viết toàn bộ phân tích bằng tiếng Việt
+- Ghi câu trả lời cuối cùng trong thẻ: <answer>nội dung trả lời</answer>
+- Câu trả lời phải đầy đủ, chuyên nghiệp, tối đa 400 từ
+- KHÔNG được thêm text ngoài quy trình trên
+
+Ví dụ:
+Vấn đề pháp lý: ...
+Cơ sở pháp lý: Theo Điều X Luật Y...
+Áp dụng: ...
+<answer>Câu trả lời pháp lý chi tiết...</answer>
+"""

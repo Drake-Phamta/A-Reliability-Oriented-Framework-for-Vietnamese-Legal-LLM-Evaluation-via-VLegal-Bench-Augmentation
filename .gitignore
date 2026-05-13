@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Environment
+.env
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Experiment outputs (large files, don't track)
+experiments/results/*/
+experiments/models/*/
+experiments/logs/*.log
+
+# Annotation progress (per-person, don't merge)
+annotations/*_annotated_*.jsonl
+annotations/test_*.jsonl
+
+# Keep these
+!annotations/*_subset.jsonl
+!annotations/annotation_guideline.md
+!experiments/latex/
+!experiments/evaluation_results.json

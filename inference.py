@@ -27,7 +27,8 @@ class VLLM:
                  base_url: str = f"{os.getenv("HOST_NAME")}/v1",
                  batch_size: int = 4,
                  max_model_len: int = 4096,
-                 delay_between_requests: float = 1.0
+                 delay_between_requests: float = 1.0,
+                 prompt_mode: str = "zero_shot"
     ):
         self.client = AsyncOpenAI(
             base_url=base_url, 
@@ -39,19 +40,23 @@ class VLLM:
         self.batch_size = batch_size
         self.max_model_len = max_model_len
         self.delay = delay_between_requests
+        self.prompt_mode = prompt_mode
 
-    def get_system_prompt(self, task_name_folder: str):
+    def get_system_prompt(self, task_name_folder: str, prompt_mode: str = "zero_shot"):
         task_name = task_name_folder.replace(".", "_")
         namespace = {}
         with open(f"./{task_name_folder}/prompt_{task_name}.py", 'r', encoding='utf-8') as f:
             code = f.read()
             exec(code, namespace)
-        # if args.few_shot:
-        #     return namespace.get("EXAMPLE_FEWSHOT")
-        # elif args.is_thinking:
-        #     return namespace.get("EXAMPLE_REASONING")
 
-        return namespace.get("EXAMPLE") or ""
+        if prompt_mode == "fewshot":
+            return namespace.get("EXAMPLE_FEWSHOT") or namespace.get("EXAMPLE") or ""
+        elif prompt_mode == "reasoning":
+            return namespace.get("EXAMPLE_REASONING") or namespace.get("EXAMPLE") or ""
+        elif prompt_mode == "reliability":
+            return namespace.get("EXAMPLE_RELIABILITY") or namespace.get("EXAMPLE_REASONING") or namespace.get("EXAMPLE") or ""
+        else:  # zero_shot
+            return namespace.get("EXAMPLE") or ""
 
     def get_batch_questions(self, data, batch_size: int = 4):
         """Group raw dataset entries into batches of items.
@@ -71,7 +76,7 @@ class VLLM:
         return batches
 
     async def ask(self, user_prompt, model):
-        system_prompt = self.get_system_prompt(self.dataset_path.split("/")[1])
+        system_prompt = self.get_system_prompt(self.dataset_path.split("/")[1], self.prompt_mode)
         max_input_tokens = self.max_model_len
         user_prompt = truncate_text_to_tokens(user_prompt, max_input_tokens)
         try:
@@ -144,6 +149,7 @@ class VLLM:
                     logging.warning(f"Unknown task: {str(e)}")
             try:
                 responses = list(await asyncio.gather(*(self.ask(q, self.model) for q in user_questions)))
+                batch_raw_responses = list(responses)
                 responses_new = []
                 thinking = []
                 for idx, resp in enumerate(responses):
@@ -152,9 +158,13 @@ class VLLM:
                     parsed_think = None
                     if resp:
                         try:
-                            parsed_resp = self.prediction.parse_output(
-                                resp.replace("</think>", "")
-                            )
+                            clean_resp = resp.replace("</think>", "")
+                            if self.prompt_mode == "reasoning":
+                                parsed_resp = self.prediction.parse_output_with_reasoning(clean_resp)
+                            elif self.prompt_mode == "reliability":
+                                parsed_resp = self.prediction.parse_answer_tag(clean_resp)
+                            else:
+                                parsed_resp = self.prediction.parse_output(clean_resp)
                         except Exception as e:
                             logging.exception(f"Parsing failed at index {idx}: {e}")
 
@@ -168,9 +178,13 @@ class VLLM:
                             if not resp_retry:
                                 continue
                             try:
-                                parsed_resp = self.prediction.parse_output(
-                                    resp_retry.replace("</think>", "")
-                                )
+                                clean_retry = resp_retry.replace("</think>", "")
+                                if self.prompt_mode == "reasoning":
+                                    parsed_resp = self.prediction.parse_output_with_reasoning(clean_retry)
+                                elif self.prompt_mode == "reliability":
+                                    parsed_resp = self.prediction.parse_answer_tag(clean_retry)
+                                else:
+                                    parsed_resp = self.prediction.parse_output(clean_retry)
                             except Exception as e:
                                 logging.exception(
                                     f"Retry parsing failed at index {idx}: {e}"
@@ -184,9 +198,10 @@ class VLLM:
                 responses = responses_new
                 logging.info(f'Predicted Answer (batch): {responses}')
                 results.extend(responses)
-                for entry, pred, gt in zip(batch, responses, batch_ground_truths):
+                for entry, pred, gt, raw_resp in zip(batch, responses, batch_ground_truths, batch_raw_responses):
                     res_entry = entry.copy()
                     res_entry['prediction'] = pred
+                    res_entry['raw_response'] = raw_resp or ''
                     res_entry['ground_truth'] = gt
                     predictions.append(res_entry)
             except Exception as e:
@@ -218,9 +233,13 @@ if __name__ == "__main__":
     parser.add_argument("--dataset_path", type=str, 
                         default="./2.3/2_3_legal_graph_structuring_dataset_reformatted.jsonl",
                         help="Path to the dataset file")
-    parser.add_argument("--batch_size", type=int, 
+    parser.add_argument("--batch_size", type=int,
                         default=4,
-                        help="Batch size for processing")   
+                        help="Batch size for processing")
+    parser.add_argument("--prompt_mode", type=str,
+                        default="zero_shot",
+                        choices=["zero_shot", "fewshot", "reasoning", "reliability"],
+                        help="Prompt mode: zero_shot, fewshot, reasoning, or reliability")
     args = parser.parse_args()
     dataset_path = args.dataset_path
     model_name = args.model_name
@@ -247,9 +266,10 @@ if __name__ == "__main__":
         api_key=api_key,
         model=model_name,
         base_url=base_url,
-        dataset_path=dataset_path, 
+        dataset_path=dataset_path,
         batch_size=args.batch_size,
         max_model_len=args.max_model_len,
-        delay_between_requests=delay
+        delay_between_requests=delay,
+        prompt_mode=args.prompt_mode
     )
     asyncio.run(vllm.run())

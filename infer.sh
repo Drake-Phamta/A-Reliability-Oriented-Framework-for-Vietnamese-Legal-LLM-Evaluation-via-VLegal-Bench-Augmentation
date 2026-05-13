@@ -6,6 +6,7 @@ TASK_FILE="${TASK//./_}"
 BATCH_SIZE=1
 MODEL_NAME="gemini-2.5-flash-lite"
 MAX_MODEL_LEN=32768
+PROMPT_MODE=${PROMPT_MODE:-"zero_shot"}  # zero_shot, fewshot, reasoning, reliability
 
 # === New option — default false ===
 USE_REMOVE_CONTENT=${USE_REMOVE_CONTENT:-false}
@@ -42,3 +43,4 @@ python inference.py \
        --model_name "$MODEL_NAME" \
        --max_model_len "$MAX_MODEL_LEN" \
        --batch_size "$BATCH_SIZE" \
+       --prompt_mode "$PROMPT_MODE" \

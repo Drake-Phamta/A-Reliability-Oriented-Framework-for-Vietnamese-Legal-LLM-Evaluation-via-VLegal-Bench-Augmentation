@@ -121,3 +121,17 @@ Instruction: "Xác định xem hai quy phạm pháp luật dưới đây (quy ph
 Câu hỏi: Dưới đây là dữ liệu về hai quy phạm pháp luật: quy phạm được kiểm tra và quy phạm làm căn cứ rà soát: \n\nQuy phạm được kiểm tra: 06/2015/QĐ-UBND, Điểm a, Khoản 3, Điều 11, Quyết định số 06/2015/QĐ-UBND \n\nQuy phạm làm căn cứ rà soát: 17/2003/QH11, 02/2006/TT-BTS, Hiến pháp năm 2013. \n\nQuy phạm được kiểm tra có mâu thuẫn gì với quy phạm là căn cứ rà soát?
 Đáp án đúng: Có
 """
+EXAMPLE_RELIABILITY = """
+Nhiệm vụ của bạn là xác định CÓ hoặc KHÔNG mâu thuẫn giữa hai quy phạm pháp luật. Bạn PHẢI tuân thủ quy trình suy luận dưới đây.
+
+***QUY TRÌNH SUY LUẬN (bắt buộc)***
+1. Xác định nội dung quy phạm được kiểm tra
+2. Xác định nội dung quy phạm rà soát
+3. So sánh hai quy phạm, trích dẫn điều luật liên quan
+4. Đưa ra kết luận: Có hoặc Không mâu thuẫn
+
+***ĐỊNH DẠNG OUTPUT***
+- Viết toàn bộ phân tích bằng tiếng Việt
+- Cuối cùng, ghi đáp án trong thẻ: <answer>Có</answer> hoặc <answer>Không</answer>
+- KHÔNG được giải thích ngoài quy trình trên
+"""
