@@ -22,6 +22,10 @@ import argparse
 from collections import Counter
 from typing import List, Dict, Tuple
 
+# Fix UTF-8 output on Windows
+if sys.platform == "win32":
+    sys.stdout.reconfigure(encoding='utf-8')
+
 
 def load_jsonl(path: str) -> dict:
     """Load annotations indexed by sample_id."""
