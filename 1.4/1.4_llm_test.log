@@ -6996,3 +6996,181 @@
 2.  **Constraint Check:** I must provide *only* a single letter (A, B, C, or D) as the answer, with no explanations or extra text.
 3.  **Analyze the Question:** The question asks what Điểm b Khoản 2 Điều 1
 2026-05-17 15:02:00,936 - INFO - Predicted Answer (batch): ['A']
+2026-05-17 15:02:09,744 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 15:02:09,746 - INFO - [Raw response 0]: Thinking Process:
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal document (Nghị định số 10/2024/NĐ-CP, Khoản 3 Điều 52).
+2.  **Constraint Check:** I must only output a single letter (A, B, C, or D) and provide no explanations or extra text.
+3.  **Analyze the Question:** "Khoản 3 Điều 52 Nghị định số 10/2024/NĐ-CP
+2026-05-17 15:02:09,747 - WARNING - Extracted 'A' from response: Thinking Process:
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal document (Nghị định số 10/2024/NĐ-CP, Khoản 3 Điều 52).
+2.  **Constraint Check:** I must only output a single letter (A, B, C, or D) and provide no explanations or extra text.
+3.  **Analyze the Question:** "Khoản 3 Điều 52 Nghị định số 10/2024/NĐ-CP
+2026-05-17 15:02:09,747 - INFO - Predicted Answer (batch): ['A']
+2026-05-17 15:02:18,783 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 15:02:18,786 - INFO - [Raw response 0]: Thinking Process:
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal/technical document (Thông tư số 06/2019/TT-BGTVT, Khoản 1 Điều 10).
+2.  **Constraint Check:** I must only output a single letter (A, B, C, or D) and provide no explanation or extra text.
+3.  **Identify the Question:** The question asks for the time limit for repairing items evaluated as 'not meeting requirements' (không đạt yêu cầu) according
+2026-05-17 15:02:18,786 - WARNING - Extracted 'A' from response: Thinking Process:
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal/technical document (Thông tư số 06/2019/TT-BGTVT, Khoản 1 Điều 10).
+2.  **Constraint Check:** I must only output a single letter (A, B, C, or D) and provide no explanation or extra text.
+3.  **Identify the Question:** The question asks for the time limit for repairing items evaluated as 'not meeting requirements' (không đạt yêu cầu) according
+2026-05-17 15:02:18,787 - INFO - Predicted Answer (batch): ['A']
+2026-05-17 15:02:29,986 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 15:02:29,989 - INFO - [Raw response 0]: Thinking Process:
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal text (Khoản 1 Điều 38 Nghị định số 322/HĐBT ngày 18 tháng 10 năm 1991).
+2.  **Constraint Check:** I must only output a single letter (A, B, C, or D) and provide no explanation or extra text.
+3.  **Analyze the Question:** The question asks what content is regulated by Khoản 1 Điều 38 Nghị định số
+2026-05-17 15:02:29,989 - WARNING - Extracted 'A' from response: Thinking Process:
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal text (Khoản 1 Điều 38 Nghị định số 322/HĐBT ngày 18 tháng 10 năm 1991).
+2.  **Constraint Check:** I must only output a single letter (A, B, C, or D) and provide no explanation or extra text.
+3.  **Analyze the Question:** The question asks what content is regulated by Khoản 1 Điều 38 Nghị định số
+2026-05-17 15:02:29,990 - INFO - Predicted Answer (batch): ['A']
+2026-05-17 15:02:38,230 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 15:02:38,237 - INFO - [Raw response 0]: Thinking Process:
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal/technical document (Điểm đ Khoản 4 Điều 6 Thông tư số 59/2015/TT-BTNMT).
+2.  **Constraint Check:** I must provide *only* a single letter (A, B, C, or D) as the answer, with absolutely no explanation or extra text.
+3.  **Analyze the Question:** The question asks what "Điểm đ Khoản 4 Điều 6 Thông tư số
+2026-05-17 15:02:38,237 - WARNING - Extracted 'A' from response: Thinking Process:
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal/technical document (Điểm đ Khoản 4 Điều 6 Thông tư số 59/2015/TT-BTNMT).
+2.  **Constraint Check:** I must provide *only* a single letter (A, B, C, or D) as the answer, with absolutely no explanation or extra text.
+3.  **Analyze the Question:** The question asks what "Điểm đ Khoản 4 Điều 6 Thông tư số
+2026-05-17 15:02:38,238 - INFO - Predicted Answer (batch): ['A']
+2026-05-17 15:02:47,064 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 15:02:47,066 - INFO - [Raw response 0]: Thinking Process:
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal document (Thông tư số 202/2013/TT-BQP, Khoản 2 Điều 20).
+2.  **Constraint Check:** I must only output a single letter (A, B, C, or D) and provide no explanations or extra text.
+3.  **Analyze the Question:** "Khoản 2 Điều 20 Thông tư số 202/2013/TT-BQP
+2026-05-17 15:02:47,072 - WARNING - Extracted 'A' from response: Thinking Process:
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal document (Thông tư số 202/2013/TT-BQP, Khoản 2 Điều 20).
+2.  **Constraint Check:** I must only output a single letter (A, B, C, or D) and provide no explanations or extra text.
+3.  **Analyze the Question:** "Khoản 2 Điều 20 Thông tư số 202/2013/TT-BQP
+2026-05-17 15:02:47,072 - INFO - Predicted Answer (batch): ['A']
+2026-05-17 15:02:54,926 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 15:02:54,933 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal document (Thông tư 05/2022/TT-BTP) and select only one letter (A, B, C, or D) as the final output. No explanations are allowed.
+2.  **Identify the Question:** The question asks for the specific code (mã số) assigned to "trợ giúp viên pháp lý hạng III" according to Khoản 3 Điều 2 Chương I Thông tư 05/2022
+2026-05-17 15:02:54,934 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal document (Thông tư 05/2022/TT-BTP) and select only one letter (A, B, C, or D) as the final output. No explanations are allowed.
+2.  **Identify the Question:** The question asks for the specific code (mã số) assigned to "trợ giúp viên pháp lý hạng III" according to Khoản 3 Điều 2 Chương I Thông tư 05/2022
+2026-05-17 15:02:54,934 - INFO - Predicted Answer (batch): ['A']
+2026-05-17 15:03:06,531 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 15:03:06,533 - INFO - [Raw response 0]: Thinking Process:
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal document (Nghị định số 65/2018/NĐ-CP, Điểm c Khoản 3 Điều 46 Chương VII).
+2.  **Constraint Check:** I must only output a single letter (A, B, C, or D) and provide no explanations or extra text.
+3.  **Analyze the Question:** The question asks what specific documents are required for the settlement/finalization (thanh, quyết toán
+2026-05-17 15:03:06,534 - WARNING - Extracted 'A' from response: Thinking Process:
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal document (Nghị định số 65/2018/NĐ-CP, Điểm c Khoản 3 Điều 46 Chương VII).
+2.  **Constraint Check:** I must only output a single letter (A, B, C, or D) and provide no explanations or extra text.
+3.  **Analyze the Question:** The question asks what specific documents are required for the settlement/finalization (thanh, quyết toán
+2026-05-17 15:03:06,535 - INFO - Predicted Answer (batch): ['A']
+2026-05-17 15:03:14,650 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 15:03:14,655 - INFO - [Raw response 0]: Thinking Process:
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal text (Khoản 4 Điều 23 Nghị định số 12/2025/NĐ-CP).
+2.  **Constraint Check:** I must only output a single letter (A, B, C, or D) and provide no explanations or extra text.
+3.  **Evaluate the Question/Context:** The question asks about the responsibility of the managing agency within 30 days after a Disposal Decision (Quyết định xử lý)
+2026-05-17 15:03:14,656 - WARNING - Extracted 'A' from response: Thinking Process:
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal text (Khoản 4 Điều 23 Nghị định số 12/2025/NĐ-CP).
+2.  **Constraint Check:** I must only output a single letter (A, B, C, or D) and provide no explanations or extra text.
+3.  **Evaluate the Question/Context:** The question asks about the responsibility of the managing agency within 30 days after a Disposal Decision (Quyết định xử lý)
+2026-05-17 15:03:14,656 - INFO - Predicted Answer (batch): ['A']
+2026-05-17 15:03:22,573 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 15:03:22,575 - INFO - [Raw response 0]: Thinking Process:
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal document (Nghị định số 156/2018/NĐ-CP, Điểm a Khoản 2 Điều 70).
+2.  **Constraint Check:** I must only output a single letter (A, B, C, or D) and provide no explanation or extra text.
+3.  **Analyze the Question:** The question asks what Điểm a Khoản 2 Điều 70 Nghị định số 15
+2026-05-17 15:03:22,576 - WARNING - Extracted 'A' from response: Thinking Process:
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal document (Nghị định số 156/2018/NĐ-CP, Điểm a Khoản 2 Điều 70).
+2.  **Constraint Check:** I must only output a single letter (A, B, C, or D) and provide no explanation or extra text.
+3.  **Analyze the Question:** The question asks what Điểm a Khoản 2 Điều 70 Nghị định số 15
+2026-05-17 15:03:22,576 - INFO - Predicted Answer (batch): ['A']
+2026-05-17 15:03:31,057 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 15:03:31,059 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal document (Thông tư số 01/2025/TT-TANDTC, Khoản 2 Điều 30 Mục 3 Chương IV).
+2.  **Constraint Check:** I must only output a single letter (A, B, C, or D) and provide no explanation or extra text.
+3.  **Analyze the Question:** "Khoản 2 Điều 30 Mục 3 Chương IV Thông tư số 01/
+2026-05-17 15:03:31,059 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal document (Thông tư số 01/2025/TT-TANDTC, Khoản 2 Điều 30 Mục 3 Chương IV).
+2.  **Constraint Check:** I must only output a single letter (A, B, C, or D) and provide no explanation or extra text.
+3.  **Analyze the Question:** "Khoản 2 Điều 30 Mục 3 Chương IV Thông tư số 01/
+2026-05-17 15:03:31,060 - INFO - Predicted Answer (batch): ['A']
+2026-05-17 15:03:42,214 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 15:03:42,216 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal document (Khoản 12 Điều 3 Nghị định 175/2024/NĐ-CP).
+2.  **Constraint Check:** I must only output a single letter (A, B, C, or D) and provide no explanation or extra text.
+3.  **Analyze the Question:** "Khoản 12 Điều 3 Nghị định 175/2024/NĐ-CP ngày 3
+2026-05-17 15:03:42,217 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal document (Khoản 12 Điều 3 Nghị định 175/2024/NĐ-CP).
+2.  **Constraint Check:** I must only output a single letter (A, B, C, or D) and provide no explanation or extra text.
+3.  **Analyze the Question:** "Khoản 12 Điều 3 Nghị định 175/2024/NĐ-CP ngày 3
+2026-05-17 15:03:42,217 - INFO - Predicted Answer (batch): ['A']
+2026-05-17 15:03:50,274 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 15:03:50,279 - INFO - [Raw response 0]: Thinking Process:
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal document (Thông tư số 108/2020/TT-BTC, Khoản 1 Điều 1).
+2.  **Constraint Check:** I must only output a single letter (A, B, C, or D) and provide no explanations or extra text.
+3.  **Analyze the Question:** "Khoản 1 Điều 1 Thông tư số 108/2020/TT-BTC quy định về điều
+2026-05-17 15:03:50,280 - WARNING - Extracted 'A' from response: Thinking Process:
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal document (Thông tư số 108/2020/TT-BTC, Khoản 1 Điều 1).
+2.  **Constraint Check:** I must only output a single letter (A, B, C, or D) and provide no explanations or extra text.
+3.  **Analyze the Question:** "Khoản 1 Điều 1 Thông tư số 108/2020/TT-BTC quy định về điều
+2026-05-17 15:03:50,280 - INFO - Predicted Answer (batch): ['A']
+2026-05-17 15:03:58,767 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 15:03:58,772 - INFO - [Raw response 0]: Thinking Process:
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal text (Khoản 5 Điều 6 Nghị định số 155/2024/NĐ-CP).
+2.  **Constraint Check:** I must only output a single letter (A, B, C, or D) and provide no explanations or extra text.
+3.  **Identify the Core Question:** What does Khoản 5 Điều 6 Nghị định số 155/2024/NĐ-CP quy
+2026-05-17 15:03:58,773 - WARNING - Extracted 'A' from response: Thinking Process:
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal text (Khoản 5 Điều 6 Nghị định số 155/2024/NĐ-CP).
+2.  **Constraint Check:** I must only output a single letter (A, B, C, or D) and provide no explanations or extra text.
+3.  **Identify the Core Question:** What does Khoản 5 Điều 6 Nghị định số 155/2024/NĐ-CP quy
+2026-05-17 15:03:58,773 - INFO - Predicted Answer (batch): ['A']
+2026-05-17 15:04:07,600 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 15:04:07,607 - INFO - [Raw response 0]: Thinking Process:
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal document (Thông tư số 15/2019/TT-BQP, Khoản 3, Điều 6, Chương I).
+2.  **Constraint Check:** I must only output a single letter (A, B, C, or D) and provide no explanation or extra text.
+3.  **Analyze the Question:** "Theo Khoản 3, Điều 6, Chương I của Thông tư số 15/201
+2026-05-17 15:04:07,608 - WARNING - Extracted 'A' from response: Thinking Process:
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal document (Thông tư số 15/2019/TT-BQP, Khoản 3, Điều 6, Chương I).
+2.  **Constraint Check:** I must only output a single letter (A, B, C, or D) and provide no explanation or extra text.
+3.  **Analyze the Question:** "Theo Khoản 3, Điều 6, Chương I của Thông tư số 15/201
+2026-05-17 15:04:07,609 - INFO - Predicted Answer (batch): ['A']
+2026-05-17 15:04:18,536 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 15:04:18,539 - INFO - [Raw response 0]: Thinking Process:
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal document (Thông tư 105/2022/TT-BQP, Khoản 1, Điều 3, Chương I).
+2.  **Constraint Check:** I must only output a single letter (A, B, C, or D) and provide no explanation.
+3.  **Analyze the Question:** "Khoản 1, Điều 3, Chương I của Thông tư 105/2022/TT-
+2026-05-17 15:04:18,539 - WARNING - Extracted 'A' from response: Thinking Process:
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal document (Thông tư 105/2022/TT-BQP, Khoản 1, Điều 3, Chương I).
+2.  **Constraint Check:** I must only output a single letter (A, B, C, or D) and provide no explanation.
+3.  **Analyze the Question:** "Khoản 1, Điều 3, Chương I của Thông tư 105/2022/TT-
+2026-05-17 15:04:18,540 - INFO - Predicted Answer (batch): ['A']
+2026-05-17 15:04:26,952 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 15:04:26,954 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal document (Nghị định số 91/CP).
+2.  **Constraint Check:** I must only output a single letter (A, B, C, or D) and provide no explanations or extra text.
+3.  **Analyze the Question:** "Điều 3 Nghị định số 91/CP quy định nội dung nào dưới đây?" (What content does Article 3 of Decree No. 91/CP regulate?)
+4.  
+2026-05-17 15:04:26,955 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal document (Nghị định số 91/CP).
+2.  **Constraint Check:** I must only output a single letter (A, B, C, or D) and provide no explanations or extra text.
+3.  **Analyze the Question:** "Điều 3 Nghị định số 91/CP quy định nội dung nào dưới đây?" (What content does Article 3 of Decree No. 91/CP regulate?)
+4.  
+2026-05-17 15:04:26,955 - INFO - Predicted Answer (batch): ['A']
+2026-05-17 15:04:35,978 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-17 15:04:35,984 - INFO - [Raw response 0]: Thinking Process:
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal text (Điểm a Khoản 1 Điều 13 Nghị định 115/2018/NĐ-CP).
+2.  **Constraint Check:** I must only output a single letter (A, B, C, or D) and provide no explanation or extra text.
+3.  **Identify the Question:** The question asks for the fine range for the act of not having internal regulations regarding food safety conditions during production, according to Đi
+2026-05-17 15:04:35,985 - WARNING - Extracted 'A' from response: Thinking Process:
+1.  **Analyze the Request:** The user wants me to answer a multiple-choice question based on a specific legal text (Điểm a Khoản 1 Điều 13 Nghị định 115/2018/NĐ-CP).
+2.  **Constraint Check:** I must only output a single letter (A, B, C, or D) and provide no explanation or extra text.
+3.  **Identify the Question:** The question asks for the fine range for the act of not having internal regulations regarding food safety conditions during production, according to Đi
+2026-05-17 15:04:35,985 - INFO - Predicted Answer (batch): ['A']
