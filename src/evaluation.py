@@ -35,6 +35,30 @@ task_type_mapping = {
     '5_3_law_vs_ethics': 'multiple_choices',
     '5_4': 'multiple_choices'
 }
+
+
+def infer_task_id_from_filename(file_name: str) -> str:
+    """Infer canonical task id from dataset/result file name.
+
+    Examples:
+    - 1_1.jsonl -> 1_1
+    - 1_1_legal_entity_recognition_dataset_reformatted.jsonl -> 1_1
+    - 5_3_law_vs_ethics_reformatted.jsonl -> 5_3_law_vs_ethics
+    """
+    stem = os.path.splitext(file_name)[0]
+    parts = stem.split("_")
+    if len(parts) < 2:
+        return stem
+
+    task = "_".join(parts[:2])
+    if task == "5_3":
+        if "legal_ethics_cases" in stem:
+            return "5_3_legal_ethics_cases"
+        if "law_vs_ethics" in stem:
+            return "5_3_law_vs_ethics"
+    return task
+
+
 def parse_triplets(answer_text):
     """Parse the string response into a list of tuples
     
@@ -171,13 +195,8 @@ class Prediction:
         with open(self.data_file, 'r', encoding='utf-8') as f:
             self.data.extend([json.loads(line) for line in f.readlines()])
         file_name = os.path.basename(self.data_file)
-        self.task = "_".join(file_name.split("_")[:2])
+        self.task = infer_task_id_from_filename(file_name)
         print(self.task)
-        if self.task == "5_3":
-            if "legal_ethics_cases" in file_name:
-                self.task = "5_3_legal_ethics_cases"
-            elif "law_vs_ethics" in file_name:
-                self.task = "5_3_law_vs_ethics"
         print(f"Loaded {len(self.data)} entries for task {self.task}")
         
         self.reasoning = reasoning
@@ -434,12 +453,7 @@ class Metrics:
         assert all('prediction' in item and 'ground_truth' in item for item in self.data), "Each entry must contain 'prediction' and 'ground_truth' fields."
         # Check for task type 
         file_name = os.path.basename(self.result_path)
-        task = "_".join(file_name.split("_")[:2])
-        if task == "5_3":
-            if "legal_ethics_cases" in file_name:
-                task = "5_3_legal_ethics_cases"
-            elif "law_vs_ethics" in file_name:
-                task = "5_3_law_vs_ethics"
+        task = infer_task_id_from_filename(file_name)
         assert task in task_type_mapping, f"Task {task} not recognized in task_type_mapping. Please rename the result file in format <task>_results.jsonl"
         self.task_type = task_type_mapping[task]
         print(f"Detected task type: {self.task_type}")

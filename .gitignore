@@ -13,6 +13,7 @@ build/
 .venv/
 venv/
 env/
+wenv/
 
 # IDE
 .vscode/
@@ -39,3 +40,5 @@ annotations/test_*.jsonl
 !annotations/annotation_guideline.md
 !experiments/latex/
 !experiments/evaluation_results.json
+
+CLAUDE.md

@@ -244,6 +244,9 @@ This repository includes a reliability-oriented evaluation framework extending V
 - `docs/PLAN_2WEEKS.md` - 2-week sprint plan
 - `docs/annotation_guideline.md` - Annotation guidelines
 - `docs/GITHUB_ISSUES.md` - GitHub issue templates
+- `result.md` - Inference output
+
+
 
 ---
 

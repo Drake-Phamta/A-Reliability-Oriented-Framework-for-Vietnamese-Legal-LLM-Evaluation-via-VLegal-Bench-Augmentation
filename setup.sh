@@ -20,7 +20,7 @@ fi
 echo "[OK] Virtual environment ready"
 
 # Activate
-source venv/bin/activate
+source env/bin/activate
 
 # Install dependencies
 echo "[INFO] Installing dependencies..."
@@ -38,7 +38,7 @@ fi
 # Setup .env
 if [ ! -f ".env" ]; then
     cp .env.example .env
-    echo "[INFO] Created .env from template - EDIT IT with your API keys!"
+    echo "[INFO] Created .env from template - configured for local Ollama."
 fi
 
 # NLTK data
@@ -59,6 +59,6 @@ echo "  Setup complete!"
 echo "========================================"
 echo ""
 echo "Next steps:"
-echo "  1. Edit .env with your API keys"
-echo "  2. Read TEAM_GUIDE.md for your tasks"
-echo "  3. Run: source venv/bin/activate && python tools/run_experiments.py --help"
+echo "  1. Start Ollama server at http://localhost:11434"
+echo "  2. Ensure model exists: ollama pull google/gemma-4-E4B-it"
+echo "  3. Run: source venv/bin/activate && bash infer.sh"
