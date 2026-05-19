@@ -247,6 +247,25 @@ Tool tự động lưu progress, có thể Ctrl+C thoát bất cứ lúc nào.
 | 4.1 | Generation | 396 | Citation + temporal (summarization) |
 | 4.3 | Generation | 498 | Citation + abstention (legal opinion) |
 
+# task bị loại bỏ:
+| Task | Loại | Số mẫu gốc | Ghi chú |
+|------|------|--------|-----------------|
+| 2.4 | MC | 599 | Removed (Reliability focus) |
+| 3.2 | MC | 600 | Removed (Temporal validity) |
+| 3.3 | MC | 292 | Unsuitable (Multi-hop reasoning) |
+| 4.3 | Generation | 498 | Removed (Abstention evaluation) |
+
+# Lựa chọn hiện tại
+| Task | Loại | Số mẫu gốc | Annotation Focus |
+|------|------|--------|-----------------|
+| 1.4 | MC | 968 | Citation grounding (Article recall) |
+| 1.5 | MC | 821 | Citation grounding (Document-level basis) |
+| 3.1 | MC | 600 | Citation grounding (Article-level basis) |
+| 4.1 | Generation | 396 | Citation + Temporal (Summarization) |
+| 4.2 | Generation | 300 | Generation (IRAC structured analysis) |
+
+
+
 **Subset annotation**: 200-300 mẫu/task → tổng ~1,200-1,500 mẫu
 
 ---
