@@ -5,7 +5,7 @@ set -euo pipefail
 # You can override task list by setting TASKS_CSV manually.
 
 BATCH_SIZE="${BATCH_SIZE:-1}"
-MODEL_NAME="${OLLAMA_MODEL:-gemma4:e4b}"
+MODEL_NAME="${OLLAMA_MODEL:-gemma4:e4b-it-q8_0}"
 OLLAMA_BASE_URL="${OLLAMA_BASE_URL:-http://localhost:11434}"
 MAX_MODEL_LEN="${MAX_MODEL_LEN:-8192}"
 MAX_OUTPUT_TOKENS="${MAX_OUTPUT_TOKENS:-128}"

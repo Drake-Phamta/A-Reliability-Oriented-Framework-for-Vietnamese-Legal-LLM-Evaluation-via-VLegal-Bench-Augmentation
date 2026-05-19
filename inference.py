@@ -14,7 +14,7 @@ from src.result_tracker import upsert_task_metrics
 import tiktoken
 
 DEFAULT_OLLAMA_BASE_URL = "http://localhost:11434"
-DEFAULT_OLLAMA_MODEL = "gemma4:e4b"
+DEFAULT_OLLAMA_MODEL = "gemma4:e4b-it-q8_0"
 
 
 def parse_tasks_csv(tasks_csv: str) -> List[str]:
