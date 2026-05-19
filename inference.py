@@ -15,6 +15,7 @@ import tiktoken
 
 DEFAULT_OLLAMA_BASE_URL = "http://localhost:11434"
 DEFAULT_OLLAMA_MODEL = "gemma4:e4b-it-q8_0"
+DEFAULT_LLM_PROFILE = "balanced"
 
 
 def parse_tasks_csv(tasks_csv: str) -> List[str]:
@@ -81,6 +82,52 @@ def truncate_text_to_tokens(text: str, max_tokens: int, encoding_name: str = "p5
     truncated_tokens = tokens[:max_tokens]
     return encoding.decode(truncated_tokens)
 
+
+def resolve_decode_config(
+    prompt_mode: str,
+    llm_profile: str,
+    temperature: float = None,
+    top_p: float = None,
+    repeat_penalty: float = None,
+    max_output_tokens: int = None,
+) -> Dict:
+    profile_key = (llm_profile or DEFAULT_LLM_PROFILE).strip().lower()
+    profile_defaults = {
+        "stable": {"temperature": 0.1, "top_p": 0.9, "repeat_penalty": 1.0},
+        "balanced": {"temperature": 0.2, "top_p": 0.9, "repeat_penalty": 1.05},
+        "reasoning": {"temperature": 0.2, "top_p": 0.95, "repeat_penalty": 1.05},
+    }
+    if profile_key not in profile_defaults:
+        profile_key = DEFAULT_LLM_PROFILE
+
+    mode_key = (prompt_mode or "fewshot").strip().lower()
+    mode_defaults = {
+        "zero_shot": {"temperature": 0.1, "top_p": 0.9},
+        "fewshot": {"temperature": 0.1, "top_p": 0.9},
+        "reasoning": {"temperature": 0.2, "top_p": 0.95},
+        "reliability": {"temperature": 0.15, "top_p": 0.9},
+    }
+
+    resolved = dict(profile_defaults[profile_key])
+    resolved.update(mode_defaults.get(mode_key, {}))
+
+    if temperature is not None:
+        resolved["temperature"] = temperature
+    if top_p is not None:
+        resolved["top_p"] = top_p
+    if repeat_penalty is not None:
+        resolved["repeat_penalty"] = repeat_penalty
+
+    if max_output_tokens is not None:
+        resolved["max_output_tokens"] = max_output_tokens
+    else:
+        if mode_key in ("reasoning", "reliability") or profile_key == "reasoning":
+            resolved["max_output_tokens"] = 256
+        else:
+            resolved["max_output_tokens"] = 128
+    resolved["llm_profile"] = profile_key
+    return resolved
+
 class VLLM: 
     def __init__(self, 
                  api_key: str,
@@ -92,7 +139,11 @@ class VLLM:
                  max_output_tokens: int = 128,
                  max_retry: int = 1,
                  delay_between_requests: float = 0.0,
-                 prompt_mode: str = "fewshot"
+                 prompt_mode: str = "fewshot",
+                 temperature: float = 0.2,
+                 top_p: float = 0.9,
+                 repeat_penalty: float = 1.05,
+                 llm_profile: str = DEFAULT_LLM_PROFILE
     ):
         self.client = AsyncOpenAI(
             base_url=base_url, 
@@ -108,6 +159,10 @@ class VLLM:
         self.max_retry = max_retry
         self.delay = delay_between_requests
         self.prompt_mode = prompt_mode
+        self.temperature = temperature
+        self.top_p = top_p
+        self.repeat_penalty = repeat_penalty
+        self.llm_profile = llm_profile
 
     def get_system_prompt(self, task_name_folder: str, prompt_mode: str = "fewshot"):
         task_name = task_name_folder.replace(".", "_")
@@ -156,30 +211,25 @@ class VLLM:
         system_prompt = self.get_system_prompt(self.task_name, self.prompt_mode)
         max_input_tokens = self.max_model_len
         user_prompt = truncate_text_to_tokens(user_prompt, max_input_tokens)
+        request_kwargs = {
+            "model": model,
+            "messages": [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt},
+            ],
+            "max_tokens": self.max_output_tokens,
+            "temperature": self.temperature,
+            "top_p": self.top_p,
+            "response_format": {"type": "text"},
+        }
+        if self.repeat_penalty is not None:
+            request_kwargs["repeat_penalty"] = self.repeat_penalty
         try:
-            response = await self.client.chat.completions.create(
-                model=model,
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_prompt},
-                ],  
-                max_tokens=self.max_output_tokens,
-                # temperature=1 if is_retry else 0,
-                temperature=0,
-                response_format={"type": "text"}
-            )
-        except Exception as e:
-            response = await self.client.chat.completions.create(
-                model=model,
-                messages=[
-                    {"role": "assistant", "content": system_prompt},
-                    {"role": "user", "content": user_prompt},
-                ],  
-                max_tokens=self.max_output_tokens,
-                # temperature=1 if is_retry else 0,
-                temperature=0,
-                response_format={"type": "text"}
-            )
+            response = await self.client.chat.completions.create(**request_kwargs)
+        except Exception:
+            # Compatibility fallback for backends that do not accept repeat_penalty.
+            request_kwargs.pop("repeat_penalty", None)
+            response = await self.client.chat.completions.create(**request_kwargs)
         # Add delay after request
         await asyncio.sleep(self.delay)
         status_code = None
@@ -314,6 +364,14 @@ class VLLM:
 
 
 def run_single_dataset(dataset_path: str, model_name: str, base_url: str, api_key: str, args) -> Dict:
+    decode_config = resolve_decode_config(
+        prompt_mode=args.prompt_mode,
+        llm_profile=args.llm_profile,
+        temperature=args.temperature,
+        top_p=args.top_p,
+        repeat_penalty=args.repeat_penalty,
+        max_output_tokens=args.max_output_tokens,
+    )
     vllm = VLLM(
         api_key=api_key,
         model=model_name,
@@ -321,10 +379,14 @@ def run_single_dataset(dataset_path: str, model_name: str, base_url: str, api_ke
         dataset_path=dataset_path,
         batch_size=args.batch_size,
         max_model_len=args.max_model_len,
-        max_output_tokens=args.max_output_tokens,
+        max_output_tokens=decode_config["max_output_tokens"],
         max_retry=args.max_retry,
         delay_between_requests=0.0,
-        prompt_mode=args.prompt_mode
+        prompt_mode=args.prompt_mode,
+        temperature=decode_config["temperature"],
+        top_p=decode_config["top_p"],
+        repeat_penalty=decode_config["repeat_penalty"],
+        llm_profile=decode_config["llm_profile"],
     )
     return asyncio.run(vllm.run())
 
@@ -339,7 +401,7 @@ if __name__ == "__main__":
                         default=None,
                         help="Max token lens")   
     parser.add_argument("--max_output_tokens", type=int,
-                        default=128,
+                        default=None,
                         help="Max output tokens for each response")
     parser.add_argument("--max_retry", type=int,
                         default=1,
@@ -356,6 +418,15 @@ if __name__ == "__main__":
                         default="fewshot",
                         choices=["zero_shot", "fewshot", "reasoning", "reliability"],
                         help="Prompt mode: zero_shot, fewshot, reasoning, or reliability")
+    parser.add_argument("--temperature", type=float, default=None,
+                        help="Decoding temperature (override profile/mode defaults)")
+    parser.add_argument("--top_p", type=float, default=None,
+                        help="Decoding top_p (override profile/mode defaults)")
+    parser.add_argument("--repeat_penalty", type=float, default=None,
+                        help="Decoding repeat penalty (override profile/mode defaults)")
+    parser.add_argument("--llm_profile", type=str, default=DEFAULT_LLM_PROFILE,
+                        choices=["stable", "balanced", "reasoning"],
+                        help="Decode profile preset: stable, balanced, reasoning")
     args = parser.parse_args()
     dataset_path = args.dataset_path
     model_name = args.model_name or os.getenv("OLLAMA_MODEL", DEFAULT_OLLAMA_MODEL)
@@ -366,6 +437,26 @@ if __name__ == "__main__":
 
     if not model_name.strip():
         raise ValueError("OLLAMA model is empty. Set OLLAMA_MODEL or pass --model_name.")
+
+    decode_config = resolve_decode_config(
+        prompt_mode=args.prompt_mode,
+        llm_profile=args.llm_profile,
+        temperature=args.temperature,
+        top_p=args.top_p,
+        repeat_penalty=args.repeat_penalty,
+        max_output_tokens=args.max_output_tokens,
+    )
+    args.temperature = decode_config["temperature"]
+    args.top_p = decode_config["top_p"]
+    args.repeat_penalty = decode_config["repeat_penalty"]
+    args.max_output_tokens = decode_config["max_output_tokens"]
+    args.llm_profile = decode_config["llm_profile"]
+    print(
+        "[INFO] Decode config: "
+        f"profile={args.llm_profile}, prompt_mode={args.prompt_mode}, "
+        f"temperature={args.temperature}, top_p={args.top_p}, "
+        f"repeat_penalty={args.repeat_penalty}, max_output_tokens={args.max_output_tokens}"
+    )
 
     if args.tasks:
         tasks = parse_tasks_csv(args.tasks)
