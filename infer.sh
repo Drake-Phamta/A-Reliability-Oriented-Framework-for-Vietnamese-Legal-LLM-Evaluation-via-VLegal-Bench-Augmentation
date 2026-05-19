@@ -2,7 +2,7 @@
 
 # ===== CONFIG =====
 # Điền danh sách task tại đây
-TASKS=("2.5" "3.1" "3.2" "3.3" "3.4" "3.5"  "4.1" "4.2" "4.3" "5.1" "5.2" "5.3")
+TASKS=("4.1")
 
 BATCH_SIZE=1
 MODEL_NAME=${OLLAMA_MODEL:-"gemma4:e4b-it-q8_0"}

@@ -1,7 +1,7 @@
 import json
 import re
 import traceback
-from typing import List, Dict, Tuple
+from typing import List, Dict, Tuple, Optional, Set
 import os
 from rouge_score import rouge_scorer
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
@@ -178,6 +178,96 @@ def parse_triplets(answer_text):
             logging.error(f"Failed to parse triplets with fallback patterns: {e}")
             logging.debug(f"Problematic input: {answer_text[:200]}...")
             return []
+
+
+def _compact_for_log(text: Optional[str], max_len: int = 220) -> str:
+    """Compact long text for logging."""
+    if text is None:
+        return "<None>"
+    compact = re.sub(r"\s+", " ", str(text)).strip()
+    if len(compact) > max_len:
+        return compact[:max_len] + "..."
+    return compact
+
+
+def _unwrap_single_choice_wrappers(text: str) -> str:
+    """Remove lightweight markdown wrappers around a single token."""
+    if text is None:
+        return ""
+    value = str(text).strip()
+    wrapper_pairs = [
+        ("**", "**"),
+        ("__", "__"),
+        ("`", "`"),
+        ("(", ")"),
+        ("[", "]"),
+    ]
+    changed = True
+    while changed and value:
+        changed = False
+        for left, right in wrapper_pairs:
+            if (
+                len(value) > (len(left) + len(right))
+                and value.startswith(left)
+                and value.endswith(right)
+            ):
+                value = value[len(left) : len(value) - len(right)].strip()
+                changed = True
+    return value
+
+
+def _to_valid_label(candidate: Optional[str], valid_labels: Set[str]) -> Optional[str]:
+    if candidate is None:
+        return None
+    normalized = str(candidate).strip().upper()
+    if normalized in valid_labels:
+        return normalized
+    return None
+
+
+def parse_single_choice_strict(raw_output: Optional[str], valid_labels: Set[str]) -> Optional[str]:
+    """Strict parser for single-choice outputs.
+
+    Parse order:
+    1) whole stripped text must be exactly one valid label.
+    2) content inside <answer>...</answer> or <output>...</output> must be one valid label.
+    3) the final non-empty line, after wrapper normalization, must be one valid label.
+    """
+    if raw_output is None:
+        return None
+
+    raw_text = str(raw_output)
+    stripped = raw_text.strip()
+    if not stripped:
+        return None
+
+    # 1) Exact answer only.
+    direct = _to_valid_label(stripped, valid_labels)
+    if direct is not None:
+        return direct
+
+    # 2) Parse explicit tags.
+    for tag in ("answer", "output"):
+        matches = re.findall(
+            rf"<{tag}>\s*(.*?)\s*</{tag}>", raw_text, flags=re.DOTALL | re.IGNORECASE
+        )
+        if not matches:
+            continue
+        tagged = _to_valid_label(matches[-1], valid_labels)
+        if tagged is not None:
+            return tagged
+
+    # 3) Parse final non-empty line with markdown wrapper normalization.
+    non_empty_lines = [line.strip() for line in raw_text.splitlines() if line.strip()]
+    if non_empty_lines:
+        last_line = _unwrap_single_choice_wrappers(non_empty_lines[-1])
+        tail_label = _to_valid_label(last_line, valid_labels)
+        if tail_label is not None:
+            return tail_label
+
+    return None
+
+
 class Prediction: 
     """
     Class to handle inference process and store predictions.
@@ -270,29 +360,21 @@ class Prediction:
         Returns:
             str: Parsed final answer.
         """
-        if self.task in ["1_1", "1_3", "1_4", "1_5", "2_1", "2_2", "3_1", "3_2", "3_3", "3_5", "5_1", "5_2", "5_3_legal_ethics_cases", "5_3_law_vs_ethics", "5_4"]: 
-            # Validate: must be exactly A, B, C, or D
-            if raw_output.upper() in ['A', 'B', 'C', 'D']:
-                return raw_output.upper()
-            
-            # Try to extract if response contains other text
-            match = re.search(r'\b([ABCD])\b', raw_output, re.IGNORECASE)
-            if match:
-                extracted = match.group(1).upper()
-                logging.warning(f"Extracted '{extracted}' from response: {raw_output}")
-                return extracted
+        if self.task in ["1_1", "1_3", "1_4", "1_5", "2_1", "2_2", "3_1", "3_2", "3_3", "3_5", "5_1", "5_2", "5_3_legal_ethics_cases", "5_3_law_vs_ethics", "5_4"]:
+            parsed = parse_single_choice_strict(raw_output, {"A", "B", "C", "D"})
+            if parsed is None:
+                logging.warning(
+                    f"Non-compliant output for strict single-choice parsing (A-D): {_compact_for_log(raw_output)}"
+                )
+            return parsed
         
         elif self.task == "1_2": 
-            # Validate: must be exactly A, B, C, D, E, or F
-            if raw_output.upper() in ['A', 'B', 'C', 'D', 'E', 'F']:
-                return raw_output.upper()
-            
-            # Try to extract if response contains other text
-            match = re.search(r'\b([ABCDEF])\b', raw_output, re.IGNORECASE)
-            if match:
-                extracted = match.group(1).upper()
-                logging.warning(f"Extracted '{extracted}' from response: {raw_output}")
-                return extracted
+            parsed = parse_single_choice_strict(raw_output, {"A", "B", "C", "D", "E", "F"})
+            if parsed is None:
+                logging.warning(
+                    f"Non-compliant output for strict single-choice parsing (A-F): {_compact_for_log(raw_output)}"
+                )
+            return parsed
             
         elif self.task == "2_3": 
             # Parse the response into list of tuples
