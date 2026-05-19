@@ -1,0 +1,1866 @@
+2026-05-19 10:48:53,595 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:48:53,596 - INFO - [Raw response 0]: The user wants me to analyze a case study about a lawyer's conduct and choose the most appropriate answer from the given options (A, B, C, or D).
+The core issue is: Lawyer A promised the client (H) that he would not go to jail for a specific charge, received a fee (100 million VND), but the client was ultimately sentenced to 2 years imprisonment. When the client's family demanded the money back, Lawyer A refused, claiming he fulfilled the contract.
+
+I need to evaluate Lawyer A's actions against professional ethics (likely based on the Vietnamese Bar Association
+2026-05-19 10:48:53,596 - WARNING - Extracted 'A' from response: The user wants me to analyze a case study about a lawyer's conduct and choose the most appropriate answer from the given options (A, B, C, or D).
+The core issue is: Lawyer A promised the client (H) that he would not go to jail for a specific charge, received a fee (100 million VND), but the client was ultimately sentenced to 2 years imprisonment. When the client's family demanded the money back, Lawyer A refused, claiming he fulfilled the contract.
+
+I need to evaluate Lawyer A's actions against professional ethics (likely based on the Vietnamese Bar Association
+2026-05-19 10:48:53,596 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:48:55,232 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:48:55,233 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:** Lawyer A has a legal service contract with a client for a civil case, with a fixed fee of 50 million VND. The case is complex and prolonged, and the 50 million VND is insufficient to cover the actual costs/effort.
+2.  **Identify the core legal/ethical issue:** How should a lawyer handle a situation where the scope/effort/cost of the contracted service exceeds the agreed-upon fee?
+3.  **Evaluate the options based on professional ethics and contract law:**
+
+    *   **A. Trao
+2026-05-19 10:48:55,233 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:** Lawyer A has a legal service contract with a client for a civil case, with a fixed fee of 50 million VND. The case is complex and prolonged, and the 50 million VND is insufficient to cover the actual costs/effort.
+2.  **Identify the core legal/ethical issue:** How should a lawyer handle a situation where the scope/effort/cost of the contracted service exceeds the agreed-upon fee?
+3.  **Evaluate the options based on professional ethics and contract law:**
+
+    *   **A. Trao
+2026-05-19 10:48:55,233 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:48:56,902 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:48:56,903 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Mr. T hired VPLS A (led by Lawyer K) for legal services (drafting, consulting, representation in the initial hearing).
+    *   Contract value: 100,000,000 VND.
+    *   VPLS A assigned an intern (Anh B) to handle tasks (drafting, mediation).
+    *   Crucial failure: VPLS A did not send anyone to the main trial (24/9/2019).
+    *   Mr. T
+2026-05-19 10:48:56,903 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Mr. T hired VPLS A (led by Lawyer K) for legal services (drafting, consulting, representation in the initial hearing).
+    *   Contract value: 100,000,000 VND.
+    *   VPLS A assigned an intern (Anh B) to handle tasks (drafting, mediation).
+    *   Crucial failure: VPLS A did not send anyone to the main trial (24/9/2019).
+    *   Mr. T
+2026-05-19 10:48:56,904 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:48:58,521 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:48:58,522 - INFO - [Raw response 0]: The user wants me to analyze a legal scenario involving a law firm (VPLS A), a supervising lawyer (K), a trainee lawyer (B), and a client (T).
+The core issue is that the contract promised representation at the preliminary hearing by a lawyer, but only a trainee (B) was involved, and no lawyer attended the hearing. The client felt deceived and demanded a refund and disciplinary action.
+
+The question asks: "If you were in the position of B, what would you do when being assigned tasks like this by a lawyer?" (If anh (chị) ở vào trường hợp anh B
+2026-05-19 10:48:58,523 - WARNING - Extracted 'A' from response: The user wants me to analyze a legal scenario involving a law firm (VPLS A), a supervising lawyer (K), a trainee lawyer (B), and a client (T).
+The core issue is that the contract promised representation at the preliminary hearing by a lawyer, but only a trainee (B) was involved, and no lawyer attended the hearing. The client felt deceived and demanded a refund and disciplinary action.
+
+The question asks: "If you were in the position of B, what would you do when being assigned tasks like this by a lawyer?" (If anh (chị) ở vào trường hợp anh B
+2026-05-19 10:48:58,523 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:00,208 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:00,209 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Law firm H signed a legal service contract with 5 households (representing 50 households) to help them recover 20 billion VND in compensation money from the Provincial People's Committee (UBND tỉnh X).
+    *   The fee was 30% of the recovered amount.
+    *   The law firm provided consultation and support (performed its duties).
+    *   The Provincial People's Committee paid the money to the households.
+    *   The households paid 50% of the fee.
+
+2026-05-19 10:49:00,209 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Law firm H signed a legal service contract with 5 households (representing 50 households) to help them recover 20 billion VND in compensation money from the Provincial People's Committee (UBND tỉnh X).
+    *   The fee was 30% of the recovered amount.
+    *   The law firm provided consultation and support (performed its duties).
+    *   The Provincial People's Committee paid the money to the households.
+    *   The households paid 50% of the fee.
+
+2026-05-19 10:49:00,209 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:01,876 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:01,877 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics scenario) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Client (Chị B) hires Lawyer X to defend her husband (A) in a criminal case ("Trộm cắp tài sản").
+    *   Lawyer X takes over but only visits the detainee after "more
+2026-05-19 10:49:01,877 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics scenario) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Client (Chị B) hires Lawyer X to defend her husband (A) in a criminal case ("Trộm cắp tài sản").
+    *   Lawyer X takes over but only visits the detainee after "more
+2026-05-19 10:49:01,877 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:03,501 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:03,502 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a scenario about a novice lawyer, K, taking a drug case) and select the single correct option (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:** Lawyer K is new, lacks experience in a drug case, and feels unable to perform well for the client. The core ethical dilemma is whether to take the case despite lack of competence.
+
+3.  
+2026-05-19 10:49:03,502 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a scenario about a novice lawyer, K, taking a drug case) and select the single correct option (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:** Lawyer K is new, lacks experience in a drug case, and feels unable to perform well for the client. The core ethical dilemma is whether to take the case despite lack of competence.
+
+3.  
+2026-05-19 10:49:03,502 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:05,130 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:05,131 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a scenario-based legal ethics/professional conduct question) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Lawyer An is defending client P (charged with fraud).
+    *   During the trial, the presiding judge (Chủ tọa) repeatedly interrupts and belittles the lawyer's defense arguments
+2026-05-19 10:49:05,131 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a scenario-based legal ethics/professional conduct question) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Lawyer An is defending client P (charged with fraud).
+    *   During the trial, the presiding judge (Chủ tọa) repeatedly interrupts and belittles the lawyer's defense arguments
+2026-05-19 10:49:05,131 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:06,772 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:06,772 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:** Lawyer Nguyễn Cường is representing Ms. Bùi Vân Nga in a land dispute case. One day before the initial hearing, the client calls to terminate the service contract without stating a reason. The next morning, 90 minutes before the hearing starts, the client calls again, asking the lawyer to file a motion to postpone the hearing to finalize the contract termination.
+2.  **Identify the core conflict:** The conflict is between the client's sudden desire to terminate the contract and the legal/professional duty of the lawyer to ensure the client's rights
+2026-05-19 10:49:06,772 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:** Lawyer Nguyễn Cường is representing Ms. Bùi Vân Nga in a land dispute case. One day before the initial hearing, the client calls to terminate the service contract without stating a reason. The next morning, 90 minutes before the hearing starts, the client calls again, asking the lawyer to file a motion to postpone the hearing to finalize the contract termination.
+2.  **Identify the core conflict:** The conflict is between the client's sudden desire to terminate the contract and the legal/professional duty of the lawyer to ensure the client's rights
+2026-05-19 10:49:06,773 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:08,420 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:08,421 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics scenario) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Clients: Anh Hà and Chị Loan (husband and wife, seeking divorce).
+    *   Lawyer: Luật sư An (Head of Law Office X, friend of both clients).
+    *   Initial situation: Both
+2026-05-19 10:49:08,421 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics scenario) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Clients: Anh Hà and Chị Loan (husband and wife, seeking divorce).
+    *   Lawyer: Luật sư An (Head of Law Office X, friend of both clients).
+    *   Initial situation: Both
+2026-05-19 10:49:08,421 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:10,073 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:10,074 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics scenario) and select the single correct answer (A, B, C, or D). I must provide *only* the letter choice, with no explanation or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Hà and Loan are divorcing.
+    *   Lawyer An (at Law Office X) is advising both.
+    *   There are disputes over assets.
+    *   An advises Loan: If she wants more assets, she
+2026-05-19 10:49:10,074 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics scenario) and select the single correct answer (A, B, C, or D). I must provide *only* the letter choice, with no explanation or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Hà and Loan are divorcing.
+    *   Lawyer An (at Law Office X) is advising both.
+    *   There are disputes over assets.
+    *   An advises Loan: If she wants more assets, she
+2026-05-19 10:49:10,074 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:11,707 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:11,707 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (MCQ) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Anh Hà and Chị Loan (husband and wife) want a divorce.
+    *   They hire Luật sư An (who is the head of the law office X).
+    *   An advises them, but finds disagreements over assets
+2026-05-19 10:49:11,708 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (MCQ) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Anh Hà and Chị Loan (husband and wife) want a divorce.
+    *   They hire Luật sư An (who is the head of the law office X).
+    *   An advises them, but finds disagreements over assets
+2026-05-19 10:49:11,708 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:13,324 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:13,325 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics case study) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Case Study:**
+    *   **Parties:** Anh Hà, Chị Loan (couple seeking divorce).
+    *   **Lawyer:** Luật sư An (Head of Law Office X, friend of the couple).
+    *   **Initial
+2026-05-19 10:49:13,325 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics case study) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Case Study:**
+    *   **Parties:** Anh Hà, Chị Loan (couple seeking divorce).
+    *   **Lawyer:** Luật sư An (Head of Law Office X, friend of the couple).
+    *   **Initial
+2026-05-19 10:49:13,325 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:14,954 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:14,955 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:** Lawyer A is working with Lawyer B on a case. Lawyer A perceives Lawyer B as less competent and inexperienced. Lawyer A then pressures the client to either fire Lawyer B (allowing A to work alone) or quadruple Lawyer B's fee, threatening to terminate the contract if the demands are not met.
+2.  **Identify the core ethical issues:**
+    *   Disparaging/undermining a colleague (Lawyer B).
+    *   Using professional judgment (competence) to manipulate the client's decision.
+    *   Co
+2026-05-19 10:49:14,955 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:** Lawyer A is working with Lawyer B on a case. Lawyer A perceives Lawyer B as less competent and inexperienced. Lawyer A then pressures the client to either fire Lawyer B (allowing A to work alone) or quadruple Lawyer B's fee, threatening to terminate the contract if the demands are not met.
+2.  **Identify the core ethical issues:**
+    *   Disparaging/undermining a colleague (Lawyer B).
+    *   Using professional judgment (competence) to manipulate the client's decision.
+    *   Co
+2026-05-19 10:49:14,955 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:16,573 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:16,574 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:** Lawyer A is co-counseling with Lawyer B in a theft case. Lawyer A believes Lawyer B is less competent and inexperienced, while the client pays both equally. Lawyer A demands the client either fire Lawyer B or quadruple Lawyer B's fee, threatening to terminate the contract otherwise.
+2.  **Identify the ethical conflict:** Lawyer A's actions (demanding unequal compensation or forcing a change in team based on perceived competence) violate principles of professional conduct, collegiality, and integrity.
+3.  **Determine the ethical standard (General Legal
+2026-05-19 10:49:16,574 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:** Lawyer A is co-counseling with Lawyer B in a theft case. Lawyer A believes Lawyer B is less competent and inexperienced, while the client pays both equally. Lawyer A demands the client either fire Lawyer B or quadruple Lawyer B's fee, threatening to terminate the contract otherwise.
+2.  **Identify the ethical conflict:** Lawyer A's actions (demanding unequal compensation or forcing a change in team based on perceived competence) violate principles of professional conduct, collegiality, and integrity.
+3.  **Determine the ethical standard (General Legal
+2026-05-19 10:49:16,574 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:18,195 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:18,196 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:** Lawyer K is appointed as a defense lawyer (bào chữa theo định bào chữa chỉ định) for a minor (N, under 18). The state pays a minimal fee. Lawyer K tells the mother that the state payment is low, the work is difficult, and therefore asks the mother for extra money to work diligently.
+2.  **Identify the legal/ethical issues:**
+    *   Defense appointed by the state (bào chữa chỉ định).
+    *   The client is a minor (N).
+    *   The core issue
+2026-05-19 10:49:18,196 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:** Lawyer K is appointed as a defense lawyer (bào chữa theo định bào chữa chỉ định) for a minor (N, under 18). The state pays a minimal fee. Lawyer K tells the mother that the state payment is low, the work is difficult, and therefore asks the mother for extra money to work diligently.
+2.  **Identify the legal/ethical issues:**
+    *   Defense appointed by the state (bào chữa chỉ định).
+    *   The client is a minor (N).
+    *   The core issue
+2026-05-19 10:49:18,196 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:19,833 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:19,834 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question and select the single correct option (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+2.  **Analyze the Scenario:**
+    *   Anh H is a legal intern (người thực tập hành nghề luật sư) at Law Office X.
+    *   Bà Y's child is being prosecuted for theft.
+    *   Bà Y specifically asks Anh H to defend the child
+2026-05-19 10:49:19,834 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question and select the single correct option (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+2.  **Analyze the Scenario:**
+    *   Anh H is a legal intern (người thực tập hành nghề luật sư) at Law Office X.
+    *   Bà Y's child is being prosecuted for theft.
+    *   Bà Y specifically asks Anh H to defend the child
+2026-05-19 10:49:19,834 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:21,487 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:21,487 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics scenario) and select the single correct answer (A, B, C, or D). I must provide *only* the letter of the choice, with no explanation or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Context: Divorce case (Hà and Loan).
+    *   Action by Lawyer An (representing Loan): An advises Loan to "get a larger share" by:
+        *   Discarding the original house purchase paper.
+        
+2026-05-19 10:49:21,488 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics scenario) and select the single correct answer (A, B, C, or D). I must provide *only* the letter of the choice, with no explanation or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Context: Divorce case (Hà and Loan).
+    *   Action by Lawyer An (representing Loan): An advises Loan to "get a larger share" by:
+        *   Discarding the original house purchase paper.
+        
+2026-05-19 10:49:21,488 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:23,124 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:23,125 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (MCQ) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Anh Hà and Chị Loan are divorcing.
+    *   Luật sư An (Trưởng Văn Phòng Luật sư X) is involved.
+    *   Luật sư An advises them on asset division.
+    *   
+2026-05-19 10:49:23,126 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (MCQ) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Anh Hà and Chị Loan are divorcing.
+    *   Luật sư An (Trưởng Văn Phòng Luật sư X) is involved.
+    *   Luật sư An advises them on asset division.
+    *   
+2026-05-19 10:49:23,126 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:24,745 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:24,746 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics scenario) and select the single correct answer (A, B, C, or D). I must provide *only* the letter of the choice, with no explanations or extra text.
+
+2.  **Analyze the Scenario (The Case):**
+    *   Luật sư An (LS An) is hired by Hà and Loan for divorce proceedings.
+    *   LS An realizes there are asset disputes.
+    *   LS An advises them: LS An will represent one
+2026-05-19 10:49:24,746 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics scenario) and select the single correct answer (A, B, C, or D). I must provide *only* the letter of the choice, with no explanations or extra text.
+
+2.  **Analyze the Scenario (The Case):**
+    *   Luật sư An (LS An) is hired by Hà and Loan for divorce proceedings.
+    *   LS An realizes there are asset disputes.
+    *   LS An advises them: LS An will represent one
+2026-05-19 10:49:24,746 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:26,416 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:26,417 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics/professional conduct scenario) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Date: 11/5/2017.
+    *   Parties: Ms. M (Client) and Law Firm X (represented by Lawyer Y).
+    *   Contract: Legal
+2026-05-19 10:49:26,417 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics/professional conduct scenario) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Date: 11/5/2017.
+    *   Parties: Ms. M (Client) and Law Firm X (represented by Lawyer Y).
+    *   Contract: Legal
+2026-05-19 10:49:26,417 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:28,031 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:28,032 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal scenario) and select the single correct answer (A, B, C, or D). I must provide *only* the letter of the choice, with no explanation or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Date: 11/5/2017.
+    *   Parties: Bà M (Client) and Công ty luật X (Law Firm), represented by Luật sư Y (Director).
+    *   Contract: Legal
+2026-05-19 10:49:28,033 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal scenario) and select the single correct answer (A, B, C, or D). I must provide *only* the letter of the choice, with no explanation or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Date: 11/5/2017.
+    *   Parties: Bà M (Client) and Công ty luật X (Law Firm), represented by Luật sư Y (Director).
+    *   Contract: Legal
+2026-05-19 10:49:28,033 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:29,680 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:29,681 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:** Lawyer A (Head of Law Office A) approaches the wealthy parents (M and N) of a suspect (K) who has been arrested for intentional injury. Lawyer A promises the parents that because he is "very familiar with the police, prosecution, and court," they can be completely reassured if they hire him.
+2.  **Identify the core ethical issues:**
+    *   Solicitation/Marketing: Approaching clients proactively (though sometimes permissible, the manner matters).
+    *   Misrepresentation/Undue influence: Using personal connections ("familiar with
+2026-05-19 10:49:29,681 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:** Lawyer A (Head of Law Office A) approaches the wealthy parents (M and N) of a suspect (K) who has been arrested for intentional injury. Lawyer A promises the parents that because he is "very familiar with the police, prosecution, and court," they can be completely reassured if they hire him.
+2.  **Identify the core ethical issues:**
+    *   Solicitation/Marketing: Approaching clients proactively (though sometimes permissible, the manner matters).
+    *   Misrepresentation/Undue influence: Using personal connections ("familiar with
+2026-05-19 10:49:29,681 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:31,301 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:31,302 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:** Lawyer A (Trưởng Văn phòng Luật sư A) is approached by wealthy parents (M, N) whose son (K) has been arrested for intentional injury. Lawyer A offers to defend K, but crucially, A tells M and N that he is "very familiar with the police, prosecution, and court" (rất quen thân với anh em Công an, Viện Kiểm sát, Tòa án) and assures them they can "completely rest assured" (hoàn toàn yên tâm).
+2.  **Identify the ethical violation:** The statement by
+2026-05-19 10:49:31,302 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:** Lawyer A (Trưởng Văn phòng Luật sư A) is approached by wealthy parents (M, N) whose son (K) has been arrested for intentional injury. Lawyer A offers to defend K, but crucially, A tells M and N that he is "very familiar with the police, prosecution, and court" (rất quen thân với anh em Công an, Viện Kiểm sát, Tòa án) and assures them they can "completely rest assured" (hoàn toàn yên tâm).
+2.  **Identify the ethical violation:** The statement by
+2026-05-19 10:49:31,302 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:32,942 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:32,943 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Lawyer A (Company X) represents the Plaintiff (Nguyên đơn).
+    *   Lawyer B (Company Y) represents the Defendant (Bị đơn).
+    *   The case is a property dispute (tranh chấp tài sản).
+    *   Lawyer A and Lawyer B are biological siblings (anh em ruột).
+    *   Both companies signed contracts and assigned their respective lawyers.
+2.  **Identify the core ethical issue:** The conflict of interest arising from the close familial relationship (siblings) between
+2026-05-19 10:49:32,943 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Lawyer A (Company X) represents the Plaintiff (Nguyên đơn).
+    *   Lawyer B (Company Y) represents the Defendant (Bị đơn).
+    *   The case is a property dispute (tranh chấp tài sản).
+    *   Lawyer A and Lawyer B are biological siblings (anh em ruột).
+    *   Both companies signed contracts and assigned their respective lawyers.
+2.  **Identify the core ethical issue:** The conflict of interest arising from the close familial relationship (siblings) between
+2026-05-19 10:49:32,944 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:34,554 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:34,555 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Lawyer A (Company X) represents the Plaintiff (Nguyên đơn).
+    *   Lawyer B (Company Y) represents the Defendant (Bị đơn).
+    *   Lawyer A and Lawyer B are biological siblings (anh em ruột).
+    *   The case is a property dispute (tranh chấp tài sản).
+    *   The question asks what Lawyer B should do.
+
+2.  **Identify the core legal/ethical issue:**
+    *   The issue is a conflict of interest (x
+2026-05-19 10:49:34,555 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Lawyer A (Company X) represents the Plaintiff (Nguyên đơn).
+    *   Lawyer B (Company Y) represents the Defendant (Bị đơn).
+    *   Lawyer A and Lawyer B are biological siblings (anh em ruột).
+    *   The case is a property dispute (tranh chấp tài sản).
+    *   The question asks what Lawyer B should do.
+
+2.  **Identify the core legal/ethical issue:**
+    *   The issue is a conflict of interest (x
+2026-05-19 10:49:34,555 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:36,203 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:36,204 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Law Firm Hoàng Hà represented Ms. Y (Defendant) in the initial trial (Sơ thẩm).
+    *   Ms. Y won the initial trial.
+    *   The contract was terminated/liquidated (thanh lý hợp đồng).
+    *   Mr. X (Plaintiff) lost the initial trial and appealed (kháng cáo).
+    *   Mr. X wants to hire Lawyer B (who works at the same firm, Hoàng Hà) to represent him in the appellate trial (Phúc thẩm).
+    *
+2026-05-19 10:49:36,204 - WARNING - Extracted 'B' from response: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Law Firm Hoàng Hà represented Ms. Y (Defendant) in the initial trial (Sơ thẩm).
+    *   Ms. Y won the initial trial.
+    *   The contract was terminated/liquidated (thanh lý hợp đồng).
+    *   Mr. X (Plaintiff) lost the initial trial and appealed (kháng cáo).
+    *   Mr. X wants to hire Lawyer B (who works at the same firm, Hoàng Hà) to represent him in the appellate trial (Phúc thẩm).
+    *
+2026-05-19 10:49:36,204 - INFO - Predicted Answer (batch): ['B']
+2026-05-19 10:49:37,818 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:37,819 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:** Two lawyers (M and N) representing opposing parties (Plaintiff and Defendant) in a civil case. They meet, share all information (claims, evidence, documents) of both sides, and agree to persuade their respective clients to settle and withdraw the lawsuit.
+2.  **Identify the core ethical issue:** Sharing confidential information and evidence between opposing counsel.
+3.  **Recall legal/ethical principles (Lawyer Ethics):** Lawyers have a duty of confidentiality and must maintain the integrity and impartiality of the legal process. Sharing confidential information from one client with the
+2026-05-19 10:49:37,819 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:** Two lawyers (M and N) representing opposing parties (Plaintiff and Defendant) in a civil case. They meet, share all information (claims, evidence, documents) of both sides, and agree to persuade their respective clients to settle and withdraw the lawsuit.
+2.  **Identify the core ethical issue:** Sharing confidential information and evidence between opposing counsel.
+3.  **Recall legal/ethical principles (Lawyer Ethics):** Lawyers have a duty of confidentiality and must maintain the integrity and impartiality of the legal process. Sharing confidential information from one client with the
+2026-05-19 10:49:37,819 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:39,476 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:39,477 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics scenario) and select the single correct option (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Nguyễn Văn A (Husband, Director of Huy Hoàng Law Firm) represents Nguyễn Hoàng (Plaintiff) against Huỳnh Minh (Defendant) in a contract dispute. Fee: 70 million VND.
+    *   Tr
+2026-05-19 10:49:39,477 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics scenario) and select the single correct option (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Nguyễn Văn A (Husband, Director of Huy Hoàng Law Firm) represents Nguyễn Hoàng (Plaintiff) against Huỳnh Minh (Defendant) in a contract dispute. Fee: 70 million VND.
+    *   Tr
+2026-05-19 10:49:39,477 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:41,097 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:41,097 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Nguyễn Văn A (Husband) is the Director of Huy Hoàng Law Firm.
+    *   Trần Thị B (Wife) is a Lawyer at T&H Law Office.
+    *   A represents Nguyễn Hoàng (Plaintiff) in a contract dispute against Huỳnh Minh (Defendant).
+    *   B is approached by Huỳnh Minh (Defendant) and signs a contract to represent him, despite the conflict of interest (B's husband, A, represents the opposing party).
+2.  **Identify the core
+2026-05-19 10:49:41,098 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Nguyễn Văn A (Husband) is the Director of Huy Hoàng Law Firm.
+    *   Trần Thị B (Wife) is a Lawyer at T&H Law Office.
+    *   A represents Nguyễn Hoàng (Plaintiff) in a contract dispute against Huỳnh Minh (Defendant).
+    *   B is approached by Huỳnh Minh (Defendant) and signs a contract to represent him, despite the conflict of interest (B's husband, A, represents the opposing party).
+2.  **Identify the core
+2026-05-19 10:49:41,098 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:41,101 - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-4212' coro=<AsyncClient.aclose() done, defined at /home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/venv/lib/python3.12/site-packages/httpx/_client.py:1978> exception=RuntimeError('Event loop is closed')>
+Traceback (most recent call last):
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/venv/lib/python3.12/site-packages/httpx/_client.py", line 1985, in aclose
+    await self._transport.aclose()
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/venv/lib/python3.12/site-packages/httpx/_transports/default.py", line 406, in aclose
+    await self._pool.aclose()
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 353, in aclose
+    await self._close_connections(closing_connections)
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/venv/lib/python3.12/site-packages/httpcore/_async/connection_pool.py", line 345, in _close_connections
+    await connection.aclose()
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/venv/lib/python3.12/site-packages/httpcore/_async/connection.py", line 173, in aclose
+    await self._connection.aclose()
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/venv/lib/python3.12/site-packages/httpcore/_async/http11.py", line 258, in aclose
+    await self._network_stream.aclose()
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/venv/lib/python3.12/site-packages/httpcore/_backends/anyio.py", line 53, in aclose
+    await self._stream.aclose()
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 1344, in aclose
+    self._transport.close()
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 1211, in close
+    super().close()
+  File "/usr/lib/python3.12/asyncio/selector_events.py", line 875, in close
+    self._loop.call_soon(self._call_connection_lost, None)
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 795, in call_soon
+    self._check_closed()
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 541, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+2026-05-19 10:49:42,778 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:42,779 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics/professional conduct scenario) and select the single correct option (A, B, C, or D). I must provide *only* the letter answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Client (Ông T) hired VPLS A (led by Luật sư K) for legal services (drafting, consulting, representing in the first instance trial).
+    *   Fee: 100 million VND.
+    
+2026-05-19 10:49:42,779 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics/professional conduct scenario) and select the single correct option (A, B, C, or D). I must provide *only* the letter answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Client (Ông T) hired VPLS A (led by Luật sư K) for legal services (drafting, consulting, representing in the first instance trial).
+    *   Fee: 100 million VND.
+    
+2026-05-19 10:49:42,779 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:44,406 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:44,406 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Mr. T hired VPLS A (led by Lawyer K) for legal services (drafting, consulting, representation in the first instance trial).
+    *   Fee: 100,000,000 VND.
+    *   VPLS A assigned the task to Mr. B, who was an intern (người tập sự).
+    *   Mr. B participated in drafting and mediation (allowed under supervision).
+    *   Crucial failure: VPLS A did *not* send anyone to
+2026-05-19 10:49:44,407 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Mr. T hired VPLS A (led by Lawyer K) for legal services (drafting, consulting, representation in the first instance trial).
+    *   Fee: 100,000,000 VND.
+    *   VPLS A assigned the task to Mr. B, who was an intern (người tập sự).
+    *   Mr. B participated in drafting and mediation (allowed under supervision).
+    *   Crucial failure: VPLS A did *not* send anyone to
+2026-05-19 10:49:44,407 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:46,056 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:46,057 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (MCQ) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+2.  **Analyze the Scenario:**
+    *   Lawyer A is defending suspect Q (a minor) in a case.
+    *   The defense is likely *appointed* (implied by the context of legal aid/state involvement, though not explicitly stated as "appointed defense,"
+2026-05-19 10:49:46,057 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (MCQ) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+2.  **Analyze the Scenario:**
+    *   Lawyer A is defending suspect Q (a minor) in a case.
+    *   The defense is likely *appointed* (implied by the context of legal aid/state involvement, though not explicitly stated as "appointed defense,"
+2026-05-19 10:49:46,057 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:47,685 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:47,685 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+2.  **Analyze the Scenario:**
+    *   Lawyer A is appointed to defend a minor suspect (Q) under the *appointed defense system* (chế định bào chữa chỉ định).
+    *   The family offers 50 million VND because the lawyer needs resources (travel, investigation, etc
+2026-05-19 10:49:47,686 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+2.  **Analyze the Scenario:**
+    *   Lawyer A is appointed to defend a minor suspect (Q) under the *appointed defense system* (chế định bào chữa chỉ định).
+    *   The family offers 50 million VND because the lawyer needs resources (travel, investigation, etc
+2026-05-19 10:49:47,686 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:49,306 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:49,307 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:** Anh H is a legal intern (người thực tập hành nghề luật sư) at Law Office X. Bà Y asks Anh H specifically to defend her child, who is charged with theft.
+2.  **Identify the core legal/ethical issue:** Can a legal intern (người thực tập) independently participate in court proceedings (bào chữa)?
+3.  **Recall/Apply relevant regulations (Vietnamese legal context):** Legal interns operate under the supervision of a licensed lawyer (luật sư). They do not have the independent right to represent clients
+2026-05-19 10:49:49,307 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:** Anh H is a legal intern (người thực tập hành nghề luật sư) at Law Office X. Bà Y asks Anh H specifically to defend her child, who is charged with theft.
+2.  **Identify the core legal/ethical issue:** Can a legal intern (người thực tập) independently participate in court proceedings (bào chữa)?
+3.  **Recall/Apply relevant regulations (Vietnamese legal context):** Legal interns operate under the supervision of a licensed lawyer (luật sư). They do not have the independent right to represent clients
+2026-05-19 10:49:49,307 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:50,947 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:50,948 - INFO - [Raw response 0]: The user wants me to answer a multiple-choice question based on a legal ethics scenario.
+The scenario involves an intern lawyer (Anh H) taking a case without permission, then transferring it to another firm for a cut. This violates professional ethics.
+The supervising lawyer (Luật sư A) documented this violation and reported it to the Provincial Bar Association (Đoàn luật sư tỉnh K).
+There was a physical altercation (xô sát) between Anh H and Luật sư A.
+The question asks for an assessment of the actions of Luật sư A and Anh H, and what the intern should do.
+
+
+2026-05-19 10:49:50,948 - WARNING - Extracted 'A' from response: The user wants me to answer a multiple-choice question based on a legal ethics scenario.
+The scenario involves an intern lawyer (Anh H) taking a case without permission, then transferring it to another firm for a cut. This violates professional ethics.
+The supervising lawyer (Luật sư A) documented this violation and reported it to the Provincial Bar Association (Đoàn luật sư tỉnh K).
+There was a physical altercation (xô sát) between Anh H and Luật sư A.
+The question asks for an assessment of the actions of Luật sư A and Anh H, and what the intern should do.
+
+
+2026-05-19 10:49:50,948 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:52,574 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:52,574 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal scenario) and select the single correct option (A, B, C, or D). I must provide *only* the letter answer, with no explanation or extra text.
+2.  **Analyze the Scenario (The Core Issue):**
+    *   Anh H is a legal intern (tập sự) at Law Office X.
+    *   Anh H took a case (Bà Y's client) and then secretly passed it to another office for a commission (vi
+2026-05-19 10:49:52,575 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal scenario) and select the single correct option (A, B, C, or D). I must provide *only* the letter answer, with no explanation or extra text.
+2.  **Analyze the Scenario (The Core Issue):**
+    *   Anh H is a legal intern (tập sự) at Law Office X.
+    *   Anh H took a case (Bà Y's client) and then secretly passed it to another office for a commission (vi
+2026-05-19 10:49:52,575 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:54,222 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:54,223 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Nguyễn Văn C (Grandfather) gifted 300m² land and a house (value 1 billion VND) to Nguyễn Văn T (Grandson).
+    *   The gift contract was confirmed/certified by the local People's Committee (UBND xã sở tại).
+    *   The property has not yet been registered/transferred (chưa sang tên trước bạ).
+    *   T is still living with C and is filial.
+    *   C changed his mind due to rising land prices
+2026-05-19 10:49:54,223 - WARNING - Extracted 'C' from response: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Nguyễn Văn C (Grandfather) gifted 300m² land and a house (value 1 billion VND) to Nguyễn Văn T (Grandson).
+    *   The gift contract was confirmed/certified by the local People's Committee (UBND xã sở tại).
+    *   The property has not yet been registered/transferred (chưa sang tên trước bạ).
+    *   T is still living with C and is filial.
+    *   C changed his mind due to rising land prices
+2026-05-19 10:49:54,223 - INFO - Predicted Answer (batch): ['C']
+2026-05-19 10:49:55,864 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:55,864 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question and select the single correct answer (A, B, C, or D). I must provide *only* the letter of the answer, with no explanations or extra text.
+2.  **Analyze the Scenario:**
+    *   Law firm H (led by lawyer X) contracts with Ms. Y.
+    *   The case: Son of Ms. Y is accused of Robbery (Cướp giật tài sản).
+    *   The agreement: Ms. Y pays 1
+2026-05-19 10:49:55,864 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question and select the single correct answer (A, B, C, or D). I must provide *only* the letter of the answer, with no explanations or extra text.
+2.  **Analyze the Scenario:**
+    *   Law firm H (led by lawyer X) contracts with Ms. Y.
+    *   The case: Son of Ms. Y is accused of Robbery (Cướp giật tài sản).
+    *   The agreement: Ms. Y pays 1
+2026-05-19 10:49:55,865 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:57,487 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:57,488 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:** A law firm (H), led by lawyer X, signs a contract with Ms. Y to defend her son (accused of theft). The contract includes a specific promise/guarantee: the son will either get a suspended sentence (án treo) or at most, a sentence equal to the detention period (5 months 20 days). Ms. Y pays 100 million VND. The actual outcome is 2 years imprisonment.
+2.  **Identify the core legal/ethical issue:** The lawyer made a specific, guaranteed outcome (án treo
+2026-05-19 10:49:57,488 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:** A law firm (H), led by lawyer X, signs a contract with Ms. Y to defend her son (accused of theft). The contract includes a specific promise/guarantee: the son will either get a suspended sentence (án treo) or at most, a sentence equal to the detention period (5 months 20 days). Ms. Y pays 100 million VND. The actual outcome is 2 years imprisonment.
+2.  **Identify the core legal/ethical issue:** The lawyer made a specific, guaranteed outcome (án treo
+2026-05-19 10:49:57,488 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:49:59,104 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:49:59,105 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (MCQ) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario (The Question):**
+    *   Law firm H (led by Lawyer X) signs a contract with Ms. Y.
+    *   Service: Defense for Ms. Y's son (charged with Robbery).
+    *   Fee: 
+2026-05-19 10:49:59,105 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (MCQ) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario (The Question):**
+    *   Law firm H (led by Lawyer X) signs a contract with Ms. Y.
+    *   Service: Defense for Ms. Y's son (charged with Robbery).
+    *   Fee: 
+2026-05-19 10:49:59,105 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:50:00,770 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:00,771 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics scenario) and select the single correct answer (A, B, C, or D). I must provide *only* the letter of the choice, with no explanation or extra text.
+
+2.  **Analyze the Scenario (The Case):**
+    *   H committed an offense (Cố ý gây thương tích - 18% injury).
+    *   H hired Lawyer A for defense (Fee: 50 million VND).
+    *   Lawyer A
+2026-05-19 10:50:00,771 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics scenario) and select the single correct answer (A, B, C, or D). I must provide *only* the letter of the choice, with no explanation or extra text.
+
+2.  **Analyze the Scenario (The Case):**
+    *   H committed an offense (Cố ý gây thương tích - 18% injury).
+    *   H hired Lawyer A for defense (Fee: 50 million VND).
+    *   Lawyer A
+2026-05-19 10:50:00,771 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:50:02,446 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:02,447 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Case: Civil dispute (Inheritance).
+    *   Parties: Client A (represented by Lawyer X), Client B (represented by Lawyer Y).
+    *   Action: Lawyer X suggests to Client A that they should pay extra money to Lawyer Y.
+    *   Goal: To persuade Client B (via Lawyer Y) to agree to a settlement favorable to Client A.
+    *   Execution: Client A pays the extra money. Lawyer X tells Client A that Lawyer Y agreed.
+    *   Result: Settlement achieved
+2026-05-19 10:50:02,447 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Case: Civil dispute (Inheritance).
+    *   Parties: Client A (represented by Lawyer X), Client B (represented by Lawyer Y).
+    *   Action: Lawyer X suggests to Client A that they should pay extra money to Lawyer Y.
+    *   Goal: To persuade Client B (via Lawyer Y) to agree to a settlement favorable to Client A.
+    *   Execution: Client A pays the extra money. Lawyer X tells Client A that Lawyer Y agreed.
+    *   Result: Settlement achieved
+2026-05-19 10:50:02,447 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:50:04,063 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:04,064 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Case: Civil dispute (Inheritance).
+    *   Actors: Lawyer X (for Client A), Lawyer Y (for Client B).
+    *   Action: Lawyer X suggests/arranges for Client A to pay extra money to Lawyer Y.
+    *   Goal: Lawyer Y uses this money/influence to persuade Client B to agree to a settlement favorable to Client A.
+    *   Result: Settlement achieved, court approved.
+    *   Conflict: Client B discovers the payment, gets angry, demands a refund (
+2026-05-19 10:50:04,064 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Case: Civil dispute (Inheritance).
+    *   Actors: Lawyer X (for Client A), Lawyer Y (for Client B).
+    *   Action: Lawyer X suggests/arranges for Client A to pay extra money to Lawyer Y.
+    *   Goal: Lawyer Y uses this money/influence to persuade Client B to agree to a settlement favorable to Client A.
+    *   Result: Settlement achieved, court approved.
+    *   Conflict: Client B discovers the payment, gets angry, demands a refund (
+2026-05-19 10:50:04,064 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:50:05,686 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:05,687 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Lawyer X (representing A) and Lawyer Y (representing B) are in a civil dispute (inheritance).
+    *   Lawyer X suggests/arranges for A to pay extra money to Lawyer Y.
+    *   The purpose of the extra money is for Lawyer Y to persuade B to agree to a settlement favorable to A.
+    *   Lawyer X assures A that Lawyer Y agrees. A pays the extra money.
+    *   The case settles successfully through mediation.
+    *   Later, A tells B
+2026-05-19 10:50:05,687 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Lawyer X (representing A) and Lawyer Y (representing B) are in a civil dispute (inheritance).
+    *   Lawyer X suggests/arranges for A to pay extra money to Lawyer Y.
+    *   The purpose of the extra money is for Lawyer Y to persuade B to agree to a settlement favorable to A.
+    *   Lawyer X assures A that Lawyer Y agrees. A pays the extra money.
+    *   The case settles successfully through mediation.
+    *   Later, A tells B
+2026-05-19 10:50:05,687 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:50:07,354 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:07,355 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Client: Trần Văn T (Defendant).
+    *   Opponent: Lê Văn K (Plaintiff).
+    *   Initial Fee: 30 million VND.
+    *   Dispute: Land encroachment (300m² difference).
+    *   Facts known by Lawyer S: The discrepancy is due to measurement error (K's certificate is wrong), and T has used the land before K arrived (T's claim is valid).
+    *   Lawyer S's action: Threatens T that the
+2026-05-19 10:50:07,355 - INFO - Retrying parsing for question 0, attempt 1
+2026-05-19 10:50:08,944 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:08,945 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Lawyer S represents client T in a land dispute against K.
+    *   Initial fee: 30 million VND.
+    *   The dispute involves a discrepancy in land area (300m²).
+    *   Lawyer S knows T's claim (prior use) is valid, and K's claim (based on flawed measurement) is weak.
+    *   To get more money, Lawyer S threatens T, saying the case is unfavorable, and demands an additional 50 million VND (b
+2026-05-19 10:50:08,945 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:50:10,561 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:10,562 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Client: Trần Văn T (Defendant).
+    *   Opponent: Lê Văn K (Plaintiff).
+    *   Case: Land dispute.
+    *   Initial Fee: 30 million VND.
+    *   Lawyer: Nguyễn Văn S.
+    *   Facts known by S:
+        *   The discrepancy (300m2) is a measurement error by K's certification body.
+        *   T has used this land before K settled there, so T's claim is valid.
+2026-05-19 10:50:10,562 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Client: Trần Văn T (Defendant).
+    *   Opponent: Lê Văn K (Plaintiff).
+    *   Case: Land dispute.
+    *   Initial Fee: 30 million VND.
+    *   Lawyer: Nguyễn Văn S.
+    *   Facts known by S:
+        *   The discrepancy (300m2) is a measurement error by K's certification body.
+        *   T has used this land before K settled there, so T's claim is valid.
+2026-05-19 10:50:10,562 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:50:12,218 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:12,219 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics scenario) and select the single correct option (A, B, C, or D). I must provide *only* the letter answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Client (Bà A) hires Lawyer C for a civil inheritance dispute (50 million VND fixed fee).
+    *   Lawyer C reviews the case file.
+    *   Lawyer C meets Bà A and *fabricates/ex
+2026-05-19 10:50:12,219 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics scenario) and select the single correct option (A, B, C, or D). I must provide *only* the letter answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Client (Bà A) hires Lawyer C for a civil inheritance dispute (50 million VND fixed fee).
+    *   Lawyer C reviews the case file.
+    *   Lawyer C meets Bà A and *fabricates/ex
+2026-05-19 10:50:12,219 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:50:13,835 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:13,836 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:** A lawyer (A) promises a win, takes payment, but fails to participate fully in the trial. The client loses the case. The lawyer refuses to return the money. The client complains to the Bar Association (Đoàn Luật sư). The Bar Association decides to revoke the lawyer's license. The lawyer appeals to the Vietnam Lawyers Federation (Liên đoàn Luật sư Việt Nam). The question asks if the client's action (complaining to the Bar Association) was correct, or if they should sue in court.
+
+2.  **Identify the core
+2026-05-19 10:50:13,836 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:** A lawyer (A) promises a win, takes payment, but fails to participate fully in the trial. The client loses the case. The lawyer refuses to return the money. The client complains to the Bar Association (Đoàn Luật sư). The Bar Association decides to revoke the lawyer's license. The lawyer appeals to the Vietnam Lawyers Federation (Liên đoàn Luật sư Việt Nam). The question asks if the client's action (complaining to the Bar Association) was correct, or if they should sue in court.
+
+2.  **Identify the core
+2026-05-19 10:50:13,836 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:50:15,447 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:15,448 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (MCQ) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+2.  **Analyze the Scenario:**
+    *   Lawyer A promises the client they will win the case ("cam kết thắng").
+    *   Lawyer A takes payment upfront ("tiền chạy án ghi bằng giấy nợ").
+    *   Lawyer A fails to participate in
+2026-05-19 10:50:15,448 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (MCQ) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+2.  **Analyze the Scenario:**
+    *   Lawyer A promises the client they will win the case ("cam kết thắng").
+    *   Lawyer A takes payment upfront ("tiền chạy án ghi bằng giấy nợ").
+    *   Lawyer A fails to participate in
+2026-05-19 10:50:15,448 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:50:17,064 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:17,065 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Lawyer A promises a win ("chạy án").
+    *   Lawyer A abandons the case (doesn't attend the trial).
+    *   The client loses.
+    *   Lawyer A refuses to return the money.
+    *   The client complains to the Bar Association (Đoàn luật sư).
+    *   The Bar Association decides to remove Lawyer A's name (xóa tên).
+    *   Lawyer A appeals to the Vietnam Lawyers Federation (Liên đoàn luật sư Việt Nam
+2026-05-19 10:50:17,065 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Lawyer A promises a win ("chạy án").
+    *   Lawyer A abandons the case (doesn't attend the trial).
+    *   The client loses.
+    *   Lawyer A refuses to return the money.
+    *   The client complains to the Bar Association (Đoàn luật sư).
+    *   The Bar Association decides to remove Lawyer A's name (xóa tên).
+    *   Lawyer A appeals to the Vietnam Lawyers Federation (Liên đoàn luật sư Việt Nam
+2026-05-19 10:50:17,066 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:50:18,683 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:18,683 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:** A lawyer (A) promised a win, failed to participate fully, and lost the case. The client demands the money. The client complains to the Bar Association (Đoàn luật sư), leading to A's name being removed. A appeals this decision to the Standing Committee of the Vietnam Lawyers Association (Ban Thường vụ Liên đoàn luật sư Việt Nam).
+2.  **Identify the core legal question:** Is appealing to the Standing Committee of the Vietnam Lawyers Association (Liên đoàn luật sư Việt Nam) correct? If rejected, where should A appeal next
+2026-05-19 10:50:18,684 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:** A lawyer (A) promised a win, failed to participate fully, and lost the case. The client demands the money. The client complains to the Bar Association (Đoàn luật sư), leading to A's name being removed. A appeals this decision to the Standing Committee of the Vietnam Lawyers Association (Ban Thường vụ Liên đoàn luật sư Việt Nam).
+2.  **Identify the core legal question:** Is appealing to the Standing Committee of the Vietnam Lawyers Association (Liên đoàn luật sư Việt Nam) correct? If rejected, where should A appeal next
+2026-05-19 10:50:18,684 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:50:20,299 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:20,300 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+2.  **Analyze the Scenario:**
+    *   Lawyer B signs a legal service contract.
+    *   The contract *promises* the client (the accused) will receive a suspended sentence (án treo).
+    *   Lawyer B receives 50% of the fee based on this promise
+2026-05-19 10:50:20,300 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+2.  **Analyze the Scenario:**
+    *   Lawyer B signs a legal service contract.
+    *   The contract *promises* the client (the accused) will receive a suspended sentence (án treo).
+    *   Lawyer B receives 50% of the fee based on this promise
+2026-05-19 10:50:20,300 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:50:21,915 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:21,916 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:** Lawyer B signs a contract promising the client (the accused) will receive a suspended sentence (án treo). Lawyer B receives 50% of the fee. The court ultimately sentences the client to imprisonment (tù giam). The client demands the money. Lawyer B avoids the client. When confronted by the Bar Association, Lawyer B admits to returning half the money, claiming the remaining half was used for "running the case" (chạy án) because otherwise, the outcome would have been worse.
+2.  **Identify the legal/ethical issues:**
+2026-05-19 10:50:21,916 - WARNING - Extracted 'B' from response: Thinking Process:
+
+1.  **Analyze the scenario:** Lawyer B signs a contract promising the client (the accused) will receive a suspended sentence (án treo). Lawyer B receives 50% of the fee. The court ultimately sentences the client to imprisonment (tù giam). The client demands the money. Lawyer B avoids the client. When confronted by the Bar Association, Lawyer B admits to returning half the money, claiming the remaining half was used for "running the case" (chạy án) because otherwise, the outcome would have been worse.
+2.  **Identify the legal/ethical issues:**
+2026-05-19 10:50:21,916 - INFO - Predicted Answer (batch): ['B']
+2026-05-19 10:50:23,536 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:23,537 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:** A lawyer (B) promises a client (defendant) that they will receive a suspended sentence (án treo) in exchange for a fee (50% received). The actual outcome is imprisonment. The client demands the money. The lawyer avoids the demand. The client wants to know if complaining to the Bar Association (Đoàn luật sư) is the correct action or if they should sue in court.
+2.  **Identify the core legal issue:** The issue revolves around the professional conduct of the lawyer (breach of contract, misleading representation, failure to
+2026-05-19 10:50:23,537 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:** A lawyer (B) promises a client (defendant) that they will receive a suspended sentence (án treo) in exchange for a fee (50% received). The actual outcome is imprisonment. The client demands the money. The lawyer avoids the demand. The client wants to know if complaining to the Bar Association (Đoàn luật sư) is the correct action or if they should sue in court.
+2.  **Identify the core legal issue:** The issue revolves around the professional conduct of the lawyer (breach of contract, misleading representation, failure to
+2026-05-19 10:50:23,537 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:50:25,160 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:25,161 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question about legal ethics and select the single correct answer (A, B, C, or D). I must provide *only* the letter answer, with no explanation or extra text.
+2.  **Analyze the Scenario:**
+    *   Lawyer C meets client B.
+    *   C exaggerates/boasts about their academic titles, positions, and involvement in big cases (creating an impression of superior capability).
+    *   C specifically asks for the name of the presiding judge.
+
+2026-05-19 10:50:25,161 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question about legal ethics and select the single correct answer (A, B, C, or D). I must provide *only* the letter answer, with no explanation or extra text.
+2.  **Analyze the Scenario:**
+    *   Lawyer C meets client B.
+    *   C exaggerates/boasts about their academic titles, positions, and involvement in big cases (creating an impression of superior capability).
+    *   C specifically asks for the name of the presiding judge.
+
+2026-05-19 10:50:25,161 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:50:26,774 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:26,775 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question about legal ethics and professional conduct (specifically regarding a lawyer's behavior when meeting a client) and select the single correct option (A, B, C, or D). I must provide *only* the letter answer, with no explanation or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Lawyer C meets client B.
+    *   C boasts about their academic titles, positions in professional organizations, and wide network with officials/state agencies.
+    *   C
+2026-05-19 10:50:26,775 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question about legal ethics and professional conduct (specifically regarding a lawyer's behavior when meeting a client) and select the single correct option (A, B, C, or D). I must provide *only* the letter answer, with no explanation or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Lawyer C meets client B.
+    *   C boasts about their academic titles, positions in professional organizations, and wide network with officials/state agencies.
+    *   C
+2026-05-19 10:50:26,775 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:50:28,404 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:28,405 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   A civil case is ongoing.
+    *   Lawyer A represents the defendant (new, 1 year experience, small office).
+    *   Lawyer B represents the plaintiff.
+    *   Lawyer C (experienced, 10+ years, famous office) contacts the defendant privately.
+    *   Lawyer C disparages Lawyer A (new, less experienced).
+    *   Lawyer C pressures the client to cancel the contract with Lawyer A.
+    *   Lawyer C offers a cheaper service (
+2026-05-19 10:50:28,405 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   A civil case is ongoing.
+    *   Lawyer A represents the defendant (new, 1 year experience, small office).
+    *   Lawyer B represents the plaintiff.
+    *   Lawyer C (experienced, 10+ years, famous office) contacts the defendant privately.
+    *   Lawyer C disparages Lawyer A (new, less experienced).
+    *   Lawyer C pressures the client to cancel the contract with Lawyer A.
+    *   Lawyer C offers a cheaper service (
+2026-05-19 10:50:28,405 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:50:30,027 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:30,028 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   A civil case is ongoing (Plaintiff vs. Defendant).
+    *   Lawyer A represents the Defendant (new, 1 year experience, small firm).
+    *   Lawyer B represents the Plaintiff.
+    *   Lawyer C (experienced, famous firm) uses personal connections to contact the Defendant (client of Lawyer A).
+    *   Lawyer C tells the Defendant that Lawyer A is new (1 year) and Lawyer C is experienced (10+ years) and has a famous firm.
+    *   
+2026-05-19 10:50:30,028 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   A civil case is ongoing (Plaintiff vs. Defendant).
+    *   Lawyer A represents the Defendant (new, 1 year experience, small firm).
+    *   Lawyer B represents the Plaintiff.
+    *   Lawyer C (experienced, famous firm) uses personal connections to contact the Defendant (client of Lawyer A).
+    *   Lawyer C tells the Defendant that Lawyer A is new (1 year) and Lawyer C is experienced (10+ years) and has a famous firm.
+    *   
+2026-05-19 10:50:30,028 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:50:31,658 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:31,659 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+2.  **Analyze the Scenario:**
+    *   Client A wants to legalize 300 m² of land (rạch) by creating a fake dossier, claiming it's part of legally certified land.
+    *   Client A consults Lawyer B.
+    *   Lawyer B claims
+2026-05-19 10:50:31,659 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+2.  **Analyze the Scenario:**
+    *   Client A wants to legalize 300 m² of land (rạch) by creating a fake dossier, claiming it's part of legally certified land.
+    *   Client A consults Lawyer B.
+    *   Lawyer B claims
+2026-05-19 10:50:31,660 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:50:33,273 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:33,274 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Client A wants to legalize 300 m² of land (rạch) by creating a fake dossier, claiming it's part of legally certified land.
+    *   Lawyer B is approached for consultation.
+    *   Lawyer B claims to know the Vice Chairman of the People's Committee (UBND) of District X and promises to make it happen.
+    *   They sign a legal service contract (non-litigation).
+    *   Lawyer B meets privately with the Vice Chairman to create
+2026-05-19 10:50:33,274 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Client A wants to legalize 300 m² of land (rạch) by creating a fake dossier, claiming it's part of legally certified land.
+    *   Lawyer B is approached for consultation.
+    *   Lawyer B claims to know the Vice Chairman of the People's Committee (UBND) of District X and promises to make it happen.
+    *   They sign a legal service contract (non-litigation).
+    *   Lawyer B meets privately with the Vice Chairman to create
+2026-05-19 10:50:33,274 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:50:34,892 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:34,893 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Bà B (Client) hires Luật sư S to represent her in a land dispute against Ông D.
+    *   Luật sư S meets Ông D (Opposing party/relative) outside the official capacity.
+    *   Ông D asks Luật sư S for advice on how to resolve the dispute with Bà B.
+2.  **Identify the core legal/ethical issue:**
+    *   The conflict of interest (Xung đột lợi ích). Luật sư S is representing Bà B, and Ông D is the opposing party
+2026-05-19 10:50:34,893 - WARNING - Extracted 'B' from response: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Bà B (Client) hires Luật sư S to represent her in a land dispute against Ông D.
+    *   Luật sư S meets Ông D (Opposing party/relative) outside the official capacity.
+    *   Ông D asks Luật sư S for advice on how to resolve the dispute with Bà B.
+2.  **Identify the core legal/ethical issue:**
+    *   The conflict of interest (Xung đột lợi ích). Luật sư S is representing Bà B, and Ông D is the opposing party
+2026-05-19 10:50:34,893 - INFO - Predicted Answer (batch): ['B']
+2026-05-19 10:50:36,510 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:36,510 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (MCQ) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+2.  **Analyze the Scenario:** A lawyer (the user) is participating in a trial in another province. A colleague suffers a traffic accident during the proceedings. The user is the one who discovers or is informed immediately.
+3.  **Analyze the Ethical/Professional Requirement:** As a lawyer
+2026-05-19 10:50:36,511 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (MCQ) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+2.  **Analyze the Scenario:** A lawyer (the user) is participating in a trial in another province. A colleague suffers a traffic accident during the proceedings. The user is the one who discovers or is informed immediately.
+3.  **Analyze the Ethical/Professional Requirement:** As a lawyer
+2026-05-19 10:50:36,511 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:50:38,142 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:38,142 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (MCQ) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+2.  **Analyze the Scenario:** Two lawyers are participating in a civil trial.
+    *   Lawyer 1 (Plaintiff's counsel) criticizes Lawyer 2 (Defendant's counsel) for citing non-law/incorrect law, telling them to "go study law."
+
+2026-05-19 10:50:38,143 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (MCQ) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+2.  **Analyze the Scenario:** Two lawyers are participating in a civil trial.
+    *   Lawyer 1 (Plaintiff's counsel) criticizes Lawyer 2 (Defendant's counsel) for citing non-law/incorrect law, telling them to "go study law."
+
+2026-05-19 10:50:38,143 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:50:39,773 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:39,774 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (MCQ) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Trần Thị M is a trainee lawyer (người tập sự) under Lawyer T at Law Office X.
+    *   M contributed money (15 million VND) to T for equipment/office rent (this detail is context but
+2026-05-19 10:50:39,774 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (MCQ) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Trần Thị M is a trainee lawyer (người tập sự) under Lawyer T at Law Office X.
+    *   M contributed money (15 million VND) to T for equipment/office rent (this detail is context but
+2026-05-19 10:50:39,774 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:50:41,396 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:41,397 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Trần Thị M is an apprentice lawyer (người tập sự) under Lawyer T at Law Office X.
+    *   M paid 15 million VND to Lawyer T for "equipment, facilities, and office rent."
+    *   During the apprenticeship, M was found to be poaching clients (lôi kéo khách hàng) from the office.
+    *   Lawyer T requested the Provincial Bar Association (Đoàn Luật sư tỉnh K) to discipline M and remove her from the apprentice list.
+    *   M
+2026-05-19 10:50:41,397 - INFO - Retrying parsing for question 0, attempt 1
+2026-05-19 10:50:42,979 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:42,980 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Trần Thị M is a trainee lawyer (người tập sự) under Lawyer T at Law Office X.
+    *   M paid 15 million VND to Lawyer T for "equipment, facilities, and office rent."
+    *   During the traineeship, M was found to be poaching clients (lôi kéo khách hàng của Văn phòng để làm riêng).
+    *   Lawyer T requested the Provincial Bar Association (Đoàn Luật sư tỉnh K) to discipline M and remove her from the traineeship list.
+
+2026-05-19 10:50:42,980 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:50:44,599 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:44,600 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+2.  **Analyze the Scenario:**
+    *   Lawyer K is appointed (chỉ định) to defend defendant N in a capital crime case.
+    *   Lawyer K meets with N's mother (M).
+    *   K tells M: Defense is very difficult, N is likely
+2026-05-19 10:50:44,600 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+2.  **Analyze the Scenario:**
+    *   Lawyer K is appointed (chỉ định) to defend defendant N in a capital crime case.
+    *   Lawyer K meets with N's mother (M).
+    *   K tells M: Defense is very difficult, N is likely
+2026-05-19 10:50:44,600 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:50:46,218 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:46,219 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics scenario) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Lawyer A is defending suspect X (charged with theft, currently detained).
+    *   The suspect's parents are approached by the investigator (Điều tra viên).
+    *   The investigator offers to "help" X
+2026-05-19 10:50:46,219 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics scenario) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Lawyer A is defending suspect X (charged with theft, currently detained).
+    *   The suspect's parents are approached by the investigator (Điều tra viên).
+    *   The investigator offers to "help" X
+2026-05-19 10:50:46,219 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:50:47,886 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:47,887 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   H is an intern (tập sự) under Lawyer X (Trưởng Văn phòng/Hướng dẫn).
+    *   Lawyer X is experienced, well-connected (with judicial/state officials).
+    *   Lawyer X rarely assigns professional tasks to H.
+    *   Lawyer X constantly forces H to accompany him to social events (drinking/dinners) with clients or officials.
+    *   H refuses because she cannot handle alcohol and has experienced harassment.
+    *   Lawyer X pressures H, stating
+2026-05-19 10:50:47,887 - INFO - Retrying parsing for question 0, attempt 1
+2026-05-19 10:50:49,477 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:49,478 - INFO - Predicted Answer (batch): [[]]
+2026-05-19 10:50:51,091 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:51,092 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (MCQ) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Role: Defense lawyer (bào chữa).
+    *   Case: Criminal case.
+    *   Finding: The client's actions *do* meet the elements of the crime (cầu thành tội phạm) as stated in
+2026-05-19 10:50:51,092 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (MCQ) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Role: Defense lawyer (bào chữa).
+    *   Case: Criminal case.
+    *   Finding: The client's actions *do* meet the elements of the crime (cầu thành tội phạm) as stated in
+2026-05-19 10:50:51,092 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:50:52,702 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:52,703 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:** Lawyer A is the sole witness to a fatal traffic accident. The fault lies with the vehicle owner, B. B asks Lawyer A to defend them starting from the investigation phase.
+2.  **Identify the ethical conflict:** Lawyer A has a dual role: (1) Witness (knowledge of facts, potentially implicating B) and (2) Defense Counsel (duty to zealously represent B). These roles are inherently conflicting, especially since A knows B's guilt.
+3.  **Determine the ethical obligation (Legal/Professional Ethics):** Lawyers must
+2026-05-19 10:50:52,703 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:** Lawyer A is the sole witness to a fatal traffic accident. The fault lies with the vehicle owner, B. B asks Lawyer A to defend them starting from the investigation phase.
+2.  **Identify the ethical conflict:** Lawyer A has a dual role: (1) Witness (knowledge of facts, potentially implicating B) and (2) Defense Counsel (duty to zealously represent B). These roles are inherently conflicting, especially since A knows B's guilt.
+3.  **Determine the ethical obligation (Legal/Professional Ethics):** Lawyers must
+2026-05-19 10:50:52,703 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:50:54,341 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:54,342 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario (The Question):**
+    *   Lawyer A is discussing a defense strategy for Client C with Lawyer B (Director of Law Firm B).
+    *   Lawyer A suggests:
+        *   Client C needs a suspended sentence ("án treo").
+        *   
+2026-05-19 10:50:54,342 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario (The Question):**
+    *   Lawyer A is discussing a defense strategy for Client C with Lawyer B (Director of Law Firm B).
+    *   Lawyer A suggests:
+        *   Client C needs a suspended sentence ("án treo").
+        *   
+2026-05-19 10:50:54,342 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:50:55,954 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:55,955 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+2.  **Analyze the Scenario:**
+    *   Lawyer A (attorney) discusses the defense strategy for Client C with Lawyer B (Director of Law Firm B).
+    *   Lawyer A presents two options:
+        1.  *Option 1 (Quick/Agreed):* Aim
+2026-05-19 10:50:55,955 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+2.  **Analyze the Scenario:**
+    *   Lawyer A (attorney) discusses the defense strategy for Client C with Lawyer B (Director of Law Firm B).
+    *   Lawyer A presents two options:
+        1.  *Option 1 (Quick/Agreed):* Aim
+2026-05-19 10:50:55,955 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:50:57,582 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:57,584 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:** Lawyer A is defending minor B, charged with extortion (Article 135 BLHS). The court sentenced B to 1 year suspended sentence. The family accepted the verdict. Lawyer A believes the sentence is too harsh and B qualifies for a lighter penalty (non-custodial correction/cải tạo không giam giữ) and potentially a different charge.
+2.  **Identify the core conflict/dilemma:** Lawyer A's professional duty (seeking the best outcome for the client) vs. the family's current decision (acceptance/non
+2026-05-19 10:50:57,584 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:** Lawyer A is defending minor B, charged with extortion (Article 135 BLHS). The court sentenced B to 1 year suspended sentence. The family accepted the verdict. Lawyer A believes the sentence is too harsh and B qualifies for a lighter penalty (non-custodial correction/cải tạo không giam giữ) and potentially a different charge.
+2.  **Identify the core conflict/dilemma:** Lawyer A's professional duty (seeking the best outcome for the client) vs. the family's current decision (acceptance/non
+2026-05-19 10:50:57,584 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:50:59,215 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:50:59,216 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:** Lawyer A is rushing to court, violates traffic rules (running a yellow/red light). When stopped by police, A presents the lawyer card and ID, but then gives the police a wallet containing important personal items (ID, credit card, documents) and makes a suggestive statement: "I want to keep or take anything belonging to you, except holding the vehicle and holding me, I am in a hurry to get to court to defend my client."
+2.  **Identify the core issue:** The lawyer's statement and actions (offering/suggesting
+2026-05-19 10:50:59,216 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:** Lawyer A is rushing to court, violates traffic rules (running a yellow/red light). When stopped by police, A presents the lawyer card and ID, but then gives the police a wallet containing important personal items (ID, credit card, documents) and makes a suggestive statement: "I want to keep or take anything belonging to you, except holding the vehicle and holding me, I am in a hurry to get to court to defend my client."
+2.  **Identify the core issue:** The lawyer's statement and actions (offering/suggesting
+2026-05-19 10:50:59,216 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:00,836 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:00,837 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:** A law office (A) has 2 lawyers. Four clients arrive simultaneously with different needs:
+    *   Client 1: Disabled person (social policy consultation). (Vulnerable group)
+    *   Client 2: Poor person (land confiscation complaint/litigation). (Vulnerable group)
+    *   Client 3: Low-income person (inheritance lawsuit). (Vulnerable group, financial constraint)
+    *   Client 4: Businessman (foreign contract consultation). (High-paying, complex commercial case)
+2.
+2026-05-19 10:51:00,837 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:** A law office (A) has 2 lawyers. Four clients arrive simultaneously with different needs:
+    *   Client 1: Disabled person (social policy consultation). (Vulnerable group)
+    *   Client 2: Poor person (land confiscation complaint/litigation). (Vulnerable group)
+    *   Client 3: Low-income person (inheritance lawsuit). (Vulnerable group, financial constraint)
+    *   Client 4: Businessman (foreign contract consultation). (High-paying, complex commercial case)
+2.
+2026-05-19 10:51:00,838 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:02,481 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:02,482 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:** Lawyer Q (representing client X) receives an urgent call about his father's critical condition (force majeure/emergency). He informs the client X, requests a postponement, and arranges for another lawyer, Z, from the same firm to take over the defense. Client X refuses because he believes Q is the only one who can guarantee the quality corresponding to the fee paid. Q decides to proceed with Z and leave.
+2.  **Identify the core questions:**
+    *   How should Lawyer Q's actions be evaluated (legally and ethically)?
+
+2026-05-19 10:51:02,482 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:** Lawyer Q (representing client X) receives an urgent call about his father's critical condition (force majeure/emergency). He informs the client X, requests a postponement, and arranges for another lawyer, Z, from the same firm to take over the defense. Client X refuses because he believes Q is the only one who can guarantee the quality corresponding to the fee paid. Q decides to proceed with Z and leave.
+2.  **Identify the core questions:**
+    *   How should Lawyer Q's actions be evaluated (legally and ethically)?
+
+2026-05-19 10:51:02,482 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:04,173 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:04,175 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a complex legal scenario (a multiple-choice question) and select the single correct option (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario (Key Facts):**
+    *   Law firm K hired to represent client H.A (defendant in inheritance case).
+    *   Lawyer X was initially assigned (holding crucial documents: land/house ownership certificate, but *without* a
+2026-05-19 10:51:04,175 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a complex legal scenario (a multiple-choice question) and select the single correct option (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario (Key Facts):**
+    *   Law firm K hired to represent client H.A (defendant in inheritance case).
+    *   Lawyer X was initially assigned (holding crucial documents: land/house ownership certificate, but *without* a
+2026-05-19 10:51:04,175 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:05,805 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:05,806 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a complex legal ethics scenario and choose the single correct answer (A, B, C, or D) without any explanation.
+2.  **Analyze the Scenario:**
+    *   Law firm K hired to represent client H.A in an inheritance case.
+    *   Lawyer X was initially assigned but had a conflict (long-distance travel/emergency).
+    *   Lawyer Y was assigned by the firm's director (K) to replace X.
+    *   Client H.A rejected Y
+2026-05-19 10:51:05,806 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a complex legal ethics scenario and choose the single correct answer (A, B, C, or D) without any explanation.
+2.  **Analyze the Scenario:**
+    *   Law firm K hired to represent client H.A in an inheritance case.
+    *   Lawyer X was initially assigned but had a conflict (long-distance travel/emergency).
+    *   Lawyer Y was assigned by the firm's director (K) to replace X.
+    *   Client H.A rejected Y
+2026-05-19 10:51:05,806 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:07,442 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:07,443 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal scenario) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Year 2003: Ông Chiền (donor) gave 300m² land and a house (value 1 billion VND) to Ông T (donee).
+    *   The gift contract was confirmed
+2026-05-19 10:51:07,443 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal scenario) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Year 2003: Ông Chiền (donor) gave 300m² land and a house (value 1 billion VND) to Ông T (donee).
+    *   The gift contract was confirmed
+2026-05-19 10:51:07,443 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:09,068 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:09,070 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+2.  **Analyze the Scenario:**
+    *   Mr. B (Vice Director, largest shareholder) wants to overthrow the current Director (who is effective) to become the Director.
+    *   Mr. B proposes a legal service contract.
+    *   The compensation offered is not money, but a
+2026-05-19 10:51:09,070 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+2.  **Analyze the Scenario:**
+    *   Mr. B (Vice Director, largest shareholder) wants to overthrow the current Director (who is effective) to become the Director.
+    *   Mr. B proposes a legal service contract.
+    *   The compensation offered is not money, but a
+2026-05-19 10:51:09,070 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:10,691 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:10,692 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the answer, with no explanations or extra text.
+2.  **Analyze the Scenario:**
+    *   Mr. B (Vice Director, largest shareholder) wants to overthrow the current Director (who is effective).
+    *   Mr. B hires Lawyer M for legal consultation.
+    *   The agreement includes a promise: If the service is successful, Mr.
+2026-05-19 10:51:10,692 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the answer, with no explanations or extra text.
+2.  **Analyze the Scenario:**
+    *   Mr. B (Vice Director, largest shareholder) wants to overthrow the current Director (who is effective).
+    *   Mr. B hires Lawyer M for legal consultation.
+    *   The agreement includes a promise: If the service is successful, Mr.
+2026-05-19 10:51:10,692 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:12,343 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:12,344 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics scenario) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Client A hires Lawyer K for a inheritance lawsuit (Plaintiff).
+    *   Lawyer K needs to meet the opposing party (B) and a related party (C) to gather evidence.
+    *   Client A sees
+2026-05-19 10:51:12,344 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics scenario) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Client A hires Lawyer K for a inheritance lawsuit (Plaintiff).
+    *   Lawyer K needs to meet the opposing party (B) and a related party (C) to gather evidence.
+    *   Client A sees
+2026-05-19 10:51:12,344 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:13,997 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:13,998 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Company A (State-owned monopoly) hires Law Firm B to review standard contracts used with regular clients.
+    *   A's initial drafts favor A and disadvantage clients.
+    *   Law Firm B modifies the drafts to ensure fairness/equality between parties (legal advice).
+    *   A rejects the modifications, insists on its original drafts, and refuses to pay the remaining fee, claiming B's quality is poor and B didn't protect A's interests.
+    *   B demands payment for the work done
+2026-05-19 10:51:13,998 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Company A (State-owned monopoly) hires Law Firm B to review standard contracts used with regular clients.
+    *   A's initial drafts favor A and disadvantage clients.
+    *   Law Firm B modifies the drafts to ensure fairness/equality between parties (legal advice).
+    *   A rejects the modifications, insists on its original drafts, and refuses to pay the remaining fee, claiming B's quality is poor and B didn't protect A's interests.
+    *   B demands payment for the work done
+2026-05-19 10:51:13,998 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:15,668 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:15,668 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (MCQ) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario (The Case of Lawyer A and Victim X):**
+    *   Lawyer A (individual practice) represents Victim X (the victim) in a criminal case from investigation to the first trial.
+    *   Lawyer A provides all required documents (Law
+2026-05-19 10:51:15,668 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (MCQ) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario (The Case of Lawyer A and Victim X):**
+    *   Lawyer A (individual practice) represents Victim X (the victim) in a criminal case from investigation to the first trial.
+    *   Lawyer A provides all required documents (Law
+2026-05-19 10:51:15,669 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:17,283 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:17,284 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (MCQ) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Lawyer A represented the victim X (bị hại X) in a criminal case from investigation to the first trial.
+    *   Lawyer A had a service contract with X.
+    *   The relationship with X ended (
+2026-05-19 10:51:17,284 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (MCQ) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Lawyer A represented the victim X (bị hại X) in a criminal case from investigation to the first trial.
+    *   Lawyer A had a service contract with X.
+    *   The relationship with X ended (
+2026-05-19 10:51:17,284 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:18,914 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:18,915 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   A legal service contract (Văn phòng luật sư A - Khách hàng B) has been terminated/liquidated (thanh lý).
+    *   Client B discovers that the service was incomplete (specifically, obtaining the Certificate of Ownership/Usage Rights for sold apartments).
+    *   Client B requests A to continue the work.
+    *   A proposes two options: 1) Sign a new contract for the remaining work, or 2) Refer B to another firm.
+    *   Client B refuses and threatens legal
+2026-05-19 10:51:18,915 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   A legal service contract (Văn phòng luật sư A - Khách hàng B) has been terminated/liquidated (thanh lý).
+    *   Client B discovers that the service was incomplete (specifically, obtaining the Certificate of Ownership/Usage Rights for sold apartments).
+    *   Client B requests A to continue the work.
+    *   A proposes two options: 1) Sign a new contract for the remaining work, or 2) Refer B to another firm.
+    *   Client B refuses and threatens legal
+2026-05-19 10:51:18,915 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:20,567 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:20,568 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics scenario) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Lawyer A represents client B (a wealthy businessman with serious legal issues/evidence of crime).
+    *   Lawyer A advises B to confess, cooperate, and mitigate consequences.
+    *   B rejects the advice,
+2026-05-19 10:51:20,568 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics scenario) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Lawyer A represents client B (a wealthy businessman with serious legal issues/evidence of crime).
+    *   Lawyer A advises B to confess, cooperate, and mitigate consequences.
+    *   B rejects the advice,
+2026-05-19 10:51:20,569 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:22,245 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:22,246 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics scenario) and select the single correct answer (A, B, C, or D). I must provide *only* the letter of the choice, with no explanation or extra text.
+
+2.  **Analyze the Scenario (The Case):**
+    *   Lawyer A represents Client B in an inheritance dispute.
+    *   The fee is fixed (trọn gói).
+    *   Lawyer A *promises* B: "The court will not accept the case
+2026-05-19 10:51:22,246 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics scenario) and select the single correct answer (A, B, C, or D). I must provide *only* the letter of the choice, with no explanation or extra text.
+
+2.  **Analyze the Scenario (The Case):**
+    *   Lawyer A represents Client B in an inheritance dispute.
+    *   The fee is fixed (trọn gói).
+    *   Lawyer A *promises* B: "The court will not accept the case
+2026-05-19 10:51:22,246 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:23,862 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:23,863 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Lawyer A represents client B in an inheritance dispute.
+    *   The contract is a fixed fee (trọn gói).
+    *   Lawyer A makes a strong commitment: "The court will not accept the inheritance dispute; it is time-barred." (A commitment to a specific outcome).
+    *   Client B offers extra rewards/gifts (money, land) if the commitment is met. Lawyer A agrees and signs an agreement.
+    *   The court rules against the commitment (divides the inheritance).
+
+2026-05-19 10:51:23,863 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Lawyer A represents client B in an inheritance dispute.
+    *   The contract is a fixed fee (trọn gói).
+    *   Lawyer A makes a strong commitment: "The court will not accept the inheritance dispute; it is time-barred." (A commitment to a specific outcome).
+    *   Client B offers extra rewards/gifts (money, land) if the commitment is met. Lawyer A agrees and signs an agreement.
+    *   The court rules against the commitment (divides the inheritance).
+
+2026-05-19 10:51:23,864 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:25,495 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:25,496 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:** Lawyer K successfully defended client M (a war invalid/disabled person and CEO of THÀNH ĐẠT) in an appellate trial, leading to M's acquittal. M (and the company) offered K two things:
+    *   A long-term retainer/salary (20,000,000 VND/month) to be the company's private lawyer.
+    *   A "hot bonus" (10,000,000 VND) immediately after the trial as thanks for the successful defense
+2026-05-19 10:51:25,496 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:** Lawyer K successfully defended client M (a war invalid/disabled person and CEO of THÀNH ĐẠT) in an appellate trial, leading to M's acquittal. M (and the company) offered K two things:
+    *   A long-term retainer/salary (20,000,000 VND/month) to be the company's private lawyer.
+    *   A "hot bonus" (10,000,000 VND) immediately after the trial as thanks for the successful defense
+2026-05-19 10:51:25,496 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:27,136 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:27,137 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Đào Văn M (trainee/new lawyer) refuses private clients during training.
+    *   After getting the license, M signs two legal service contracts (with clients V and Q) *in the name of the Law Firm* where he trained.
+    *   The contracts stipulate a 50% success fee (contingency fee) if the asset is recovered.
+    *   The contracts were successfully executed at the first instance (sơ thẩm).
+    *   The Law Firm Director discovers this and demands
+2026-05-19 10:51:27,137 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Đào Văn M (trainee/new lawyer) refuses private clients during training.
+    *   After getting the license, M signs two legal service contracts (with clients V and Q) *in the name of the Law Firm* where he trained.
+    *   The contracts stipulate a 50% success fee (contingency fee) if the asset is recovered.
+    *   The contracts were successfully executed at the first instance (sơ thẩm).
+    *   The Law Firm Director discovers this and demands
+2026-05-19 10:51:27,137 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:28,757 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:28,758 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question and select the single correct answer (A, B, C, or D). I must provide *only* the letter of the choice, with no explanations or extra text.
+2.  **Analyze the Scenario:**
+    *   Đào Văn M (Tập sự/Lawyer) refused private clients during training.
+    *   After getting the license, M signed two legal service contracts (with V and Q) *in the name of the Law Firm* where he trained.
+    
+2026-05-19 10:51:28,758 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question and select the single correct answer (A, B, C, or D). I must provide *only* the letter of the choice, with no explanations or extra text.
+2.  **Analyze the Scenario:**
+    *   Đào Văn M (Tập sự/Lawyer) refused private clients during training.
+    *   After getting the license, M signed two legal service contracts (with V and Q) *in the name of the Law Firm* where he trained.
+    
+2026-05-19 10:51:28,758 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:30,365 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:30,366 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Đào Văn M (Tập sự) refuses private clients during training.
+    *   After getting the license, M signs two legal service contracts (with V and Q) *in the name of the Law Firm* where he trained.
+    *   The contracts stipulate a 50% success fee (contingency fee).
+    *   The cases were successfully handled at the trial level.
+    *   The Director of the Law Firm discovers this and demands M either terminate the contract or transfer the case back to
+2026-05-19 10:51:30,366 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Đào Văn M (Tập sự) refuses private clients during training.
+    *   After getting the license, M signs two legal service contracts (with V and Q) *in the name of the Law Firm* where he trained.
+    *   The contracts stipulate a 50% success fee (contingency fee).
+    *   The cases were successfully handled at the trial level.
+    *   The Director of the Law Firm discovers this and demands M either terminate the contract or transfer the case back to
+2026-05-19 10:51:30,366 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:31,981 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:31,982 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question and select the single correct answer (A, B, C, or D). I must provide *only* the letter of the choice, with no explanation or extra text.
+2.  **Analyze the Scenario:** Two lawyers (A and B) are defending the same client (X) in an appeal trial (hình sự/kinh tế). They disagree fundamentally on the defense strategy: Lawyer A aims for mitigation (giảm nhẹ), while Lawyer B aims for acquittal (không phạm tội).
+3
+2026-05-19 10:51:31,982 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question and select the single correct answer (A, B, C, or D). I must provide *only* the letter of the choice, with no explanation or extra text.
+2.  **Analyze the Scenario:** Two lawyers (A and B) are defending the same client (X) in an appeal trial (hình sự/kinh tế). They disagree fundamentally on the defense strategy: Lawyer A aims for mitigation (giảm nhẹ), while Lawyer B aims for acquittal (không phạm tội).
+3
+2026-05-19 10:51:31,983 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:33,582 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:33,583 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (MCQ) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+2.  **Analyze the Scenario:** Two lawyers (A and B) are defending the same client (X) in an appellate criminal case. They disagree on the defense strategy (A aims for mitigation/reduction; B aims for acquittal/no crime).
+3.  **Analyze the Question:**
+2026-05-19 10:51:33,583 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (MCQ) and select the single correct answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+2.  **Analyze the Scenario:** Two lawyers (A and B) are defending the same client (X) in an appellate criminal case. They disagree on the defense strategy (A aims for mitigation/reduction; B aims for acquittal/no crime).
+3.  **Analyze the Question:**
+2026-05-19 10:51:33,583 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:35,281 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:35,282 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The goal is to read a complex scenario involving a trainee lawyer (Chị Ng) and the head of the law firm (Ông A), analyze their actions based on professional ethics and regulations, and select the single best option (A, B, C, or D). The output must be *only* the chosen letter.
+
+2.  **Analyze the Scenario (Key Actions & Violations):**
+    *   **Chị Ng's actions:**
+        *   Trainee assigned administrative/accounting tasks but actually performs general office/janitorial
+2026-05-19 10:51:35,282 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The goal is to read a complex scenario involving a trainee lawyer (Chị Ng) and the head of the law firm (Ông A), analyze their actions based on professional ethics and regulations, and select the single best option (A, B, C, or D). The output must be *only* the chosen letter.
+
+2.  **Analyze the Scenario (Key Actions & Violations):**
+    *   **Chị Ng's actions:**
+        *   Trainee assigned administrative/accounting tasks but actually performs general office/janitorial
+2026-05-19 10:51:35,282 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:36,893 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:36,894 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a complex scenario (a legal ethics/professional conduct case involving a trainee lawyer/intern) and choose the single best answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario (Key Issues):**
+    *   Hồ Thị Ng (Trainee Lawyer/Intern) is assigned administrative/janitorial tasks instead of legal work.
+    *   Ng handles a case for a friend
+2026-05-19 10:51:36,895 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a complex scenario (a legal ethics/professional conduct case involving a trainee lawyer/intern) and choose the single best answer (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario (Key Issues):**
+    *   Hồ Thị Ng (Trainee Lawyer/Intern) is assigned administrative/janitorial tasks instead of legal work.
+    *   Ng handles a case for a friend
+2026-05-19 10:51:36,895 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:38,547 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:38,548 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:** Lawyer A (representing Client B) needs official documents (certified copies of land use rights certificate and construction permit) from two government agencies (Department of Natural Resources and Environment, Department of Construction) in K province to advise the client on a dispute with Mr. C.
+2.  **Identify the problem:** The government agencies are ignoring the formal request (Công văn) from Lawyer A, despite repeated attempts.
+3.  **Determine the goal:** Find the most professional, legally sound, and effective course of action for a lawyer in this situation.
+4
+2026-05-19 10:51:38,548 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:** Lawyer A (representing Client B) needs official documents (certified copies of land use rights certificate and construction permit) from two government agencies (Department of Natural Resources and Environment, Department of Construction) in K province to advise the client on a dispute with Mr. C.
+2.  **Identify the problem:** The government agencies are ignoring the formal request (Công văn) from Lawyer A, despite repeated attempts.
+3.  **Determine the goal:** Find the most professional, legally sound, and effective course of action for a lawyer in this situation.
+4
+2026-05-19 10:51:38,548 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:40,174 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:40,176 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:** A lawyer is meeting with the presiding judge (Thẩm phán chủ tọa) at the courthouse regarding a defense case. The lawyer submits evidence and asks for a record (Biên bản giao nhận chứng cứ). The judge accepts the documents but then suggests meeting privately ("tìm nơi kín đáo để gặp, nói chuyện") and hints at potential favorable outcomes ("có thể vận dụng có lợi cho 'Nhà Bác' đấy nhưng Bác phải 'xem' thế nào"). The judge then excuses themselves due to being busy/inconvenience.
+2.  
+2026-05-19 10:51:40,176 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:** A lawyer is meeting with the presiding judge (Thẩm phán chủ tọa) at the courthouse regarding a defense case. The lawyer submits evidence and asks for a record (Biên bản giao nhận chứng cứ). The judge accepts the documents but then suggests meeting privately ("tìm nơi kín đáo để gặp, nói chuyện") and hints at potential favorable outcomes ("có thể vận dụng có lợi cho 'Nhà Bác' đấy nhưng Bác phải 'xem' thế nào"). The judge then excuses themselves due to being busy/inconvenience.
+2.  
+2026-05-19 10:51:40,176 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:41,808 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:41,809 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:** A lawyer is meeting with a Judge to present evidence and arguments for a client (the defendant). The Judge adopts a rigid stance, suggests the lawyer should cooperate by providing evidence according to the Judge's direction, warns the lawyer about the consequences if they don't comply ("if not, don't blame the court!"), and dismisses the lawyer's efforts ("The matter is clear. The lawyer doesn't need to present anything more."). The lawyer has already presented materials and proposed an alternative solution. The Judge tells the lawyer to "review themselves when
+2026-05-19 10:51:41,809 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:** A lawyer is meeting with a Judge to present evidence and arguments for a client (the defendant). The Judge adopts a rigid stance, suggests the lawyer should cooperate by providing evidence according to the Judge's direction, warns the lawyer about the consequences if they don't comply ("if not, don't blame the court!"), and dismisses the lawyer's efforts ("The matter is clear. The lawyer doesn't need to present anything more."). The lawyer has already presented materials and proposed an alternative solution. The Judge tells the lawyer to "review themselves when
+2026-05-19 10:51:41,809 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:43,455 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:43,456 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question about a lawyer's ethical violations and select the single correct option (A, B, C, or D). I must provide *only* the letter answer, with no explanation or extra text.
+2.  **Analyze the Scenario:**
+    *   Client: Chairman of a large import-export company, facing potential criminal charges/arrest.
+    *   Lawyer's knowledge: The Chairman has a reputation for drinking in "bia ôm" places (public scandal) and owns a "
+2026-05-19 10:51:43,456 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question about a lawyer's ethical violations and select the single correct option (A, B, C, or D). I must provide *only* the letter answer, with no explanation or extra text.
+2.  **Analyze the Scenario:**
+    *   Client: Chairman of a large import-export company, facing potential criminal charges/arrest.
+    *   Lawyer's knowledge: The Chairman has a reputation for drinking in "bia ôm" places (public scandal) and owns a "
+2026-05-19 10:51:43,456 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:45,085 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:45,087 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:** A lawyer is consulted by a Chairman of a large import-export company who is facing potential criminal charges/detention. The lawyer knows two critical pieces of negative information about the client:
+    *   The client frequently goes to "bia ôm" (bars/clubs) and was photographed.
+    *   The client owns a "backyard company" (sân sau) and uses illegal funds for real estate purchases.
+2.  **Analyze the lawyer's current action (the problematic behavior):** The lawyer uses this negative information to create a
+2026-05-19 10:51:45,087 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:** A lawyer is consulted by a Chairman of a large import-export company who is facing potential criminal charges/detention. The lawyer knows two critical pieces of negative information about the client:
+    *   The client frequently goes to "bia ôm" (bars/clubs) and was photographed.
+    *   The client owns a "backyard company" (sân sau) and uses illegal funds for real estate purchases.
+2.  **Analyze the lawyer's current action (the problematic behavior):** The lawyer uses this negative information to create a
+2026-05-19 10:51:45,088 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:46,766 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:46,767 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics scenario) and select the single correct answer (A, B, C, or D). I must provide *only* the letter answer, with no explanation or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Client (Bà L) hires Lawyer (Luật sư A) to defend her brother (L.V.M.) in a criminal case ("Lừa đảo chiếm đoạt tài sản").
+    *   Contract details: Total fee (1
+2026-05-19 10:51:46,767 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics scenario) and select the single correct answer (A, B, C, or D). I must provide *only* the letter answer, with no explanation or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Client (Bà L) hires Lawyer (Luật sư A) to defend her brother (L.V.M.) in a criminal case ("Lừa đảo chiếm đoạt tài sản").
+    *   Contract details: Total fee (1
+2026-05-19 10:51:46,767 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:48,387 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:48,388 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a legal case scenario (a multiple-choice question) and select the single correct answer (A, B, C, or D). I must provide *only* the letter of the choice, with no explanation or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Client (Bà L) hires Lawyer (Luật sư A) to defend her brother (L.V.M.) in a criminal case (Fraud).
+    *   Contract details: Total fee = 15 million VNĐ
+2026-05-19 10:51:48,388 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a legal case scenario (a multiple-choice question) and select the single correct answer (A, B, C, or D). I must provide *only* the letter of the choice, with no explanation or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Client (Bà L) hires Lawyer (Luật sư A) to defend her brother (L.V.M.) in a criminal case (Fraud).
+    *   Contract details: Total fee = 15 million VNĐ
+2026-05-19 10:51:48,388 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:50,072 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:50,074 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics case study) and select the single correct option (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Case Study:**
+    *   **Parties:** Bà A (Client), Văn phòng Luật sư B (Law Firm), Luật sư K (Head of Firm/Senior Lawyer), Luật sư C (Trainee/Intern).
+    *   **
+2026-05-19 10:51:50,075 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics case study) and select the single correct option (A, B, C, or D). I must provide *only* the letter corresponding to the correct answer, with no explanations or extra text.
+
+2.  **Analyze the Case Study:**
+    *   **Parties:** Bà A (Client), Văn phòng Luật sư B (Law Firm), Luật sư K (Head of Firm/Senior Lawyer), Luật sư C (Trainee/Intern).
+    *   **
+2026-05-19 10:51:50,075 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:51,709 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:51,710 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics scenario) and select the single correct answer (A, B, C, or D). I must provide *only* the letter answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Client (Bà A) hired Law Firm B (led by Lawyer K) for legal services (land dispute).
+    *   Lawyer K made a misleading promise (using connections to judges) to secure payment (100 million VND).
+2026-05-19 10:51:51,710 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question (a legal ethics scenario) and select the single correct answer (A, B, C, or D). I must provide *only* the letter answer, with no explanations or extra text.
+
+2.  **Analyze the Scenario:**
+    *   Client (Bà A) hired Law Firm B (led by Lawyer K) for legal services (land dispute).
+    *   Lawyer K made a misleading promise (using connections to judges) to secure payment (100 million VND).
+2026-05-19 10:51:51,710 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:53,375 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:53,376 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Lawyer X represents client Y in a civil case (investment/compensation).
+    *   Initial fee: 20 million VND (lump sum).
+    *   X uses a connection (V) to inquire about Judge H's view.
+    *   V informs X that Judge H favors Y's claim (180 million VND).
+    *   X tells Y that she is *certain* to get 180 million VND.
+    *   X proposes a contract amendment: Fee changes to
+2026-05-19 10:51:53,376 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Lawyer X represents client Y in a civil case (investment/compensation).
+    *   Initial fee: 20 million VND (lump sum).
+    *   X uses a connection (V) to inquire about Judge H's view.
+    *   V informs X that Judge H favors Y's claim (180 million VND).
+    *   X tells Y that she is *certain* to get 180 million VND.
+    *   X proposes a contract amendment: Fee changes to
+2026-05-19 10:51:53,376 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:55,012 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:55,012 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Client: Bà Nguyễn A (Plaintiff in inheritance dispute).
+    *   Lawyer: Luật sư Y (Representing Bà Nguyễn A).
+    *   Agreement: 80 million VND (all-inclusive fee for Bà Nguyễn A).
+    *   Third Party: Ông Trần B (Co-heir/Opposing party).
+    *   Action by Ông Trần B: Offers Luật sư Y 50 million VND if Luật sư Y agrees *not* to intervene deeply in the dispute, allowing Ông Trần B's
+2026-05-19 10:51:55,013 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Client: Bà Nguyễn A (Plaintiff in inheritance dispute).
+    *   Lawyer: Luật sư Y (Representing Bà Nguyễn A).
+    *   Agreement: 80 million VND (all-inclusive fee for Bà Nguyễn A).
+    *   Third Party: Ông Trần B (Co-heir/Opposing party).
+    *   Action by Ông Trần B: Offers Luật sư Y 50 million VND if Luật sư Y agrees *not* to intervene deeply in the dispute, allowing Ông Trần B's
+2026-05-19 10:51:55,013 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:56,676 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:56,677 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a legal scenario (a complaint against a lawyer) and answer a specific question about the jurisdiction of the Provincial Bar Association (Đoàn luật sư tỉnh H). The answer must be a single letter (A, B, C, or D) without any explanation.
+
+2.  **Analyze the Scenario:**
+    *   Client (Bà K) hired Lawyer Đ.
+    *   Agreement: Oral, 200 million VND, for legal consultation and defense at the appellate court.
+    *   Payment:
+2026-05-19 10:51:56,677 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a legal scenario (a complaint against a lawyer) and answer a specific question about the jurisdiction of the Provincial Bar Association (Đoàn luật sư tỉnh H). The answer must be a single letter (A, B, C, or D) without any explanation.
+
+2.  **Analyze the Scenario:**
+    *   Client (Bà K) hired Lawyer Đ.
+    *   Agreement: Oral, 200 million VND, for legal consultation and defense at the appellate court.
+    *   Payment:
+2026-05-19 10:51:56,677 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:58,301 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:58,302 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Client (Bà K) hires Lawyer Đ for legal consultation and representation (appeal) in a property dispute.
+    *   Agreement was verbal (no contract).
+    *   Fee: 200 million VND.
+    *   Payment: 200 million VND was transferred to Lawyer Đ.
+    *   Outcome: The appellate court dismissed the case because Bà K (the appellant) missed multiple summonses, despite proper service.
+    *   Client's complaint: Lawyer Đ received the fee but did nothing
+2026-05-19 10:51:58,302 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   Client (Bà K) hires Lawyer Đ for legal consultation and representation (appeal) in a property dispute.
+    *   Agreement was verbal (no contract).
+    *   Fee: 200 million VND.
+    *   Payment: 200 million VND was transferred to Lawyer Đ.
+    *   Outcome: The appellate court dismissed the case because Bà K (the appellant) missed multiple summonses, despite proper service.
+    *   Client's complaint: Lawyer Đ received the fee but did nothing
+2026-05-19 10:51:58,302 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:51:59,969 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:51:59,970 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question about legal ethics (specifically, a lawyer's conduct regarding colleagues/opposing counsel) and select the single correct answer (A, B, C, or D). I must provide *only* the letter answer, with no explanation or extra text.
+
+2.  **Analyze the Scenario:**
+    *   VPLS A (Lawyer C) represents Client B in a civil dispute.
+    *   The total service fee is 200 million VND.
+    *   Lawyer
+2026-05-19 10:51:59,970 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the Request:** The user wants me to read a multiple-choice question about legal ethics (specifically, a lawyer's conduct regarding colleagues/opposing counsel) and select the single correct answer (A, B, C, or D). I must provide *only* the letter answer, with no explanation or extra text.
+
+2.  **Analyze the Scenario:**
+    *   VPLS A (Lawyer C) represents Client B in a civil dispute.
+    *   The total service fee is 200 million VND.
+    *   Lawyer
+2026-05-19 10:51:59,971 - INFO - Predicted Answer (batch): ['A']
+2026-05-19 10:52:01,603 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-19 10:52:01,604 - INFO - [Raw response 0]: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   VPLS A (Lawyer C) and Client B (Client) have a legal service contract (200 million VND).
+    *   Lawyer C interacts with Lawyer D (opponent's lawyer).
+    *   Lawyer D advises their client to agree to mediation and pay 75% of the claim.
+    *   In return, Lawyer C promises to share a percentage of the "bonus" with Lawyer D.
+    *   Later, Lawyer C promises a 200 million VND bonus if Client
+2026-05-19 10:52:01,604 - WARNING - Extracted 'A' from response: Thinking Process:
+
+1.  **Analyze the scenario:**
+    *   VPLS A (Lawyer C) and Client B (Client) have a legal service contract (200 million VND).
+    *   Lawyer C interacts with Lawyer D (opponent's lawyer).
+    *   Lawyer D advises their client to agree to mediation and pay 75% of the claim.
+    *   In return, Lawyer C promises to share a percentage of the "bonus" with Lawyer D.
+    *   Later, Lawyer C promises a 200 million VND bonus if Client
+2026-05-19 10:52:01,604 - INFO - Predicted Answer (batch): ['A']
