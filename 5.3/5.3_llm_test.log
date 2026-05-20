@@ -1,0 +1,220 @@
+2026-05-20 07:08:58,933 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 196, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 97, in ask
+    system_prompt = self.get_system_prompt()
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 78, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-20 07:08:58,934 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 196, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 97, in ask
+    system_prompt = self.get_system_prompt()
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 78, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-20 07:08:58,935 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 196, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 97, in ask
+    system_prompt = self.get_system_prompt()
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 78, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-20 07:08:58,936 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 196, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 97, in ask
+    system_prompt = self.get_system_prompt()
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 78, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-20 07:08:58,936 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 196, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 97, in ask
+    system_prompt = self.get_system_prompt()
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 78, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-20 07:08:58,937 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 196, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 97, in ask
+    system_prompt = self.get_system_prompt()
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 78, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-20 07:08:58,937 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 196, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 97, in ask
+    system_prompt = self.get_system_prompt()
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 78, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-20 07:08:58,938 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 196, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 97, in ask
+    system_prompt = self.get_system_prompt()
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 78, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-20 07:08:58,938 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 196, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 97, in ask
+    system_prompt = self.get_system_prompt()
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 78, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-20 07:08:58,939 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 196, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 97, in ask
+    system_prompt = self.get_system_prompt()
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 78, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-20 07:08:58,940 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 196, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 97, in ask
+    system_prompt = self.get_system_prompt()
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 78, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-20 07:08:58,940 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 196, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 97, in ask
+    system_prompt = self.get_system_prompt()
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 78, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-20 07:08:58,941 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 196, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 97, in ask
+    system_prompt = self.get_system_prompt()
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 78, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-20 07:08:58,941 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 196, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 97, in ask
+    system_prompt = self.get_system_prompt()
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 78, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-20 07:08:58,942 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 196, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 97, in ask
+    system_prompt = self.get_system_prompt()
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 78, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-20 07:08:58,942 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 196, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 97, in ask
+    system_prompt = self.get_system_prompt()
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 78, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-20 07:08:58,943 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 196, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 97, in ask
+    system_prompt = self.get_system_prompt()
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 78, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-20 07:08:58,944 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 196, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 97, in ask
+    system_prompt = self.get_system_prompt()
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 78, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-20 07:08:58,944 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 196, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 97, in ask
+    system_prompt = self.get_system_prompt()
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 78, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-20 07:08:58,945 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 196, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 97, in ask
+    system_prompt = self.get_system_prompt()
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 78, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-20 07:08:58,945 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 196, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 97, in ask
+    system_prompt = self.get_system_prompt()
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 78, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-20 07:08:58,946 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 196, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 97, in ask
+    system_prompt = self.get_system_prompt()
+  File "/home/ezycloudx-admin/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 78, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'

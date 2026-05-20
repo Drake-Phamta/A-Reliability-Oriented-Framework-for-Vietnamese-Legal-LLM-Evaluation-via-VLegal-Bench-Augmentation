@@ -1,0 +1,405 @@
+2026-05-20 07:01:23,269 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:23,275 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:23,352 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:23,418 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:23,418 - INFO - [Raw response 0]: Không
+2026-05-20 07:01:23,419 - INFO - [Raw response 1]: Không
+2026-05-20 07:01:23,419 - INFO - [Raw response 2]: Không
+2026-05-20 07:01:23,419 - INFO - [Raw response 3]: Không
+2026-05-20 07:01:23,419 - INFO - Predicted Answer (batch): ['Không', 'Không', 'Không', 'Không']
+2026-05-20 07:01:23,870 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:24,017 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:24,092 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:25,311 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:25,312 - INFO - [Raw response 0]: Không
+2026-05-20 07:01:25,312 - INFO - [Raw response 1]: Có
+2026-05-20 07:01:25,312 - INFO - [Raw response 2]: Không
+2026-05-20 07:01:25,312 - INFO - [Raw response 3]: Dựa trên các nội dung bạn cung cấp, tôi nhận thấy đây là một tập hợp các điều khoản, sửa đổi, và thay thế liên quan đến hệ thống tư pháp và tố tụng của Việt Nam.
+
+**Để tôi có thể hỗ trợ bạn tốt nhất, bạn vui lòng cho tôi biết bạn muốn tôi
+2026-05-20 07:01:25,312 - WARNING - Extracted 'Có' from response: Dựa trên các nội dung bạn cung cấp, tôi nhận thấy đây là một tập hợp các điều khoản, sửa đổi, và thay thế liên quan đến hệ thống tư pháp và tố tụng của Việt Nam.
+
+**Để tôi có thể hỗ trợ bạn tốt nhất, bạn vui lòng cho tôi biết bạn muốn tôi
+2026-05-20 07:01:25,312 - INFO - Predicted Answer (batch): ['Không', 'Có', 'Không', 'Có']
+2026-05-20 07:01:25,779 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:25,992 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:26,043 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:26,056 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:26,057 - INFO - [Raw response 0]: Không
+2026-05-20 07:01:26,057 - INFO - [Raw response 1]: Không
+2026-05-20 07:01:26,057 - INFO - [Raw response 2]: Không
+2026-05-20 07:01:26,057 - INFO - [Raw response 3]: Không
+2026-05-20 07:01:26,057 - INFO - Predicted Answer (batch): ['Không', 'Không', 'Không', 'Không']
+2026-05-20 07:01:26,605 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:26,750 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:26,986 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:27,124 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:27,124 - INFO - [Raw response 0]: Không
+2026-05-20 07:01:27,125 - INFO - [Raw response 1]: Có
+2026-05-20 07:01:27,125 - INFO - [Raw response 2]: Không
+2026-05-20 07:01:27,125 - INFO - [Raw response 3]: Không
+2026-05-20 07:01:27,125 - INFO - Predicted Answer (batch): ['Không', 'Có', 'Không', 'Không']
+2026-05-20 07:01:27,775 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:27,863 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:27,864 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:28,126 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:28,127 - INFO - [Raw response 0]: Không
+2026-05-20 07:01:28,127 - INFO - [Raw response 1]: Không
+2026-05-20 07:01:28,127 - INFO - [Raw response 2]: Không
+2026-05-20 07:01:28,128 - INFO - [Raw response 3]: Không
+2026-05-20 07:01:28,128 - INFO - Predicted Answer (batch): ['Không', 'Không', 'Không', 'Không']
+2026-05-20 07:01:28,608 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:28,825 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:28,826 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:28,826 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:28,827 - INFO - [Raw response 0]: Không
+2026-05-20 07:01:28,827 - INFO - [Raw response 1]: Không
+2026-05-20 07:01:28,827 - INFO - [Raw response 2]: Không
+2026-05-20 07:01:28,827 - INFO - [Raw response 3]: Không
+2026-05-20 07:01:28,828 - INFO - Predicted Answer (batch): ['Không', 'Không', 'Không', 'Không']
+2026-05-20 07:01:29,271 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:29,344 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:29,518 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:29,533 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:29,534 - INFO - [Raw response 0]: Không
+2026-05-20 07:01:29,534 - INFO - [Raw response 1]: Có
+2026-05-20 07:01:29,534 - INFO - [Raw response 2]: Không
+2026-05-20 07:01:29,534 - INFO - [Raw response 3]: Không
+2026-05-20 07:01:29,534 - INFO - Predicted Answer (batch): ['Không', 'Có', 'Không', 'Không']
+2026-05-20 07:01:30,071 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:30,219 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:30,234 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:30,235 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:30,236 - INFO - [Raw response 0]: Không
+2026-05-20 07:01:30,236 - INFO - [Raw response 1]: Có
+2026-05-20 07:01:30,236 - INFO - [Raw response 2]: Không
+2026-05-20 07:01:30,236 - INFO - [Raw response 3]: Không
+2026-05-20 07:01:30,236 - INFO - Predicted Answer (batch): ['Không', 'Có', 'Không', 'Không']
+2026-05-20 07:01:30,674 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:30,898 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:30,974 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:31,109 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:31,110 - INFO - [Raw response 0]: Có
+2026-05-20 07:01:31,110 - INFO - [Raw response 1]: Không
+2026-05-20 07:01:31,110 - INFO - [Raw response 2]: Không
+2026-05-20 07:01:31,110 - INFO - [Raw response 3]: Không
+2026-05-20 07:01:31,110 - INFO - Predicted Answer (batch): ['Có', 'Không', 'Không', 'Không']
+2026-05-20 07:01:31,543 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:31,905 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:31,985 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:32,093 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:32,094 - INFO - [Raw response 0]: Không
+2026-05-20 07:01:32,094 - INFO - [Raw response 1]: Không
+2026-05-20 07:01:32,094 - INFO - [Raw response 2]: Có
+2026-05-20 07:01:32,094 - INFO - [Raw response 3]: Không
+2026-05-20 07:01:32,094 - INFO - Predicted Answer (batch): ['Không', 'Không', 'Có', 'Không']
+2026-05-20 07:01:32,630 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:32,777 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:32,854 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:32,970 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:32,970 - INFO - [Raw response 0]: Không
+2026-05-20 07:01:32,970 - INFO - [Raw response 1]: Không
+2026-05-20 07:01:32,971 - INFO - [Raw response 2]: Không
+2026-05-20 07:01:32,971 - INFO - [Raw response 3]: Không
+2026-05-20 07:01:32,971 - INFO - Predicted Answer (batch): ['Không', 'Không', 'Không', 'Không']
+2026-05-20 07:01:33,627 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:33,701 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:34,340 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:34,508 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:34,509 - INFO - [Raw response 0]: Không
+2026-05-20 07:01:34,510 - INFO - [Raw response 1]: Không
+2026-05-20 07:01:34,510 - INFO - [Raw response 2]: Không
+2026-05-20 07:01:34,510 - INFO - [Raw response 3]: Không
+2026-05-20 07:01:34,510 - INFO - Predicted Answer (batch): ['Không', 'Không', 'Không', 'Không']
+2026-05-20 07:01:35,050 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:35,089 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:35,090 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:35,105 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:35,106 - INFO - [Raw response 0]: Không
+2026-05-20 07:01:35,107 - INFO - [Raw response 1]: Không
+2026-05-20 07:01:35,107 - INFO - [Raw response 2]: Không
+2026-05-20 07:01:35,107 - INFO - [Raw response 3]: Không
+2026-05-20 07:01:35,107 - INFO - Predicted Answer (batch): ['Không', 'Không', 'Không', 'Không']
+2026-05-20 07:01:35,577 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:35,870 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:35,896 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:35,909 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:35,910 - INFO - [Raw response 0]: Không
+2026-05-20 07:01:35,910 - INFO - [Raw response 1]: Không
+2026-05-20 07:01:35,910 - INFO - [Raw response 2]: Không
+2026-05-20 07:01:35,910 - INFO - [Raw response 3]: Không
+2026-05-20 07:01:35,910 - INFO - Predicted Answer (batch): ['Không', 'Không', 'Không', 'Không']
+2026-05-20 07:01:36,511 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:36,512 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:36,589 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:36,639 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:36,640 - INFO - [Raw response 0]: Không
+2026-05-20 07:01:36,640 - INFO - [Raw response 1]: Không
+2026-05-20 07:01:36,640 - INFO - [Raw response 2]: Không
+2026-05-20 07:01:36,640 - INFO - [Raw response 3]: Có
+2026-05-20 07:01:36,640 - INFO - Predicted Answer (batch): ['Không', 'Không', 'Không', 'Có']
+2026-05-20 07:01:37,389 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:37,542 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:37,917 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:37,931 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:37,931 - INFO - [Raw response 0]: Không
+2026-05-20 07:01:37,932 - INFO - [Raw response 1]: Không
+2026-05-20 07:01:37,932 - INFO - [Raw response 2]: Không
+2026-05-20 07:01:37,932 - INFO - [Raw response 3]: Không
+2026-05-20 07:01:37,932 - INFO - Predicted Answer (batch): ['Không', 'Không', 'Không', 'Không']
+2026-05-20 07:01:38,331 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:38,617 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:38,776 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:38,929 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:38,930 - INFO - [Raw response 0]: Không
+2026-05-20 07:01:38,930 - INFO - [Raw response 1]: Không
+2026-05-20 07:01:38,930 - INFO - [Raw response 2]: Không
+2026-05-20 07:01:38,930 - INFO - [Raw response 3]: Không
+2026-05-20 07:01:38,930 - INFO - Predicted Answer (batch): ['Không', 'Không', 'Không', 'Không']
+2026-05-20 07:01:39,335 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:39,479 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:39,553 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:39,827 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:39,828 - INFO - [Raw response 0]: Không
+2026-05-20 07:01:39,828 - INFO - [Raw response 1]: Không
+2026-05-20 07:01:39,828 - INFO - [Raw response 2]: Không
+2026-05-20 07:01:39,828 - INFO - [Raw response 3]: Không
+2026-05-20 07:01:39,829 - INFO - Predicted Answer (batch): ['Không', 'Không', 'Không', 'Không']
+2026-05-20 07:01:40,412 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:40,551 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:40,931 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:41,270 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:41,271 - INFO - [Raw response 0]: Có
+2026-05-20 07:01:41,271 - INFO - [Raw response 1]: Không
+2026-05-20 07:01:41,271 - INFO - [Raw response 2]: Không
+2026-05-20 07:01:41,271 - INFO - [Raw response 3]: Không
+2026-05-20 07:01:41,271 - INFO - Predicted Answer (batch): ['Có', 'Không', 'Không', 'Không']
+2026-05-20 07:01:42,019 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:42,169 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:42,410 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:43,505 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:43,506 - INFO - [Raw response 0]: Đây là một tập hợp các điều khoản sửa đổi, bổ sung hoặc quy định chi tiết về tổ chức và hoạt động của hệ thống Tòa án, bao gồm các quy định về thẩm quyền, thủ tục tố tụng, và các vấn đề hành chính liên quan.
+
+Dưới đây là phân tích tổng quan
+2026-05-20 07:01:43,506 - WARNING - Parse returned None at index 0 | finish_reason=length | usage={'prompt_tokens': 4096, 'completion_tokens': 64, 'total_tokens': 4160}
+2026-05-20 07:01:43,507 - INFO - [Raw response 1]: Không
+2026-05-20 07:01:43,507 - INFO - [Raw response 2]: Không
+2026-05-20 07:01:43,507 - INFO - [Raw response 3]: Không
+2026-05-20 07:01:43,507 - INFO - Predicted Answer (batch): [[], 'Không', 'Không', 'Không']
+2026-05-20 07:01:44,028 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:44,029 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:44,103 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:44,245 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:44,245 - INFO - [Raw response 0]: Không
+2026-05-20 07:01:44,245 - INFO - [Raw response 1]: Không
+2026-05-20 07:01:44,246 - INFO - [Raw response 2]: Không
+2026-05-20 07:01:44,246 - INFO - [Raw response 3]: Không
+2026-05-20 07:01:44,246 - INFO - Predicted Answer (batch): ['Không', 'Không', 'Không', 'Không']
+2026-05-20 07:01:44,953 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:45,034 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:45,075 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:45,088 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:45,088 - INFO - [Raw response 0]: Không
+2026-05-20 07:01:45,088 - INFO - [Raw response 1]: Không
+2026-05-20 07:01:45,089 - INFO - [Raw response 2]: Không
+2026-05-20 07:01:45,089 - INFO - [Raw response 3]: Không
+2026-05-20 07:01:45,089 - INFO - Predicted Answer (batch): ['Không', 'Không', 'Không', 'Không']
+2026-05-20 07:01:45,685 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:45,791 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:45,792 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:45,805 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:45,806 - INFO - [Raw response 0]: Không
+2026-05-20 07:01:45,806 - INFO - [Raw response 1]: Không
+2026-05-20 07:01:45,806 - INFO - [Raw response 2]: Có
+2026-05-20 07:01:45,806 - INFO - [Raw response 3]: Không
+2026-05-20 07:01:45,806 - INFO - Predicted Answer (batch): ['Không', 'Không', 'Có', 'Không']
+2026-05-20 07:01:46,292 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:46,514 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:46,882 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:46,896 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:46,896 - INFO - [Raw response 0]: Có
+2026-05-20 07:01:46,896 - INFO - [Raw response 1]: Không
+2026-05-20 07:01:46,897 - INFO - [Raw response 2]: Không
+2026-05-20 07:01:46,897 - INFO - [Raw response 3]: Không
+2026-05-20 07:01:46,897 - INFO - Predicted Answer (batch): ['Có', 'Không', 'Không', 'Không']
+2026-05-20 07:01:47,626 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:47,643 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:47,644 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:47,645 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:47,646 - INFO - [Raw response 0]: Không
+2026-05-20 07:01:47,646 - INFO - [Raw response 1]: Không
+2026-05-20 07:01:47,646 - INFO - [Raw response 2]: Không
+2026-05-20 07:01:47,646 - INFO - [Raw response 3]: Không
+2026-05-20 07:01:47,646 - INFO - Predicted Answer (batch): ['Không', 'Không', 'Không', 'Không']
+2026-05-20 07:01:48,333 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:48,721 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:49,154 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:50,075 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:50,076 - INFO - [Raw response 0]: Dựa trên các văn bản pháp luật được cung cấp, tôi xin tóm tắt và phân tích các quy định liên quan đến việc khấu trừ thuế (hay điều kiện được khấu trừ/hạch toán) liên quan đến thanh toán.
+
+## Tóm tắt các quy định chính
+
+Các văn bản quy định về
+2026-05-20 07:01:50,076 - WARNING - Parse returned None at index 0 | finish_reason=length | usage={'prompt_tokens': 4096, 'completion_tokens': 64, 'total_tokens': 4160}
+2026-05-20 07:01:50,076 - INFO - [Raw response 1]: Không
+2026-05-20 07:01:50,076 - INFO - [Raw response 2]: Không
+2026-05-20 07:01:50,076 - INFO - [Raw response 3]: Không
+2026-05-20 07:01:50,076 - INFO - Predicted Answer (batch): [[], 'Không', 'Không', 'Không']
+2026-05-20 07:01:50,468 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:50,947 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:50,961 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:50,962 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:50,962 - INFO - [Raw response 0]: Không
+2026-05-20 07:01:50,962 - INFO - [Raw response 1]: Không
+2026-05-20 07:01:50,963 - INFO - [Raw response 2]: Không
+2026-05-20 07:01:50,963 - INFO - [Raw response 3]: Không
+2026-05-20 07:01:50,963 - INFO - Predicted Answer (batch): ['Không', 'Không', 'Không', 'Không']
+2026-05-20 07:01:51,425 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:51,647 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:51,726 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:51,739 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:51,740 - INFO - [Raw response 0]: Không
+2026-05-20 07:01:51,740 - INFO - [Raw response 1]: Không
+2026-05-20 07:01:51,740 - INFO - [Raw response 2]: Không
+2026-05-20 07:01:51,740 - INFO - [Raw response 3]: Có
+2026-05-20 07:01:51,740 - INFO - Predicted Answer (batch): ['Không', 'Không', 'Không', 'Có']
+2026-05-20 07:01:52,156 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:52,447 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:52,525 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:52,717 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:52,718 - INFO - [Raw response 0]: Không
+2026-05-20 07:01:52,718 - INFO - [Raw response 1]: Có
+2026-05-20 07:01:52,718 - INFO - [Raw response 2]: Không
+2026-05-20 07:01:52,718 - INFO - [Raw response 3]: Không
+2026-05-20 07:01:52,719 - INFO - Predicted Answer (batch): ['Không', 'Có', 'Không', 'Không']
+2026-05-20 07:01:53,361 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:53,517 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:53,598 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:53,612 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:53,613 - INFO - [Raw response 0]: Không
+2026-05-20 07:01:53,613 - INFO - [Raw response 1]: Không
+2026-05-20 07:01:53,613 - INFO - [Raw response 2]: Không
+2026-05-20 07:01:53,613 - INFO - [Raw response 3]: Có
+2026-05-20 07:01:53,613 - INFO - Predicted Answer (batch): ['Không', 'Không', 'Không', 'Có']
+2026-05-20 07:01:54,212 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:54,286 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:54,439 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:55,644 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:55,644 - INFO - [Raw response 0]: Không
+2026-05-20 07:01:55,645 - INFO - [Raw response 1]: Không
+2026-05-20 07:01:55,645 - INFO - [Raw response 2]: Bạn đã cung cấp một văn bản rất chi tiết về cơ chế phân bổ ngân sách và các tiêu chí hỗ trợ cho các địa phương. Đây là một tài liệu mang tính quy định hành chính và tài chính công.
+
+Để tôi có thể hỗ trợ bạn tốt nhất, bạn vui lòng cho tôi biết **bạn
+2026-05-20 07:01:55,645 - WARNING - Extracted 'Có' from response: Bạn đã cung cấp một văn bản rất chi tiết về cơ chế phân bổ ngân sách và các tiêu chí hỗ trợ cho các địa phương. Đây là một tài liệu mang tính quy định hành chính và tài chính công.
+
+Để tôi có thể hỗ trợ bạn tốt nhất, bạn vui lòng cho tôi biết **bạn
+2026-05-20 07:01:55,645 - INFO - [Raw response 3]: Không
+2026-05-20 07:01:55,645 - INFO - Predicted Answer (batch): ['Không', 'Không', 'Có', 'Không']
+2026-05-20 07:01:56,090 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:56,305 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:56,447 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:56,460 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:56,461 - INFO - [Raw response 0]: Có
+2026-05-20 07:01:56,461 - INFO - [Raw response 1]: Có
+2026-05-20 07:01:56,461 - INFO - [Raw response 2]: Không
+2026-05-20 07:01:56,461 - INFO - [Raw response 3]: Có
+2026-05-20 07:01:56,461 - INFO - Predicted Answer (batch): ['Có', 'Có', 'Không', 'Có']
+2026-05-20 07:01:56,887 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:57,176 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:57,411 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:58,498 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:58,499 - INFO - [Raw response 0]: Không
+2026-05-20 07:01:58,499 - INFO - [Raw response 1]: Dựa trên các điều khoản được cung cấp, tôi xin tóm tắt và phân tích các nội dung chính như sau:
+
+## I. Các Quy Định Về Thẩm Quyền và Quy Trình Tố Tụng
+
+Các điều khoản này quy định chi tiết về thẩm quyền xét xử, quy trình kháng
+2026-05-20 07:01:58,499 - WARNING - Parse returned None at index 1 | finish_reason=length | usage={'prompt_tokens': 4096, 'completion_tokens': 64, 'total_tokens': 4160}
+2026-05-20 07:01:58,499 - INFO - [Raw response 2]: Không
+2026-05-20 07:01:58,499 - INFO - [Raw response 3]: Không
+2026-05-20 07:01:58,500 - INFO - Predicted Answer (batch): ['Không', [], 'Không', 'Không']
+2026-05-20 07:01:59,463 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:59,464 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:59,479 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:59,480 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:01:59,481 - INFO - [Raw response 0]: Không
+2026-05-20 07:01:59,481 - INFO - [Raw response 1]: Không
+2026-05-20 07:01:59,481 - INFO - [Raw response 2]: Không
+2026-05-20 07:01:59,481 - INFO - [Raw response 3]: Không
+2026-05-20 07:01:59,481 - INFO - Predicted Answer (batch): ['Không', 'Không', 'Không', 'Không']
+2026-05-20 07:02:00,174 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:02:00,325 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:02:00,565 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:02:01,672 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:02:01,673 - INFO - [Raw response 0]: Không
+2026-05-20 07:02:01,673 - INFO - [Raw response 1]: Không
+2026-05-20 07:02:01,673 - INFO - [Raw response 2]: Dựa trên các nội dung bạn cung cấp, tôi nhận thấy đây là một tập hợp các điều khoản, sửa đổi, và quy định pháp lý liên quan đến hệ thống tư pháp và hành chính của Việt Nam, bao gồm:
+
+1. **Các quy định về Tòa án và Thẩm quyền xét xử
+2026-05-20 07:02:01,673 - WARNING - Parse returned None at index 2 | finish_reason=length | usage={'prompt_tokens': 4096, 'completion_tokens': 64, 'total_tokens': 4160}
+2026-05-20 07:02:01,673 - INFO - [Raw response 3]: Có
+2026-05-20 07:02:01,674 - INFO - Predicted Answer (batch): ['Không', 'Không', [], 'Có']
+2026-05-20 07:02:02,223 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:02:02,344 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:02:02,359 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:02:02,360 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:02:02,361 - INFO - [Raw response 0]: Có
+2026-05-20 07:02:02,361 - INFO - [Raw response 1]: Không
+2026-05-20 07:02:02,361 - INFO - [Raw response 2]: Không
+2026-05-20 07:02:02,361 - INFO - [Raw response 3]: Không
+2026-05-20 07:02:02,361 - INFO - Predicted Answer (batch): ['Có', 'Không', 'Không', 'Không']
+2026-05-20 07:02:03,236 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:02:03,322 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:02:03,407 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:02:03,441 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:02:03,442 - INFO - [Raw response 0]: Không
+2026-05-20 07:02:03,442 - INFO - [Raw response 1]: Không
+2026-05-20 07:02:03,442 - INFO - [Raw response 2]: Không
+2026-05-20 07:02:03,442 - INFO - [Raw response 3]: Không
+2026-05-20 07:02:03,442 - INFO - Predicted Answer (batch): ['Không', 'Không', 'Không', 'Không']
+2026-05-20 07:02:04,070 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:02:04,159 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:02:04,160 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:02:05,369 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:02:05,370 - INFO - [Raw response 0]: Không
+2026-05-20 07:02:05,370 - INFO - [Raw response 1]: Không
+2026-05-20 07:02:05,370 - INFO - [Raw response 2]: Có
+2026-05-20 07:02:05,370 - INFO - [Raw response 3]: Dựa trên các văn bản bạn cung cấp, tôi xin tóm tắt và phân tích các quy trình liên quan đến thủ tục đất đai, tập trung vào các khía cạnh khác nhau:
+
+---
+
+## TÓM TẮT VÀ PHÂN TÍCH CÁC QUY TRÌ
+2026-05-20 07:02:05,370 - WARNING - Parse returned None at index 3 | finish_reason=length | usage={'prompt_tokens': 4096, 'completion_tokens': 64, 'total_tokens': 4160}
+2026-05-20 07:02:05,370 - INFO - Predicted Answer (batch): ['Không', 'Không', 'Có', []]
+2026-05-20 07:02:06,128 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:02:06,198 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:02:06,199 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:02:06,216 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:02:06,218 - INFO - [Raw response 0]: Không
+2026-05-20 07:02:06,218 - INFO - [Raw response 1]: Không
+2026-05-20 07:02:06,218 - INFO - [Raw response 2]: Không
+2026-05-20 07:02:06,218 - INFO - [Raw response 3]: Không
+2026-05-20 07:02:06,219 - INFO - Predicted Answer (batch): ['Không', 'Không', 'Không', 'Không']
+2026-05-20 07:02:06,679 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:02:06,895 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:02:07,047 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:02:07,126 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:02:07,127 - INFO - [Raw response 0]: Có
+2026-05-20 07:02:07,127 - INFO - [Raw response 1]: Không
+2026-05-20 07:02:07,127 - INFO - [Raw response 2]: Không
+2026-05-20 07:02:07,127 - INFO - [Raw response 3]: Không
+2026-05-20 07:02:07,127 - INFO - Predicted Answer (batch): ['Có', 'Không', 'Không', 'Không']
+2026-05-20 07:02:07,684 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:02:07,971 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:02:08,786 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:02:08,836 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:02:08,837 - INFO - [Raw response 0]: Không
+2026-05-20 07:02:08,837 - INFO - [Raw response 1]: Có
+2026-05-20 07:02:08,837 - INFO - [Raw response 2]: Có
+2026-05-20 07:02:08,837 - INFO - [Raw response 3]: Không
+2026-05-20 07:02:08,837 - INFO - Predicted Answer (batch): ['Không', 'Có', 'Có', 'Không']
+2026-05-20 07:02:09,237 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:02:09,367 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:02:09,368 - INFO - [Raw response 0]: Không
+2026-05-20 07:02:09,368 - INFO - [Raw response 1]: Không
+2026-05-20 07:02:09,368 - INFO - Predicted Answer (batch): ['Không', 'Không']

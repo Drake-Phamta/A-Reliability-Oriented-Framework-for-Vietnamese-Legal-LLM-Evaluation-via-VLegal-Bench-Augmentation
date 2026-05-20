@@ -1,0 +1,566 @@
+2026-05-20 07:08:00,583 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:00,650 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:00,727 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:00,740 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:00,741 - INFO - [Raw response 0]: A
+2026-05-20 07:08:00,741 - INFO - [Raw response 1]: C
+2026-05-20 07:08:00,741 - INFO - [Raw response 2]: B
+2026-05-20 07:08:00,741 - INFO - [Raw response 3]: A
+2026-05-20 07:08:00,742 - INFO - Predicted Answer (batch): ['A', 'C', 'B', 'A']
+2026-05-20 07:08:01,170 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:01,222 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:01,273 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:01,286 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:01,287 - INFO - [Raw response 0]: C
+2026-05-20 07:08:01,287 - INFO - [Raw response 1]: B
+2026-05-20 07:08:01,287 - INFO - [Raw response 2]: A
+2026-05-20 07:08:01,287 - INFO - [Raw response 3]: B
+2026-05-20 07:08:01,287 - INFO - Predicted Answer (batch): ['C', 'B', 'A', 'B']
+2026-05-20 07:08:01,696 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:01,772 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:01,814 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:01,828 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:01,828 - INFO - [Raw response 0]: C
+2026-05-20 07:08:01,828 - INFO - [Raw response 1]: D
+2026-05-20 07:08:01,829 - INFO - [Raw response 2]: A
+2026-05-20 07:08:01,829 - INFO - [Raw response 3]: D
+2026-05-20 07:08:01,829 - INFO - Predicted Answer (batch): ['C', 'D', 'A', 'D']
+2026-05-20 07:08:02,238 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:02,294 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:02,309 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:02,310 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:02,311 - INFO - [Raw response 0]: D
+2026-05-20 07:08:02,311 - INFO - [Raw response 1]: A
+2026-05-20 07:08:02,311 - INFO - [Raw response 2]: B
+2026-05-20 07:08:02,311 - INFO - [Raw response 3]: D
+2026-05-20 07:08:02,311 - INFO - Predicted Answer (batch): ['D', 'A', 'B', 'D']
+2026-05-20 07:08:02,777 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:02,833 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:02,848 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:02,849 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:02,850 - INFO - [Raw response 0]: D
+2026-05-20 07:08:02,850 - INFO - [Raw response 1]: D
+2026-05-20 07:08:02,850 - INFO - [Raw response 2]: B
+2026-05-20 07:08:02,850 - INFO - [Raw response 3]: A
+2026-05-20 07:08:02,850 - INFO - Predicted Answer (batch): ['D', 'D', 'B', 'A']
+2026-05-20 07:08:03,268 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:03,341 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:03,362 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:03,363 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:03,363 - INFO - [Raw response 0]: B
+2026-05-20 07:08:03,364 - INFO - [Raw response 1]: C
+2026-05-20 07:08:03,364 - INFO - [Raw response 2]: D
+2026-05-20 07:08:03,364 - INFO - [Raw response 3]: A
+2026-05-20 07:08:03,364 - INFO - Predicted Answer (batch): ['B', 'C', 'D', 'A']
+2026-05-20 07:08:03,751 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:03,844 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:03,891 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:03,905 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:03,905 - INFO - [Raw response 0]: D
+2026-05-20 07:08:03,905 - INFO - [Raw response 1]: A
+2026-05-20 07:08:03,906 - INFO - [Raw response 2]: A
+2026-05-20 07:08:03,906 - INFO - [Raw response 3]: C
+2026-05-20 07:08:03,906 - INFO - Predicted Answer (batch): ['D', 'A', 'A', 'C']
+2026-05-20 07:08:04,278 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:04,361 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:04,362 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:04,362 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:04,363 - INFO - [Raw response 0]: A
+2026-05-20 07:08:04,363 - INFO - [Raw response 1]: A
+2026-05-20 07:08:04,363 - INFO - [Raw response 2]: D
+2026-05-20 07:08:04,363 - INFO - [Raw response 3]: A
+2026-05-20 07:08:04,363 - INFO - Predicted Answer (batch): ['A', 'A', 'D', 'A']
+2026-05-20 07:08:04,798 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:04,799 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:04,832 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:04,846 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:04,847 - INFO - [Raw response 0]: C
+2026-05-20 07:08:04,847 - INFO - [Raw response 1]: D
+2026-05-20 07:08:04,847 - INFO - [Raw response 2]: A, C
+2026-05-20 07:08:04,848 - WARNING - Extracted 'A' from response: A, C
+2026-05-20 07:08:04,848 - INFO - [Raw response 3]: A
+2026-05-20 07:08:04,848 - INFO - Predicted Answer (batch): ['C', 'D', 'A', 'A']
+2026-05-20 07:08:05,206 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:05,295 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:05,296 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:05,297 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:05,298 - INFO - [Raw response 0]: A
+2026-05-20 07:08:05,298 - INFO - [Raw response 1]: C
+2026-05-20 07:08:05,298 - INFO - [Raw response 2]: B
+2026-05-20 07:08:05,298 - INFO - [Raw response 3]: D
+2026-05-20 07:08:05,298 - INFO - Predicted Answer (batch): ['A', 'C', 'B', 'D']
+2026-05-20 07:08:05,707 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:05,724 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:05,725 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:05,725 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:05,726 - INFO - [Raw response 0]: B
+2026-05-20 07:08:05,726 - INFO - [Raw response 1]: B
+2026-05-20 07:08:05,726 - INFO - [Raw response 2]: D
+2026-05-20 07:08:05,726 - INFO - [Raw response 3]: A
+2026-05-20 07:08:05,726 - INFO - Predicted Answer (batch): ['B', 'B', 'D', 'A']
+2026-05-20 07:08:06,099 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:06,141 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:06,206 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:06,207 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:06,207 - INFO - [Raw response 0]: B
+2026-05-20 07:08:06,207 - INFO - [Raw response 1]: C
+2026-05-20 07:08:06,207 - INFO - [Raw response 2]: B
+2026-05-20 07:08:06,208 - INFO - [Raw response 3]: B
+2026-05-20 07:08:06,208 - INFO - Predicted Answer (batch): ['B', 'C', 'B', 'B']
+2026-05-20 07:08:06,612 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:06,646 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:06,647 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:06,661 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:06,661 - INFO - [Raw response 0]: C
+2026-05-20 07:08:06,662 - INFO - [Raw response 1]: A
+2026-05-20 07:08:06,662 - INFO - [Raw response 2]: C
+2026-05-20 07:08:06,662 - INFO - [Raw response 3]: A
+2026-05-20 07:08:06,662 - INFO - Predicted Answer (batch): ['C', 'A', 'C', 'A']
+2026-05-20 07:08:07,033 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:07,075 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:07,143 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:07,144 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:07,144 - INFO - [Raw response 0]: D
+2026-05-20 07:08:07,144 - INFO - [Raw response 1]: B
+2026-05-20 07:08:07,144 - INFO - [Raw response 2]: C
+2026-05-20 07:08:07,145 - INFO - [Raw response 3]: C
+2026-05-20 07:08:07,145 - INFO - Predicted Answer (batch): ['D', 'B', 'C', 'C']
+2026-05-20 07:08:07,499 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:07,564 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:07,565 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:07,566 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:07,567 - INFO - [Raw response 0]: D
+2026-05-20 07:08:07,567 - INFO - [Raw response 1]: A
+2026-05-20 07:08:07,567 - INFO - [Raw response 2]: C
+2026-05-20 07:08:07,567 - INFO - [Raw response 3]: D
+2026-05-20 07:08:07,567 - INFO - Predicted Answer (batch): ['D', 'A', 'C', 'D']
+2026-05-20 07:08:07,957 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:08,054 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:08,055 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:08,113 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:08,114 - INFO - [Raw response 0]: D
+2026-05-20 07:08:08,114 - INFO - [Raw response 1]: D
+2026-05-20 07:08:08,114 - INFO - [Raw response 2]: A, B, D
+2026-05-20 07:08:08,114 - WARNING - Extracted 'A' from response: A, B, D
+2026-05-20 07:08:08,114 - INFO - [Raw response 3]: C
+2026-05-20 07:08:08,114 - INFO - Predicted Answer (batch): ['D', 'D', 'A', 'C']
+2026-05-20 07:08:08,470 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:08,561 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:08,567 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:08,568 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:08,568 - INFO - [Raw response 0]: B
+2026-05-20 07:08:08,568 - INFO - [Raw response 1]: B
+2026-05-20 07:08:08,569 - INFO - [Raw response 2]: D
+2026-05-20 07:08:08,569 - INFO - [Raw response 3]: A
+2026-05-20 07:08:08,569 - INFO - Predicted Answer (batch): ['B', 'B', 'D', 'A']
+2026-05-20 07:08:08,985 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:09,047 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:09,062 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:09,063 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:09,063 - INFO - [Raw response 0]: A
+2026-05-20 07:08:09,064 - INFO - [Raw response 1]: A
+2026-05-20 07:08:09,064 - INFO - [Raw response 2]: D
+2026-05-20 07:08:09,064 - INFO - [Raw response 3]: C
+2026-05-20 07:08:09,064 - INFO - Predicted Answer (batch): ['A', 'A', 'D', 'C']
+2026-05-20 07:08:09,446 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:09,481 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:09,514 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:09,527 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:09,529 - INFO - [Raw response 0]: A
+2026-05-20 07:08:09,529 - INFO - [Raw response 1]: A
+2026-05-20 07:08:09,529 - INFO - [Raw response 2]: B
+2026-05-20 07:08:09,529 - INFO - [Raw response 3]: A
+2026-05-20 07:08:09,529 - INFO - Predicted Answer (batch): ['A', 'A', 'B', 'A']
+2026-05-20 07:08:09,914 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:09,952 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:09,968 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:09,969 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:09,969 - INFO - [Raw response 0]: B
+2026-05-20 07:08:09,969 - INFO - [Raw response 1]: A
+2026-05-20 07:08:09,970 - INFO - [Raw response 2]: B
+2026-05-20 07:08:09,970 - INFO - [Raw response 3]: C
+2026-05-20 07:08:09,970 - INFO - Predicted Answer (batch): ['B', 'A', 'B', 'C']
+2026-05-20 07:08:10,333 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:10,414 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:10,454 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:10,468 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:10,468 - INFO - [Raw response 0]: B
+2026-05-20 07:08:10,468 - INFO - [Raw response 1]: C
+2026-05-20 07:08:10,469 - INFO - [Raw response 2]: A
+2026-05-20 07:08:10,469 - INFO - [Raw response 3]: D
+2026-05-20 07:08:10,469 - INFO - Predicted Answer (batch): ['B', 'C', 'A', 'D']
+2026-05-20 07:08:10,872 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:10,906 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:10,907 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:10,925 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:10,926 - INFO - [Raw response 0]: D
+2026-05-20 07:08:10,926 - INFO - [Raw response 1]: A
+2026-05-20 07:08:10,926 - INFO - [Raw response 2]: C
+2026-05-20 07:08:10,926 - INFO - [Raw response 3]: A
+2026-05-20 07:08:10,927 - INFO - Predicted Answer (batch): ['D', 'A', 'C', 'A']
+2026-05-20 07:08:11,291 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:11,349 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:11,351 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:11,394 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:11,395 - INFO - [Raw response 0]: B
+2026-05-20 07:08:11,395 - INFO - [Raw response 1]: C
+2026-05-20 07:08:11,395 - INFO - [Raw response 2]: C
+2026-05-20 07:08:11,395 - INFO - [Raw response 3]: B
+2026-05-20 07:08:11,395 - INFO - Predicted Answer (batch): ['B', 'C', 'C', 'B']
+2026-05-20 07:08:11,777 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:11,813 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:11,851 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:11,863 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:11,864 - INFO - [Raw response 0]: A
+2026-05-20 07:08:11,864 - INFO - [Raw response 1]: C
+2026-05-20 07:08:11,864 - INFO - [Raw response 2]: B
+2026-05-20 07:08:11,864 - INFO - [Raw response 3]: A
+2026-05-20 07:08:11,865 - INFO - Predicted Answer (batch): ['A', 'C', 'B', 'A']
+2026-05-20 07:08:12,222 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:12,299 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:12,299 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:12,313 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:12,314 - INFO - [Raw response 0]: D
+2026-05-20 07:08:12,314 - INFO - [Raw response 1]: D
+2026-05-20 07:08:12,314 - INFO - [Raw response 2]: D
+2026-05-20 07:08:12,314 - INFO - [Raw response 3]: D
+2026-05-20 07:08:12,314 - INFO - Predicted Answer (batch): ['D', 'D', 'D', 'D']
+2026-05-20 07:08:12,703 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:12,743 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:12,744 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:12,758 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:12,759 - INFO - [Raw response 0]: B
+2026-05-20 07:08:12,759 - INFO - [Raw response 1]: C
+2026-05-20 07:08:12,759 - INFO - [Raw response 2]: A
+2026-05-20 07:08:12,759 - INFO - [Raw response 3]: C
+2026-05-20 07:08:12,759 - INFO - Predicted Answer (batch): ['B', 'C', 'A', 'C']
+2026-05-20 07:08:13,225 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:13,241 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:13,241 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:13,242 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:13,243 - INFO - [Raw response 0]: D
+2026-05-20 07:08:13,243 - INFO - [Raw response 1]: A
+2026-05-20 07:08:13,243 - INFO - [Raw response 2]: C
+2026-05-20 07:08:13,243 - INFO - [Raw response 3]: B
+2026-05-20 07:08:13,243 - INFO - Predicted Answer (batch): ['D', 'A', 'C', 'B']
+2026-05-20 07:08:13,632 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:13,666 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:13,708 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:13,722 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:13,723 - INFO - [Raw response 0]: A
+2026-05-20 07:08:13,723 - INFO - [Raw response 1]: D
+2026-05-20 07:08:13,723 - INFO - [Raw response 2]: C
+2026-05-20 07:08:13,723 - INFO - [Raw response 3]: C
+2026-05-20 07:08:13,723 - INFO - Predicted Answer (batch): ['A', 'D', 'C', 'C']
+2026-05-20 07:08:14,087 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:14,129 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:14,207 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:14,207 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:14,208 - INFO - [Raw response 0]: A
+2026-05-20 07:08:14,208 - INFO - [Raw response 1]: C
+2026-05-20 07:08:14,208 - INFO - [Raw response 2]: D
+2026-05-20 07:08:14,208 - INFO - [Raw response 3]: C
+2026-05-20 07:08:14,208 - INFO - Predicted Answer (batch): ['A', 'C', 'D', 'C']
+2026-05-20 07:08:14,615 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:14,653 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:14,668 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:14,669 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:14,669 - INFO - [Raw response 0]: A
+2026-05-20 07:08:14,670 - INFO - [Raw response 1]: A
+2026-05-20 07:08:14,670 - INFO - [Raw response 2]: B
+2026-05-20 07:08:14,670 - INFO - [Raw response 3]: B
+2026-05-20 07:08:14,670 - INFO - Predicted Answer (batch): ['A', 'A', 'B', 'B']
+2026-05-20 07:08:15,062 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:15,126 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:15,167 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:15,180 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:15,181 - INFO - [Raw response 0]: D
+2026-05-20 07:08:15,181 - INFO - [Raw response 1]: C
+2026-05-20 07:08:15,181 - INFO - [Raw response 2]: C
+2026-05-20 07:08:15,181 - INFO - [Raw response 3]: A
+2026-05-20 07:08:15,181 - INFO - Predicted Answer (batch): ['D', 'C', 'C', 'A']
+2026-05-20 07:08:15,525 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:15,610 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:15,611 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:15,625 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:15,625 - INFO - [Raw response 0]: A
+2026-05-20 07:08:15,626 - INFO - [Raw response 1]: D
+2026-05-20 07:08:15,626 - INFO - [Raw response 2]: B
+2026-05-20 07:08:15,626 - INFO - [Raw response 3]: D
+2026-05-20 07:08:15,626 - INFO - Predicted Answer (batch): ['A', 'D', 'B', 'D']
+2026-05-20 07:08:15,996 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:16,095 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:16,096 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:16,109 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:16,110 - INFO - [Raw response 0]: B
+2026-05-20 07:08:16,110 - INFO - [Raw response 1]: A
+2026-05-20 07:08:16,110 - INFO - [Raw response 2]: A
+2026-05-20 07:08:16,110 - INFO - [Raw response 3]: B
+2026-05-20 07:08:16,110 - INFO - Predicted Answer (batch): ['B', 'A', 'A', 'B']
+2026-05-20 07:08:16,481 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:16,556 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:16,558 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:16,559 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:16,559 - INFO - [Raw response 0]: A
+2026-05-20 07:08:16,559 - INFO - [Raw response 1]: C
+2026-05-20 07:08:16,560 - INFO - [Raw response 2]: C
+2026-05-20 07:08:16,560 - INFO - [Raw response 3]: A
+2026-05-20 07:08:16,560 - INFO - Predicted Answer (batch): ['A', 'C', 'C', 'A']
+2026-05-20 07:08:16,981 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:16,997 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:16,998 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:16,998 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:16,999 - INFO - [Raw response 0]: B
+2026-05-20 07:08:16,999 - INFO - [Raw response 1]: A
+2026-05-20 07:08:16,999 - INFO - [Raw response 2]: C
+2026-05-20 07:08:16,999 - INFO - [Raw response 3]: B
+2026-05-20 07:08:17,000 - INFO - Predicted Answer (batch): ['B', 'A', 'C', 'B']
+2026-05-20 07:08:17,393 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:17,431 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:17,432 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:17,446 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:17,447 - INFO - [Raw response 0]: D
+2026-05-20 07:08:17,447 - INFO - [Raw response 1]: C
+2026-05-20 07:08:17,447 - INFO - [Raw response 2]: B
+2026-05-20 07:08:17,447 - INFO - [Raw response 3]: D
+2026-05-20 07:08:17,447 - INFO - Predicted Answer (batch): ['D', 'C', 'B', 'D']
+2026-05-20 07:08:17,797 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:17,873 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:17,874 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:17,875 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:17,876 - INFO - [Raw response 0]: C
+2026-05-20 07:08:17,876 - INFO - [Raw response 1]: B
+2026-05-20 07:08:17,876 - INFO - [Raw response 2]: C
+2026-05-20 07:08:17,876 - INFO - [Raw response 3]: B
+2026-05-20 07:08:17,876 - INFO - Predicted Answer (batch): ['C', 'B', 'C', 'B']
+2026-05-20 07:08:18,251 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:18,327 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:18,328 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:18,371 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:18,372 - INFO - [Raw response 0]: D
+2026-05-20 07:08:18,372 - INFO - [Raw response 1]: C
+2026-05-20 07:08:18,372 - INFO - [Raw response 2]: B
+2026-05-20 07:08:18,372 - INFO - [Raw response 3]: C
+2026-05-20 07:08:18,373 - INFO - Predicted Answer (batch): ['D', 'C', 'B', 'C']
+2026-05-20 07:08:18,740 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:18,814 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:18,815 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:18,857 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:18,858 - INFO - [Raw response 0]: A
+2026-05-20 07:08:18,858 - INFO - [Raw response 1]: D
+2026-05-20 07:08:18,858 - INFO - [Raw response 2]: C
+2026-05-20 07:08:18,858 - INFO - [Raw response 3]: C
+2026-05-20 07:08:18,858 - INFO - Predicted Answer (batch): ['A', 'D', 'C', 'C']
+2026-05-20 07:08:19,244 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:19,246 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:19,297 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:19,344 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:19,345 - INFO - [Raw response 0]: C
+2026-05-20 07:08:19,345 - INFO - [Raw response 1]: D
+2026-05-20 07:08:19,345 - INFO - [Raw response 2]: A, C, D
+2026-05-20 07:08:19,345 - WARNING - Extracted 'A' from response: A, C, D
+2026-05-20 07:08:19,345 - INFO - [Raw response 3]: C
+2026-05-20 07:08:19,345 - INFO - Predicted Answer (batch): ['C', 'D', 'A', 'C']
+2026-05-20 07:08:19,714 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:19,805 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:19,806 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:19,820 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:19,821 - INFO - [Raw response 0]: B
+2026-05-20 07:08:19,821 - INFO - [Raw response 1]: D
+2026-05-20 07:08:19,821 - INFO - [Raw response 2]: C
+2026-05-20 07:08:19,821 - INFO - [Raw response 3]: A
+2026-05-20 07:08:19,821 - INFO - Predicted Answer (batch): ['B', 'D', 'C', 'A']
+2026-05-20 07:08:20,235 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:20,302 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:20,317 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:20,318 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:20,319 - INFO - [Raw response 0]: B
+2026-05-20 07:08:20,319 - INFO - [Raw response 1]: B
+2026-05-20 07:08:20,319 - INFO - [Raw response 2]: B
+2026-05-20 07:08:20,319 - INFO - [Raw response 3]: C
+2026-05-20 07:08:20,319 - INFO - Predicted Answer (batch): ['B', 'B', 'B', 'C']
+2026-05-20 07:08:20,689 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:20,791 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:20,793 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:20,807 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:20,808 - INFO - [Raw response 0]: A
+2026-05-20 07:08:20,808 - INFO - [Raw response 1]: A
+2026-05-20 07:08:20,808 - INFO - [Raw response 2]: A
+2026-05-20 07:08:20,808 - INFO - [Raw response 3]: D
+2026-05-20 07:08:20,809 - INFO - Predicted Answer (batch): ['A', 'A', 'A', 'D']
+2026-05-20 07:08:21,189 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:21,266 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:21,281 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:21,282 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:21,283 - INFO - [Raw response 0]: C
+2026-05-20 07:08:21,283 - INFO - [Raw response 1]: A
+2026-05-20 07:08:21,283 - INFO - [Raw response 2]: A
+2026-05-20 07:08:21,283 - INFO - [Raw response 3]: B
+2026-05-20 07:08:21,283 - INFO - Predicted Answer (batch): ['C', 'A', 'A', 'B']
+2026-05-20 07:08:21,658 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:21,734 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:21,735 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:21,735 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:21,736 - INFO - [Raw response 0]: A
+2026-05-20 07:08:21,736 - INFO - [Raw response 1]: D
+2026-05-20 07:08:21,736 - INFO - [Raw response 2]: B
+2026-05-20 07:08:21,736 - INFO - [Raw response 3]: B
+2026-05-20 07:08:21,736 - INFO - Predicted Answer (batch): ['A', 'D', 'B', 'B']
+2026-05-20 07:08:22,194 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:22,195 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:22,202 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:22,217 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:22,217 - INFO - [Raw response 0]: A
+2026-05-20 07:08:22,218 - INFO - [Raw response 1]: A
+2026-05-20 07:08:22,218 - INFO - [Raw response 2]: C
+2026-05-20 07:08:22,218 - INFO - [Raw response 3]: A, D
+2026-05-20 07:08:22,218 - WARNING - Extracted 'A' from response: A, D
+2026-05-20 07:08:22,218 - INFO - Predicted Answer (batch): ['A', 'A', 'C', 'A']
+2026-05-20 07:08:22,623 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:22,638 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:22,639 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:22,691 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:22,692 - INFO - [Raw response 0]: D
+2026-05-20 07:08:22,692 - INFO - [Raw response 1]: D
+2026-05-20 07:08:22,692 - INFO - [Raw response 2]: A
+2026-05-20 07:08:22,692 - INFO - [Raw response 3]: D
+2026-05-20 07:08:22,692 - INFO - Predicted Answer (batch): ['D', 'D', 'A', 'D']
+2026-05-20 07:08:23,062 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:23,123 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:23,158 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:23,171 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:23,172 - INFO - [Raw response 0]: A
+2026-05-20 07:08:23,172 - INFO - [Raw response 1]: D
+2026-05-20 07:08:23,172 - INFO - [Raw response 2]: C
+2026-05-20 07:08:23,172 - INFO - [Raw response 3]: C
+2026-05-20 07:08:23,172 - INFO - Predicted Answer (batch): ['A', 'D', 'C', 'C']
+2026-05-20 07:08:23,529 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:23,630 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:23,631 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:23,645 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:23,646 - INFO - [Raw response 0]: A
+2026-05-20 07:08:23,646 - INFO - [Raw response 1]: B
+2026-05-20 07:08:23,646 - INFO - [Raw response 2]: B
+2026-05-20 07:08:23,646 - INFO - [Raw response 3]: A
+2026-05-20 07:08:23,646 - INFO - Predicted Answer (batch): ['A', 'B', 'B', 'A']
+2026-05-20 07:08:24,012 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:24,066 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:24,081 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:24,082 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:24,083 - INFO - [Raw response 0]: D
+2026-05-20 07:08:24,083 - INFO - [Raw response 1]: D
+2026-05-20 07:08:24,083 - INFO - [Raw response 2]: A
+2026-05-20 07:08:24,083 - INFO - [Raw response 3]: D
+2026-05-20 07:08:24,083 - INFO - Predicted Answer (batch): ['D', 'D', 'A', 'D']
+2026-05-20 07:08:24,435 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:24,521 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:24,522 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:24,523 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:24,524 - INFO - [Raw response 0]: A
+2026-05-20 07:08:24,524 - INFO - [Raw response 1]: A
+2026-05-20 07:08:24,524 - INFO - [Raw response 2]: A
+2026-05-20 07:08:24,524 - INFO - [Raw response 3]: B
+2026-05-20 07:08:24,524 - INFO - Predicted Answer (batch): ['A', 'A', 'A', 'B']
+2026-05-20 07:08:24,934 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:24,979 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:24,993 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:24,994 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:24,995 - INFO - [Raw response 0]: A
+2026-05-20 07:08:24,995 - INFO - [Raw response 1]: A
+2026-05-20 07:08:24,995 - INFO - [Raw response 2]: C
+2026-05-20 07:08:24,995 - INFO - [Raw response 3]: D
+2026-05-20 07:08:24,995 - INFO - Predicted Answer (batch): ['A', 'A', 'C', 'D']
+2026-05-20 07:08:25,405 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:25,472 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:25,487 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:25,487 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:25,488 - INFO - [Raw response 0]: B
+2026-05-20 07:08:25,488 - INFO - [Raw response 1]: C
+2026-05-20 07:08:25,488 - INFO - [Raw response 2]: A
+2026-05-20 07:08:25,488 - INFO - [Raw response 3]: A
+2026-05-20 07:08:25,489 - INFO - Predicted Answer (batch): ['B', 'C', 'A', 'A']
+2026-05-20 07:08:25,896 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:25,946 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:25,962 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:25,963 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:25,963 - INFO - [Raw response 0]: A
+2026-05-20 07:08:25,964 - INFO - [Raw response 1]: D
+2026-05-20 07:08:25,964 - INFO - [Raw response 2]: C
+2026-05-20 07:08:25,964 - INFO - [Raw response 3]: B
+2026-05-20 07:08:25,964 - INFO - Predicted Answer (batch): ['A', 'D', 'C', 'B']
+2026-05-20 07:08:26,328 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:26,406 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:26,407 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:26,443 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:26,444 - INFO - [Raw response 0]: A
+2026-05-20 07:08:26,444 - INFO - [Raw response 1]: C
+2026-05-20 07:08:26,444 - INFO - [Raw response 2]: A, D
+2026-05-20 07:08:26,444 - WARNING - Extracted 'A' from response: A, D
+2026-05-20 07:08:26,444 - INFO - [Raw response 3]: C
+2026-05-20 07:08:26,444 - INFO - Predicted Answer (batch): ['A', 'C', 'A', 'C']
+2026-05-20 07:08:26,825 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:26,913 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:26,914 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:26,915 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:26,916 - INFO - [Raw response 0]: D
+2026-05-20 07:08:26,916 - INFO - [Raw response 1]: C
+2026-05-20 07:08:26,916 - INFO - [Raw response 2]: A
+2026-05-20 07:08:26,916 - INFO - [Raw response 3]: A
+2026-05-20 07:08:26,916 - INFO - Predicted Answer (batch): ['D', 'C', 'A', 'A']
+2026-05-20 07:08:27,290 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:27,366 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:27,367 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:27,368 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:27,369 - INFO - [Raw response 0]: A
+2026-05-20 07:08:27,369 - INFO - [Raw response 1]: B
+2026-05-20 07:08:27,369 - INFO - [Raw response 2]: B
+2026-05-20 07:08:27,369 - INFO - [Raw response 3]: C
+2026-05-20 07:08:27,369 - INFO - Predicted Answer (batch): ['A', 'B', 'B', 'C']
+2026-05-20 07:08:27,740 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:27,815 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:27,816 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:27,816 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:27,817 - INFO - [Raw response 0]: B
+2026-05-20 07:08:27,817 - INFO - [Raw response 1]: A
+2026-05-20 07:08:27,817 - INFO - [Raw response 2]: B
+2026-05-20 07:08:27,817 - INFO - [Raw response 3]: C
+2026-05-20 07:08:27,818 - INFO - Predicted Answer (batch): ['B', 'A', 'B', 'C']
+2026-05-20 07:08:28,188 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:28,279 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:28,279 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:28,280 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:28,281 - INFO - [Raw response 0]: A
+2026-05-20 07:08:28,281 - INFO - [Raw response 1]: C
+2026-05-20 07:08:28,281 - INFO - [Raw response 2]: D
+2026-05-20 07:08:28,281 - INFO - [Raw response 3]: C
+2026-05-20 07:08:28,281 - INFO - Predicted Answer (batch): ['A', 'C', 'D', 'C']
+2026-05-20 07:08:28,684 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:28,766 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:28,768 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:28,769 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:28,770 - INFO - [Raw response 0]: C
+2026-05-20 07:08:28,770 - INFO - [Raw response 1]: A
+2026-05-20 07:08:28,770 - INFO - [Raw response 2]: C
+2026-05-20 07:08:28,770 - INFO - [Raw response 3]: C
+2026-05-20 07:08:28,770 - INFO - Predicted Answer (batch): ['C', 'A', 'C', 'C']
+2026-05-20 07:08:29,168 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:29,197 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:29,198 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:29,211 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:29,212 - INFO - [Raw response 0]: A
+2026-05-20 07:08:29,212 - INFO - [Raw response 1]: B
+2026-05-20 07:08:29,212 - INFO - [Raw response 2]: A
+2026-05-20 07:08:29,213 - INFO - [Raw response 3]: A
+2026-05-20 07:08:29,213 - INFO - Predicted Answer (batch): ['A', 'B', 'A', 'A']
+2026-05-20 07:08:29,638 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:29,714 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:29,739 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:29,740 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:29,741 - INFO - [Raw response 0]: B
+2026-05-20 07:08:29,741 - INFO - [Raw response 1]: B
+2026-05-20 07:08:29,741 - INFO - [Raw response 2]: A
+2026-05-20 07:08:29,741 - INFO - [Raw response 3]: C
+2026-05-20 07:08:29,741 - INFO - Predicted Answer (batch): ['B', 'B', 'A', 'C']
+2026-05-20 07:08:30,065 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 07:08:30,065 - INFO - [Raw response 0]: A
+2026-05-20 07:08:30,066 - INFO - Predicted Answer (batch): ['A']

@@ -1,0 +1,1153 @@
+2026-05-20 06:49:24,589 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:24,650 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:24,678 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:24,736 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:24,737 - INFO - [Raw response 0]: ["Điểm b / Khoản 35 / Điều 1 / Nghị định 17/2019/NĐ-CP + sửa đổi bổ sung + Nghị định số 07/2017/NĐ-CP"]
+2026-05-20 06:49:24,737 - INFO - [Raw response 1]: ["Khoản 4 / Điều 16 / Chương VI / Nghị định 140/2018/NĐ-CP + sửa đổi bổ sung + điểm b Khoản 1 Điều 29"]
+2026-05-20 06:49:24,737 - INFO - [Raw response 2]: ["Khoản 8 / Điều 1 / Thông tư 56/2018/TT-BGTVT + sửa đổi bổ sung + Phần 12 Bộ QCATHK"]
+2026-05-20 06:49:24,737 - INFO - [Raw response 3]: ["Khoản 3 / Điều 1 / Thông tư 89/2018/TT-BTC + sửa đổi bổ sung + điểm b, điểm h, điểm i khoản 1 Điều 3"]
+2026-05-20 06:49:24,737 - INFO - Predicted Answer (batch): [[('Điểm b / Khoản 35 / Điều 1 / Nghị định 17/2019/NĐ-CP', 'sửa đổi bổ sung', 'Nghị định số 07/2017/NĐ-CP')], [('Khoản 4 / Điều 16 / Chương VI / Nghị định 140/2018/NĐ-CP', 'sửa đổi bổ sung', 'điểm b Khoản 1 Điều 29')], [('Khoản 8 / Điều 1 / Thông tư 56/2018/TT-BGTVT', 'sửa đổi bổ sung', 'Phần 12 Bộ QCATHK')], [('Khoản 3 / Điều 1 / Thông tư 89/2018/TT-BTC', 'sửa đổi bổ sung', 'điểm b, điểm h, điểm i khoản 1 Điều 3')]]
+2026-05-20 06:49:25,876 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:26,318 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:27,681 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:28,712 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:28,713 - INFO - [Raw response 0]: [
+  [
+    "Điểm a / Khoản 6 / Điều 5 / Nghị định 140/2018/NĐ-CP",
+    "sửa đổi bổ sung",
+    "điểm b Khoản 2"
+  ]
+]
+2026-05-20 06:49:28,713 - INFO - [Raw response 1]: ["Điều 15 / Chương V / Nghị định 140/2018/NĐ-CP + bãi bỏ + Điều 23, Điều 24, Điều 28, Điều 29 của Nghị định số 166/2016/NĐ-CP ngày 24 tháng 12 năm 2016 quy định về giao dịch điện tử trong lĩnh vực bảo hiểm xã hội, bảo hiểm y tế và bảo hiểm thất nghiệp và Điều 15 Nghị định số 134/2015/NĐ-CP ngày 29 tháng 12 năm 2015 của Chính phủ quy định chi tiết một số điều của Luật Bảo hiểm xã hội về bảo hiểm xã hội tự nguyện"]
+2026-05-20 06:49:28,713 - INFO - [Raw response 2]: ["Điều 6 + sửa đổi + Điều 72/2015/TT-BTC", "Khoản 3 Điều 7 + sửa đổi bổ sung + Điều 72/2015/TT-BTC", "Điều 8 + sửa đổi bổ sung + Điều 72/2015/TT-BTC", "Điều 9 + sửa đổi bổ sung + Điều 72/2015/TT-BTC", "Khoản 1 Điều 18 + sửa đổi + Điều 72/2015/TT-BTC", "Điều 19 + sửa đổi bổ sung + Điều 72/2015/TT-BTC", "Điều 20a + bổ sung + Điều 72/2015/TT-BTC", "Điều 23 + sửa đổi bổ sung + Điều 72/2015/TT-BTC", "Điều 25 + sửa đổi bổ sung + Điều 72/2015/TT-BTC", "Khoản 3 Điều 26 + sửa đổi, bổ sung + Điều 72/2015/TT-BTC"]
+2026-05-20 06:49:28,714 - INFO - [Raw response 3]: ["Khoản 1 / Điều 2 / Thông tư 21/2020/TT-BGTVT + sửa đổi bổ sung + Điều 4"]
+2026-05-20 06:49:28,714 - INFO - Predicted Answer (batch): [[('Điểm a / Khoản 6 / Điều 5 / Nghị định 140/2018/NĐ-CP', 'sửa đổi bổ sung', 'điểm b Khoản 2')], [('Điều 15 / Chương V / Nghị định 140/2018/NĐ-CP', 'bãi bỏ', 'Điều 23, Điều 24, Điều 28, Điều 29 của Nghị định số 166/2016/NĐ-CP ngày 24 tháng 12 năm 2016 quy định về giao dịch điện tử trong lĩnh vực bảo hiểm xã hội, bảo hiểm y tế và bảo hiểm thất nghiệp và Điều 15 Nghị định số 134/2015/NĐ-CP ngày 29 tháng 12 năm 2015 của Chính phủ quy định chi tiết một số điều của Luật Bảo hiểm xã hội về bảo hiểm xã hội tự nguyện')], [('Điều 6', 'sửa đổi', 'Điều 72/2015/TT-BTC'), ('Khoản 3 Điều 7', 'sửa đổi bổ sung', 'Điều 72/2015/TT-BTC'), ('Điều 8', 'sửa đổi bổ sung', 'Điều 72/2015/TT-BTC'), ('Điều 9', 'sửa đổi bổ sung', 'Điều 72/2015/TT-BTC'), ('Khoản 1 Điều 18', 'sửa đổi', 'Điều 72/2015/TT-BTC'), ('Điều 19', 'sửa đổi bổ sung', 'Điều 72/2015/TT-BTC'), ('Điều 20a', 'bổ sung', 'Điều 72/2015/TT-BTC'), ('Điều 23', 'sửa đổi bổ sung', 'Điều 72/2015/TT-BTC'), ('Điều 25', 'sửa đổi bổ sung', 'Điều 72/2015/TT-BTC'), ('Khoản 3 Điều 26', 'sửa đổi, bổ sung', 'Điều 72/2015/TT-BTC')], [('Khoản 1 / Điều 2 / Thông tư 21/2020/TT-BGTVT', 'sửa đổi bổ sung', 'Điều 4')]]
+2026-05-20 06:49:29,993 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:30,042 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:30,326 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:30,440 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:30,441 - INFO - [Raw response 0]: [
+  [
+    "Điểm a / Khoản 4 / Điều 1 / Thông tư 03/2024/TT-BGTVT",
+    "sửa đổi bổ sung",
+    "Thông tư 27/2011/TT-BGTVT"
+  ]
+]
+2026-05-20 06:49:30,441 - INFO - [Raw response 1]: ["Khoản 4 / Điều 1 / Thông tư 136/2018/TT-BTC + sửa đổi + Điều 8 Thông tư số 13/2017/TT-BTC"]
+2026-05-20 06:49:30,441 - INFO - [Raw response 2]: ["Điểm d / Khoản 2 / Điều 7 / Thông tư 17/2023/TT-BYT + bãi bỏ + điểm đ khoản 1 Điều 6 Thông tư số 48/2015/TT-BYT ngày 01 tháng 12 năm 2015 của Bộ trưởng Bộ Y tế"]
+2026-05-20 06:49:30,441 - INFO - [Raw response 3]: ["Khoản 4 / Điều 3 / Thông tư 04/2025/TT-BCA + sửa đổi bổ sung + các điểm a, b, c, và d khoản 2 Điều 84"]
+2026-05-20 06:49:30,441 - INFO - Predicted Answer (batch): [[('Điểm a / Khoản 4 / Điều 1 / Thông tư 03/2024/TT-BGTVT', 'sửa đổi bổ sung', 'Thông tư 27/2011/TT-BGTVT')], [('Khoản 4 / Điều 1 / Thông tư 136/2018/TT-BTC', 'sửa đổi', 'Điều 8 Thông tư số 13/2017/TT-BTC')], [('Điểm d / Khoản 2 / Điều 7 / Thông tư 17/2023/TT-BYT', 'bãi bỏ', 'điểm đ khoản 1 Điều 6 Thông tư số 48/2015/TT-BYT ngày 01 tháng 12 năm 2015 của Bộ trưởng Bộ Y tế')], [('Khoản 4 / Điều 3 / Thông tư 04/2025/TT-BCA', 'sửa đổi bổ sung', 'các điểm a, b, c, và d khoản 2 Điều 84')]]
+2026-05-20 06:49:31,645 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:31,676 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:31,690 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:31,782 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:31,782 - INFO - [Raw response 0]: ["Điểm a / Khoản 2 / Điều 1 / Nghị định 139/2020/NĐ-CP + sửa đổi bổ sung + điểm a khoản 3 Điều 2"]
+2026-05-20 06:49:31,783 - INFO - [Raw response 1]: ["Điểm a / Khoản 5 / Điều 1 / Nghị định 04/2024/NĐ-CP + sửa đổi bổ sung + Nghị định 118/2014/NĐ-CP"]
+2026-05-20 06:49:31,783 - INFO - [Raw response 2]: ["Khoản 8 / Điều 5 / Nghị định 140/2018/NĐ-CP + sửa đổi bổ sung + khoản 8 Điều 18"]
+2026-05-20 06:49:31,783 - INFO - [Raw response 3]: ["Khoản 10 / Điều 1 / Thông tư 04/2025/TT-BCA + bổ sung + điểm d sau điểm c khoản 1 Điều 33"]
+2026-05-20 06:49:31,783 - INFO - Predicted Answer (batch): [[('Điểm a / Khoản 2 / Điều 1 / Nghị định 139/2020/NĐ-CP', 'sửa đổi bổ sung', 'điểm a khoản 3 Điều 2')], [('Điểm a / Khoản 5 / Điều 1 / Nghị định 04/2024/NĐ-CP', 'sửa đổi bổ sung', 'Nghị định 118/2014/NĐ-CP')], [('Khoản 8 / Điều 5 / Nghị định 140/2018/NĐ-CP', 'sửa đổi bổ sung', 'khoản 8 Điều 18')], [('Khoản 10 / Điều 1 / Thông tư 04/2025/TT-BCA', 'bổ sung', 'điểm d sau điểm c khoản 1 Điều 33')]]
+2026-05-20 06:49:33,020 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:33,071 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:33,085 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:33,310 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:33,311 - INFO - [Raw response 0]: ["Khoản 1 / Điều 6 / Nghị định 140/2018/NĐ-CP + bãi bỏ + Khoản 2 Điều 3."]
+2026-05-20 06:49:33,311 - INFO - [Raw response 1]: ["Khoản 1 / Điều 1 / Thông tư 89/2018/TT-BTC + sửa đổi bổ sung + Thông tư số 91/2012/TT-BTC"]
+2026-05-20 06:49:33,311 - INFO - [Raw response 2]: ["Điều 1 / Nghị định 77/NĐ-CP + bổ sung + khoản 11 Điều 9 Nghị định số 187/2013/NĐ-CP"]
+2026-05-20 06:49:33,311 - INFO - [Raw response 3]: ["Điểm a, b, c Khoản 4 Điều 2 của Thông tư số 24/2018/TT-BYT + sửa đổi, bổ sung + Khoản 1 / Điều 1 / Thông tư 05/2020/TT-BYT"]
+2026-05-20 06:49:33,311 - INFO - Predicted Answer (batch): [[('Khoản 1 / Điều 6 / Nghị định 140/2018/NĐ-CP', 'bãi bỏ', 'Khoản 2 Điều 3.')], [('Khoản 1 / Điều 1 / Thông tư 89/2018/TT-BTC', 'sửa đổi bổ sung', 'Thông tư số 91/2012/TT-BTC')], [('Điều 1 / Nghị định 77/NĐ-CP', 'bổ sung', 'khoản 11 Điều 9 Nghị định số 187/2013/NĐ-CP')], [('Điểm a, b, c Khoản 4 Điều 2 của Thông tư số 24/2018/TT-BYT', 'sửa đổi, bổ sung', 'Khoản 1 / Điều 1 / Thông tư 05/2020/TT-BYT')]]
+2026-05-20 06:49:34,715 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:34,811 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:34,880 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:35,071 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:35,072 - INFO - [Raw response 0]: ["Khoản 4 / Điều 3 / Thông tư 21/2020/TT-BGTVT + bãi bỏ + Mẫu QLB-7 ban hành kèm theo Thông tư số 33/2016/TT-BGTVT"]
+2026-05-20 06:49:35,072 - INFO - [Raw response 1]: ["Khoản 2 / Điều 1 / Nghị định 83/2024/NĐ-CP + sửa đổi bổ sung + điểm a, b khoản 5 Điều 22 của Nghị định số 123/2016/NĐ-CP"]
+2026-05-20 06:49:35,072 - INFO - [Raw response 2]: ["Khoản 4 / Điều 1 / Thông tư 07/2019/TT-BGTVT + sửa đổi bổ sung + Thông tư số 52/2017/TT-BGTVT"]
+2026-05-20 06:49:35,072 - INFO - [Raw response 3]: [
+"Điểm đ / Khoản 3 / Điều 1 / Thông tư 25/2016/TT_NHNN + bổ sung + khoản 7 vào Điều 8",
+"Khoản 3 / Điều 1 / Thông tư 25/2016/TT_NHNN + sửa đổi + Điều 8"
+]
+2026-05-20 06:49:35,072 - INFO - Predicted Answer (batch): [[('Khoản 4 / Điều 3 / Thông tư 21/2020/TT-BGTVT', 'bãi bỏ', 'Mẫu QLB-7 ban hành kèm theo Thông tư số 33/2016/TT-BGTVT')], [('Khoản 2 / Điều 1 / Nghị định 83/2024/NĐ-CP', 'sửa đổi bổ sung', 'điểm a, b khoản 5 Điều 22 của Nghị định số 123/2016/NĐ-CP')], [('Khoản 4 / Điều 1 / Thông tư 07/2019/TT-BGTVT', 'sửa đổi bổ sung', 'Thông tư số 52/2017/TT-BGTVT')], [('Điểm đ / Khoản 3 / Điều 1 / Thông tư 25/2016/TT_NHNN', 'bổ sung', 'khoản 7 vào Điều 8'), ('Khoản 3 / Điều 1 / Thông tư 25/2016/TT_NHNN', 'sửa đổi', 'Điều 8')]]
+2026-05-20 06:49:36,267 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:36,372 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:36,710 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:38,305 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:38,306 - INFO - [Raw response 0]: ["Điều 5 / Nghị định 77/NĐ-CP + bổ sung + Điều 11c Nghị định số 187/2013/NĐ-CP"]
+2026-05-20 06:49:38,306 - INFO - [Raw response 1]: ["Điều 3 / Thông tư 04/2025/TT-BCA + sửa đổi bổ sung + Thông tư số 36/2019/TT-BCA ngày 18 tháng 9 năm 2019 của Bộ trưởng Bộ Công an quy định về Nghi lễ Công an nhân dân"]
+2026-05-20 06:49:38,306 - INFO - [Raw response 2]: ["Khoản 1 / Điều 4 / Thông tư 18/2018/TT-BLĐTBXH, sửa đổi bổ sung, Thông tư liên tịch về Đơn đề nghị cấp chính sách nội trú - Dùng cho học sinh, sinh viên đang học tại các cơ sở giáo dục nghề nghiệp công lập; Đơn đề nghị cấp chính sách nội trú - Dùng cho học sinh, sinh viên đang học tại các cơ sở giáo dục nghề nghiệp tư thục hoặc cơ sở giáo dục nghề nghiệp có vốn đầu tư nước ngoài; Đơn đề nghị xác nhận và cấp hỗ trợ - Dùng cho học sinh, sinh viên đang học tại các cơ sở giáo dục nghề nghiệp công lập; Đơn đề nghị xác nhận và cấp hỗ trợ - Dùng cho học sinh, sinh viên đang học tại các cơ sở giáo dục nghề nghiệp tư thục hoặc cơ sở giáo dục nghề nghiệp có vốn đầu tư nước ngoài (Phụ lục II, Phụ lục III, Phụ lục IV, Phụ lục V kèm theo)"]
+2026-05-20 06:49:38,306 - WARNING - No valid triplets parsed from response: ["Khoản 1 / Điều 4 / Thông tư 18/2018/TT-BLĐTBXH, sửa đổi bổ sung, Thông tư liên tịch về Đơn đề nghị cấp chính sách nội trú - Dùng cho học sinh, sinh viên đang học tại các cơ sở giáo dục nghề nghiệp công lập; Đơn đề nghị cấp chính sách nội trú - Dùng cho học sinh, sinh viên đang học tại các cơ sở giáo dục nghề nghiệp tư thục hoặc cơ sở giáo dục nghề nghiệp có vốn đầu tư nước ngoài; Đơn đề nghị xác nhận và cấp hỗ trợ - Dùng cho học sinh, sinh viên đang học tại các cơ sở giáo dục nghề nghiệp công lập; Đơn đề nghị xác nhận và cấp hỗ trợ - Dùng cho học sinh, sinh viên đang học tại các cơ sở giáo dục nghề nghiệp tư thục hoặc cơ sở giáo dục nghề nghiệp có vốn đầu tư nước ngoài (Phụ lục II, Phụ lục III, Phụ lục IV, Phụ lục V kèm theo)"]
+2026-05-20 06:49:38,306 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 867, 'completion_tokens': 216, 'total_tokens': 1083}
+2026-05-20 06:49:38,307 - INFO - [Raw response 3]: ["Khoản 2 / Điều 3 / Thông tư 42/2018/TT-NHNN + sửa đổi bổ sung + Thông tư số 24/2015/TT-NHNN"]
+2026-05-20 06:49:38,307 - INFO - Predicted Answer (batch): [[('Điều 5 / Nghị định 77/NĐ-CP', 'bổ sung', 'Điều 11c Nghị định số 187/2013/NĐ-CP')], [('Điều 3 / Thông tư 04/2025/TT-BCA', 'sửa đổi bổ sung', 'Thông tư số 36/2019/TT-BCA ngày 18 tháng 9 năm 2019 của Bộ trưởng Bộ Công an quy định về Nghi lễ Công an nhân dân')], [], [('Khoản 2 / Điều 3 / Thông tư 42/2018/TT-NHNN', 'sửa đổi bổ sung', 'Thông tư số 24/2015/TT-NHNN')]]
+2026-05-20 06:49:39,476 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:39,478 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:39,520 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:39,545 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:39,545 - INFO - [Raw response 0]: ["Khoản 3 / Điều 2 / Thông tư 08/2018/TT-BKHĐT + bổ sung + Điểm e Khoản 3 Điều 2"]
+2026-05-20 06:49:39,546 - INFO - [Raw response 1]: ["Khoản 4 / Điều 4 / Thông tư 83/2023/TT-BQP + sửa đổi bổ sung + điểm d khoản 1 Điều 8"]
+2026-05-20 06:49:39,546 - INFO - [Raw response 2]: ["Điều 5 / Nghị định 140/2018/NĐ-CP + sửa đổi bổ sung + Nghị định số 143/2016/NĐ-CP"]
+2026-05-20 06:49:39,546 - INFO - [Raw response 3]: ["Khoản 4 / Điều 3 / Thông tư 03/2024/TT-BCA + bổ sung + khoản 3 vào sau khoản 2 Điều 9"]
+2026-05-20 06:49:39,546 - INFO - Predicted Answer (batch): [[('Khoản 3 / Điều 2 / Thông tư 08/2018/TT-BKHĐT', 'bổ sung', 'Điểm e Khoản 3 Điều 2')], [('Khoản 4 / Điều 4 / Thông tư 83/2023/TT-BQP', 'sửa đổi bổ sung', 'điểm d khoản 1 Điều 8')], [('Điều 5 / Nghị định 140/2018/NĐ-CP', 'sửa đổi bổ sung', 'Nghị định số 143/2016/NĐ-CP')], [('Khoản 4 / Điều 3 / Thông tư 03/2024/TT-BCA', 'bổ sung', 'khoản 3 vào sau khoản 2 Điều 9')]]
+2026-05-20 06:49:40,440 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:40,612 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:40,766 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:41,529 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:41,530 - INFO - [Raw response 0]: ["Điều 3 Thông tư số 29/2015/TT-NHNN ngày 22 tháng 12 năm 2015 của Thống đốc Ngân hàng Nhà nước Việt Nam sửa đổi, bổ sung một số văn bản quy phạm pháp luật của Ngân hàng Nhà nước Việt Nam quy định về thành phần hồ sơ có bản sao chứng thực giấy tờ, văn bản + sửa đổi bổ sung + Điểm a / Khoản 2 / Điều 4 / Thông tư 23/2022/TT-NHNN"]
+2026-05-20 06:49:41,530 - INFO - [Raw response 1]: ["Khoản 2 / Điều 4 / Thông tư 03/2024/TT-BCA + sửa đổi bổ sung + Thông tư số 42/2017/TT-BCA"]
+2026-05-20 06:49:41,530 - INFO - [Raw response 2]: ["Điều 3 / sửa đổi bổ sung / Thông tư số 28/2015/TT-BCT"]
+2026-05-20 06:49:41,530 - WARNING - No valid triplets parsed from response: ["Điều 3 / sửa đổi bổ sung / Thông tư số 28/2015/TT-BCT"]
+2026-05-20 06:49:41,530 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 572, 'completion_tokens': 28, 'total_tokens': 600}
+2026-05-20 06:49:41,530 - INFO - [Raw response 3]: ["Khoản 1 / Điều 1 / Thông tư 83/2023/TT-BQP + sửa đổi + Khoản 1 Điều 1"]
+2026-05-20 06:49:41,531 - INFO - Predicted Answer (batch): [[('Điều 3 Thông tư số 29/2015/TT-NHNN ngày 22 tháng 12 năm 2015 của Thống đốc Ngân hàng Nhà nước Việt Nam sửa đổi, bổ sung một số văn bản quy phạm pháp luật của Ngân hàng Nhà nước Việt Nam quy định về thành phần hồ sơ có bản sao chứng thực giấy tờ, văn bản', 'sửa đổi bổ sung', 'Điểm a / Khoản 2 / Điều 4 / Thông tư 23/2022/TT-NHNN')], [('Khoản 2 / Điều 4 / Thông tư 03/2024/TT-BCA', 'sửa đổi bổ sung', 'Thông tư số 42/2017/TT-BCA')], [], [('Khoản 1 / Điều 1 / Thông tư 83/2023/TT-BQP', 'sửa đổi', 'Khoản 1 Điều 1')]]
+2026-05-20 06:49:42,647 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:42,664 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:42,846 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:42,903 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:42,904 - INFO - [Raw response 0]: ["Khoản 5 / Điều 1 / Thông tư 07/2019/TT-BGTVT + sửa đổi bổ sung + Thông tư số 52/2017/TT-BGTVT"]
+2026-05-20 06:49:42,904 - INFO - [Raw response 1]: ["Khoản 4 / Điều 3 / Luật 28/2018/QH14 + sửa đổi bổ sung + điểm a khoản 6 Điều 10"]
+2026-05-20 06:49:42,904 - INFO - [Raw response 2]: ["Điều 9 / Nghị định 77/NĐ-CP + sửa đổi bổ sung + các điểm c, d, đ, h, i khoản 1 Điều 15 của Nghị định số 38/2014/NĐ-CP"]
+2026-05-20 06:49:42,904 - INFO - [Raw response 3]: ["Khoản 8 / Điều 1 / Thông tư 27/2024/TT-BGTVT + sửa đổi bổ sung + Phần 8 Bộ QCATHK"]
+2026-05-20 06:49:42,904 - INFO - Predicted Answer (batch): [[('Khoản 5 / Điều 1 / Thông tư 07/2019/TT-BGTVT', 'sửa đổi bổ sung', 'Thông tư số 52/2017/TT-BGTVT')], [('Khoản 4 / Điều 3 / Luật 28/2018/QH14', 'sửa đổi bổ sung', 'điểm a khoản 6 Điều 10')], [('Điều 9 / Nghị định 77/NĐ-CP', 'sửa đổi bổ sung', 'các điểm c, d, đ, h, i khoản 1 Điều 15 của Nghị định số 38/2014/NĐ-CP')], [('Khoản 8 / Điều 1 / Thông tư 27/2024/TT-BGTVT', 'sửa đổi bổ sung', 'Phần 8 Bộ QCATHK')]]
+2026-05-20 06:49:43,970 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:44,182 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:44,264 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:44,813 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:44,814 - INFO - [Raw response 0]: ["Khoản 3 / Điều 3 / Thông tư 03/2024/TT-BCA + sửa đổi bổ sung + Thông tư số 42/2017/TT-BCA"]
+2026-05-20 06:49:44,814 - INFO - [Raw response 1]: ["Khoản 1 / Điều 1 / Luật 28/2018/QH14 + sửa đổi bổ sung + khoản 1 Điều 4"]
+2026-05-20 06:49:44,814 - INFO - [Raw response 2]: ["điểm b khoản 2 Điều 4 / Thông tư 18/2018/TT-BLĐTBXH + bãi bỏ + Điều 4 / Thông tư 18/2018/TT-BLĐTBXH"]
+2026-05-20 06:49:44,814 - INFO - [Raw response 3]: ["Khoản 4 / Điều 2 / Thông tư 03/2024/TT-BCA + sửa đổi bổ sung + Thông tư số 43/2017/TT-BCA ngày 20 tháng 10 năm 2017 của Bộ trưởng Bộ Công an quy định về trình tự cấp, thu hồi Giấy chứng nhận đủ điều kiện về an ninh, trật tự và sát hạch, cấp Chứng chỉ nghiệp vụ bảo vệ"]
+2026-05-20 06:49:44,814 - INFO - Predicted Answer (batch): [[('Khoản 3 / Điều 3 / Thông tư 03/2024/TT-BCA', 'sửa đổi bổ sung', 'Thông tư số 42/2017/TT-BCA')], [('Khoản 1 / Điều 1 / Luật 28/2018/QH14', 'sửa đổi bổ sung', 'khoản 1 Điều 4')], [('điểm b khoản 2 Điều 4 / Thông tư 18/2018/TT-BLĐTBXH', 'bãi bỏ', 'Điều 4 / Thông tư 18/2018/TT-BLĐTBXH')], [('Khoản 4 / Điều 2 / Thông tư 03/2024/TT-BCA', 'sửa đổi bổ sung', 'Thông tư số 43/2017/TT-BCA ngày 20 tháng 10 năm 2017 của Bộ trưởng Bộ Công an quy định về trình tự cấp, thu hồi Giấy chứng nhận đủ điều kiện về an ninh, trật tự và sát hạch, cấp Chứng chỉ nghiệp vụ bảo vệ')]]
+2026-05-20 06:49:45,851 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:45,865 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:45,921 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:46,088 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:46,089 - INFO - [Raw response 0]: ["Khoản 2 / Điều 6 / Luật 28/2018/QH14 + sửa đổi bổ sung + Điều 9"]
+2026-05-20 06:49:46,089 - INFO - [Raw response 1]: ["Khoản 3 / Điều 6 / Nghị định 140/2018/NĐ-CP + bãi bỏ + Khoản 4 Điều 6."]
+2026-05-20 06:49:46,089 - INFO - [Raw response 2]: ["Khoản 6 / Điều 4 / Thông tư 17/2023/TT-BYT + sửa đổi bổ sung + Điều 10"]
+2026-05-20 06:49:46,089 - INFO - [Raw response 3]: ["Khoản 3 Điều 18 của Thông tư số 24/2018/TT-BGTVT + bãi bỏ + Điều 2 / Thông tư 11/2019/TT-BGTVT"]
+2026-05-20 06:49:46,089 - INFO - Predicted Answer (batch): [[('Khoản 2 / Điều 6 / Luật 28/2018/QH14', 'sửa đổi bổ sung', 'Điều 9')], [('Khoản 3 / Điều 6 / Nghị định 140/2018/NĐ-CP', 'bãi bỏ', 'Khoản 4 Điều 6.')], [('Khoản 6 / Điều 4 / Thông tư 17/2023/TT-BYT', 'sửa đổi bổ sung', 'Điều 10')], [('Khoản 3 Điều 18 của Thông tư số 24/2018/TT-BGTVT', 'bãi bỏ', 'Điều 2 / Thông tư 11/2019/TT-BGTVT')]]
+2026-05-20 06:49:47,160 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:47,206 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:47,275 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:47,364 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:47,365 - INFO - [Raw response 0]: ["Khoản 9 / Điều 1 / Thông tư 31/2022/TT-BCT + sửa đổi bổ sung + khoản 1 Điều 11"]
+2026-05-20 06:49:47,365 - INFO - [Raw response 1]: ["Khoản 2 / Điều 1 / Thông tư 03/2024/TT-BCA + sửa đổi bổ sung + khoản 3 Điều 6"]
+2026-05-20 06:49:47,365 - INFO - [Raw response 2]: ["Điều 16 / Nghị định 140/2018/NĐ-CP + sửa đổi + Nghị định số 103/2017/NĐ-CP"]
+2026-05-20 06:49:47,366 - INFO - [Raw response 3]: ["Khoản 9 / Điều 1 / Thông tư 27/2024/TT-BGTVT + sửa đổi bổ sung + Phần 9 Bộ QCATHK tại Phụ lục IX ban hành kèm theo Thông tư này"]
+2026-05-20 06:49:47,366 - INFO - Predicted Answer (batch): [[('Khoản 9 / Điều 1 / Thông tư 31/2022/TT-BCT', 'sửa đổi bổ sung', 'khoản 1 Điều 11')], [('Khoản 2 / Điều 1 / Thông tư 03/2024/TT-BCA', 'sửa đổi bổ sung', 'khoản 3 Điều 6')], [('Điều 16 / Nghị định 140/2018/NĐ-CP', 'sửa đổi', 'Nghị định số 103/2017/NĐ-CP')], [('Khoản 9 / Điều 1 / Thông tư 27/2024/TT-BGTVT', 'sửa đổi bổ sung', 'Phần 9 Bộ QCATHK tại Phụ lục IX ban hành kèm theo Thông tư này')]]
+2026-05-20 06:49:48,475 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:48,490 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:48,584 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:48,675 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:48,676 - INFO - [Raw response 0]: ["Khoản 1 / Điều 4 / Luật 28/2018/QH14 + sửa đổi bổ sung + khoản 1 Điều 20"]
+2026-05-20 06:49:48,676 - INFO - [Raw response 1]: ["Khoản 2 / Điều 3 / Thông tư 13/2023/TT-BNNPTNT + sửa đổi bổ sung + Thông tư số 28/2018/TT-BNNPTNT"]
+2026-05-20 06:49:48,676 - INFO - [Raw response 2]: ["Điều 6 Thông tư số 22/2009/TT-BCT + sửa đổi bổ sung + Điều 1 / Thông tư 06/2017/TT-BCT"]
+2026-05-20 06:49:48,676 - INFO - [Raw response 3]: ["Khoản 1 / Điều 1 / Thông tư 56/2018/TT-BGTVT + sửa đổi bổ sung + Phần 1 Bộ QCATHK"]
+2026-05-20 06:49:48,676 - INFO - Predicted Answer (batch): [[('Khoản 1 / Điều 4 / Luật 28/2018/QH14', 'sửa đổi bổ sung', 'khoản 1 Điều 20')], [('Khoản 2 / Điều 3 / Thông tư 13/2023/TT-BNNPTNT', 'sửa đổi bổ sung', 'Thông tư số 28/2018/TT-BNNPTNT')], [('Điều 6 Thông tư số 22/2009/TT-BCT', 'sửa đổi bổ sung', 'Điều 1 / Thông tư 06/2017/TT-BCT')], [('Khoản 1 / Điều 1 / Thông tư 56/2018/TT-BGTVT', 'sửa đổi bổ sung', 'Phần 1 Bộ QCATHK')]]
+2026-05-20 06:49:49,806 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:49,827 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:49,828 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:50,562 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:50,563 - INFO - [Raw response 0]: ["Khoản 6 / Điều 2 / Thông tư 31/2022/TT-BCT + bổ sung + khoản 6 tại Điều 28"]
+2026-05-20 06:49:50,563 - INFO - [Raw response 1]: ["Điểm d / Khoản 1 / Điều 1 / Thông tư 23/2022/TT-BTNMT + sửa đổi bổ sung + khoản 5"]
+2026-05-20 06:49:50,563 - INFO - [Raw response 2]: ["Khoản 1 / Điều 1 / Nghị định 04/2024/NĐ-CP + sửa đổi bổ sung + khoản 1 Điều 5"]
+2026-05-20 06:49:50,563 - INFO - [Raw response 3]: ["Mục 4 / Điều 9 / Thông tư 19/2020/TT-BCT + sửa đổi, bổ sung + 5. Không xét đến những công đoạn nêu tại khoản 2, 3, 4, nguyên liệu dệt không có xuất xứ liệt kê trong danh mục dưới đây sẽ được coi là có xuất xứ tại một Nước thành viên nếu đáp ứng các công đoạn gia công, chế biến quy định dưới đây: a) Xơ và sợi"]
+2026-05-20 06:49:50,563 - INFO - Predicted Answer (batch): [[('Khoản 6 / Điều 2 / Thông tư 31/2022/TT-BCT', 'bổ sung', 'khoản 6 tại Điều 28')], [('Điểm d / Khoản 1 / Điều 1 / Thông tư 23/2022/TT-BTNMT', 'sửa đổi bổ sung', 'khoản 5')], [('Khoản 1 / Điều 1 / Nghị định 04/2024/NĐ-CP', 'sửa đổi bổ sung', 'khoản 1 Điều 5')], [('Mục 4 / Điều 9 / Thông tư 19/2020/TT-BCT', 'sửa đổi, bổ sung', '5. Không xét đến những công đoạn nêu tại khoản 2, 3, 4, nguyên liệu dệt không có xuất xứ liệt kê trong danh mục dưới đây sẽ được coi là có xuất xứ tại một Nước thành viên nếu đáp ứng các công đoạn gia công, chế biến quy định dưới đây: a) Xơ và sợi')]]
+2026-05-20 06:49:51,628 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:51,764 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:51,806 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:51,830 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:51,830 - INFO - [Raw response 0]: ["Khoản 2 / Điều 1 / Nghị định 118/2020/NĐ-CP + bổ sung + Điều 5"]
+2026-05-20 06:49:51,831 - INFO - [Raw response 1]: ["Điều 2 / Thông tư 18/2018/TT-BLĐTBXH + sửa đổi bổ sung + Thông tư số 47/2016/ TT-BLĐTBXH"]
+2026-05-20 06:49:51,831 - INFO - [Raw response 2]: ["Điều 1 / Nghị định 83/2024/NĐ-CP + sửa đổi bổ sung + Nghị định 123/2016/NĐ-CP"]
+2026-05-20 06:49:51,831 - INFO - [Raw response 3]: ["Khoản 3 / Điều 1 / Thông tư 21/2020/TT-BGTVT + sửa đổi bổ sung + Thông tư số 81/2014/TT-BGTVT"]
+2026-05-20 06:49:51,831 - INFO - Predicted Answer (batch): [[('Khoản 2 / Điều 1 / Nghị định 118/2020/NĐ-CP', 'bổ sung', 'Điều 5')], [('Điều 2 / Thông tư 18/2018/TT-BLĐTBXH', 'sửa đổi bổ sung', 'Thông tư số 47/2016/ TT-BLĐTBXH')], [('Điều 1 / Nghị định 83/2024/NĐ-CP', 'sửa đổi bổ sung', 'Nghị định 123/2016/NĐ-CP')], [('Khoản 3 / Điều 1 / Thông tư 21/2020/TT-BGTVT', 'sửa đổi bổ sung', 'Thông tư số 81/2014/TT-BGTVT')]]
+2026-05-20 06:49:53,003 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:53,050 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:53,148 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:53,518 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:53,519 - INFO - [Raw response 0]: ["Điều 2 / Thông tư 17/2023/TT-BYT + sửa đổi bổ sung + Quyết định số 46/2007/QĐ-BYT"]
+2026-05-20 06:49:53,519 - INFO - [Raw response 1]: ["Khoản 1 / Điều 1 / Thông tư 13/2023/TT-BNNPTNT + sửa đổi bổ sung + khoản 3 Điều 3", "Khoản 1 / Điều 1 / Thông tư 13/2023/TT-BNNPTNT + bổ sung + khoản 4 vào sau khoản 3 Điều 3"]
+2026-05-20 06:49:53,519 - INFO - [Raw response 2]: ["Khoản 11 / Điều 1 / Thông tư 18/2019/TT-NHNN + sửa đổi bổ sung + Thông tư số 43/2016/TT-NHNN"]
+2026-05-20 06:49:53,519 - INFO - [Raw response 3]: ["Khoản 1 / Điều 10 / Chương IV / Nghị định 140/2018/NĐ-CP + sửa đổi + Điều 11"]
+2026-05-20 06:49:53,519 - INFO - Predicted Answer (batch): [[('Điều 2 / Thông tư 17/2023/TT-BYT', 'sửa đổi bổ sung', 'Quyết định số 46/2007/QĐ-BYT')], [('Khoản 1 / Điều 1 / Thông tư 13/2023/TT-BNNPTNT', 'sửa đổi bổ sung', 'khoản 3 Điều 3'), ('Khoản 1 / Điều 1 / Thông tư 13/2023/TT-BNNPTNT', 'bổ sung', 'khoản 4 vào sau khoản 3 Điều 3')], [('Khoản 11 / Điều 1 / Thông tư 18/2019/TT-NHNN', 'sửa đổi bổ sung', 'Thông tư số 43/2016/TT-NHNN')], [('Khoản 1 / Điều 10 / Chương IV / Nghị định 140/2018/NĐ-CP', 'sửa đổi', 'Điều 11')]]
+2026-05-20 06:49:54,705 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:54,721 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:54,779 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:54,847 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:54,847 - INFO - [Raw response 0]: ["Điểm a / Khoản 1 / Điều 1 / Thông tư 13/2020/TT-BYTT + sửa đổi bổ sung + Thông tư số 35/2016/TT- BYT"]
+2026-05-20 06:49:54,847 - INFO - [Raw response 1]: ["Khoản 4 / Điều 1 / Chương I / Nghị định 04/2023/NĐ-CP + sửa đổi bổ sung + Điều 10"]
+2026-05-20 06:49:54,848 - INFO - [Raw response 2]: ["Điểm d / Khoản 3 / Điều 1 / Nghị định 25/2019/NĐ-CP + sửa đổi + khoản 7 Điều 6"]
+2026-05-20 06:49:54,848 - INFO - [Raw response 3]: ["Khoản 6 / Điều 11 / Chương IV / Nghị định 140/2018/NĐ-CP + sửa đổi bổ sung + Khoản 6 Điều 10"]
+2026-05-20 06:49:54,848 - INFO - Predicted Answer (batch): [[('Điểm a / Khoản 1 / Điều 1 / Thông tư 13/2020/TT-BYTT', 'sửa đổi bổ sung', 'Thông tư số 35/2016/TT- BYT')], [('Khoản 4 / Điều 1 / Chương I / Nghị định 04/2023/NĐ-CP', 'sửa đổi bổ sung', 'Điều 10')], [('Điểm d / Khoản 3 / Điều 1 / Nghị định 25/2019/NĐ-CP', 'sửa đổi', 'khoản 7 Điều 6')], [('Khoản 6 / Điều 11 / Chương IV / Nghị định 140/2018/NĐ-CP', 'sửa đổi bổ sung', 'Khoản 6 Điều 10')]]
+2026-05-20 06:49:56,108 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:56,155 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:56,285 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:56,826 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:56,827 - INFO - [Raw response 0]: ["Khoản 7 / Điều 1 / Thông tư 89/2018/TT-BTC + sửa đổi bổ sung + Thông tư số 91/2012/TT-BTC"]
+2026-05-20 06:49:56,827 - INFO - [Raw response 1]: ["Điểm a / Khoản 10 / Điều 1 / Thông tư 13/2023/TT-BNNPTNT + sửa đổi bổ sung + Thông tư số 28/2018/TT-BNNPTNT"]
+2026-05-20 06:49:56,827 - INFO - [Raw response 2]: ["Mục 4 / Điều 29 / Thông tư 19/2020/TT-BCT + sửa đổi, bổ sung + 5. Không xét đến những công đoạn nêu tại khoản 2, 3, 4, nguyên liệu dệt không có xuất xứ liệt kê trong danh mục dưới đây sẽ được coi là có xuất xứ tại một Nước thành viên nếu đáp ứng các công đoạn gia công, chế biến quy định dưới đây: a) Xơ và sợi"]
+2026-05-20 06:49:56,827 - INFO - [Raw response 3]: ["Khoản 2 / Điều 1 / Thông tư 123/2018/TT-BTC + sửa đổi bổ sung + Thông tư số 114/2014/TT-BTC"]
+2026-05-20 06:49:56,827 - INFO - Predicted Answer (batch): [[('Khoản 7 / Điều 1 / Thông tư 89/2018/TT-BTC', 'sửa đổi bổ sung', 'Thông tư số 91/2012/TT-BTC')], [('Điểm a / Khoản 10 / Điều 1 / Thông tư 13/2023/TT-BNNPTNT', 'sửa đổi bổ sung', 'Thông tư số 28/2018/TT-BNNPTNT')], [('Mục 4 / Điều 29 / Thông tư 19/2020/TT-BCT', 'sửa đổi, bổ sung', '5. Không xét đến những công đoạn nêu tại khoản 2, 3, 4, nguyên liệu dệt không có xuất xứ liệt kê trong danh mục dưới đây sẽ được coi là có xuất xứ tại một Nước thành viên nếu đáp ứng các công đoạn gia công, chế biến quy định dưới đây: a) Xơ và sợi')], [('Khoản 2 / Điều 1 / Thông tư 123/2018/TT-BTC', 'sửa đổi bổ sung', 'Thông tư số 114/2014/TT-BTC')]]
+2026-05-20 06:49:57,976 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:57,978 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:58,144 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:58,291 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:58,291 - INFO - [Raw response 0]: ["Khoản 4 / Điều 8 / Thông tư 13/2023/TT-BVHTTDL + sửa đổi bổ sung + Thông tư số 01/2020/TT-BVHTTDL"]
+2026-05-20 06:49:58,291 - INFO - [Raw response 1]: ["Khoản 6 / Điều 1 / Nghị định 04/2024/NĐ-CP + sửa đổi bổ sung + điểm b khoản 2 Điều 21"]
+2026-05-20 06:49:58,292 - INFO - [Raw response 2]: ["Điều 18b Nghị định số 19/2016/NĐ-CP ngày 22 tháng 3 năm 2016 của Chính phủ về kinh doanh khí + bổ sung + Điều 23 / Chương V / Nghị định 77/NĐ-CP"]
+2026-05-20 06:49:58,292 - INFO - [Raw response 3]: ["Khoản 3 / Điều 1 / Luật 28/2018/QH14 + sửa đổi bổ sung + điểm a khoản 2 Điều 62"]
+2026-05-20 06:49:58,292 - INFO - Predicted Answer (batch): [[('Khoản 4 / Điều 8 / Thông tư 13/2023/TT-BVHTTDL', 'sửa đổi bổ sung', 'Thông tư số 01/2020/TT-BVHTTDL')], [('Khoản 6 / Điều 1 / Nghị định 04/2024/NĐ-CP', 'sửa đổi bổ sung', 'điểm b khoản 2 Điều 21')], [('Điều 18b Nghị định số 19/2016/NĐ-CP ngày 22 tháng 3 năm 2016 của Chính phủ về kinh doanh khí', 'bổ sung', 'Điều 23 / Chương V / Nghị định 77/NĐ-CP')], [('Khoản 3 / Điều 1 / Luật 28/2018/QH14', 'sửa đổi bổ sung', 'điểm a khoản 2 Điều 62')]]
+2026-05-20 06:49:59,438 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:59,581 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:59,637 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:59,650 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:49:59,651 - INFO - [Raw response 0]: ["Khoản 6 / Điều 1 / Nghị định 04/2023/NĐ-CP + sửa đổi bổ sung + khoản 3 Điều 19"]
+2026-05-20 06:49:59,651 - INFO - [Raw response 1]: ["Khoản 1 / Điều 6 / Luật 28/2018/QH14 + sửa đổi bổ sung + Điều 8"]
+2026-05-20 06:49:59,651 - INFO - [Raw response 2]: ["Khoản 6 / Điều 10 / Chương IV / Nghị định 140/2018/NĐ-CP + sửa đổi + Khoản 2 Điều 17"]
+2026-05-20 06:49:59,652 - INFO - [Raw response 3]: [
+"Khoản 1 / Điều 3 / Thông tư 08/2018/TT-BKHĐT + sửa đổi + Khoản 1 Điều 23"
+]
+2026-05-20 06:49:59,652 - INFO - Predicted Answer (batch): [[('Khoản 6 / Điều 1 / Nghị định 04/2023/NĐ-CP', 'sửa đổi bổ sung', 'khoản 3 Điều 19')], [('Khoản 1 / Điều 6 / Luật 28/2018/QH14', 'sửa đổi bổ sung', 'Điều 8')], [('Khoản 6 / Điều 10 / Chương IV / Nghị định 140/2018/NĐ-CP', 'sửa đổi', 'Khoản 2 Điều 17')], [('Khoản 1 / Điều 3 / Thông tư 08/2018/TT-BKHĐT', 'sửa đổi', 'Khoản 1 Điều 23')]]
+2026-05-20 06:50:00,725 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:00,743 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:00,757 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:00,826 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:00,826 - INFO - [Raw response 0]: ["Điều 3 / Thông tư 03/2024/TT-BCA + sửa đổi bổ sung + Thông tư số 45/2017/TT-BCA"]
+2026-05-20 06:50:00,827 - INFO - [Raw response 1]: ["Khoản 7 / Điều 3 / Nghị định 140/2018/NĐ-CP + sửa đổi + Điều 26"]
+2026-05-20 06:50:00,827 - INFO - [Raw response 2]: ["Khoản 1 / Điều 1 / Thông tư 01/2019/TT-BTC + sửa đổi, bổ sung + Điều 18"]
+2026-05-20 06:50:00,827 - INFO - [Raw response 3]: ["Khoản 12 / Điều 1 / Nghị định 118/2020/NĐ-CP + bổ sung + Điều 23a"]
+2026-05-20 06:50:00,827 - INFO - Predicted Answer (batch): [[('Điều 3 / Thông tư 03/2024/TT-BCA', 'sửa đổi bổ sung', 'Thông tư số 45/2017/TT-BCA')], [('Khoản 7 / Điều 3 / Nghị định 140/2018/NĐ-CP', 'sửa đổi', 'Điều 26')], [('Khoản 1 / Điều 1 / Thông tư 01/2019/TT-BTC', 'sửa đổi, bổ sung', 'Điều 18')], [('Khoản 12 / Điều 1 / Nghị định 118/2020/NĐ-CP', 'bổ sung', 'Điều 23a')]]
+2026-05-20 06:50:01,861 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:01,983 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:01,997 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:02,066 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:02,067 - INFO - [Raw response 0]: ["Khoản 5 / Điều 3 / Nghị định 140/2018/NĐ-CP + sửa đổi + Khoản 1 Điều 22"]
+2026-05-20 06:50:02,067 - INFO - [Raw response 1]: ["Khoản 5 / Điều 8 / Luật 28/2018/QH14 + bãi bỏ + khoản 2 và khoản 3 Điều 67"]
+2026-05-20 06:50:02,067 - INFO - [Raw response 2]: ["Khoản 8 / Điều 1 / Nghị định 04/2024/NĐ-CP + sửa đổi bổ sung + Nghị định 118/2014/NĐ-CP"]
+2026-05-20 06:50:02,067 - INFO - [Raw response 3]: ["Khoản 2 / Điều 3 / Thông tư 08/2018/TT-BKHĐT + sửa đổi + Điều 24"]
+2026-05-20 06:50:02,067 - INFO - Predicted Answer (batch): [[('Khoản 5 / Điều 3 / Nghị định 140/2018/NĐ-CP', 'sửa đổi', 'Khoản 1 Điều 22')], [('Khoản 5 / Điều 8 / Luật 28/2018/QH14', 'bãi bỏ', 'khoản 2 và khoản 3 Điều 67')], [('Khoản 8 / Điều 1 / Nghị định 04/2024/NĐ-CP', 'sửa đổi bổ sung', 'Nghị định 118/2014/NĐ-CP')], [('Khoản 2 / Điều 3 / Thông tư 08/2018/TT-BKHĐT', 'sửa đổi', 'Điều 24')]]
+2026-05-20 06:50:03,345 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:03,366 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:03,420 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:03,841 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:03,842 - INFO - [Raw response 0]: ["Khoản 1 / Điều 7 / Thông tư 17/2023/TT-BYT + bãi bỏ + Thông tư số 14/2011/TT-BYT ngày 01 tháng 04 năm 2011 của Bộ trưởng Bộ Y tế về hướng dẫn lấy mẫu phục vụ thanh tra, kiểm tra về chất lượng, vệ sinh an toàn thực phẩm."]
+2026-05-20 06:50:03,842 - INFO - [Raw response 1]: ["Khoản 5 / Điều 1 / Thông tư 136/2018/TT-BTC + sửa đổi bổ sung + Thông tư số 13/2017/TT-BTC"]
+2026-05-20 06:50:03,842 - INFO - [Raw response 2]: ["Khoản 8 / Điều 1 / Chương I / Nghị định 140/2018/NĐ-CP + sửa đổi bổ sung + Nghị định số 44/2016/NĐ-CP"]
+2026-05-20 06:50:03,842 - INFO - [Raw response 3]: ["Khoản 10 / Điều 1 / Thông tư 9/2020/TT-BYT + sửa đổi bổ sung + Thông tư số 03/2018/TT-BYT"]
+2026-05-20 06:50:03,842 - INFO - Predicted Answer (batch): [[('Khoản 1 / Điều 7 / Thông tư 17/2023/TT-BYT', 'bãi bỏ', 'Thông tư số 14/2011/TT-BYT ngày 01 tháng 04 năm 2011 của Bộ trưởng Bộ Y tế về hướng dẫn lấy mẫu phục vụ thanh tra, kiểm tra về chất lượng, vệ sinh an toàn thực phẩm.')], [('Khoản 5 / Điều 1 / Thông tư 136/2018/TT-BTC', 'sửa đổi bổ sung', 'Thông tư số 13/2017/TT-BTC')], [('Khoản 8 / Điều 1 / Chương I / Nghị định 140/2018/NĐ-CP', 'sửa đổi bổ sung', 'Nghị định số 44/2016/NĐ-CP')], [('Khoản 10 / Điều 1 / Thông tư 9/2020/TT-BYT', 'sửa đổi bổ sung', 'Thông tư số 03/2018/TT-BYT')]]
+2026-05-20 06:50:05,051 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:05,052 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:05,135 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:05,181 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:05,182 - INFO - [Raw response 0]: ["Khoản 1 / Điều 1 / Nghị định 77/2024/NĐ-C + sửa đổi bổ sung + khoản 1 Điều 3 của Nghị định số 75/2021/NĐ-CP"]
+2026-05-20 06:50:05,182 - INFO - [Raw response 1]: ["Khoản 5 / Điều 1 / Nghị định 139/2020/NĐ-CP + sửa đổi bổ sung + điểm đ, điểm e khoản 2 Điều 5"]
+2026-05-20 06:50:05,183 - INFO - [Raw response 2]: ["Khoản 1 / Điều 1 / Thông tư 15/2021/TT-BTTTT + sửa đổi bổ sung + Thông tư 07/2015/TT-BTTTT"]
+2026-05-20 06:50:05,183 - INFO - [Raw response 3]: ["Khoản 17 / Điều 1 / Thông tư 16/2018/TT-BNNPTNT + sửa đổi bổ sung + khoản 3 Điều 31"]
+2026-05-20 06:50:05,183 - INFO - Predicted Answer (batch): [[('Khoản 1 / Điều 1 / Nghị định 77/2024/NĐ-C', 'sửa đổi bổ sung', 'khoản 1 Điều 3 của Nghị định số 75/2021/NĐ-CP')], [('Khoản 5 / Điều 1 / Nghị định 139/2020/NĐ-CP', 'sửa đổi bổ sung', 'điểm đ, điểm e khoản 2 Điều 5')], [('Khoản 1 / Điều 1 / Thông tư 15/2021/TT-BTTTT', 'sửa đổi bổ sung', 'Thông tư 07/2015/TT-BTTTT')], [('Khoản 17 / Điều 1 / Thông tư 16/2018/TT-BNNPTNT', 'sửa đổi bổ sung', 'khoản 3 Điều 31')]]
+2026-05-20 06:50:06,401 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:06,402 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:06,417 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:06,452 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:06,453 - INFO - [Raw response 0]: ["Điều 1 / Thông tư 31/2022/TT-BCT + sửa đổi bổ sung + Thông tư số 57/2014/TT-BCT"]
+2026-05-20 06:50:06,453 - INFO - [Raw response 1]: ["Điều 9 / Thông tư 17/2023/TT-BYT + sửa đổi bổ sung + các văn bản quy phạm pháp luật được dẫn chiếu để áp dụng tại Thông tư này"]
+2026-05-20 06:50:06,453 - INFO - [Raw response 2]: ["Điều 2 / Thông tư 12/2024/TT-BGDĐT + sửa đổi bổ sung + Thông tư số 02/2022/TT-BGDĐT"]
+2026-05-20 06:50:06,453 - INFO - [Raw response 3]: ["Điều 6 / Thông tư 13/2023/TT-BVHTTDL + sửa đổi bổ sung + Thông tư số 28/2014/TT-BVHTTDL"]
+2026-05-20 06:50:06,453 - INFO - Predicted Answer (batch): [[('Điều 1 / Thông tư 31/2022/TT-BCT', 'sửa đổi bổ sung', 'Thông tư số 57/2014/TT-BCT')], [('Điều 9 / Thông tư 17/2023/TT-BYT', 'sửa đổi bổ sung', 'các văn bản quy phạm pháp luật được dẫn chiếu để áp dụng tại Thông tư này')], [('Điều 2 / Thông tư 12/2024/TT-BGDĐT', 'sửa đổi bổ sung', 'Thông tư số 02/2022/TT-BGDĐT')], [('Điều 6 / Thông tư 13/2023/TT-BVHTTDL', 'sửa đổi bổ sung', 'Thông tư số 28/2014/TT-BVHTTDL')]]
+2026-05-20 06:50:07,737 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:07,786 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:07,813 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:07,827 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:07,828 - INFO - [Raw response 0]: ["Khoản 1 / Điều 1 / Thông tư 06/2020/TT-BCT + sửa đổi bổ sung + Thông tư số 03/2019/TT-BCT"]
+2026-05-20 06:50:07,828 - INFO - [Raw response 1]: ["Khoản 3 / Điều 1 / Thông tư 18/2019/TT-NHNN + sửa đổi, bổ sung + Thông tư số 43/2016/TT-NHNN"]
+2026-05-20 06:50:07,828 - INFO - [Raw response 2]: ["Điểm a / Khoản 11 / Điều 1 / Thông tư 07/2019/TT-BTC + sửa đổi bổ sung + Thông tư số 72/2015/TT-BTC"]
+2026-05-20 06:50:07,828 - INFO - [Raw response 3]: ["Điều 2 / Nghị định 83/2024/NĐ-CP + sửa đổi bổ sung + điểm a khoản 6 Điều 4 Nghị định số 10/2016/NĐ-CP"]
+2026-05-20 06:50:07,828 - INFO - Predicted Answer (batch): [[('Khoản 1 / Điều 1 / Thông tư 06/2020/TT-BCT', 'sửa đổi bổ sung', 'Thông tư số 03/2019/TT-BCT')], [('Khoản 3 / Điều 1 / Thông tư 18/2019/TT-NHNN', 'sửa đổi, bổ sung', 'Thông tư số 43/2016/TT-NHNN')], [('Điểm a / Khoản 11 / Điều 1 / Thông tư 07/2019/TT-BTC', 'sửa đổi bổ sung', 'Thông tư số 72/2015/TT-BTC')], [('Điều 2 / Nghị định 83/2024/NĐ-CP', 'sửa đổi bổ sung', 'điểm a khoản 6 Điều 4 Nghị định số 10/2016/NĐ-CP')]]
+2026-05-20 06:50:08,826 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:08,894 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:08,975 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:08,999 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:09,000 - INFO - [Raw response 0]: ["Khoản 3 / Điều 1 / Thông tư 07/2019/TT-BTC + sửa đổi bổ sung + Điều 8"]
+2026-05-20 06:50:09,000 - INFO - [Raw response 1]: ["Khoản 10 / Điều 1 / Nghị định 118/2020/NĐ-CP + bổ sung + Điều 19a"]
+2026-05-20 06:50:09,001 - INFO - [Raw response 2]: ["Điều 1 / Thông tư 17/2021/TT-BTTTT + sửa đổi bổ sung + Thông tư số 11/2015/TT-BTTTT"]
+2026-05-20 06:50:09,001 - INFO - [Raw response 3]: ["Điều 8 / Chương II / Nghị định 77/NĐ-CP + bổ sung + Điều 12a Nghị định số 108/2008/NĐ-CP"]
+2026-05-20 06:50:09,001 - INFO - Predicted Answer (batch): [[('Khoản 3 / Điều 1 / Thông tư 07/2019/TT-BTC', 'sửa đổi bổ sung', 'Điều 8')], [('Khoản 10 / Điều 1 / Nghị định 118/2020/NĐ-CP', 'bổ sung', 'Điều 19a')], [('Điều 1 / Thông tư 17/2021/TT-BTTTT', 'sửa đổi bổ sung', 'Thông tư số 11/2015/TT-BTTTT')], [('Điều 8 / Chương II / Nghị định 77/NĐ-CP', 'bổ sung', 'Điều 12a Nghị định số 108/2008/NĐ-CP')]]
+2026-05-20 06:50:09,897 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:10,105 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:10,161 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:10,232 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:10,233 - INFO - [Raw response 0]: ["Khoản 5 / Điều 1 / Nghị định 140/2018/NĐ-CP + sửa đổi + Điều 17"]
+2026-05-20 06:50:10,233 - INFO - [Raw response 1]: ["Mục 4 / Điều 20 / sửa đổi bổ sung / Mục 4"]
+2026-05-20 06:50:10,233 - WARNING - No valid triplets parsed from response: ["Mục 4 / Điều 20 / sửa đổi bổ sung / Mục 4"]
+2026-05-20 06:50:10,234 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 809, 'completion_tokens': 21, 'total_tokens': 830}
+2026-05-20 06:50:10,234 - INFO - [Raw response 2]: ["Khoản 6 / Điều 3 / Luật 28/2018/QH14 + sửa đổi bổ sung + khoản 5 Điều 104"]
+2026-05-20 06:50:10,234 - INFO - [Raw response 3]: ["Khoản 11 / Điều 1 / Thông tư 07/2019/TT-BTC + sửa đổi bổ sung + Thông tư số 72/2015/TT-BTC"]
+2026-05-20 06:50:10,234 - INFO - Predicted Answer (batch): [[('Khoản 5 / Điều 1 / Nghị định 140/2018/NĐ-CP', 'sửa đổi', 'Điều 17')], [], [('Khoản 6 / Điều 3 / Luật 28/2018/QH14', 'sửa đổi bổ sung', 'khoản 5 Điều 104')], [('Khoản 11 / Điều 1 / Thông tư 07/2019/TT-BTC', 'sửa đổi bổ sung', 'Thông tư số 72/2015/TT-BTC')]]
+2026-05-20 06:50:11,432 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:11,433 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:11,530 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:11,608 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:11,609 - INFO - [Raw response 0]: ["Khoản 9 / Điều 2 / Thông tư 03/2024/TT-BCA + bãi bỏ + khoản 2 Điều 3 Thông tư số 43/2017/TT-BCA"]
+2026-05-20 06:50:11,609 - INFO - [Raw response 1]: ["Khoản 3 / Điều 1 / Thông tư 17/2023/TT-BYT + sửa đổi bổ sung + Thông tư số 24/2019/TT-BYT"]
+2026-05-20 06:50:11,609 - INFO - [Raw response 2]: ["Khoản 13 / Điều 1 / Thông tư 27/2024/TT-BGTVT + sửa đổi bổ sung + Phần 14 Bộ QCATHK"]
+2026-05-20 06:50:11,609 - INFO - [Raw response 3]: ["Điểm c / Khoản 8 / Điều 1 / Thông tư 17/2022/TT-BCT + sửa đổi bổ sung + mục 10"]
+2026-05-20 06:50:11,609 - INFO - Predicted Answer (batch): [[('Khoản 9 / Điều 2 / Thông tư 03/2024/TT-BCA', 'bãi bỏ', 'khoản 2 Điều 3 Thông tư số 43/2017/TT-BCA')], [('Khoản 3 / Điều 1 / Thông tư 17/2023/TT-BYT', 'sửa đổi bổ sung', 'Thông tư số 24/2019/TT-BYT')], [('Khoản 13 / Điều 1 / Thông tư 27/2024/TT-BGTVT', 'sửa đổi bổ sung', 'Phần 14 Bộ QCATHK')], [('Điểm c / Khoản 8 / Điều 1 / Thông tư 17/2022/TT-BCT', 'sửa đổi bổ sung', 'mục 10')]]
+2026-05-20 06:50:12,735 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:12,904 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:13,019 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:13,064 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:13,065 - INFO - [Raw response 0]: ["Khoản 1 / Điều 2 / Thông tư 23/2022/TT-NHNN + sửa đổi bổ sung + khoản 1 Điều 8"]
+2026-05-20 06:50:13,065 - INFO - [Raw response 1]: ["Mục 4 / Thông tư 19/2020/TT-BCT + sửa đổi, bổ sung + Khoản 15 / Điều 31 / Mục 4 / Thông tư 19/2020/TT-BCT"]
+2026-05-20 06:50:13,066 - INFO - [Raw response 2]: ["Khoản 12 / Điều 1 / Thông tư 27/2024/TT-BGTVT + sửa đổi bổ sung + Phần 12 Bộ QCATHK tại Phụ lục XII ban hành kèm theo Thông tư này."]
+2026-05-20 06:50:13,066 - INFO - [Raw response 3]: ["Khoản 2 / Điều 1 / Thông tư 14/2016/TT-BCA + sửa đổi bổ sung + Thông tư số 33/2012/TT-BCA"]
+2026-05-20 06:50:13,066 - INFO - Predicted Answer (batch): [[('Khoản 1 / Điều 2 / Thông tư 23/2022/TT-NHNN', 'sửa đổi bổ sung', 'khoản 1 Điều 8')], [('Mục 4 / Thông tư 19/2020/TT-BCT', 'sửa đổi, bổ sung', 'Khoản 15 / Điều 31 / Mục 4 / Thông tư 19/2020/TT-BCT')], [('Khoản 12 / Điều 1 / Thông tư 27/2024/TT-BGTVT', 'sửa đổi bổ sung', 'Phần 12 Bộ QCATHK tại Phụ lục XII ban hành kèm theo Thông tư này.')], [('Khoản 2 / Điều 1 / Thông tư 14/2016/TT-BCA', 'sửa đổi bổ sung', 'Thông tư số 33/2012/TT-BCA')]]
+2026-05-20 06:50:13,950 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:14,211 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:14,231 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:14,374 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:14,375 - INFO - [Raw response 0]: ["Khoản 10 / Điều 1 / Thông tư 16/2018/TT-BNNPTNT + sửa đổi bổ sung + Thông tư số 48/2013/TT-BNNPTNT"]
+2026-05-20 06:50:14,375 - INFO - [Raw response 1]: ["Điểm b / Khoản 1 / Điều 1 / Thông tư 12/2024/TT-BGDĐT + bổ sung + Khoản 8 và 9"]
+2026-05-20 06:50:14,375 - INFO - [Raw response 2]: ["Khoản 3 / Điều 8 / Luật 28/2018/QH14 + sửa đổi bổ sung + điểm b khoản 2 Điều 16"]
+2026-05-20 06:50:14,375 - INFO - [Raw response 3]: ["Khoản 2 Điều 5 Thông tư này + bãi bỏ + khoản 2 Điều 5"]
+2026-05-20 06:50:14,375 - INFO - Predicted Answer (batch): [[('Khoản 10 / Điều 1 / Thông tư 16/2018/TT-BNNPTNT', 'sửa đổi bổ sung', 'Thông tư số 48/2013/TT-BNNPTNT')], [('Điểm b / Khoản 1 / Điều 1 / Thông tư 12/2024/TT-BGDĐT', 'bổ sung', 'Khoản 8 và 9')], [('Khoản 3 / Điều 8 / Luật 28/2018/QH14', 'sửa đổi bổ sung', 'điểm b khoản 2 Điều 16')], [('Khoản 2 Điều 5 Thông tư này', 'bãi bỏ', 'khoản 2 Điều 5')]]
+2026-05-20 06:50:15,595 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:15,628 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:15,827 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:15,953 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:15,954 - INFO - [Raw response 0]: ["Khoản 2 / Điều 1 / Luật 28/2018/QH14 + sửa đổi bổ sung + Điều 62"]
+2026-05-20 06:50:15,954 - INFO - [Raw response 1]: ["Điều 5 / Thông tư 18/2018/TT-BLĐTBXH + sửa đổi bổ sung + Thông tư số 57/2015/ TT-BLĐTBXH"]
+2026-05-20 06:50:15,954 - INFO - [Raw response 2]: ["Khoản 1 / Điều 3 / Luật 28/2018/QH14 + sửa đổi bổ sung + Điều 10"]
+2026-05-20 06:50:15,954 - INFO - [Raw response 3]: [
+  ["Khoản 2 / Điều 1 / Thông tư 136/2018/TT-BTC", "sửa đổi bổ sung", "Thông tư số 13/2017/TT-BTC"]
+]
+2026-05-20 06:50:15,954 - INFO - Predicted Answer (batch): [[('Khoản 2 / Điều 1 / Luật 28/2018/QH14', 'sửa đổi bổ sung', 'Điều 62')], [('Điều 5 / Thông tư 18/2018/TT-BLĐTBXH', 'sửa đổi bổ sung', 'Thông tư số 57/2015/ TT-BLĐTBXH')], [('Khoản 1 / Điều 3 / Luật 28/2018/QH14', 'sửa đổi bổ sung', 'Điều 10')], [('Khoản 2 / Điều 1 / Thông tư 136/2018/TT-BTC', 'sửa đổi bổ sung', 'Thông tư số 13/2017/TT-BTC')]]
+2026-05-20 06:50:17,029 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:17,315 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:18,209 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:18,524 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:18,525 - INFO - [Raw response 0]: ["Khoản 1 / Điều 3 / Thông tư 03/2024/TT-BCA + sửa đổi bổ sung + Thông tư số 42/2017/TT-BCA", "Khoản 1 / Điều 3 / Thông tư 03/2024/TT-BCA + sửa đổi bổ sung + Thông tư số 43/2017/TT-BCA", "Khoản 1 / Điều 3 / Thông tư 03/2024/TT-BCA + sửa đổi bổ sung + Thông tư số 45/2017/TT-BCA"]
+2026-05-20 06:50:18,525 - INFO - [Raw response 1]: ["Điểm a / Khoản 5 / Điều 1 / Thông tư 12/2020/TT-NHNN + sửa đổi bổ sung + Khoản 1, 2 / Thông tư số 05/2020/TT-NHNN", "Điểm a / Khoản 5 / Điều 1 / Thông tư 12/2020/TT-NHNN + sửa đổi bổ sung + Điều 7 / Thông tư số 05/2020/TT-NHNN"]
+2026-05-20 06:50:18,525 - INFO - [Raw response 2]: ["Khoản 4 / Điều 1 / Thông tư 23/2022/TT-BTNMT + bổ sung + Điều 22a"]
+2026-05-20 06:50:18,525 - INFO - [Raw response 3]: ["Khoản 1 / Điều 1 / Thông tư 16/2018/TT-BNNPTNT + sửa đổi bổ sung + Thông tư số 48/2013/TT-BNNPTNT"]
+2026-05-20 06:50:18,525 - INFO - Predicted Answer (batch): [[('Khoản 1 / Điều 3 / Thông tư 03/2024/TT-BCA', 'sửa đổi bổ sung', 'Thông tư số 42/2017/TT-BCA'), ('Khoản 1 / Điều 3 / Thông tư 03/2024/TT-BCA', 'sửa đổi bổ sung', 'Thông tư số 43/2017/TT-BCA'), ('Khoản 1 / Điều 3 / Thông tư 03/2024/TT-BCA', 'sửa đổi bổ sung', 'Thông tư số 45/2017/TT-BCA')], [('Điểm a / Khoản 5 / Điều 1 / Thông tư 12/2020/TT-NHNN', 'sửa đổi bổ sung', 'Khoản 1, 2 / Thông tư số 05/2020/TT-NHNN'), ('Điểm a / Khoản 5 / Điều 1 / Thông tư 12/2020/TT-NHNN', 'sửa đổi bổ sung', 'Điều 7 / Thông tư số 05/2020/TT-NHNN')], [('Khoản 4 / Điều 1 / Thông tư 23/2022/TT-BTNMT', 'bổ sung', 'Điều 22a')], [('Khoản 1 / Điều 1 / Thông tư 16/2018/TT-BNNPTNT', 'sửa đổi bổ sung', 'Thông tư số 48/2013/TT-BNNPTNT')]]
+2026-05-20 06:50:19,641 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:19,702 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:19,745 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:19,781 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:19,782 - INFO - [Raw response 0]: ["Khoản 6 / Điều 1 / Thông tư 17/2023/TT-BYT + sửa đổi bổ sung + khoản 2 Điều 17"]
+2026-05-20 06:50:19,782 - INFO - [Raw response 1]: ["Điều 1 / Thông tư 8/2020/TT-BYT + sửa đổi bổ sung + Thông tư số 04/2018/TT-BYT"]
+2026-05-20 06:50:19,782 - INFO - [Raw response 2]: ["Khoản 2 / Điều 2 / Thông tư 03/2024/TT-BCA + sửa đổi bổ sung + Thông tư số 42/2017/TT-BCA"]
+2026-05-20 06:50:19,782 - INFO - [Raw response 3]: ["Điểm a / Khoản 4 / Điều 1 / Chương I / Nghị định 04/2023/NĐ-CP + sửa đổi bổ sung + điểm b khoản 2"]
+2026-05-20 06:50:19,782 - INFO - Predicted Answer (batch): [[('Khoản 6 / Điều 1 / Thông tư 17/2023/TT-BYT', 'sửa đổi bổ sung', 'khoản 2 Điều 17')], [('Điều 1 / Thông tư 8/2020/TT-BYT', 'sửa đổi bổ sung', 'Thông tư số 04/2018/TT-BYT')], [('Khoản 2 / Điều 2 / Thông tư 03/2024/TT-BCA', 'sửa đổi bổ sung', 'Thông tư số 42/2017/TT-BCA')], [('Điểm a / Khoản 4 / Điều 1 / Chương I / Nghị định 04/2023/NĐ-CP', 'sửa đổi bổ sung', 'điểm b khoản 2')]]
+2026-05-20 06:50:20,931 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:20,947 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:21,081 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:21,082 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:21,083 - INFO - [Raw response 0]: ["Điều 1 / Thông tư 26/2020/TT-BYT + sửa đổi bổ sung + Thông tư 22/2013/TT-BYT"]
+2026-05-20 06:50:21,083 - INFO - [Raw response 1]: ["Khoản 8 / Điều 1 / Thông tư 03/2024/TT-BCA + bãi bỏ + các biểu mẫu ban hành kèm theo Thông tư số 42/2017/TT-BCA"]
+2026-05-20 06:50:21,083 - INFO - [Raw response 2]: ["Điều 1 / Thông tư 36/2018/TT-BCA + sửa đổi bổ sung + Thông tư số 66/2014/TT-BCA"]
+2026-05-20 06:50:21,083 - INFO - [Raw response 3]: ["Khoản 7 / Điều 1 / Thông tư 16/2018/TT-BNNPTNT + sửa đổi bổ sung + Thông tư số 48/2013/TT-BNNPTNT"]
+2026-05-20 06:50:21,083 - INFO - Predicted Answer (batch): [[('Điều 1 / Thông tư 26/2020/TT-BYT', 'sửa đổi bổ sung', 'Thông tư 22/2013/TT-BYT')], [('Khoản 8 / Điều 1 / Thông tư 03/2024/TT-BCA', 'bãi bỏ', 'các biểu mẫu ban hành kèm theo Thông tư số 42/2017/TT-BCA')], [('Điều 1 / Thông tư 36/2018/TT-BCA', 'sửa đổi bổ sung', 'Thông tư số 66/2014/TT-BCA')], [('Khoản 7 / Điều 1 / Thông tư 16/2018/TT-BNNPTNT', 'sửa đổi bổ sung', 'Thông tư số 48/2013/TT-BNNPTNT')]]
+2026-05-20 06:50:22,124 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:22,268 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:22,535 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:22,858 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:22,859 - INFO - [Raw response 0]: ["Khoản 15 / Điều 1 / Thông tư 16/2018/TT-BNNPTNT + sửa đổi bổ sung + khoản 3 Điều 29"]
+2026-05-20 06:50:22,859 - INFO - [Raw response 1]: ["Khoản 2 / Điều 1 / Nghị định 04/2024/NĐ-CP + sửa đổi bổ sung + Điều 6"]
+2026-05-20 06:50:22,859 - INFO - [Raw response 2]: ["Khoản 5 / Điều 3 / Thông tư 13/2023/TT-BVHTTDL + sửa đổi bổ sung + Mẫu số 9 ban hành kèm theo Thông tư số 10/2013/TT-BVHTTDL"]
+2026-05-20 06:50:22,859 - INFO - [Raw response 3]: ["Khoản 5 / Điều 4 / Thông tư 17/2023/TT-BYT + sửa đổi bổ sung + Điều 4. Sửa đổi, bổ sung một số điều tại Thông tư số 43/2014/TT-BYT ngày 24 tháng 11 năm 2014 của Bộ trưởng Bộ Y tế quy định về quản lý thực phẩm chức năng"]
+2026-05-20 06:50:22,860 - INFO - Predicted Answer (batch): [[('Khoản 15 / Điều 1 / Thông tư 16/2018/TT-BNNPTNT', 'sửa đổi bổ sung', 'khoản 3 Điều 29')], [('Khoản 2 / Điều 1 / Nghị định 04/2024/NĐ-CP', 'sửa đổi bổ sung', 'Điều 6')], [('Khoản 5 / Điều 3 / Thông tư 13/2023/TT-BVHTTDL', 'sửa đổi bổ sung', 'Mẫu số 9 ban hành kèm theo Thông tư số 10/2013/TT-BVHTTDL')], [('Khoản 5 / Điều 4 / Thông tư 17/2023/TT-BYT', 'sửa đổi bổ sung', 'Điều 4. Sửa đổi, bổ sung một số điều tại Thông tư số 43/2014/TT-BYT ngày 24 tháng 11 năm 2014 của Bộ trưởng Bộ Y tế quy định về quản lý thực phẩm chức năng')]]
+2026-05-20 06:50:23,968 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:24,015 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:24,082 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:24,095 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:24,096 - INFO - [Raw response 0]: ["Khoản 2 / Điều 5 / Thông tư 18/2018/TT-BLĐTBXH + sửa đổi + điểm b khoản 3 Điều 10"]
+2026-05-20 06:50:24,096 - INFO - [Raw response 1]: ["Khoản 1 / Điều 1 / Thông tư 69/2023/TT-BTC + sửa đổi bổ sung + Thông tư số 57/2021/TT-BTC"]
+2026-05-20 06:50:24,096 - INFO - [Raw response 2]: ["Khoản 3 / Điều 1 / Thông tư 01/2019/TT-BTC + sửa đổi bổ sung + Thông tư số 50/2017/TT-BTC"]
+2026-05-20 06:50:24,096 - INFO - [Raw response 3]: ["Khoản 4 / Điều 5 / Thông tư 18/2018/TT-BLĐTBXH + bãi bỏ + khoản 2 Điều 4"]
+2026-05-20 06:50:24,096 - INFO - Predicted Answer (batch): [[('Khoản 2 / Điều 5 / Thông tư 18/2018/TT-BLĐTBXH', 'sửa đổi', 'điểm b khoản 3 Điều 10')], [('Khoản 1 / Điều 1 / Thông tư 69/2023/TT-BTC', 'sửa đổi bổ sung', 'Thông tư số 57/2021/TT-BTC')], [('Khoản 3 / Điều 1 / Thông tư 01/2019/TT-BTC', 'sửa đổi bổ sung', 'Thông tư số 50/2017/TT-BTC')], [('Khoản 4 / Điều 5 / Thông tư 18/2018/TT-BLĐTBXH', 'bãi bỏ', 'khoản 2 Điều 4')]]
+2026-05-20 06:50:25,135 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:25,167 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:25,362 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:25,387 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:25,388 - INFO - [Raw response 0]: ["Khoản 4 Điều 5 Thông tư số 13/2017/TT-BTC + bổ sung + Khoản 1 / Điều 1 / Thông tư 136/2018/TT-BTC"]
+2026-05-20 06:50:25,388 - INFO - [Raw response 1]: ["Khoản 2 / Điều 7 / Thông tư 13/2023/TT-BVHTTDL + sửa đổi bổ sung + Thông tư số 22/2018/TT-BVHTTDL"]
+2026-05-20 06:50:25,388 - INFO - [Raw response 2]: ["Khoản 6 / Điều 8 / Thông tư 18/2018/TT-BLĐTBXH + sửa đổi bổ sung + Chương II"]
+2026-05-20 06:50:25,388 - INFO - [Raw response 3]: ["Khoản 2 / Điều 1 / Thông tư 25/2016/TT_NHNN + sửa đổi bổ sung + Điều 2"]
+2026-05-20 06:50:25,388 - INFO - Predicted Answer (batch): [[('Khoản 4 Điều 5 Thông tư số 13/2017/TT-BTC', 'bổ sung', 'Khoản 1 / Điều 1 / Thông tư 136/2018/TT-BTC')], [('Khoản 2 / Điều 7 / Thông tư 13/2023/TT-BVHTTDL', 'sửa đổi bổ sung', 'Thông tư số 22/2018/TT-BVHTTDL')], [('Khoản 6 / Điều 8 / Thông tư 18/2018/TT-BLĐTBXH', 'sửa đổi bổ sung', 'Chương II')], [('Khoản 2 / Điều 1 / Thông tư 25/2016/TT_NHNN', 'sửa đổi bổ sung', 'Điều 2')]]
+2026-05-20 06:50:26,540 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:26,638 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:26,667 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:27,316 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:27,317 - INFO - [Raw response 0]: ["Khoản 10 / Điều 4 / Thông tư 83/2023/TT-BQP + sửa đổi bổ sung + khoản 7 Điều 13"]
+2026-05-20 06:50:27,317 - INFO - [Raw response 1]: ["Khoản 7 / Điều 5 / Luật 28/2018/QH14 + sửa đổi bổ sung + điểm a khoản 1 Điều 46"]
+2026-05-20 06:50:27,317 - INFO - [Raw response 2]: [
+"Khoản 4 Điều 9 + sửa đổi + Khoản 3 Điều này",
+"Khoản 5 Điều 9 + sửa đổi + Điều 12 Thông tư này",
+"Khoản 7a Điều 9 + bổ sung",
+"Điểm đ Khoản 2 Điều 12 + bổ sung",
+"Mục 7 Phụ lục III Hồ sơ tổng thể về cơ sở thử nghiệm + sửa đổi"
+]
+2026-05-20 06:50:27,317 - INFO - [Raw response 3]: ["Khoản 2 / Điều 1 / Thông tư 17/2022/TT-BCT + bổ sung + Điều 3a"]
+2026-05-20 06:50:27,318 - INFO - Predicted Answer (batch): [[('Khoản 10 / Điều 4 / Thông tư 83/2023/TT-BQP', 'sửa đổi bổ sung', 'khoản 7 Điều 13')], [('Khoản 7 / Điều 5 / Luật 28/2018/QH14', 'sửa đổi bổ sung', 'điểm a khoản 1 Điều 46')], [('Khoản 4 Điều 9', 'sửa đổi', 'Khoản 3 Điều này'), ('Khoản 5 Điều 9', 'sửa đổi', 'Điều 12 Thông tư này')], [('Khoản 2 / Điều 1 / Thông tư 17/2022/TT-BCT', 'bổ sung', 'Điều 3a')]]
+2026-05-20 06:50:28,393 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:28,425 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:28,467 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:28,535 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:28,536 - INFO - [Raw response 0]: ["Điều 1 / Thông tư 19/2020/TT-BCT + sửa đổi bổ sung + Thông tư số 22/2016/TT-BCT"]
+2026-05-20 06:50:28,536 - INFO - [Raw response 1]: ["Khoản 11 / Điều 1 / Thông tư 16/2018/TT-BNNPTNT + sửa đổi + Điều 21"]
+2026-05-20 06:50:28,536 - INFO - [Raw response 2]: ["Điều 6 / Chương II / Nghị định 140/2018/NĐ-CP + bãi bỏ + Nghị định số 143/2016/NĐ-CP"]
+2026-05-20 06:50:28,536 - INFO - [Raw response 3]: ["Điểm d / Khoản 3 / Điều 1 / Thông tư 25/2016/TT_NHNN + sửa đổi bổ sung + khoản 6"]
+2026-05-20 06:50:28,536 - INFO - Predicted Answer (batch): [[('Điều 1 / Thông tư 19/2020/TT-BCT', 'sửa đổi bổ sung', 'Thông tư số 22/2016/TT-BCT')], [('Khoản 11 / Điều 1 / Thông tư 16/2018/TT-BNNPTNT', 'sửa đổi', 'Điều 21')], [('Điều 6 / Chương II / Nghị định 140/2018/NĐ-CP', 'bãi bỏ', 'Nghị định số 143/2016/NĐ-CP')], [('Điểm d / Khoản 3 / Điều 1 / Thông tư 25/2016/TT_NHNN', 'sửa đổi bổ sung', 'khoản 6')]]
+2026-05-20 06:50:29,622 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:29,653 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:29,849 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:32,552 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:32,553 - INFO - [Raw response 0]: ["Khoản 7 / Điều 8 / Thông tư 18/2018/TT-BLĐTBXH + bãi bỏ + khoản 2 Điều 7."]
+2026-05-20 06:50:32,553 - INFO - [Raw response 1]: [
+  [
+    "Khoản 4 / Điều 1 / Thông tư 33/2020/TT-BTTTT",
+    "sửa đổi bổ sung",
+    "điểm b) Khoản 1 Điều 18"
+  ],
+  [
+    "Khoản 4 / Điều 1 / Thông tư 33/2020/TT-BTTTT",
+    "sửa đổi bổ sung",
+    "Khoản 2 Điều 18"
+  ],
+  [
+    "Khoản 4 / Điều 1 / Thông tư 33/2020/TT-BTTTT",
+    "bổ sung",
+    "các Phụ lục số XII, XIII của Thông tư này vào Thông tư số 08/2013/TT-BTTTT"
+  ],
+  [
+    "Khoản 4 / Điều 1 / Thông tư 33/2020/TT-BTTTT",
+    "thay thế",
+    "các Phụ lục I, VI, VII, X và XI của Thông tư số 08/2013/TT-BTTTT bằng các Phụ lục I, VI, VII, X và XI tương ứng theo số Phụ lục của Thông tư này"
+  ]
+]
+2026-05-20 06:50:32,553 - INFO - [Raw response 2]: ["Điều 15 / Nghị định 118/2020/NĐ-CP + sửa đổi, bổ sung + Điều 15 / Nghị định số 69/2010/NĐ-CP"]
+2026-05-20 06:50:32,554 - INFO - [Raw response 3]: ["Khoản 8 / Điều 4 / Thông tư 17/2023/TT-BYT + sửa đổi bổ sung + Điều 14"]
+2026-05-20 06:50:32,554 - INFO - Predicted Answer (batch): [[('Khoản 7 / Điều 8 / Thông tư 18/2018/TT-BLĐTBXH', 'bãi bỏ', 'khoản 2 Điều 7.')], [('Khoản 4 / Điều 1 / Thông tư 33/2020/TT-BTTTT', 'sửa đổi bổ sung', 'điểm b) Khoản 1 Điều 18'), ('Khoản 4 / Điều 1 / Thông tư 33/2020/TT-BTTTT', 'sửa đổi bổ sung', 'Khoản 2 Điều 18'), ('Khoản 4 / Điều 1 / Thông tư 33/2020/TT-BTTTT', 'bổ sung', 'các Phụ lục số XII, XIII của Thông tư này vào Thông tư số 08/2013/TT-BTTTT'), ('Khoản 4 / Điều 1 / Thông tư 33/2020/TT-BTTTT', 'thay thế', 'các Phụ lục I, VI, VII, X và XI của Thông tư số 08/2013/TT-BTTTT bằng các Phụ lục I, VI, VII, X và XI tương ứng theo số Phụ lục của Thông tư này')], [('Điều 15 / Nghị định 118/2020/NĐ-CP', 'sửa đổi, bổ sung', 'Điều 15 / Nghị định số 69/2010/NĐ-CP')], [('Khoản 8 / Điều 4 / Thông tư 17/2023/TT-BYT', 'sửa đổi bổ sung', 'Điều 14')]]
+2026-05-20 06:50:33,633 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:33,850 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:34,307 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:34,666 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:34,667 - INFO - [Raw response 0]: ["Khoản 2 / Điều 1 / Thông tư 12/2020/TT-NHNN + sửa đổi bổ sung + Thông tư số 05/2020/TT-NHNN"]
+2026-05-20 06:50:34,667 - INFO - [Raw response 1]: [
+"Điều 1 + sửa đổi, bổ sung + Thông tư này",
+"Điều 3 + sửa đổi, bổ sung + Thông tư số 28/2015/TT-BCT",
+"Mục 4 + sửa đổi, bổ sung + “4. Không xét đến những công đoạn ... hoặc từ một trong những loại sau”"
+]
+2026-05-20 06:50:34,667 - INFO - [Raw response 2]: ["Khoản 6 / Điều 1 / Thông tư 06/2020/TT-BCT + bãi bỏ + Phụ lục VI (Hướng dẫn kê khai C/O mẫu CPTPP và Tờ khai bổ sung) ban hành kèm theo Thông tư số 03/2019/TT-BCT", "Khoản 6 / Điều 1 / Thông tư 06/2020/TT-BCT + thay thế + Phụ lục IV ban hành kèm theo Thông tư này"]
+2026-05-20 06:50:34,667 - INFO - [Raw response 3]: ["Khoản 3 / Điều 6 / Luật 28/2018/QH14 + sửa đổi bổ sung + Điều 10"]
+2026-05-20 06:50:34,667 - INFO - Predicted Answer (batch): [[('Khoản 2 / Điều 1 / Thông tư 12/2020/TT-NHNN', 'sửa đổi bổ sung', 'Thông tư số 05/2020/TT-NHNN')], [('Điều 1', 'sửa đổi, bổ sung', 'Thông tư này'), ('Điều 3', 'sửa đổi, bổ sung', 'Thông tư số 28/2015/TT-BCT'), ('Mục 4', 'sửa đổi, bổ sung', '“4. Không xét đến những công đoạn ... hoặc từ một trong những loại sau”')], [('Khoản 6 / Điều 1 / Thông tư 06/2020/TT-BCT', 'bãi bỏ', 'Phụ lục VI (Hướng dẫn kê khai C/O mẫu CPTPP và Tờ khai bổ sung) ban hành kèm theo Thông tư số 03/2019/TT-BCT'), ('Khoản 6 / Điều 1 / Thông tư 06/2020/TT-BCT', 'thay thế', 'Phụ lục IV ban hành kèm theo Thông tư này')], [('Khoản 3 / Điều 6 / Luật 28/2018/QH14', 'sửa đổi bổ sung', 'Điều 10')]]
+2026-05-20 06:50:35,799 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:35,829 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:35,858 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:35,914 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:35,915 - INFO - [Raw response 0]: ["Khoản 9 / Điều 1 / Thông tư 04/2025/TT-BCA + sửa đổi bổ sung + điểm b khoản 1 Điều 33"]
+2026-05-20 06:50:35,915 - INFO - [Raw response 1]: ["Khoản 5 / Điều 2 / Thông tư 31/2022/TT-BCT + sửa đổi bổ sung + điểm c khoản 3 Điều 15"]
+2026-05-20 06:50:35,915 - INFO - [Raw response 2]: ["Khoản 3 / Điều 3 / Luật 28/2018/QH14 + sửa đổi bổ sung + khoản 2 Điều 10"]
+2026-05-20 06:50:35,915 - INFO - [Raw response 3]: ["Khoản 1 / Điều 5 / Luật 28/2018/QH14 + bổ sung + Điều 5. Sửa đổi, bổ sung một số điều của Luật Đầu tư công"]
+2026-05-20 06:50:35,915 - INFO - Predicted Answer (batch): [[('Khoản 9 / Điều 1 / Thông tư 04/2025/TT-BCA', 'sửa đổi bổ sung', 'điểm b khoản 1 Điều 33')], [('Khoản 5 / Điều 2 / Thông tư 31/2022/TT-BCT', 'sửa đổi bổ sung', 'điểm c khoản 3 Điều 15')], [('Khoản 3 / Điều 3 / Luật 28/2018/QH14', 'sửa đổi bổ sung', 'khoản 2 Điều 10')], [('Khoản 1 / Điều 5 / Luật 28/2018/QH14', 'bổ sung', 'Điều 5. Sửa đổi, bổ sung một số điều của Luật Đầu tư công')]]
+2026-05-20 06:50:36,630 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:36,929 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:37,038 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:37,072 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:37,073 - INFO - [Raw response 0]: ["Khoản 3 Điều 7 + sửa đổi bổ sung + Điểm a / Khoản 8 / Điều 1 / Thông tư 29/2020/TT-BYT"]
+2026-05-20 06:50:37,073 - INFO - [Raw response 1]: ["Điểm b khoản 2 Điều 3 + sửa đổi, bổ sung + Thông tư số 43/2016/TT-NHNN"]
+2026-05-20 06:50:37,074 - INFO - [Raw response 2]: ["Khoản 3 / Điều 3 / Thông tư 17/2022/TT-BCT + sửa đổi bổ sung + Thông tư số 32/2017/TT-BCT"]
+2026-05-20 06:50:37,074 - INFO - [Raw response 3]: ["Điều 9 + sửa đổi, bổ sung + Điều 1"]
+2026-05-20 06:50:37,074 - INFO - Predicted Answer (batch): [[('Khoản 3 Điều 7', 'sửa đổi bổ sung', 'Điểm a / Khoản 8 / Điều 1 / Thông tư 29/2020/TT-BYT')], [('Điểm b khoản 2 Điều 3', 'sửa đổi, bổ sung', 'Thông tư số 43/2016/TT-NHNN')], [('Khoản 3 / Điều 3 / Thông tư 17/2022/TT-BCT', 'sửa đổi bổ sung', 'Thông tư số 32/2017/TT-BCT')], [('Điều 9', 'sửa đổi, bổ sung', 'Điều 1')]]
+2026-05-20 06:50:38,239 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:38,241 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:38,379 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:38,979 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:38,980 - INFO - [Raw response 0]: ["Điểm đ khoản 2 Điều 7 + sửa đổi, bổ sung + Khoản 7 / Điều 1 / Thông tư 18/2019/TT-NHNN"]
+2026-05-20 06:50:38,980 - INFO - [Raw response 1]: ["Điểm a / Khoản 1 / Điều 1 / Thông tư 23/2022/TT-BTNMT + sửa đổi bổ sung + khoản 2"]
+2026-05-20 06:50:38,980 - INFO - [Raw response 2]: ["Khoản 1 / Điều 1 / Nghị định 139/2020/NĐ-CP + sửa đổi bổ sung + Nghị định số 13/2014/NĐ-CP"]
+2026-05-20 06:50:38,980 - INFO - [Raw response 3]: ["Khoản 1 / Điều 2 / Thông tư 16/2018/TT-BNNPTNT + sửa đổi bổ sung + Thông tư số 48/2013/TT-BNNPTNT", "Khoản 1 / Điều 2 / Thông tư 16/2018/TT-BNNPTNT + sửa đổi bổ sung + Thông tư số 02/2017/TT-BNNPTNT"]
+2026-05-20 06:50:38,981 - INFO - Predicted Answer (batch): [[('Điểm đ khoản 2 Điều 7', 'sửa đổi, bổ sung', 'Khoản 7 / Điều 1 / Thông tư 18/2019/TT-NHNN')], [('Điểm a / Khoản 1 / Điều 1 / Thông tư 23/2022/TT-BTNMT', 'sửa đổi bổ sung', 'khoản 2')], [('Khoản 1 / Điều 1 / Nghị định 139/2020/NĐ-CP', 'sửa đổi bổ sung', 'Nghị định số 13/2014/NĐ-CP')], [('Khoản 1 / Điều 2 / Thông tư 16/2018/TT-BNNPTNT', 'sửa đổi bổ sung', 'Thông tư số 48/2013/TT-BNNPTNT'), ('Khoản 1 / Điều 2 / Thông tư 16/2018/TT-BNNPTNT', 'sửa đổi bổ sung', 'Thông tư số 02/2017/TT-BNNPTNT')]]
+2026-05-20 06:50:40,102 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:40,108 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:40,178 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:40,257 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:40,257 - INFO - [Raw response 0]: ["Khoản 7 / Điều 4 / Thông tư 83/2023/TT-BQP + sửa đổi bổ sung + điểm a khoản 3 Điều 10"]
+2026-05-20 06:50:40,258 - INFO - [Raw response 1]: ["Khoản 2 / Điều 1 / Thông tư 12/2024/TT-BGDĐT + sửa đổi bổ sung + Thông tư số 02/2022/TT-BGDĐT"]
+2026-05-20 06:50:40,258 - INFO - [Raw response 2]: ["Khoản 6 / Điều 1 / Luật 28/2018/QH14 + sửa đổi bổ sung + khoản 4 Điều 64"]
+2026-05-20 06:50:40,258 - INFO - [Raw response 3]: ["Khoản 1 / Điều 9 / Luật 28/2018/QH14 + sửa đổi bổ sung + khoản 3 Điều 4"]
+2026-05-20 06:50:40,258 - INFO - Predicted Answer (batch): [[('Khoản 7 / Điều 4 / Thông tư 83/2023/TT-BQP', 'sửa đổi bổ sung', 'điểm a khoản 3 Điều 10')], [('Khoản 2 / Điều 1 / Thông tư 12/2024/TT-BGDĐT', 'sửa đổi bổ sung', 'Thông tư số 02/2022/TT-BGDĐT')], [('Khoản 6 / Điều 1 / Luật 28/2018/QH14', 'sửa đổi bổ sung', 'khoản 4 Điều 64')], [('Khoản 1 / Điều 9 / Luật 28/2018/QH14', 'sửa đổi bổ sung', 'khoản 3 Điều 4')]]
+2026-05-20 06:50:41,610 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:41,723 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:41,917 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:42,031 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:42,031 - INFO - [Raw response 0]: ["Điểm b / Khoản 5 / Điều 1 / Nghị định 04/2024/NĐ-CP + sửa đổi bổ sung + Nghị định 118/2014/NĐ-CP"]
+2026-05-20 06:50:42,032 - INFO - [Raw response 1]: ["Khoản 3 / Điều 3 / Thông tư 25/2016/TT_NHNN + bãi bỏ + Phụ lục số 01 và Phụ lục số 02 ban hành kèm theo Thông tư 32/2014/TT-NHNN"]
+2026-05-20 06:50:42,032 - INFO - [Raw response 2]: ["Khoản 20 / Điều 1 / Nghị định 140/2018/NĐ-CP + sửa đổi bổ sung + Khoản 1 và Khoản 2 Điều 40"]
+2026-05-20 06:50:42,032 - INFO - [Raw response 3]: ["Điểm a / Khoản 2 / Điều 7 / Thông tư 17/2023/TT-BYT + bãi bỏ + Mục 4 giải thích từ ngữ và mục 5 soát xét bổ sung thuộc Phần 1 Quy định chung của Quy định Giới hạn tối đa ô nhiễm sinh học và hóa học trong thực phẩm"]
+2026-05-20 06:50:42,032 - INFO - Predicted Answer (batch): [[('Điểm b / Khoản 5 / Điều 1 / Nghị định 04/2024/NĐ-CP', 'sửa đổi bổ sung', 'Nghị định 118/2014/NĐ-CP')], [('Khoản 3 / Điều 3 / Thông tư 25/2016/TT_NHNN', 'bãi bỏ', 'Phụ lục số 01 và Phụ lục số 02 ban hành kèm theo Thông tư 32/2014/TT-NHNN')], [('Khoản 20 / Điều 1 / Nghị định 140/2018/NĐ-CP', 'sửa đổi bổ sung', 'Khoản 1 và Khoản 2 Điều 40')], [('Điểm a / Khoản 2 / Điều 7 / Thông tư 17/2023/TT-BYT', 'bãi bỏ', 'Mục 4 giải thích từ ngữ và mục 5 soát xét bổ sung thuộc Phần 1 Quy định chung của Quy định Giới hạn tối đa ô nhiễm sinh học và hóa học trong thực phẩm')]]
+2026-05-20 06:50:43,212 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:43,213 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:43,382 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:44,759 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:44,760 - INFO - [Raw response 0]: ["Khoản 10 / Điều 5 / Nghị định 140/2018/NĐ-CP + sửa đổi bổ sung + Phụ lục Va"]
+2026-05-20 06:50:44,760 - INFO - [Raw response 1]: ["Khoản 1 / Điều 8 / Thông tư 13/2023/TT-BVHTTDL + sửa đổi bổ sung + Thông tư số 01/2020/TT-BVHTTDL"]
+2026-05-20 06:50:44,760 - INFO - [Raw response 2]: ["Khoản 21 / Điều 1 / Thông tư 16/2018/TT-BNNPTNT + sửa đổi bổ sung + Điều 40"]
+2026-05-20 06:50:44,760 - INFO - [Raw response 3]: ["(“4. Không xét đến những công đoạn ... hoặc từ một trong những loại sau”) + sửa đổi bổ sung + “5. Không xét đến những công đoạn nêu tại khoản 2, 3, 4, nguyên liệu dệt không có xuất xứ liệt kê trong danh mục dưới đây sẽ được coi là có xuất xứ tại một Nước thành viên nếu đáp ứng các công đoạn gia công, chế biến quy định dưới đây: Xơ và sợi Những công đoạn sản xuất, gia công dưới đây được thực hiện với nguyên liệu không có xuất xứ để tạo ra sản phẩm có xuất xứ: Sản xuất thông qua quá trình tạo xơ (pô-li-me hóa, đa trùng ngưng và đùn), kéo sợi, xe sợi, tạo hình hoặc bện từ sợi pha hoặc từ một trong những loại sau:”]
+2026-05-20 06:50:44,760 - WARNING - Failed to parse with ast.literal_eval: unterminated string literal (detected at line 1) (<unknown>, line 1). Trying fallback patterns...
+2026-05-20 06:50:44,762 - INFO - Parsed 1 triplets using unquoted plus-separated pattern
+2026-05-20 06:50:44,762 - INFO - Predicted Answer (batch): [[('Khoản 10 / Điều 5 / Nghị định 140/2018/NĐ-CP', 'sửa đổi bổ sung', 'Phụ lục Va')], [('Khoản 1 / Điều 8 / Thông tư 13/2023/TT-BVHTTDL', 'sửa đổi bổ sung', 'Thông tư số 01/2020/TT-BVHTTDL')], [('Khoản 21 / Điều 1 / Thông tư 16/2018/TT-BNNPTNT', 'sửa đổi bổ sung', 'Điều 40')], [('(“4. Không xét đến những công đoạn ... hoặc từ một trong những loại sau”)', 'sửa đổi bổ sung', '“5. Không xét đến những công đoạn nêu tại khoản 2')]]
+2026-05-20 06:50:45,795 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:45,796 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:45,890 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:46,521 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:46,522 - INFO - [Raw response 0]: ["Khoản 5 / Điều 10 / Chương IV / Nghị định 140/2018/NĐ-CP + sửa đổi + Khoản 3 Điều 16"]
+2026-05-20 06:50:46,522 - INFO - [Raw response 1]: ["Khoản 9 / Điều 1 / Thông tư 21/2020/TT-BGTVT + sửa đổi bổ sung + Điều 14"]
+2026-05-20 06:50:46,522 - INFO - [Raw response 2]: ["Khoản 4 / Điều 1 / Thông tư 03/2024/TT-BCA + sửa đổi bổ sung + Điều 8"]
+2026-05-20 06:50:46,522 - INFO - [Raw response 3]: ["Điều 6 / Chương I / Nghị định 77/NĐ-CP + bổ sung + Điều 11d Nghị định số 187/2013/NĐ-CP ngày 20 tháng 11 năm 2013 của Chính phủ quy định chi tiết thi hành Luật thương mại về hoạt động mua bán hàng hóa quốc tế và các hoạt động đại lý mua, bán, gia công và quá cảnh hàng hóa với nước ngoài"]
+2026-05-20 06:50:46,522 - INFO - Predicted Answer (batch): [[('Khoản 5 / Điều 10 / Chương IV / Nghị định 140/2018/NĐ-CP', 'sửa đổi', 'Khoản 3 Điều 16')], [('Khoản 9 / Điều 1 / Thông tư 21/2020/TT-BGTVT', 'sửa đổi bổ sung', 'Điều 14')], [('Khoản 4 / Điều 1 / Thông tư 03/2024/TT-BCA', 'sửa đổi bổ sung', 'Điều 8')], [('Điều 6 / Chương I / Nghị định 77/NĐ-CP', 'bổ sung', 'Điều 11d Nghị định số 187/2013/NĐ-CP ngày 20 tháng 11 năm 2013 của Chính phủ quy định chi tiết thi hành Luật thương mại về hoạt động mua bán hàng hóa quốc tế và các hoạt động đại lý mua, bán, gia công và quá cảnh hàng hóa với nước ngoài')]]
+2026-05-20 06:50:47,699 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:47,731 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:47,771 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:48,090 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:48,091 - INFO - [Raw response 0]: ["Khoản 2 / Điều 1 / Thông tư 23/2022/TT-BTNMT + sửa đổi bổ sung + khoản 2 Điều 10"]
+2026-05-20 06:50:48,091 - INFO - [Raw response 1]: ["Điều 1 / Thông tư 12/2020/TT-NHNN + sửa đổi bổ sung + Thông tư số 05/2020/TT-NHNN"]
+2026-05-20 06:50:48,091 - INFO - [Raw response 2]: ["Khoản 2 / Điều 1 / Thông tư 88/2020/TT-BTC + bãi bỏ + khoản 3, khoản 4 Điều 26 Thông tư số 68/2019/TT-BTC ngày 30/9/2019 của Bộ Tài chính."]
+2026-05-20 06:50:48,091 - INFO - [Raw response 3]: ["Khoản 2 / Điều 2 / Thông tư 18/2018/TT-BLĐTBXH + sửa đổi + khoản 3 Điều 18"]
+2026-05-20 06:50:48,092 - INFO - Predicted Answer (batch): [[('Khoản 2 / Điều 1 / Thông tư 23/2022/TT-BTNMT', 'sửa đổi bổ sung', 'khoản 2 Điều 10')], [('Điều 1 / Thông tư 12/2020/TT-NHNN', 'sửa đổi bổ sung', 'Thông tư số 05/2020/TT-NHNN')], [('Khoản 2 / Điều 1 / Thông tư 88/2020/TT-BTC', 'bãi bỏ', 'khoản 3, khoản 4 Điều 26 Thông tư số 68/2019/TT-BTC ngày 30/9/2019 của Bộ Tài chính.')], [('Khoản 2 / Điều 2 / Thông tư 18/2018/TT-BLĐTBXH', 'sửa đổi', 'khoản 3 Điều 18')]]
+2026-05-20 06:50:49,165 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:49,199 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:49,241 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:49,595 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:49,596 - INFO - [Raw response 0]: ["Khoản 7 / Điều 1 / Thông tư 29/2020/TT-BYT + sửa đổi bổ sung + khoản 6 Điều 9 Thông tư số 36/2018/TT-BYT ngày 22 tháng 11 năm 2018 của Bộ trưởng Bộ Y tế"]
+2026-05-20 06:50:49,597 - INFO - [Raw response 1]: ["Khoản 4 / Điều 2 / Thông tư 16/2018/TT-BNNPTNT + sửa đổi + khoản 4 Điều 1"]
+2026-05-20 06:50:49,597 - INFO - [Raw response 2]: ["Khoản 7 / Điều 1 / Luật 28/2018/QH14 + sửa đổi bổ sung + khoản 1 Điều 65"]
+2026-05-20 06:50:49,597 - INFO - [Raw response 3]: ["Điều 3 / Thông tư 17/2023/TT-BYT + sửa đổi bổ sung + Thông tư số 18/2019/TT-BYT"]
+2026-05-20 06:50:49,597 - INFO - Predicted Answer (batch): [[('Khoản 7 / Điều 1 / Thông tư 29/2020/TT-BYT', 'sửa đổi bổ sung', 'khoản 6 Điều 9 Thông tư số 36/2018/TT-BYT ngày 22 tháng 11 năm 2018 của Bộ trưởng Bộ Y tế')], [('Khoản 4 / Điều 2 / Thông tư 16/2018/TT-BNNPTNT', 'sửa đổi', 'khoản 4 Điều 1')], [('Khoản 7 / Điều 1 / Luật 28/2018/QH14', 'sửa đổi bổ sung', 'khoản 1 Điều 65')], [('Điều 3 / Thông tư 17/2023/TT-BYT', 'sửa đổi bổ sung', 'Thông tư số 18/2019/TT-BYT')]]
+2026-05-20 06:50:50,660 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:50,776 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:50,831 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:50,965 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:50,966 - INFO - [Raw response 0]: ["Khoản 8 / Điều 1 / Thông tư 13/2023/TT-BNNPTNT + sửa đổi bổ sung + Điều 13"]
+2026-05-20 06:50:50,967 - INFO - [Raw response 1]: ["Khoản 2 / Điều 4 / Thông tư 08/2018/TT-BKHĐT + sửa đổi bổ sung + các Thông tư liên quan đến chế độ báo cáo định kỳ thuộc phạm vi quản lý nhà nước của Bộ Kế hoạch và Đầu tư"]
+2026-05-20 06:50:50,967 - INFO - [Raw response 2]: ["Khoản 1 / Điều 1 / Thông tư 31/2022/TT-BCT + sửa đổi bổ sung + Thông tư số 57/2014/TT-BCT"]
+2026-05-20 06:50:50,967 - INFO - [Raw response 3]: ["Điều 1 / Thông tư 05/2020/TT-BYT + sửa đổi bổ sung + Thông tư số 24/2018/TT-BYT"]
+2026-05-20 06:50:50,967 - INFO - Predicted Answer (batch): [[('Khoản 8 / Điều 1 / Thông tư 13/2023/TT-BNNPTNT', 'sửa đổi bổ sung', 'Điều 13')], [('Khoản 2 / Điều 4 / Thông tư 08/2018/TT-BKHĐT', 'sửa đổi bổ sung', 'các Thông tư liên quan đến chế độ báo cáo định kỳ thuộc phạm vi quản lý nhà nước của Bộ Kế hoạch và Đầu tư')], [('Khoản 1 / Điều 1 / Thông tư 31/2022/TT-BCT', 'sửa đổi bổ sung', 'Thông tư số 57/2014/TT-BCT')], [('Điều 1 / Thông tư 05/2020/TT-BYT', 'sửa đổi bổ sung', 'Thông tư số 24/2018/TT-BYT')]]
+2026-05-20 06:50:52,144 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:52,175 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:52,353 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:52,457 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:52,458 - INFO - [Raw response 0]: ["Điểm a / Khoản 2 / Điều 1 / Thông tư 25/2016/TT_NHNN + sửa đổi bổ sung + Thông tư số 11/2013/TT-NHNN"]
+2026-05-20 06:50:52,458 - INFO - [Raw response 1]: ["Khoản 1 / Điều 1 / Thông tư 123/2018/TT-BTC + sửa đổi bổ sung + Thông tư số 114/2014/TT-BTC ngày 20/8/2014"]
+2026-05-20 06:50:52,458 - INFO - [Raw response 2]: ["Khoản 1 / Điều 11 / Luật 28/2018/QH14 + sửa đổi bổ sung + khoản 5 Điều 5"]
+2026-05-20 06:50:52,459 - INFO - [Raw response 3]: ["Khoản 9 / Điều 1 / Thông tư 26/2020/TT-BYT + sửa đổi bổ sung + Điều 13"]
+2026-05-20 06:50:52,459 - INFO - Predicted Answer (batch): [[('Điểm a / Khoản 2 / Điều 1 / Thông tư 25/2016/TT_NHNN', 'sửa đổi bổ sung', 'Thông tư số 11/2013/TT-NHNN')], [('Khoản 1 / Điều 1 / Thông tư 123/2018/TT-BTC', 'sửa đổi bổ sung', 'Thông tư số 114/2014/TT-BTC ngày 20/8/2014')], [('Khoản 1 / Điều 11 / Luật 28/2018/QH14', 'sửa đổi bổ sung', 'khoản 5 Điều 5')], [('Khoản 9 / Điều 1 / Thông tư 26/2020/TT-BYT', 'sửa đổi bổ sung', 'Điều 13')]]
+2026-05-20 06:50:53,774 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:53,821 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:53,879 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:53,903 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:53,904 - INFO - [Raw response 0]: ["Khoản 8 / Điều 1 / Thông tư 21/2020/TT-BGTVT + sửa đổi bổ sung + Thông tư số 81/2014/TT-BGTVT"]
+2026-05-20 06:50:53,904 - INFO - [Raw response 1]: ["Điều 4 / Thông tư 13/2023/TT-BVHTTDL + sửa đổi bổ sung + Thông tư số 16/2014/TT-BVHTTDL"]
+2026-05-20 06:50:53,905 - INFO - [Raw response 2]: ["Điểm b / Khoản 3 / Điều 1 / Thông tư 25/2016/TT_NHNN + sửa đổi bổ sung + điểm c (iii) và điểm c (iv) khoản 5"]
+2026-05-20 06:50:53,905 - INFO - [Raw response 3]: [
+"Khoản 6 / Điều 1 / Thông tư 28/2022/TT-BCA + sửa đổi bổ sung + Điều 14"
+]
+2026-05-20 06:50:53,905 - INFO - Predicted Answer (batch): [[('Khoản 8 / Điều 1 / Thông tư 21/2020/TT-BGTVT', 'sửa đổi bổ sung', 'Thông tư số 81/2014/TT-BGTVT')], [('Điều 4 / Thông tư 13/2023/TT-BVHTTDL', 'sửa đổi bổ sung', 'Thông tư số 16/2014/TT-BVHTTDL')], [('Điểm b / Khoản 3 / Điều 1 / Thông tư 25/2016/TT_NHNN', 'sửa đổi bổ sung', 'điểm c (iii) và điểm c (iv) khoản 5')], [('Khoản 6 / Điều 1 / Thông tư 28/2022/TT-BCA', 'sửa đổi bổ sung', 'Điều 14')]]
+2026-05-20 06:50:55,032 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:55,284 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:55,469 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:56,202 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:56,202 - INFO - [Raw response 0]: ["Khoản 1 / Điều 1 / Nghị định 118/2020/NĐ-CP + bổ sung + Điều 3"]
+2026-05-20 06:50:56,203 - INFO - [Raw response 1]: [
+"Khoản 1 / Điều 2 / Thông tư 04/2025/TT-BCA + sửa đổi bổ sung + khoản 3 Điều 103",
+"Khoản 1 / Điều 2 / Thông tư 04/2025/TT-BCA + sửa đổi bổ sung + khoản 4 Điều 103",
+"Điều 2 / Thông tư 04/2025/TT-BCA + sửa đổi bổ sung + Thông tư số 35/2019/TT-BCA"
+]
+2026-05-20 06:50:56,203 - INFO - [Raw response 2]: ["Điều 14 / sửa đổi bổ sung / khoản 2, 3, 4 Điều 21 Nghị định số 39/2009/NĐ-CP ngày 23 tháng 4 năm 2009 của Chính phủ về vật liệu nổ công nghiệp"]
+2026-05-20 06:50:56,203 - WARNING - No valid triplets parsed from response: ["Điều 14 / sửa đổi bổ sung / khoản 2, 3, 4 Điều 21 Nghị định số 39/2009/NĐ-CP ngày 23 tháng 4 năm 2009 của Chính phủ về vật liệu nổ công nghiệp"]
+2026-05-20 06:50:56,203 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 550, 'completion_tokens': 65, 'total_tokens': 615}
+2026-05-20 06:50:56,203 - INFO - [Raw response 3]: ["Khoản 3 / Điều 3 / Thông tư 31/2022/TT-BCT + bãi bỏ + Điều 27 Thông tư số 57/2020/TT-BCT"]
+2026-05-20 06:50:56,203 - INFO - Predicted Answer (batch): [[('Khoản 1 / Điều 1 / Nghị định 118/2020/NĐ-CP', 'bổ sung', 'Điều 3')], [('Khoản 1 / Điều 2 / Thông tư 04/2025/TT-BCA', 'sửa đổi bổ sung', 'khoản 3 Điều 103'), ('Khoản 1 / Điều 2 / Thông tư 04/2025/TT-BCA', 'sửa đổi bổ sung', 'khoản 4 Điều 103'), ('Điều 2 / Thông tư 04/2025/TT-BCA', 'sửa đổi bổ sung', 'Thông tư số 35/2019/TT-BCA')], [], [('Khoản 3 / Điều 3 / Thông tư 31/2022/TT-BCT', 'bãi bỏ', 'Điều 27 Thông tư số 57/2020/TT-BCT')]]
+2026-05-20 06:50:57,354 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:57,512 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:57,668 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:59,993 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:50:59,994 - INFO - [Raw response 0]: ["Khoản 5 / Điều 1 / Thông tư 29/2020/TT-BYT + sửa đổi bổ sung + Thông tư số 32/2018/TT-BYT"]
+2026-05-20 06:50:59,994 - INFO - [Raw response 1]: ["Điều 17 + sửa đổi bổ sung + Thông tư số 24/2018/TT-BGTVT", "khoản 1 Điều 21 + sửa đổi bổ sung + Thông tư số 24/2018/TT-BGTVT"]
+2026-05-20 06:50:59,994 - INFO - [Raw response 2]: ["Khoản 5 / Điều 1 / Thông tư 17/2023/TT-BYT + sửa đổi bổ sung + khoản 1 Điều 6"]
+2026-05-20 06:50:59,995 - INFO - [Raw response 3]: [
+"Điều 8 / Thông tư 18/2018/TT-BLĐTBXH + sửa đổi bổ sung + khoản 4 Mục II Thông tư liên tịch số 17/2007/TTLT-BLĐTBXH-NHNNVN.",
+"Điều 9 / Thông tư 18/2018/TT-BLĐTBXH + sửa đổi bổ sung + Thông tư số 40/2016/TT-BLĐTBXH.",
+"6 + sửa đổi bổ sung + Chương II.",
+"7 + bãi bỏ + khoản 2 Điều 7.",
+"8 + sửa đổi bổ sung + Điều 12.",
+"9 + sửa đổi bổ sung + Mẫu số 1, Mẫu số 2 quy định tại khoản 1 Điều 4; Mẫu số 3 quy định tại khoản 2 Điều 4; Mẫu số 9 quy định tại khoản 2 Điều 10; Mẫu số 12 quy định tại khoản 2 Điều 11 và Mẫu số 15 quy định tại khoản 2 Điều 13 ban hành kèm theo Thông tư số 40/2016/TT-BLĐTBXH."
+]
+2026-05-20 06:50:59,995 - INFO - Predicted Answer (batch): [[('Khoản 5 / Điều 1 / Thông tư 29/2020/TT-BYT', 'sửa đổi bổ sung', 'Thông tư số 32/2018/TT-BYT')], [('Điều 17', 'sửa đổi bổ sung', 'Thông tư số 24/2018/TT-BGTVT'), ('khoản 1 Điều 21', 'sửa đổi bổ sung', 'Thông tư số 24/2018/TT-BGTVT')], [('Khoản 5 / Điều 1 / Thông tư 17/2023/TT-BYT', 'sửa đổi bổ sung', 'khoản 1 Điều 6')], [('Điều 8 / Thông tư 18/2018/TT-BLĐTBXH', 'sửa đổi bổ sung', 'khoản 4 Mục II Thông tư liên tịch số 17/2007/TTLT-BLĐTBXH-NHNNVN.'), ('Điều 9 / Thông tư 18/2018/TT-BLĐTBXH', 'sửa đổi bổ sung', 'Thông tư số 40/2016/TT-BLĐTBXH.'), ('6', 'sửa đổi bổ sung', 'Chương II.'), ('7', 'bãi bỏ', 'khoản 2 Điều 7.'), ('8', 'sửa đổi bổ sung', 'Điều 12.'), ('9', 'sửa đổi bổ sung', 'Mẫu số 1, Mẫu số 2 quy định tại khoản 1 Điều 4; Mẫu số 3 quy định tại khoản 2 Điều 4; Mẫu số 9 quy định tại khoản 2 Điều 10; Mẫu số 12 quy định tại khoản 2 Điều 11 và Mẫu số 15 quy định tại khoản 2 Điều 13 ban hành kèm theo Thông tư số 40/2016/TT-BLĐTBXH.')]]
+2026-05-20 06:51:01,089 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:01,152 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:01,179 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:01,556 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:01,557 - INFO - [Raw response 0]: ["Điều 9 / Nghị định 140/2018/NĐ-CP + sửa đổi bổ sung + Nghị định số 147/2003/NĐ-CP"]
+2026-05-20 06:51:01,557 - INFO - [Raw response 1]: ["Khoản 2 / Điều 14 / Chương V / Nghị định 140/2018/NĐ-CP + sửa đổi bổ sung + Điều 27"]
+2026-05-20 06:51:01,557 - INFO - [Raw response 2]: ["Khoản 3 / Điều 2 / Thông tư 28/2022/TT-BCA + sửa đổi bổ sung + khoản 1 Điều 3"]
+2026-05-20 06:51:01,557 - INFO - [Raw response 3]: ["Khoản 4 Điều 11, Phụ lục 4, Phụ lục 5, Phụ lục 6A và Phụ lục 6b Thông tư số 22/2009/TT-BCT + sửa đổi bổ sung + Điều 2 / Thông tư 06/2017/TT-BCT"]
+2026-05-20 06:51:01,558 - INFO - Predicted Answer (batch): [[('Điều 9 / Nghị định 140/2018/NĐ-CP', 'sửa đổi bổ sung', 'Nghị định số 147/2003/NĐ-CP')], [('Khoản 2 / Điều 14 / Chương V / Nghị định 140/2018/NĐ-CP', 'sửa đổi bổ sung', 'Điều 27')], [('Khoản 3 / Điều 2 / Thông tư 28/2022/TT-BCA', 'sửa đổi bổ sung', 'khoản 1 Điều 3')], [('Khoản 4 Điều 11, Phụ lục 4, Phụ lục 5, Phụ lục 6A và Phụ lục 6b Thông tư số 22/2009/TT-BCT', 'sửa đổi bổ sung', 'Điều 2 / Thông tư 06/2017/TT-BCT')]]
+2026-05-20 06:51:02,638 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:02,777 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:02,982 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:03,577 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:03,577 - INFO - [Raw response 0]: [
+  [
+    "Khoản 2 / Điều 16 / Chương VI / Nghị định 140/2018/NĐ-CP",
+    "sửa đổi",
+    "Điều 17"
+  ]
+]
+2026-05-20 06:51:03,578 - INFO - [Raw response 1]: ["Điểm b khoản 1 Điều 38 + sửa đổi, bổ sung + Thông tư số 13/2018/TT-NHNN"]
+2026-05-20 06:51:03,578 - INFO - [Raw response 2]: ["Điều 2 / Thông tư 23/2022/TT-BTNMT + bãi bỏ + khoản 3 Điều 6, khoản 4 Điều 7, Điều 9 Thông tư số 28/2019/TT-BTNMT ngày 31 tháng 12 năm 2019 của Bộ trưởng Bộ Tài nguyên và Môi trường quy định kỹ thuật đánh giá chất nạo vét và xác định khu vực nhận chìm chất nạo vét ở vùng biển Việt Nam"]
+2026-05-20 06:51:03,578 - INFO - [Raw response 3]: ["Khoản 11 / Điều 1 / Thông tư 13/2023/TT-BNNPTNT + sửa đổi bổ sung + khoản 3 Điều 19"]
+2026-05-20 06:51:03,578 - INFO - Predicted Answer (batch): [[('Khoản 2 / Điều 16 / Chương VI / Nghị định 140/2018/NĐ-CP', 'sửa đổi', 'Điều 17')], [('Điểm b khoản 1 Điều 38', 'sửa đổi, bổ sung', 'Thông tư số 13/2018/TT-NHNN')], [('Điều 2 / Thông tư 23/2022/TT-BTNMT', 'bãi bỏ', 'khoản 3 Điều 6, khoản 4 Điều 7, Điều 9 Thông tư số 28/2019/TT-BTNMT ngày 31 tháng 12 năm 2019 của Bộ trưởng Bộ Tài nguyên và Môi trường quy định kỹ thuật đánh giá chất nạo vét và xác định khu vực nhận chìm chất nạo vét ở vùng biển Việt Nam')], [('Khoản 11 / Điều 1 / Thông tư 13/2023/TT-BNNPTNT', 'sửa đổi bổ sung', 'khoản 3 Điều 19')]]
+2026-05-20 06:51:04,755 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:04,914 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:04,915 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:05,241 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:05,242 - INFO - [Raw response 0]: ["Khoản 2 / Điều 1 / Thông tư 03/2024/TT-BGTVT + sửa đổi bổ sung + khoản 4 Điều 3"]
+2026-05-20 06:51:05,242 - INFO - [Raw response 1]: ["Khoản 4 / Điều 1 / Thông tư 29/2020/TT-BYT + sửa đổi bổ sung + điểm đ khoản 3 Điều 18 Thông tư số 03/2018/TT-BYT ngày 09 tháng 02 năm 2018 của Bộ trưởng Bộ Y tế"]
+2026-05-20 06:51:05,242 - INFO - [Raw response 2]: ["Khoản 10 / Điều 1 / Thông tư 13/2023/TT-BNNPTNT + sửa đổi bổ sung + khoản 1, điểm c khoản 3 và khoản 4 Điều 18"]
+2026-05-20 06:51:05,243 - INFO - [Raw response 3]: ["Khoản 1 / Điều 3 / Thông tư 21/2020/TT-BGTVT + sửa đổi bổ sung + Thông tư số 33/2016/TT-BGTVT"]
+2026-05-20 06:51:05,243 - INFO - Predicted Answer (batch): [[('Khoản 2 / Điều 1 / Thông tư 03/2024/TT-BGTVT', 'sửa đổi bổ sung', 'khoản 4 Điều 3')], [('Khoản 4 / Điều 1 / Thông tư 29/2020/TT-BYT', 'sửa đổi bổ sung', 'điểm đ khoản 3 Điều 18 Thông tư số 03/2018/TT-BYT ngày 09 tháng 02 năm 2018 của Bộ trưởng Bộ Y tế')], [('Khoản 10 / Điều 1 / Thông tư 13/2023/TT-BNNPTNT', 'sửa đổi bổ sung', 'khoản 1, điểm c khoản 3 và khoản 4 Điều 18')], [('Khoản 1 / Điều 3 / Thông tư 21/2020/TT-BGTVT', 'sửa đổi bổ sung', 'Thông tư số 33/2016/TT-BGTVT')]]
+2026-05-20 06:51:06,324 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:06,437 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:06,438 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:06,473 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:06,474 - INFO - [Raw response 0]: ["Khoản 4 / Điều 4 / Luật 28/2018/QH14 + sửa đổi bổ sung + điểm c khoản 6 Điều 35"]
+2026-05-20 06:51:06,474 - INFO - [Raw response 1]: ["Khoản 4 Điều 1 / Thông tư 17/2021/TT-BTTTT + sửa đổi, bổ sung + Thông tư số 11/2015/TT-BTTTT"]
+2026-05-20 06:51:06,474 - INFO - [Raw response 2]: ["Điều 3 / Thông tư 21/2020/TT-BGTVT + sửa đổi bổ sung + Thông tư số 33/2016/TT-BGTVT"]
+2026-05-20 06:51:06,475 - INFO - [Raw response 3]: ["Điểm a(iv) khoản 1 Điều 64 + sửa đổi, bổ sung + Khoản 6 / Điều 1 / Thông tư 40/2018/TT-NHNN"]
+2026-05-20 06:51:06,475 - INFO - Predicted Answer (batch): [[('Khoản 4 / Điều 4 / Luật 28/2018/QH14', 'sửa đổi bổ sung', 'điểm c khoản 6 Điều 35')], [('Khoản 4 Điều 1 / Thông tư 17/2021/TT-BTTTT', 'sửa đổi, bổ sung', 'Thông tư số 11/2015/TT-BTTTT')], [('Điều 3 / Thông tư 21/2020/TT-BGTVT', 'sửa đổi bổ sung', 'Thông tư số 33/2016/TT-BGTVT')], [('Điểm a(iv) khoản 1 Điều 64', 'sửa đổi, bổ sung', 'Khoản 6 / Điều 1 / Thông tư 40/2018/TT-NHNN')]]
+2026-05-20 06:51:07,591 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:07,605 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:07,634 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:07,703 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:07,703 - INFO - [Raw response 0]: ["Khoản 1 / Điều 1 / Thông tư 26/2020/TT-BYT + sửa đổi bổ sung + Khoản 2 Điều 2"]
+2026-05-20 06:51:07,703 - INFO - [Raw response 1]: ["Khoản 1 / Điều 1 / Thông tư 29/2020/TT-BYT + sửa đổi bổ sung + Thông tư số 06/2011/TT-BYT"]
+2026-05-20 06:51:07,704 - INFO - [Raw response 2]: ["Điều 2 / Thông tư 31/2022/TT-BCT + sửa đổi bổ sung + Thông tư số 57/2020/TT-BCT"]
+2026-05-20 06:51:07,704 - INFO - [Raw response 3]: ["Điều 7 / Nghị định 77/NĐ-CP + bổ sung + Điều 28a Nghị định số 187/2013/NĐ-CP"]
+2026-05-20 06:51:07,704 - INFO - Predicted Answer (batch): [[('Khoản 1 / Điều 1 / Thông tư 26/2020/TT-BYT', 'sửa đổi bổ sung', 'Khoản 2 Điều 2')], [('Khoản 1 / Điều 1 / Thông tư 29/2020/TT-BYT', 'sửa đổi bổ sung', 'Thông tư số 06/2011/TT-BYT')], [('Điều 2 / Thông tư 31/2022/TT-BCT', 'sửa đổi bổ sung', 'Thông tư số 57/2020/TT-BCT')], [('Điều 7 / Nghị định 77/NĐ-CP', 'bổ sung', 'Điều 28a Nghị định số 187/2013/NĐ-CP')]]
+2026-05-20 06:51:08,885 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:08,976 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:09,526 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:10,185 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:10,186 - INFO - [Raw response 0]: ["Khoản 3 / Điều 2 / Thông tư 03/2024/TT-BCA + sửa đổi bổ sung + Thông tư số 42/2017/TT-BCA", "Khoản 3 / Điều 2 / Thông tư 03/2024/TT-BCA + sửa đổi bổ sung + Thông tư số 43/2017/TT-BCA", "Khoản 3 / Điều 2 / Thông tư 03/2024/TT-BCA + sửa đổi bổ sung + Thông tư số 45/2017/TT-BCA"]
+2026-05-20 06:51:10,186 - INFO - [Raw response 1]: ["Khoản 2 / Điều 1 / Thông tư 26/2020/TT-BYT + sửa đổi bổ sung + Thông tư 22/2013/TT-BYT", "Khoản 5 Điều 6 + bãi bỏ + Khoản 2 / Điều 1 / Thông tư 26/2020/TT-BYT"]
+2026-05-20 06:51:10,187 - INFO - [Raw response 2]: ["Khoản 2 / Điều 7 / Thông tư 17/2023/TT-BYT + bãi bỏ + các văn bản quy phạm pháp luật do Bộ trưởng Bộ Y tế ban hành"]
+2026-05-20 06:51:10,187 - INFO - [Raw response 3]: ["Khoản 1 / Điều 1 / Thông tư 04/2025/TT-BCA + sửa đổi bổ sung + khoản 1 Điều 9"]
+2026-05-20 06:51:10,187 - INFO - Predicted Answer (batch): [[('Khoản 3 / Điều 2 / Thông tư 03/2024/TT-BCA', 'sửa đổi bổ sung', 'Thông tư số 42/2017/TT-BCA'), ('Khoản 3 / Điều 2 / Thông tư 03/2024/TT-BCA', 'sửa đổi bổ sung', 'Thông tư số 43/2017/TT-BCA'), ('Khoản 3 / Điều 2 / Thông tư 03/2024/TT-BCA', 'sửa đổi bổ sung', 'Thông tư số 45/2017/TT-BCA')], [('Khoản 2 / Điều 1 / Thông tư 26/2020/TT-BYT', 'sửa đổi bổ sung', 'Thông tư 22/2013/TT-BYT'), ('Khoản 5 Điều 6', 'bãi bỏ', 'Khoản 2 / Điều 1 / Thông tư 26/2020/TT-BYT')], [('Khoản 2 / Điều 7 / Thông tư 17/2023/TT-BYT', 'bãi bỏ', 'các văn bản quy phạm pháp luật do Bộ trưởng Bộ Y tế ban hành')], [('Khoản 1 / Điều 1 / Thông tư 04/2025/TT-BCA', 'sửa đổi bổ sung', 'khoản 1 Điều 9')]]
+2026-05-20 06:51:11,406 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:11,452 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:11,522 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:11,623 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:11,624 - INFO - [Raw response 0]: ["Khoản 5 / Điều 1 / Thông tư 16/2018/TT-BNNPTNT + sửa đổi bổ sung + Thông tư số 48/2013/TT-BNNPTNT"]
+2026-05-20 06:51:11,624 - INFO - [Raw response 1]: ["Khoản 18, khoản 19 Điều 1, khoản 1 Điều 2 Thông tư số 28/2016/TT-NHNN + sửa đổi bổ sung + Thông tư số 21/2014/TT-NHNN"]
+2026-05-20 06:51:11,624 - INFO - [Raw response 2]: ["Khoản 7 / Điều 1 / Thông tư 26/2018/TT-BCA + sửa đổi bổ sung + Thông tư số 56/2017/TT-BCA"]
+2026-05-20 06:51:11,624 - INFO - [Raw response 3]: ["Điều 20 / Nghị định 77/NĐ-CP + bổ sung + Điều 15b Nghị định số 202/2013/NĐ-CP"]
+2026-05-20 06:51:11,624 - INFO - Predicted Answer (batch): [[('Khoản 5 / Điều 1 / Thông tư 16/2018/TT-BNNPTNT', 'sửa đổi bổ sung', 'Thông tư số 48/2013/TT-BNNPTNT')], [('Khoản 18, khoản 19 Điều 1, khoản 1 Điều 2 Thông tư số 28/2016/TT-NHNN', 'sửa đổi bổ sung', 'Thông tư số 21/2014/TT-NHNN')], [('Khoản 7 / Điều 1 / Thông tư 26/2018/TT-BCA', 'sửa đổi bổ sung', 'Thông tư số 56/2017/TT-BCA')], [('Điều 20 / Nghị định 77/NĐ-CP', 'bổ sung', 'Điều 15b Nghị định số 202/2013/NĐ-CP')]]
+2026-05-20 06:51:12,713 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:12,789 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:12,997 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:13,032 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:13,032 - INFO - [Raw response 0]: ["Khoản 7 / Điều 11 / Nghị định 140/2018/NĐ-CP + sửa đổi bổ sung + Khoản 2 Điều 12"]
+2026-05-20 06:51:13,033 - INFO - [Raw response 1]: ["Khoản 8 / Điều 1 / Nghị định 118/2020/NĐ-CP + sửa đổi bổ sung + Điều 18"]
+2026-05-20 06:51:13,033 - INFO - [Raw response 2]: ["Điều 2 / Nghị định 77/2024/NĐ-C + thay thế + Phụ lục I, Phụ lục II, Phụ lục III ban hành kèm theo Nghị định số 55/2023/NĐ-CP"]
+2026-05-20 06:51:13,033 - INFO - [Raw response 3]: [
+  [
+    "Khoản 8 / Điều 3 / Mục 4 / Thông tư 19/2020/TT-BCT",
+    "bổ sung",
+    "khoản 4 Điều 8"
+  ]
+]
+2026-05-20 06:51:13,033 - INFO - Predicted Answer (batch): [[('Khoản 7 / Điều 11 / Nghị định 140/2018/NĐ-CP', 'sửa đổi bổ sung', 'Khoản 2 Điều 12')], [('Khoản 8 / Điều 1 / Nghị định 118/2020/NĐ-CP', 'sửa đổi bổ sung', 'Điều 18')], [('Điều 2 / Nghị định 77/2024/NĐ-C', 'thay thế', 'Phụ lục I, Phụ lục II, Phụ lục III ban hành kèm theo Nghị định số 55/2023/NĐ-CP')], [('Khoản 8 / Điều 3 / Mục 4 / Thông tư 19/2020/TT-BCT', 'bổ sung', 'khoản 4 Điều 8')]]
+2026-05-20 06:51:14,248 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:14,293 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:14,322 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:15,152 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:15,153 - INFO - [Raw response 0]: ["Điều 1 / Thông tư 31/2020/TT-BCT + sửa đổi bổ sung + Thông tư số 13/2018/TT-BCT"]
+2026-05-20 06:51:15,153 - INFO - [Raw response 1]: ["Điểm a / Khoản 3 / Điều 1 / Nghị định 139/2020/NĐ-CP + sửa đổi bổ sung + khoản 2 Điều 3"]
+2026-05-20 06:51:15,153 - INFO - [Raw response 2]: ["Khoản 6 / Điều 1 / Thông tư 03/2024/TT-BCA + sửa đổi bổ sung + Điều 11"]
+2026-05-20 06:51:15,154 - INFO - [Raw response 3]: ["Điểm b / Khoản 2 / Điều 7 / Thông tư 17/2023/TT-BYT + bãi bỏ + các điểm b, c, d và đ khoản 10 Điều 1 Thông tư số 29/2020/TT-BYT ngày 31 tháng 12 năm 2020 của Bộ trưởng Bộ Y tế sửa đổi, bổ sung và bãi bỏ một số văn bản quy phạm pháp luật do Bộ trưởng Bộ Y tế ban hành, liên tịch ban hành"]
+2026-05-20 06:51:15,154 - INFO - Predicted Answer (batch): [[('Điều 1 / Thông tư 31/2020/TT-BCT', 'sửa đổi bổ sung', 'Thông tư số 13/2018/TT-BCT')], [('Điểm a / Khoản 3 / Điều 1 / Nghị định 139/2020/NĐ-CP', 'sửa đổi bổ sung', 'khoản 2 Điều 3')], [('Khoản 6 / Điều 1 / Thông tư 03/2024/TT-BCA', 'sửa đổi bổ sung', 'Điều 11')], [('Điểm b / Khoản 2 / Điều 7 / Thông tư 17/2023/TT-BYT', 'bãi bỏ', 'các điểm b, c, d và đ khoản 10 Điều 1 Thông tư số 29/2020/TT-BYT ngày 31 tháng 12 năm 2020 của Bộ trưởng Bộ Y tế sửa đổi, bổ sung và bãi bỏ một số văn bản quy phạm pháp luật do Bộ trưởng Bộ Y tế ban hành, liên tịch ban hành')]]
+2026-05-20 06:51:16,311 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:16,327 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:16,328 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:16,364 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:16,365 - INFO - [Raw response 0]: ["Điểm a / Khoản 8 / Điều 1 / Thông tư 17/2022/TT-BCT + sửa đổi bổ sung + mục 6"]
+2026-05-20 06:51:16,365 - INFO - [Raw response 1]: ["Khoản 9 / Điều 4 / Thông tư 83/2023/TT-BQP + bổ sung + Khoản 6a sau khoản 6 Điều 13"]
+2026-05-20 06:51:16,365 - INFO - [Raw response 2]: ["Khoản 2 / Điều 7 / Nghị định 140/2018/NĐ-CP + sửa đổi + điểm c khoản 1 Điều 8"]
+2026-05-20 06:51:16,365 - INFO - [Raw response 3]: ["Điểm d khoản 1 Điều 14 + bãi bỏ + Khoản 4 / Điều 6 / Nghị định 140/2018/NĐ-CP"]
+2026-05-20 06:51:16,366 - INFO - Predicted Answer (batch): [[('Điểm a / Khoản 8 / Điều 1 / Thông tư 17/2022/TT-BCT', 'sửa đổi bổ sung', 'mục 6')], [('Khoản 9 / Điều 4 / Thông tư 83/2023/TT-BQP', 'bổ sung', 'Khoản 6a sau khoản 6 Điều 13')], [('Khoản 2 / Điều 7 / Nghị định 140/2018/NĐ-CP', 'sửa đổi', 'điểm c khoản 1 Điều 8')], [('Điểm d khoản 1 Điều 14', 'bãi bỏ', 'Khoản 4 / Điều 6 / Nghị định 140/2018/NĐ-CP')]]
+2026-05-20 06:51:17,468 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:17,543 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:17,571 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:17,584 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:17,585 - INFO - [Raw response 0]: ["Khoản 3 / Điều 11 / Chương IV / Nghị định 140/2018/NĐ-CP + sửa đổi bổ sung + điểm i Khoản 2 Điều 7"]
+2026-05-20 06:51:17,585 - INFO - [Raw response 1]: ["Điều 1 / Thông tư 01/2019/TT-BTC + sửa đổi bổ sung + Thông tư số 50/2017/TT-BTC"]
+2026-05-20 06:51:17,585 - INFO - [Raw response 2]: ["Khoản 5 / Điều 1 / Thông tư 07/2019/TT-BTC + sửa đổi bổ sung + Thông tư số 72/2015/TT-BTC"]
+2026-05-20 06:51:17,585 - INFO - [Raw response 3]: ["Điểm a / Khoản 1 / Điều 1 / Thông tư 13/2023/TT-BNNPTNT + sửa đổi bổ sung + khoản 3 Điều 3"]
+2026-05-20 06:51:17,585 - INFO - Predicted Answer (batch): [[('Khoản 3 / Điều 11 / Chương IV / Nghị định 140/2018/NĐ-CP', 'sửa đổi bổ sung', 'điểm i Khoản 2 Điều 7')], [('Điều 1 / Thông tư 01/2019/TT-BTC', 'sửa đổi bổ sung', 'Thông tư số 50/2017/TT-BTC')], [('Khoản 5 / Điều 1 / Thông tư 07/2019/TT-BTC', 'sửa đổi bổ sung', 'Thông tư số 72/2015/TT-BTC')], [('Điểm a / Khoản 1 / Điều 1 / Thông tư 13/2023/TT-BNNPTNT', 'sửa đổi bổ sung', 'khoản 3 Điều 3')]]
+2026-05-20 06:51:18,636 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:18,666 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:18,681 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:19,267 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:19,267 - INFO - [Raw response 0]: [
+  ["Điều 2", "sửa đổi, bổ sung", "Thông tư này"],
+  ["Điều 3", "sửa đổi, bổ sung", "Thông tư số 28/2015/TT-BCT"],
+  ["Mục 4", "sửa đổi, bổ sung", "Thông tư số 28/2015/TT-BCT"]
+]
+2026-05-20 06:51:19,268 - INFO - [Raw response 1]: ["Điều 18 / sửa đổi khoản 8 Điều 15 Nghị định số 202/2013/NĐ-CP"]
+2026-05-20 06:51:19,268 - WARNING - No valid triplets parsed from response: ["Điều 18 / sửa đổi khoản 8 Điều 15 Nghị định số 202/2013/NĐ-CP"]
+2026-05-20 06:51:19,268 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 638, 'completion_tokens': 34, 'total_tokens': 672}
+2026-05-20 06:51:19,268 - INFO - [Raw response 2]: ["Khoản 1 / Điều 1 / Nghị định 25/2019/NĐ-CP + sửa đổi bổ sung + Điều 2"]
+2026-05-20 06:51:19,268 - INFO - [Raw response 3]: ["Khoản 1 Điều 6 + sửa đổi + Khoản 1 Điều 1 / Thông tư 14/2016/TT-BCA"]
+2026-05-20 06:51:19,268 - INFO - Predicted Answer (batch): [[('Điều 2', 'sửa đổi, bổ sung', 'Thông tư này'), ('Điều 3', 'sửa đổi, bổ sung', 'Thông tư số 28/2015/TT-BCT'), ('Mục 4', 'sửa đổi, bổ sung', 'Thông tư số 28/2015/TT-BCT')], [], [('Khoản 1 / Điều 1 / Nghị định 25/2019/NĐ-CP', 'sửa đổi bổ sung', 'Điều 2')], [('Khoản 1 Điều 6', 'sửa đổi', 'Khoản 1 Điều 1 / Thông tư 14/2016/TT-BCA')]]
+2026-05-20 06:51:20,513 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:20,558 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:20,642 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:20,780 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:20,781 - INFO - [Raw response 0]: ["Khoản 2 / Điều 3 / Thông tư 13/2023/TT-BVHTTDL + sửa đổi bổ sung + Thông tư số 10/2013/TT- BVHTTDL"]
+2026-05-20 06:51:20,781 - INFO - [Raw response 1]: ["Khoản 3 / Điều 4 / Thông tư 17/2023/TT-BYT + sửa đổi bổ sung + khoản 2, khoản 4 Điều 4"]
+2026-05-20 06:51:20,781 - INFO - [Raw response 2]: ["Khoản 7 / Điều 1 / Thông tư 26/2020/TT-BYT + sửa đổi bổ sung + Thông tư 22/2013/TT-BYT"]
+2026-05-20 06:51:20,781 - INFO - [Raw response 3]: ["Điểm e / Khoản 6 / Điều 1 / Thông tư 29/2020/TT-BYT + bổ sung + Phụ lục IIa. Nguyên tắc, tiêu chuẩn Thực hành tốt sản xuất nguyên liệu làm thuốc là tá dược của Tổ chức Y tế thế giới"]
+2026-05-20 06:51:20,781 - INFO - Predicted Answer (batch): [[('Khoản 2 / Điều 3 / Thông tư 13/2023/TT-BVHTTDL', 'sửa đổi bổ sung', 'Thông tư số 10/2013/TT- BVHTTDL')], [('Khoản 3 / Điều 4 / Thông tư 17/2023/TT-BYT', 'sửa đổi bổ sung', 'khoản 2, khoản 4 Điều 4')], [('Khoản 7 / Điều 1 / Thông tư 26/2020/TT-BYT', 'sửa đổi bổ sung', 'Thông tư 22/2013/TT-BYT')], [('Điểm e / Khoản 6 / Điều 1 / Thông tư 29/2020/TT-BYT', 'bổ sung', 'Phụ lục IIa. Nguyên tắc, tiêu chuẩn Thực hành tốt sản xuất nguyên liệu làm thuốc là tá dược của Tổ chức Y tế thế giới')]]
+2026-05-20 06:51:21,964 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:21,980 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:22,020 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:22,033 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:22,034 - INFO - [Raw response 0]: ["Khoản 4 / Điều 11 / Chương IV / Nghị định 140/2018/NĐ-CP + bổ sung + điểm m Khoản 2 Điều 7"]
+2026-05-20 06:51:22,034 - INFO - [Raw response 1]: ["Khoản 2 / Điều 3 / Thông tư 25/2016/TT_NHNN + sửa đổi bổ sung + Thông tư số 11/2013/TT-NHNN"]
+2026-05-20 06:51:22,034 - INFO - [Raw response 2]: ["Khoản 11 / Điều 2 / Thông tư 28/2022/TT-BCA + sửa đổi bổ sung + Thông tư số 20/2010/TT-BCA"]
+2026-05-20 06:51:22,034 - INFO - [Raw response 3]: ["Điều 4 / Nghị định 25/2019/NĐ-CP + bãi bỏ + Nghị định số 13/2011/NĐ-CP"]
+2026-05-20 06:51:22,034 - INFO - Predicted Answer (batch): [[('Khoản 4 / Điều 11 / Chương IV / Nghị định 140/2018/NĐ-CP', 'bổ sung', 'điểm m Khoản 2 Điều 7')], [('Khoản 2 / Điều 3 / Thông tư 25/2016/TT_NHNN', 'sửa đổi bổ sung', 'Thông tư số 11/2013/TT-NHNN')], [('Khoản 11 / Điều 2 / Thông tư 28/2022/TT-BCA', 'sửa đổi bổ sung', 'Thông tư số 20/2010/TT-BCA')], [('Điều 4 / Nghị định 25/2019/NĐ-CP', 'bãi bỏ', 'Nghị định số 13/2011/NĐ-CP')]]
+2026-05-20 06:51:23,213 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:23,243 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:23,272 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:23,297 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:23,298 - INFO - [Raw response 0]: ["Khoản 3 / Điều 3 / Thông tư 18/2018/TT-BLĐTBXH + bãi bỏ + Điều 14 và khoản 4 Điều 18"]
+2026-05-20 06:51:23,298 - INFO - [Raw response 1]: ["Khoản 5 Điều 6 + sửa đổi, bổ sung + Khoản 4 / Điều 1 / Thông tư 127/2020/TT-BQP"]
+2026-05-20 06:51:23,298 - INFO - [Raw response 2]: ["Khoản 1 / Điều 14 / Nghị định 140/2018/NĐ-CP + sửa đổi bổ sung + Điều 22"]
+2026-05-20 06:51:23,299 - INFO - [Raw response 3]: ["Điều 1 / Thông tư 13/2023/TT-BVHTTDL + sửa đổi bổ sung + Thông tư số 07/2004/TT-BVHTT"]
+2026-05-20 06:51:23,299 - INFO - Predicted Answer (batch): [[('Khoản 3 / Điều 3 / Thông tư 18/2018/TT-BLĐTBXH', 'bãi bỏ', 'Điều 14 và khoản 4 Điều 18')], [('Khoản 5 Điều 6', 'sửa đổi, bổ sung', 'Khoản 4 / Điều 1 / Thông tư 127/2020/TT-BQP')], [('Khoản 1 / Điều 14 / Nghị định 140/2018/NĐ-CP', 'sửa đổi bổ sung', 'Điều 22')], [('Điều 1 / Thông tư 13/2023/TT-BVHTTDL', 'sửa đổi bổ sung', 'Thông tư số 07/2004/TT-BVHTT')]]
+2026-05-20 06:51:24,463 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:24,464 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:24,507 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:24,633 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:24,634 - INFO - [Raw response 0]: ["Khoản 4 / Điều 1 / Thông tư 69/2023/TT-BTC + sửa đổi bổ sung + khoản 2 Điều 7"]
+2026-05-20 06:51:24,634 - INFO - [Raw response 1]: ["Điểm l khoản 1 Điều 10 + sửa đổi, bổ sung + Thông tư số 43/2016/TT-NHNN"]
+2026-05-20 06:51:24,634 - INFO - [Raw response 2]: ["Khoản 1 / Điều 1 / Thông tư 43/2018/TT-NHNN + sửa đổi bổ sung + Thông tư số 16/2010/TT-NHNN"]
+2026-05-20 06:51:24,635 - INFO - [Raw response 3]: [
+"Điều 3 + sửa đổi, bổ sung + Thông tư số 33/2013/TT-NHNN"
+]
+2026-05-20 06:51:24,635 - INFO - Predicted Answer (batch): [[('Khoản 4 / Điều 1 / Thông tư 69/2023/TT-BTC', 'sửa đổi bổ sung', 'khoản 2 Điều 7')], [('Điểm l khoản 1 Điều 10', 'sửa đổi, bổ sung', 'Thông tư số 43/2016/TT-NHNN')], [('Khoản 1 / Điều 1 / Thông tư 43/2018/TT-NHNN', 'sửa đổi bổ sung', 'Thông tư số 16/2010/TT-NHNN')], [('Điều 3', 'sửa đổi, bổ sung', 'Thông tư số 33/2013/TT-NHNN')]]
+2026-05-20 06:51:25,736 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:25,812 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:26,265 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:26,546 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:26,547 - INFO - [Raw response 0]: ["Khoản 2 / Điều 1 / Thông tư 23/2022/TT-NHNN + sửa đổi bổ sung + khoản 1 Điều 12 (đã được sửa đổi, bổ sung bởi khoản 12 Điều 1 Thông tư số 28/2016/TT-NHNN)"]
+2026-05-20 06:51:26,547 - INFO - [Raw response 1]: ["Khoản 4 / Điều 2 / Thông tư 28/2022/TT-BCA + bãi bỏ + khoản 3 Điều 3"]
+2026-05-20 06:51:26,547 - INFO - [Raw response 2]: ["Khoản 9 / Điều 1 / Thông tư 56/2018/TT-BGTVT + sửa đổi, bổ sung + Phần 14 Bộ QCATHK"]
+2026-05-20 06:51:26,547 - INFO - [Raw response 3]: ["Điều 2 / Nghị định 04/2024/NĐ-CP + bãi bỏ + khoản 2, khoản 3 Điều 2 và khoản 5 Điều 23 Nghị định số 118/2014/NĐ-CP ngày 17 tháng 12 năm 2014 của Chính phủ về sắp xếp, đổi mới và phát triển, nâng cao hiệu quả hoạt động của công ty nông, lâm nghiệp"]
+2026-05-20 06:51:26,547 - INFO - Predicted Answer (batch): [[('Khoản 2 / Điều 1 / Thông tư 23/2022/TT-NHNN', 'sửa đổi bổ sung', 'khoản 1 Điều 12 (đã được sửa đổi, bổ sung bởi khoản 12 Điều 1 Thông tư số 28/2016/TT-NHNN)')], [('Khoản 4 / Điều 2 / Thông tư 28/2022/TT-BCA', 'bãi bỏ', 'khoản 3 Điều 3')], [('Khoản 9 / Điều 1 / Thông tư 56/2018/TT-BGTVT', 'sửa đổi, bổ sung', 'Phần 14 Bộ QCATHK')], [('Điều 2 / Nghị định 04/2024/NĐ-CP', 'bãi bỏ', 'khoản 2, khoản 3 Điều 2 và khoản 5 Điều 23 Nghị định số 118/2014/NĐ-CP ngày 17 tháng 12 năm 2014 của Chính phủ về sắp xếp, đổi mới và phát triển, nâng cao hiệu quả hoạt động của công ty nông, lâm nghiệp')]]
+2026-05-20 06:51:27,557 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:27,572 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:27,746 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:28,474 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:28,475 - INFO - [Raw response 0]: ["Khoản 6 / Điều 1 / Thông tư 04/2025/TT-BCA + sửa đổi bổ sung + Điều 23"]
+2026-05-20 06:51:28,475 - INFO - [Raw response 1]: ["Khoản 3 / Điều 1 / Nghị định 139/2020/NĐ-CP + sửa đổi bổ sung + khoản 2, khoản 3, khoản 4, khoản 5 Điều 3"]
+2026-05-20 06:51:28,475 - INFO - [Raw response 2]: ["Khoản 5 / Điều 1 / Thông tư 06/2020/TT-BCT + bãi bỏ + Phụ lục V (Mẫu Tờ khai bổ sung C/O mẫu CPTPP của Việt Nam) ban hành kèm theo Thông tư số 03/2019/TT-BCT", "Khoản 5 / Điều 1 / Thông tư 06/2020/TT-BCT + thay thế + Phụ lục III ban hành kèm theo Thông tư này"]
+2026-05-20 06:51:28,475 - INFO - [Raw response 3]: ["Khoản 2 / Điều 16 / Chương IV / Nghị định 77/NĐ-CP + sửa đổi bổ sung + Điều 8a"]
+2026-05-20 06:51:28,476 - INFO - Predicted Answer (batch): [[('Khoản 6 / Điều 1 / Thông tư 04/2025/TT-BCA', 'sửa đổi bổ sung', 'Điều 23')], [('Khoản 3 / Điều 1 / Nghị định 139/2020/NĐ-CP', 'sửa đổi bổ sung', 'khoản 2, khoản 3, khoản 4, khoản 5 Điều 3')], [('Khoản 5 / Điều 1 / Thông tư 06/2020/TT-BCT', 'bãi bỏ', 'Phụ lục V (Mẫu Tờ khai bổ sung C/O mẫu CPTPP của Việt Nam) ban hành kèm theo Thông tư số 03/2019/TT-BCT'), ('Khoản 5 / Điều 1 / Thông tư 06/2020/TT-BCT', 'thay thế', 'Phụ lục III ban hành kèm theo Thông tư này')], [('Khoản 2 / Điều 16 / Chương IV / Nghị định 77/NĐ-CP', 'sửa đổi bổ sung', 'Điều 8a')]]
+2026-05-20 06:51:29,229 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:29,573 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:29,712 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:30,260 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:30,261 - INFO - [Raw response 0]: ["Khoản 5 / Điều 1 / Thông tư 123/2018/TT-BTC + sửa đổi bổ sung + Thông tư số 114/2014/TT-BTC"]
+2026-05-20 06:51:30,261 - INFO - [Raw response 1]: ["Phần 7 + sửa đổi bổ sung + Phần 7"]
+2026-05-20 06:51:30,261 - INFO - [Raw response 2]: ["Khoản 4 / Điều 1 / Thông tư 12/2020/TT-NHNN + sửa đổi, bổ sung + Thông tư số 05/2020/TT-NHNN", "Điều 7 / Điều 1 / Thông tư 12/2020/TT-NHNN + sửa đổi, bổ sung + Thông tư số 05/2020/TT-NHNN"]
+2026-05-20 06:51:30,262 - INFO - [Raw response 3]: ["Khoản 2 / Điều 1 / Thông tư 36/2018/TT-BCA + sửa đổi + khoản 3 Điều 12"]
+2026-05-20 06:51:30,262 - INFO - Predicted Answer (batch): [[('Khoản 5 / Điều 1 / Thông tư 123/2018/TT-BTC', 'sửa đổi bổ sung', 'Thông tư số 114/2014/TT-BTC')], [('Phần 7', 'sửa đổi bổ sung', 'Phần 7')], [('Khoản 4 / Điều 1 / Thông tư 12/2020/TT-NHNN', 'sửa đổi, bổ sung', 'Thông tư số 05/2020/TT-NHNN'), ('Điều 7 / Điều 1 / Thông tư 12/2020/TT-NHNN', 'sửa đổi, bổ sung', 'Thông tư số 05/2020/TT-NHNN')], [('Khoản 2 / Điều 1 / Thông tư 36/2018/TT-BCA', 'sửa đổi', 'khoản 3 Điều 12')]]
+2026-05-20 06:51:31,430 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:31,447 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:31,767 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:32,046 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:32,047 - INFO - [Raw response 0]: ["Điểm c / Khoản 5 / Điều 1 / Thông tư 12/2020/TT-NHNN + bổ sung + Khoản 5 / Điều 1 / Thông tư 12/2020/TT-NHNN", "Điều 7 + sửa đổi, bổ sung + Điều 1 / Thông tư 12/2020/TT-NHNN"]
+2026-05-20 06:51:32,047 - INFO - [Raw response 1]: ["Điểm c / Khoản 3 / Điều 1 / Nghị định 25/2019/NĐ-CP + sửa đổi bổ sung + khoản 5"]
+2026-05-20 06:51:32,047 - INFO - [Raw response 2]: ["Khoản 1 / Điều 1 / Thông tư 25/2016/TT_NHNN + sửa đổi bổ sung + Điều 1. Sửa đổi, bổ sung một số điều tại Thông tư số 11/2013/TT-NHNN"]
+2026-05-20 06:51:32,047 - INFO - [Raw response 3]: ["Khoản 4 / Điều 1 / Thông tư 14/2016/TT-BCA + sửa đổi + Khoản 3 Điều 12"]
+2026-05-20 06:51:32,048 - INFO - Predicted Answer (batch): [[('Điểm c / Khoản 5 / Điều 1 / Thông tư 12/2020/TT-NHNN', 'bổ sung', 'Khoản 5 / Điều 1 / Thông tư 12/2020/TT-NHNN'), ('Điều 7', 'sửa đổi, bổ sung', 'Điều 1 / Thông tư 12/2020/TT-NHNN')], [('Điểm c / Khoản 3 / Điều 1 / Nghị định 25/2019/NĐ-CP', 'sửa đổi bổ sung', 'khoản 5')], [('Khoản 1 / Điều 1 / Thông tư 25/2016/TT_NHNN', 'sửa đổi bổ sung', 'Điều 1. Sửa đổi, bổ sung một số điều tại Thông tư số 11/2013/TT-NHNN')], [('Khoản 4 / Điều 1 / Thông tư 14/2016/TT-BCA', 'sửa đổi', 'Khoản 3 Điều 12')]]
+2026-05-20 06:51:33,173 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:33,279 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:33,321 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:33,338 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:33,339 - INFO - [Raw response 0]: ["Khoản 2 / Điều 1 / Thông tư 56/2018/TT-BGTVT + sửa đổi bổ sung + Phần 4 Bộ QCATHK tại Phụ lục II ban hành kèm theo Thông tư này"]
+2026-05-20 06:51:33,339 - INFO - [Raw response 1]: ["Khoản 5 / Điều 1 / Thông tư 31/2022/TT-BCT + sửa đổi bổ sung + Thông tư số 57/2014/TT-BCT"]
+2026-05-20 06:51:33,340 - INFO - [Raw response 2]: ["Khoản 4 / Điều 3 / Chương II / Nghị định 140/2018/NĐ-CP + sửa đổi bổ sung + Điều 13"]
+2026-05-20 06:51:33,340 - INFO - [Raw response 3]: ["Khoản 9 / Điều 1 / Thông tư 13/2023/TT-BNNPTNT + sửa đổi bổ sung + Thông tư số 28/2018/TT-BNNPTNT"]
+2026-05-20 06:51:33,340 - INFO - Predicted Answer (batch): [[('Khoản 2 / Điều 1 / Thông tư 56/2018/TT-BGTVT', 'sửa đổi bổ sung', 'Phần 4 Bộ QCATHK tại Phụ lục II ban hành kèm theo Thông tư này')], [('Khoản 5 / Điều 1 / Thông tư 31/2022/TT-BCT', 'sửa đổi bổ sung', 'Thông tư số 57/2014/TT-BCT')], [('Khoản 4 / Điều 3 / Chương II / Nghị định 140/2018/NĐ-CP', 'sửa đổi bổ sung', 'Điều 13')], [('Khoản 9 / Điều 1 / Thông tư 13/2023/TT-BNNPTNT', 'sửa đổi bổ sung', 'Thông tư số 28/2018/TT-BNNPTNT')]]
+2026-05-20 06:51:34,369 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:34,462 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:34,655 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:35,429 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:35,430 - INFO - [Raw response 0]: ["Khoản 4 Điều 4 + sửa đổi bổ sung + Điểm a / Khoản 1 / Điều 1 / Thông tư 29/2020/TT-BYT"]
+2026-05-20 06:51:35,430 - INFO - [Raw response 1]: ["Khoản 23 / Điều 1 / Chương I / Nghị định 140/2018/NĐ-CP + thay thế + Mẫu 01 và 02 tại Phụ lục II Nghị định số 44/2016/NĐ-CP", "Khoản 23 / Điều 1 / Chương I / Nghị định 140/2018/NĐ-CP + bổ sung + Mẫu 3b vào Phụ lục II Nghị định số 44/2016/NĐ-CP"]
+2026-05-20 06:51:35,430 - INFO - [Raw response 2]: ["Khoản 2 / Điều 17 / Chương VI / Nghị định 140/2018/NĐ-CP + sửa đổi + Điều 8 Nghị định số 136/2013/NĐ-CP"]
+2026-05-20 06:51:35,430 - INFO - [Raw response 3]: ["Khoản 8 / Điều 1 / Thông tư 26/2018/TT-BCA + sửa đổi bổ sung + Điều 25"]
+2026-05-20 06:51:35,431 - INFO - Predicted Answer (batch): [[('Khoản 4 Điều 4', 'sửa đổi bổ sung', 'Điểm a / Khoản 1 / Điều 1 / Thông tư 29/2020/TT-BYT')], [('Khoản 23 / Điều 1 / Chương I / Nghị định 140/2018/NĐ-CP', 'thay thế', 'Mẫu 01 và 02 tại Phụ lục II Nghị định số 44/2016/NĐ-CP'), ('Khoản 23 / Điều 1 / Chương I / Nghị định 140/2018/NĐ-CP', 'bổ sung', 'Mẫu 3b vào Phụ lục II Nghị định số 44/2016/NĐ-CP')], [('Khoản 2 / Điều 17 / Chương VI / Nghị định 140/2018/NĐ-CP', 'sửa đổi', 'Điều 8 Nghị định số 136/2013/NĐ-CP')], [('Khoản 8 / Điều 1 / Thông tư 26/2018/TT-BCA', 'sửa đổi bổ sung', 'Điều 25')]]
+2026-05-20 06:51:36,617 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:36,710 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:36,737 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:36,773 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:36,773 - INFO - [Raw response 0]: ["Khoản 2 / Điều 1 / Thông tư 18/2018/TT-BLĐTBXH + sửa đổi bổ sung + Mẫu số 05 quy định tại điểm đ khoản 2 Điều 8 (kèm theo)"]
+2026-05-20 06:51:36,774 - INFO - [Raw response 1]: ["Điều 3 / Nghị định 140/2018/NĐ-CP + sửa đổi bổ sung + Nghị định số 31/2015/NĐ-CP"]
+2026-05-20 06:51:36,774 - INFO - [Raw response 2]: ["Khoản 1 / Điều 4 / Thông tư 13/2023/TT-BVHTTDL + sửa đổi bổ sung + Thông tư số 16/2014/TT-BVHTTDL"]
+2026-05-20 06:51:36,774 - INFO - [Raw response 3]: ["Khoản 1 / Điều 2 / Thông tư 03/2024/TT-BCA + sửa đổi bổ sung + Điều 4 / Thông tư số 42/2017/TT-BCA"]
+2026-05-20 06:51:36,774 - INFO - Predicted Answer (batch): [[('Khoản 2 / Điều 1 / Thông tư 18/2018/TT-BLĐTBXH', 'sửa đổi bổ sung', 'Mẫu số 05 quy định tại điểm đ khoản 2 Điều 8 (kèm theo)')], [('Điều 3 / Nghị định 140/2018/NĐ-CP', 'sửa đổi bổ sung', 'Nghị định số 31/2015/NĐ-CP')], [('Khoản 1 / Điều 4 / Thông tư 13/2023/TT-BVHTTDL', 'sửa đổi bổ sung', 'Thông tư số 16/2014/TT-BVHTTDL')], [('Khoản 1 / Điều 2 / Thông tư 03/2024/TT-BCA', 'sửa đổi bổ sung', 'Điều 4 / Thông tư số 42/2017/TT-BCA')]]
+2026-05-20 06:51:37,784 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:37,799 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:38,001 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:39,072 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:39,073 - INFO - [Raw response 0]: ["Khoản 3 / Điều 4 + sửa đổi bổ sung + Thông tư số 05/2020/TT-NHNN"]
+2026-05-20 06:51:39,073 - INFO - [Raw response 1]: ["Điều 6 / Thông tư 19/2020/TT-BCT + sửa đổi, bổ sung + Điều 6"]
+2026-05-20 06:51:39,073 - INFO - [Raw response 2]: ["Khoản 12 / Điều 1 / Thông tư 21/2020/TT-BGTVT + bổ sung + Thông tư số 81/2014/TT-BGTVT"]
+2026-05-20 06:51:39,073 - INFO - [Raw response 3]: ["Khoản 2 / Điều 5 / Thông tư 42/2018/TT-NHNN + bãi bỏ + Thông tư số 18/2017/TT-NHNN ngày 27 tháng 12 năm 2017 của Thống đốc Ngân hàng Nhà nước sửa đổi, bổ sung một số điều của Thông tư số 24/2015/TT-NHNN ngày 08 tháng 12 năm 2015 của Thống đốc Ngân hàng Nhà nước quy định cho vay bằng ngoại tệ của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài đối với khách hàng vay là người cư trú"]
+2026-05-20 06:51:39,073 - INFO - Predicted Answer (batch): [[('Khoản 3 / Điều 4', 'sửa đổi bổ sung', 'Thông tư số 05/2020/TT-NHNN')], [('Điều 6 / Thông tư 19/2020/TT-BCT', 'sửa đổi, bổ sung', 'Điều 6')], [('Khoản 12 / Điều 1 / Thông tư 21/2020/TT-BGTVT', 'bổ sung', 'Thông tư số 81/2014/TT-BGTVT')], [('Khoản 2 / Điều 5 / Thông tư 42/2018/TT-NHNN', 'bãi bỏ', 'Thông tư số 18/2017/TT-NHNN ngày 27 tháng 12 năm 2017 của Thống đốc Ngân hàng Nhà nước sửa đổi, bổ sung một số điều của Thông tư số 24/2015/TT-NHNN ngày 08 tháng 12 năm 2015 của Thống đốc Ngân hàng Nhà nước quy định cho vay bằng ngoại tệ của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài đối với khách hàng vay là người cư trú')]]
+2026-05-20 06:51:40,110 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:40,167 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-20 06:51:40,167 - INFO - [Raw response 0]: ["Khoản 16 / Điều 1 / Thông tư 16/2018/TT-BNNPTNT + sửa đổi bổ sung + Thông tư số 48/2013/TT-BNNPTNT"]
+2026-05-20 06:51:40,168 - INFO - [Raw response 1]: ["Khoản 8 / Điều 1 / Thông tư 9/2020/TT-BYT + sửa đổi bổ sung + Thông tư số 03/2018/TT-BYT"]
+2026-05-20 06:51:40,168 - INFO - Predicted Answer (batch): [[('Khoản 16 / Điều 1 / Thông tư 16/2018/TT-BNNPTNT', 'sửa đổi bổ sung', 'Thông tư số 48/2013/TT-BNNPTNT')], [('Khoản 8 / Điều 1 / Thông tư 9/2020/TT-BYT', 'sửa đổi bổ sung', 'Thông tư số 03/2018/TT-BYT')]]
+2026-05-20 06:51:40,213 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,213 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,213 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,214 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,214 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,215 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,217 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,221 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,222 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,222 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,222 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,223 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,223 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,223 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,224 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,224 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,224 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,225 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,225 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,225 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,226 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,226 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,226 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,227 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,227 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,227 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,230 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,231 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,231 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,231 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,231 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,233 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,233 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,234 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,235 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,235 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,235 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,235 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,236 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,237 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,237 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,237 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,238 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,238 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,239 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,239 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,239 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,239 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,240 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,240 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,240 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,241 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,241 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,241 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,242 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,242 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,242 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,243 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,243 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,243 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,244 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,244 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,245 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,245 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,245 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,246 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,246 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,247 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,247 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,247 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,248 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,248 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,248 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,249 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,249 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,250 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,250 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,251 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,251 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,251 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,252 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,252 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,252 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,252 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,253 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,253 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,253 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,254 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,254 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,254 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,254 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,255 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,255 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,255 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,256 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,256 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,256 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,257 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,257 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,257 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,258 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,259 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,259 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,261 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,261 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,261 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,262 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,262 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,263 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,263 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,263 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,264 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,264 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,264 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,265 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,265 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,265 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,266 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,266 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,266 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,267 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,267 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,267 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,268 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,268 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,268 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,269 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,269 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,269 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,270 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,271 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,271 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,271 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,272 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,272 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,273 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,273 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,273 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,274 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,275 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,275 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,276 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,276 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,276 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,277 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,277 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,277 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,278 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,278 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,278 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,279 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,279 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,279 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,280 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,280 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,280 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,281 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,281 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,281 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,282 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,282 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,283 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,283 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,284 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,284 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,284 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,287 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,287 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,287 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,288 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,288 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,289 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,290 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,290 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,290 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,290 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,291 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,291 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,291 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,292 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,292 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,292 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,292 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,293 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,293 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,293 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,294 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,294 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,294 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,295 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,295 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,296 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,298 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,299 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,299 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,299 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,300 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,300 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,300 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,300 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,301 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,301 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,301 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,302 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,302 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,303 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,303 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,303 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,304 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,304 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,304 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,305 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,305 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,306 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,306 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,306 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,307 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,307 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,307 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,308 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,308 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,308 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,309 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,309 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,310 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,311 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,312 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,312 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,316 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,316 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,317 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,317 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,318 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,319 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,319 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,320 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,320 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,321 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,321 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,322 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,322 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,322 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,323 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,323 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,323 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,324 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,324 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,325 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,325 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,326 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,326 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,330 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,330 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,331 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,331 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,332 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,332 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,332 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,332 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,333 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,333 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,334 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,334 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,335 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,335 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,336 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,336 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,336 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,336 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,337 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,337 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,338 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,338 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,338 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,339 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,339 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,339 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,340 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,340 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,341 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,341 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,341 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,342 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,342 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,343 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,343 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,343 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,344 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,344 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,344 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,345 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,345 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,345 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,346 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,346 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,346 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,347 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,347 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,348 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,349 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,349 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,349 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,350 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,350 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,351 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,351 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,352 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,352 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,352 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,353 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,353 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,353 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,354 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,354 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,355 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,355 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,355 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,355 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,356 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,356 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,357 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,357 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,357 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,358 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,358 - INFO - Using default tokenizer.
+2026-05-20 06:51:40,359 - INFO - Using default tokenizer.

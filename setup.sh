@@ -20,7 +20,7 @@ fi
 echo "[OK] Virtual environment ready"
 
 # Activate
-source venv/bin/activate
+source .venv/bin/activate
 
 # Install dependencies
 echo "[INFO] Installing dependencies..."
