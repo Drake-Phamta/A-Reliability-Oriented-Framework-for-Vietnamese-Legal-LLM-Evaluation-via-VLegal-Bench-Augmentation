@@ -103,21 +103,36 @@ source .venv/bin/activate
 uv sync
 ```
 
+### Ubuntu Quickstart (Ollama local)
+
+```bash
+python3 -m venv venv && source venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env
+ollama serve
+bash infer.sh
+```
+
 ### Configure Environment Variables
 
-Create your own .env file according to .env_example
+Create your own `.env` file from `.env.example`. Default local setup uses:
+
+```env
+HOST_NAME=http://localhost:11434
+API_KEY=ollama
+OLLAMA_MODEL=gemma4:e4b-it-q8_0
+```
 
 ---
 
 ## 🚀 Usage
 
-### Option 1: Using Local VLLM Server
+### Option 1: Using Local Ollama (default)
 
-1. **Start VLLM Server**
+1. **Start Ollama**
 
 ```bash
-# Edit MODEL_NAME in vllm_serving.sh
-bash vllm_serving.sh
+ollama serve
 ```
 
 2. **Run Inference**
@@ -144,9 +159,9 @@ USE_REMOVE_CONTENT=true bash infer.sh
 
 Edit the following variables in `infer.sh`:
 - `TASK`: Task number (e.g., "1.1", "3.3", "4.1")
-- `MODEL_NAME`: Model to use (e.g., "gpt-4o", "gemini-2.5-flash")
+- `MODEL_NAME`: Model to use (default: "gemma4:e4b-it-q8_0")
 - `BATCH_SIZE`: Number of samples per batch (default: 1)
-- `MAX_MODEL_LEN`: Maximum context length (default: 32768)
+- `MAX_MODEL_LEN`: Maximum context length (default: 8192)
 - `USE_REMOVE_CONTENT`: Use content-removed dataset variant (true/false)
 
 ---

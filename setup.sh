@@ -38,7 +38,8 @@ fi
 # Setup .env
 if [ ! -f ".env" ]; then
     cp .env.example .env
-    echo "[INFO] Created .env from template - EDIT IT with your API keys!"
+    echo "[INFO] Created .env from template for Ollama local setup."
+    echo "[INFO] Default model is OLLAMA_MODEL=gemma4:e4b-it-q8_0 (edit if needed)."
 fi
 
 # NLTK data
@@ -59,6 +60,6 @@ echo "  Setup complete!"
 echo "========================================"
 echo ""
 echo "Next steps:"
-echo "  1. Edit .env with your API keys"
-echo "  2. Read TEAM_GUIDE.md for your tasks"
-echo "  3. Run: source venv/bin/activate && python tools/run_experiments.py --help"
+echo "  1. Start Ollama: ollama serve"
+echo "  2. Verify model exists: ollama list"
+echo "  3. Run: source venv/bin/activate && bash infer.sh"

@@ -1,13 +1,14 @@
 import asyncio
 import json
 import logging
-from pyexpat import model
+import re
 from openai import AsyncOpenAI
 from tqdm import tqdm
 import os
 from dotenv import load_dotenv
 load_dotenv()
 from src.evaluation import Prediction, Metrics
+from src.reliability_metrics import parse_answer_tag
 import tiktoken
 
 def truncate_text_to_tokens(text: str, max_tokens: int, encoding_name: str = "p50k_base") -> str:
@@ -24,9 +25,10 @@ class VLLM:
                  api_key: str,
                  model: str,
                  dataset_path: str,
-                 base_url: str = f"{os.getenv("HOST_NAME")}/v1",
+                 base_url: str = f"{os.getenv('HOST_NAME')}/v1",
                  batch_size: int = 4,
                  max_model_len: int = 4096,
+                 max_output_tokens: int = 500,
                  delay_between_requests: float = 1.0,
                  prompt_mode: str = "zero_shot"
     ):
@@ -39,24 +41,33 @@ class VLLM:
         self.prediction = Prediction(dataset_path)
         self.batch_size = batch_size
         self.max_model_len = max_model_len
+        self.max_output_tokens = max_output_tokens
+        self.ollama_fallback_max_output_tokens = int(
+            os.getenv("OLLAMA_FALLBACK_MAX_OUTPUT_TOKENS", "2048")
+        )
         self.delay = delay_between_requests
         self.prompt_mode = prompt_mode
+        self.generation_tasks = {"2_3", "4_1", "4_2", "4_3"}
 
-    def get_system_prompt(self, task_name_folder: str, prompt_mode: str = "zero_shot"):
+    def get_system_prompt(self, task_name_folder: str):
         task_name = task_name_folder.replace(".", "_")
         namespace = {}
         with open(f"./{task_name_folder}/prompt_{task_name}.py", 'r', encoding='utf-8') as f:
             code = f.read()
             exec(code, namespace)
 
-        if prompt_mode == "fewshot":
+        if self.prompt_mode == "fewshot":
             return namespace.get("EXAMPLE_FEWSHOT") or namespace.get("EXAMPLE") or ""
-        elif prompt_mode == "reasoning":
+        if self.prompt_mode == "reasoning":
             return namespace.get("EXAMPLE_REASONING") or namespace.get("EXAMPLE") or ""
-        elif prompt_mode == "reliability":
-            return namespace.get("EXAMPLE_RELIABILITY") or namespace.get("EXAMPLE_REASONING") or namespace.get("EXAMPLE") or ""
-        else:  # zero_shot
-            return namespace.get("EXAMPLE") or ""
+        if self.prompt_mode == "reliability":
+            return (
+                namespace.get("EXAMPLE_RELIABILITY")
+                or namespace.get("EXAMPLE_REASONING")
+                or namespace.get("EXAMPLE")
+                or ""
+            )
+        return namespace.get("EXAMPLE") or ""
 
     def get_batch_questions(self, data, batch_size: int = 4):
         """Group raw dataset entries into batches of items.
@@ -75,10 +86,11 @@ class VLLM:
             batches.append(current)
         return batches
 
-    async def ask(self, user_prompt, model):
-        system_prompt = self.get_system_prompt(self.dataset_path.split("/")[1], self.prompt_mode)
-        max_input_tokens = self.max_model_len
-        user_prompt = truncate_text_to_tokens(user_prompt, max_input_tokens)
+    async def ask(self, user_prompt, model, max_tokens=None):
+        system_prompt = self.get_system_prompt(self.dataset_path.split("/")[1])
+        if self.max_model_len is not None:
+            user_prompt = truncate_text_to_tokens(user_prompt, self.max_model_len)
+        request_max_tokens = max_tokens if max_tokens is not None else self.max_output_tokens
         try:
             response = await self.client.chat.completions.create(
                 model=model,
@@ -86,7 +98,7 @@ class VLLM:
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt},
                 ],  
-                max_tokens=500,
+                max_tokens=request_max_tokens,
                 # temperature=1 if is_retry else 0,
                 temperature=0,
                 response_format={"type": "text"}
@@ -98,7 +110,7 @@ class VLLM:
                     {"role": "assistant", "content": system_prompt},
                     {"role": "user", "content": user_prompt},
                 ],  
-                max_tokens=500,
+                max_tokens=request_max_tokens,
                 # temperature=1 if is_retry else 0,
                 temperature=0,
                 response_format={"type": "text"}
@@ -112,14 +124,67 @@ class VLLM:
             tr = response._transport_response
             status_code = getattr(tr, "status_code", None)
         status_code = status_code or 200
-        content = None
+        content = ""
+        reasoning = ""
+        finish_reason = None
+        completion_tokens = None
         if hasattr(response, "choices"):
-            content = response.choices[0].message.content
+            choice = response.choices[0]
+            message = choice.message
+            content = message.content or ""
+            finish_reason = choice.finish_reason
+            reasoning_attr = getattr(message, "reasoning", None)
+            if reasoning_attr:
+                reasoning = str(reasoning_attr)
+            elif getattr(message, "model_extra", None):
+                reasoning = str(message.model_extra.get("reasoning", "") or "")
         elif hasattr(response, "choice"):
-            content = response.choice[0].message.content
+            content = response.choice[0].message.content or ""
+
+        if getattr(response, "usage", None) is not None:
+            completion_tokens = getattr(response.usage, "completion_tokens", None)
         if status_code != 200:
             raise Exception(f"Error from LLM API: {status_code}")
-        return content
+        return {
+            "content": content,
+            "reasoning": reasoning,
+            "finish_reason": finish_reason,
+            "completion_tokens": completion_tokens,
+            "max_tokens": request_max_tokens,
+        }
+
+    def _is_multiple_choice_task(self) -> bool:
+        return self.prediction.task not in self.generation_tasks
+
+    def _extract_mc_answer_from_reasoning(self, reasoning_text: str):
+        if not reasoning_text:
+            return None
+        tail = reasoning_text[-1000:]
+        preferred_patterns = [
+            r"(?:đáp án|dap an|chọn|chon|final answer|final|answer)\s*(?:là|la|:)?\s*\**\s*([ABCD])\b",
+            r"<output>\s*([ABCD])\s*</output>",
+            r"<answer>\s*([ABCD])\s*</answer>",
+        ]
+        for pattern in preferred_patterns:
+            matches = re.findall(pattern, tail, flags=re.IGNORECASE)
+            if matches:
+                return matches[-1].upper()
+
+        fallback = re.findall(r"\b([ABCD])\b", tail, flags=re.IGNORECASE)
+        if fallback:
+            return fallback[-1].upper()
+        return None
+
+    def _parse_model_output(self, raw_text: str):
+        clean_text = raw_text.replace("</think>", "")
+        if self.prompt_mode == "reasoning":
+            return self.prediction.parse_output_with_reasoning(clean_text)
+        if self.prompt_mode == "reliability":
+            answer_tag = parse_answer_tag(clean_text)
+            if answer_tag is not None:
+                return self.prediction.parse_output(answer_tag)
+            return None
+        return self.prediction.parse_output(clean_text)
 
     async def run(self):
 
@@ -136,7 +201,8 @@ class VLLM:
         results = []
         predictions = []
         batches = self.get_batch_questions(data, batch_size=self.batch_size)
-        max_attempt = 3
+        reasoning_fallback_count = 0
+        conditional_retry_count = 0
         for batch in tqdm(batches, desc="Processing batches"):
             user_questions = []
             batch_ground_truths = []
@@ -149,59 +215,87 @@ class VLLM:
                     logging.warning(f"Unknown task: {str(e)}")
             try:
                 responses = list(await asyncio.gather(*(self.ask(q, self.model) for q in user_questions)))
-                batch_raw_responses = list(responses)
                 responses_new = []
-                thinking = []
-                for idx, resp in enumerate(responses):
-                    logging.info(f"[Raw response {idx}]: {resp}")
+                for idx, resp_meta in enumerate(responses):
+                    content = resp_meta.get("content", "") or ""
+                    reasoning = resp_meta.get("reasoning", "") or ""
+                    finish_reason = resp_meta.get("finish_reason")
+                    completion_tokens = resp_meta.get("completion_tokens")
+                    retry_reasoning = ""
+                    logging.info(
+                        f"[Response meta {idx}] content_len={len(content)} "
+                        f"reasoning_len={len(reasoning)} finish_reason={finish_reason} "
+                        f"completion_tokens={completion_tokens} max_tokens={resp_meta.get('max_tokens')}"
+                    )
+                    logging.info(f"[Raw response {idx}]: {content}")
                     parsed_resp = None
-                    parsed_think = None
-                    if resp:
+                    if content:
                         try:
-                            clean_resp = resp.replace("</think>", "")
-                            if self.prompt_mode == "reasoning":
-                                parsed_resp = self.prediction.parse_output_with_reasoning(clean_resp)
-                            elif self.prompt_mode == "reliability":
-                                parsed_resp = self.prediction.parse_answer_tag(clean_resp)
-                            else:
-                                parsed_resp = self.prediction.parse_output(clean_resp)
+                            parsed_resp = self._parse_model_output(content)
                         except Exception as e:
                             logging.exception(f"Parsing failed at index {idx}: {e}")
 
                     if parsed_resp is None:
-                        for attempt in range(1, max_attempt + 1):
+                        should_retry = (
+                            not content.strip()
+                            and finish_reason == "length"
+                            and bool(reasoning.strip())
+                            and self.ollama_fallback_max_output_tokens > (resp_meta.get("max_tokens") or 0)
+                        )
+                        if should_retry:
+                            conditional_retry_count += 1
+                            logging.warning(
+                                f"Empty content do reasoning token budget exhausted at question {idx}; "
+                                f"retrying once with max_tokens={self.ollama_fallback_max_output_tokens}"
+                            )
+                            resp_retry_meta = await self.ask(
+                                user_questions[idx],
+                                self.model,
+                                max_tokens=self.ollama_fallback_max_output_tokens,
+                            )
+                            retry_content = resp_retry_meta.get("content", "") or ""
+                            retry_reasoning = resp_retry_meta.get("reasoning", "") or ""
                             logging.info(
-                                f"Retrying parsing for question {idx}, attempt {attempt}"
+                                f"[Retry meta {idx}] content_len={len(retry_content)} "
+                                f"reasoning_len={len(retry_reasoning)} "
+                                f"finish_reason={resp_retry_meta.get('finish_reason')} "
+                                f"completion_tokens={resp_retry_meta.get('completion_tokens')} "
+                                f"max_tokens={resp_retry_meta.get('max_tokens')}"
                             )
 
-                            resp_retry = await self.ask(user_questions[idx], self.model)
-                            if not resp_retry:
-                                continue
-                            try:
-                                clean_retry = resp_retry.replace("</think>", "")
-                                if self.prompt_mode == "reasoning":
-                                    parsed_resp = self.prediction.parse_output_with_reasoning(clean_retry)
-                                elif self.prompt_mode == "reliability":
-                                    parsed_resp = self.prediction.parse_answer_tag(clean_retry)
-                                else:
-                                    parsed_resp = self.prediction.parse_output(clean_retry)
-                            except Exception as e:
-                                logging.exception(
-                                    f"Retry parsing failed at index {idx}: {e}"
-                                )
-                            if parsed_resp is not None:
-                                break
+                            if retry_content:
+                                try:
+                                    parsed_resp = self._parse_model_output(retry_content)
+                                except Exception as e:
+                                    logging.exception(
+                                        f"Retry parsing failed at index {idx}: {e}"
+                                    )
+
+                    if parsed_resp is None and self._is_multiple_choice_task():
+                        reasoning_source = retry_reasoning if retry_reasoning else reasoning
+                        parsed_from_reasoning = self._extract_mc_answer_from_reasoning(reasoning_source)
+                        if parsed_from_reasoning is not None:
+                            parsed_resp = parsed_from_reasoning
+                            reasoning_fallback_count += 1
+                            logging.warning(
+                                f"Used reasoning fallback for question {idx}: {parsed_resp}"
+                            )
+
                     if parsed_resp is None:
+                        logging.warning(f"Failed to parse output for question {idx}; storing empty prediction.")
                         responses_new.append([])
                     else:
                         responses_new.append(parsed_resp)
                 responses = responses_new
+                logging.info(
+                    f"Fallback summary: reasoning_fallback_count={reasoning_fallback_count}, "
+                    f"conditional_retry_count={conditional_retry_count}"
+                )
                 logging.info(f'Predicted Answer (batch): {responses}')
                 results.extend(responses)
-                for entry, pred, gt, raw_resp in zip(batch, responses, batch_ground_truths, batch_raw_responses):
+                for entry, pred, gt in zip(batch, responses, batch_ground_truths):
                     res_entry = entry.copy()
                     res_entry['prediction'] = pred
-                    res_entry['raw_response'] = raw_resp or ''
                     res_entry['ground_truth'] = gt
                     predictions.append(res_entry)
             except Exception as e:
@@ -222,6 +316,72 @@ class VLLM:
         metric_results = self.metrics.eval()
         print(metric_results)
 
+        # Update EVAL.md file
+        eval_md_path = "EVAL.md"
+        columns = ["Task", "Model", "Accuracy", "Precision", "Recall", "F1-Score", "Macro-F1", "BLEU", "ROUGE"]
+        
+        def format_val(val):
+            if isinstance(val, dict):
+                return ", ".join(f"{k}: {v:.4f}" if isinstance(v, float) else f"{k}: {v}" for k, v in val.items())
+            elif isinstance(val, float):
+                return f"{val:.4f}"
+            return str(val) if val != "" else ""
+
+        row_data = {
+            "Task": task_name,
+            "Model": self.model,
+            "Accuracy": format_val(metric_results.get("accuracy", "")),
+            "Precision": format_val(metric_results.get("precision", "")),
+            "Recall": format_val(metric_results.get("recall", "")),
+            "F1-Score": format_val(metric_results.get("f1-score", "")),
+            "Macro-F1": format_val(metric_results.get("Macro-F1", "")),
+            "BLEU": format_val(metric_results.get("BLEU", "")),
+            "ROUGE": format_val(metric_results.get("ROUGE", ""))
+        }
+        
+        lines = []
+        if os.path.exists(eval_md_path):
+            with open(eval_md_path, "r", encoding="utf-8") as f:
+                lines = f.readlines()
+                
+        header_idx = -1
+        for i, line in enumerate(lines):
+            if "| Task" in line and "| Model" in line:
+                header_idx = i
+                break
+                
+        if header_idx == -1:
+            lines.append("| " + " | ".join(columns) + " |\n")
+            lines.append("|" + "|".join(["---"] * len(columns)) + "|\n")
+            header_idx = len(lines) - 2
+
+        updated = False
+        for i in range(header_idx + 2, len(lines)):
+            parts = [p.strip() for p in lines[i].split("|")]
+            if len(parts) >= 3 and parts[1] == task_name and parts[2] == self.model:
+                lines[i] = "| " + " | ".join(row_data[col] for col in columns) + " |\n"
+                updated = True
+                break
+                
+        if not updated:
+            lines.append("| " + " | ".join(row_data[col] for col in columns) + " |\n")
+
+        # Sort the rows by Task name (and then Model)
+        data_rows = lines[header_idx + 2:]
+        
+        def parse_task_name(line):
+            parts = [p.strip() for p in line.split("|")]
+            if len(parts) >= 3:
+                return parts[1]
+            return ""
+            
+        data_rows.sort(key=lambda x: parse_task_name(x))
+        
+        final_lines = lines[:header_idx + 2] + data_rows
+            
+        with open(eval_md_path, "w", encoding="utf-8") as f:
+            f.writelines(final_lines)
+
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
@@ -233,9 +393,12 @@ if __name__ == "__main__":
     parser.add_argument("--dataset_path", type=str, 
                         default="./2.3/2_3_legal_graph_structuring_dataset_reformatted.jsonl",
                         help="Path to the dataset file")
-    parser.add_argument("--batch_size", type=int,
+    parser.add_argument("--batch_size", type=int, 
                         default=4,
                         help="Batch size for processing")
+    parser.add_argument("--max_output_tokens", type=int,
+                        default=500,
+                        help="Max output tokens for each completion")
     parser.add_argument("--prompt_mode", type=str,
                         default="zero_shot",
                         choices=["zero_shot", "fewshot", "reasoning", "reliability"],
@@ -258,17 +421,18 @@ if __name__ == "__main__":
         base_url = "https://api.anthropic.com/v1/"
         delay = 7.0 
     else: 
-        print("Using local host model")
-        api_key = os.getenv("API_KEY")
-        base_url = f"{os.getenv("HOST_NAME")}/v1"
+        print("Using local host model or custom OpenAI-compatible endpoint")
+        api_key = os.getenv("OPENAI_API_KEY") or os.getenv("API_KEY")
+        base_url = os.getenv("OPENAI_BASE_URL") or f"{os.getenv('HOST_NAME', 'http://localhost:8000')}/v1"
         delay = 0
     vllm = VLLM(
         api_key=api_key,
         model=model_name,
         base_url=base_url,
-        dataset_path=dataset_path,
+        dataset_path=dataset_path, 
         batch_size=args.batch_size,
         max_model_len=args.max_model_len,
+        max_output_tokens=args.max_output_tokens,
         delay_between_requests=delay,
         prompt_mode=args.prompt_mode
     )
