@@ -1,7 +1,7 @@
 import json
 import re
 import traceback
-from typing import List, Dict, Tuple
+from typing import List, Dict, Optional, Tuple
 import os
 from rouge_score import rouge_scorer
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
@@ -182,6 +182,14 @@ class Prediction:
         
         self.reasoning = reasoning
         print(f"Reasoning set to {self.reasoning}")
+
+    @staticmethod
+    def _extract_tag_content(raw_output: str, tag_name: str) -> Optional[str]:
+        pattern = rf"<{tag_name}>\s*(.*?)\s*</{tag_name}>"
+        match = re.search(pattern, raw_output, re.DOTALL | re.IGNORECASE)
+        if not match:
+            return None
+        return match.group(1).strip()
     
     def preprocess_input(self, input_data: Dict) -> Tuple[str, str]:
         """
@@ -253,7 +261,34 @@ class Prediction:
         Returns:
             str: Parsed final answer.
         """
-        if self.task in ["1_1", "1_3", "1_4", "1_5", "2_1", "2_2", "3_1", "3_2", "3_3", "3_5", "5_1", "5_2", "5_3_legal_ethics_cases", "5_3_law_vs_ethics", "5_4"]: 
+        if raw_output is None:
+            return None
+
+        raw_output = str(raw_output).strip()
+        if not raw_output:
+            return None
+
+        tagged_output = self._extract_tag_content(raw_output, "output")
+        if tagged_output is not None:
+            raw_output = tagged_output
+
+        if self.task == "2_5":
+            normalized_output = raw_output.upper().strip()
+            if all(char in ['A', 'B', 'C', 'D', ',', ' ', '[', ']'] for char in normalized_output):
+                cleaned_output = normalized_output.strip("[]").strip()
+                parts = [part.strip() for part in cleaned_output.split(",") if part.strip()]
+                if len(parts) == 1 and len(parts[0]) > 1 and all(c in ['A', 'B', 'C', 'D'] for c in parts[0]):
+                    parts = list(parts[0])
+                if parts and all(part in ['A', 'B', 'C', 'D'] for part in parts):
+                    return parts
+            # Try to extract if response contains other text
+            matches = re.findall(r'\b([ABCD])\b', raw_output, re.IGNORECASE)
+            if matches:
+                extracted = [m.upper() for m in matches]
+                logging.warning(f"Extracted '{extracted}' from response: {raw_output}")
+                return extracted
+
+        elif self.task in ["1_1", "1_3", "1_4", "1_5", "2_1", "2_2", "3_1", "3_2", "3_3", "3_5", "5_1", "5_2", "5_3_legal_ethics_cases", "5_3_law_vs_ethics", "5_4"]: 
             # Validate: must be exactly A, B, C, or D
             if raw_output.upper() in ['A', 'B', 'C', 'D']:
                 return raw_output.upper()
@@ -309,16 +344,6 @@ class Prediction:
                 logging.warning(f"Extracted '{extracted}' from response: {raw_output}")
                 return extracted
         
-        elif self.task == "2_5": 
-            # Validate: must be combination of A, B, C, or D
-            if all(char in ['A', 'B', 'C', 'D', ',',' ', '[', ' ]'] for char in raw_output.upper()):
-                return raw_output.upper().strip("[]").split(",")
-            # Try to extract if response contains other text
-            matches = re.findall(r'\b([ABCD])\b', raw_output, re.IGNORECASE)
-            if matches:
-                extracted = [m.upper() for m in matches]
-                logging.warning(f"Extracted '{extracted}' from response: {raw_output}")
-                return extracted
         elif self.task in ["4_1", "4_3", "4_2"]:
             return raw_output.strip()
     
@@ -330,20 +355,19 @@ class Prediction:
         Returns:
             str: Parsed final answer.
         """
-        for attempt in range(max_retries):
-            # Extract content within <output> ... </output>. 
-            try:
-                match = re.search(r'<output>(.*?)</output>', raw_output, re.DOTALL | re.IGNORECASE)
-                if match:
-                    extracted = match.group(1).capitalize()
-                    logging.warning(f"Extracted '{extracted}' from response: {raw_output}")
-                    return self.parse_output(extracted)
-                else: 
-                    logging.warning(f"Attempt {attempt + 1}: Could not find <output> tags in response, retrying...")
-            except Exception as e:
-                logging.error(f"Attempt {attempt + 1} failed: {str(e)}")
-        logging.error(f"Fail to parse output after {max_retries} attempts")
-        return None
+        try:
+            extracted = self._extract_tag_content(str(raw_output), "output")
+            if extracted is None:
+                logging.warning("Could not find <output>...</output> in reasoning response.")
+                return None
+            if not extracted.strip():
+                logging.warning("Output tag found but empty in reasoning response.")
+                return None
+            logging.info("Extracted output tag content: %s", extracted)
+            return self.parse_output(extracted)
+        except Exception as e:
+            logging.error(f"Failed to parse reasoning output: {str(e)}")
+            return None
 
     def parse_thinking(self, raw_output: str, max_retries: int=3) -> str: 
         """

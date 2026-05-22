@@ -403,3 +403,530 @@ Các điều khoản này quy định chi tiết về thẩm quyền xét xử, 
 2026-05-20 07:02:09,368 - INFO - [Raw response 0]: Không
 2026-05-20 07:02:09,368 - INFO - [Raw response 1]: Không
 2026-05-20 07:02:09,368 - INFO - Predicted Answer (batch): ['Không', 'Không']
+2026-05-22 08:53:38,532 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:38,617 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:38,779 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:38,915 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:38,916 - INFO - [Raw response 0]: D
+2026-05-22 08:53:38,916 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 856, 'completion_tokens': 2, 'total_tokens': 858}
+2026-05-22 08:53:38,916 - INFO - [Raw response 1]: Không
+2026-05-22 08:53:38,916 - INFO - [Raw response 2]: B
+2026-05-22 08:53:38,916 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 3079, 'completion_tokens': 2, 'total_tokens': 3081}
+2026-05-22 08:53:38,916 - INFO - [Raw response 3]: B
+2026-05-22 08:53:38,917 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 1299, 'completion_tokens': 2, 'total_tokens': 1301}
+2026-05-22 08:53:38,917 - INFO - Predicted Answer (batch): [[], 'Không', [], []]
+2026-05-22 08:53:40,096 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:40,254 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:40,345 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:40,424 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:40,425 - INFO - [Raw response 0]: A
+2026-05-22 08:53:40,425 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 900, 'completion_tokens': 2, 'total_tokens': 902}
+2026-05-22 08:53:40,425 - INFO - [Raw response 1]: N
+2026-05-22 08:53:40,425 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 894, 'completion_tokens': 2, 'total_tokens': 896}
+2026-05-22 08:53:40,425 - INFO - [Raw response 2]: Không
+2026-05-22 08:53:40,425 - INFO - [Raw response 3]: B
+2026-05-22 08:53:40,425 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 5278, 'completion_tokens': 2, 'total_tokens': 5280}
+2026-05-22 08:53:40,425 - INFO - Predicted Answer (batch): [[], [], 'Không', []]
+2026-05-22 08:53:40,973 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:41,102 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:41,198 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:41,343 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:41,344 - INFO - [Raw response 0]: A
+2026-05-22 08:53:41,344 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 1231, 'completion_tokens': 2, 'total_tokens': 1233}
+2026-05-22 08:53:41,344 - INFO - [Raw response 1]: N
+2026-05-22 08:53:41,344 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 1220, 'completion_tokens': 2, 'total_tokens': 1222}
+2026-05-22 08:53:41,344 - INFO - [Raw response 2]: B
+2026-05-22 08:53:41,345 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 898, 'completion_tokens': 2, 'total_tokens': 900}
+2026-05-22 08:53:41,345 - INFO - [Raw response 3]: Không
+2026-05-22 08:53:41,345 - INFO - Predicted Answer (batch): [[], [], [], 'Không']
+2026-05-22 08:53:41,818 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:41,964 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:42,185 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:42,556 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:42,557 - INFO - [Raw response 0]: B
+2026-05-22 08:53:42,557 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 968, 'completion_tokens': 2, 'total_tokens': 970}
+2026-05-22 08:53:42,557 - INFO - [Raw response 1]: A
+2026-05-22 08:53:42,557 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 2741, 'completion_tokens': 2, 'total_tokens': 2743}
+2026-05-22 08:53:42,557 - INFO - [Raw response 2]: N
+2026-05-22 08:53:42,557 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 1757, 'completion_tokens': 2, 'total_tokens': 1759}
+2026-05-22 08:53:42,557 - INFO - [Raw response 3]: B
+2026-05-22 08:53:42,557 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 1238, 'completion_tokens': 2, 'total_tokens': 1240}
+2026-05-22 08:53:42,557 - INFO - Predicted Answer (batch): [[], [], [], []]
+2026-05-22 08:53:43,352 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:43,476 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:43,574 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:43,711 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:43,712 - INFO - [Raw response 0]: B
+2026-05-22 08:53:43,712 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 1075, 'completion_tokens': 2, 'total_tokens': 1077}
+2026-05-22 08:53:43,712 - INFO - [Raw response 1]: B
+2026-05-22 08:53:43,712 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 955, 'completion_tokens': 2, 'total_tokens': 957}
+2026-05-22 08:53:43,712 - INFO - [Raw response 2]: B
+2026-05-22 08:53:43,712 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 2995, 'completion_tokens': 2, 'total_tokens': 2997}
+2026-05-22 08:53:43,712 - INFO - [Raw response 3]: B
+2026-05-22 08:53:43,712 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 1098, 'completion_tokens': 2, 'total_tokens': 1100}
+2026-05-22 08:53:43,712 - INFO - Predicted Answer (batch): [[], [], [], []]
+2026-05-22 08:53:44,226 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:44,389 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:44,454 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:44,608 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:44,609 - INFO - [Raw response 0]: C
+2026-05-22 08:53:44,609 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 694, 'completion_tokens': 2, 'total_tokens': 696}
+2026-05-22 08:53:44,609 - INFO - [Raw response 1]: B
+2026-05-22 08:53:44,609 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 1319, 'completion_tokens': 2, 'total_tokens': 1321}
+2026-05-22 08:53:44,609 - INFO - [Raw response 2]: B
+2026-05-22 08:53:44,609 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 1362, 'completion_tokens': 2, 'total_tokens': 1364}
+2026-05-22 08:53:44,609 - INFO - [Raw response 3]: B
+2026-05-22 08:53:44,609 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 1047, 'completion_tokens': 2, 'total_tokens': 1049}
+2026-05-22 08:53:44,610 - INFO - Predicted Answer (batch): [[], [], [], []]
+2026-05-22 08:53:45,076 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:45,146 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:45,340 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:45,474 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:45,475 - INFO - [Raw response 0]: B
+2026-05-22 08:53:45,475 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 1524, 'completion_tokens': 2, 'total_tokens': 1526}
+2026-05-22 08:53:45,475 - INFO - [Raw response 1]: A
+2026-05-22 08:53:45,475 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 902, 'completion_tokens': 2, 'total_tokens': 904}
+2026-05-22 08:53:45,475 - INFO - [Raw response 2]: B
+2026-05-22 08:53:45,475 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 740, 'completion_tokens': 2, 'total_tokens': 742}
+2026-05-22 08:53:45,475 - INFO - [Raw response 3]: B
+2026-05-22 08:53:45,475 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 1133, 'completion_tokens': 2, 'total_tokens': 1135}
+2026-05-22 08:53:45,475 - INFO - Predicted Answer (batch): [[], [], [], []]
+2026-05-22 08:53:46,011 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:46,143 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:46,268 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:46,367 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:46,368 - INFO - [Raw response 0]: B
+2026-05-22 08:53:46,368 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 1267, 'completion_tokens': 2, 'total_tokens': 1269}
+2026-05-22 08:53:46,368 - INFO - [Raw response 1]: Có
+2026-05-22 08:53:46,368 - INFO - [Raw response 2]: B
+2026-05-22 08:53:46,368 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 1151, 'completion_tokens': 2, 'total_tokens': 1153}
+2026-05-22 08:53:46,368 - INFO - [Raw response 3]: N
+2026-05-22 08:53:46,368 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 1081, 'completion_tokens': 2, 'total_tokens': 1083}
+2026-05-22 08:53:46,368 - INFO - Predicted Answer (batch): [[], 'Có', [], []]
+2026-05-22 08:53:46,825 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:46,960 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:47,059 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:47,349 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:47,350 - INFO - [Raw response 0]: A
+2026-05-22 08:53:47,350 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 973, 'completion_tokens': 2, 'total_tokens': 975}
+2026-05-22 08:53:47,351 - INFO - [Raw response 1]: A
+2026-05-22 08:53:47,351 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 2204, 'completion_tokens': 2, 'total_tokens': 2206}
+2026-05-22 08:53:47,351 - INFO - [Raw response 2]: A
+2026-05-22 08:53:47,351 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 807, 'completion_tokens': 2, 'total_tokens': 809}
+2026-05-22 08:53:47,351 - INFO - [Raw response 3]: B
+2026-05-22 08:53:47,351 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 1089, 'completion_tokens': 2, 'total_tokens': 1091}
+2026-05-22 08:53:47,351 - INFO - Predicted Answer (batch): [[], [], [], []]
+2026-05-22 08:53:47,864 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:47,953 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:48,377 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:48,487 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:48,488 - INFO - [Raw response 0]: B
+2026-05-22 08:53:48,488 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 845, 'completion_tokens': 2, 'total_tokens': 847}
+2026-05-22 08:53:48,488 - INFO - [Raw response 1]: B
+2026-05-22 08:53:48,488 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 3034, 'completion_tokens': 2, 'total_tokens': 3036}
+2026-05-22 08:53:48,488 - INFO - [Raw response 2]: A
+2026-05-22 08:53:48,488 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 993, 'completion_tokens': 2, 'total_tokens': 995}
+2026-05-22 08:53:48,488 - INFO - [Raw response 3]: B
+2026-05-22 08:53:48,488 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 1028, 'completion_tokens': 2, 'total_tokens': 1030}
+2026-05-22 08:53:48,488 - INFO - Predicted Answer (batch): [[], [], [], []]
+2026-05-22 08:53:48,993 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:49,087 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:49,374 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:49,468 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:49,469 - INFO - [Raw response 0]: B
+2026-05-22 08:53:49,469 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 936, 'completion_tokens': 2, 'total_tokens': 938}
+2026-05-22 08:53:49,469 - INFO - [Raw response 1]: Không
+2026-05-22 08:53:49,469 - INFO - [Raw response 2]: B
+2026-05-22 08:53:49,469 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 2167, 'completion_tokens': 2, 'total_tokens': 2169}
+2026-05-22 08:53:49,469 - INFO - [Raw response 3]: Không
+2026-05-22 08:53:49,469 - INFO - Predicted Answer (batch): [[], 'Không', [], 'Không']
+2026-05-22 08:53:49,935 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:50,085 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:50,686 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:51,189 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:51,191 - INFO - [Raw response 0]: A
+2026-05-22 08:53:51,191 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 1249, 'completion_tokens': 2, 'total_tokens': 1251}
+2026-05-22 08:53:51,191 - INFO - [Raw response 1]: A
+2026-05-22 08:53:51,191 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 4191, 'completion_tokens': 2, 'total_tokens': 4193}
+2026-05-22 08:53:51,191 - INFO - [Raw response 2]: A
+2026-05-22 08:53:51,191 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 3163, 'completion_tokens': 2, 'total_tokens': 3165}
+2026-05-22 08:53:51,191 - INFO - [Raw response 3]: N
+2026-05-22 08:53:51,191 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 820, 'completion_tokens': 2, 'total_tokens': 822}
+2026-05-22 08:53:51,191 - INFO - Predicted Answer (batch): [[], [], [], []]
+2026-05-22 08:53:51,703 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:51,784 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:51,858 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:51,985 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:51,985 - INFO - [Raw response 0]: A
+2026-05-22 08:53:51,985 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 1091, 'completion_tokens': 2, 'total_tokens': 1093}
+2026-05-22 08:53:51,986 - INFO - [Raw response 1]: Không
+2026-05-22 08:53:51,986 - INFO - [Raw response 2]: A
+2026-05-22 08:53:51,986 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 760, 'completion_tokens': 2, 'total_tokens': 762}
+2026-05-22 08:53:51,986 - INFO - [Raw response 3]: A
+2026-05-22 08:53:51,986 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 1029, 'completion_tokens': 2, 'total_tokens': 1031}
+2026-05-22 08:53:51,986 - INFO - Predicted Answer (batch): [[], 'Không', [], []]
+2026-05-22 08:53:52,533 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:52,675 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:52,766 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:52,943 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:52,944 - INFO - [Raw response 0]: A
+2026-05-22 08:53:52,944 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 1205, 'completion_tokens': 2, 'total_tokens': 1207}
+2026-05-22 08:53:52,944 - INFO - [Raw response 1]: B
+2026-05-22 08:53:52,944 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 896, 'completion_tokens': 2, 'total_tokens': 898}
+2026-05-22 08:53:52,944 - INFO - [Raw response 2]: B
+2026-05-22 08:53:52,944 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 1395, 'completion_tokens': 2, 'total_tokens': 1397}
+2026-05-22 08:53:52,944 - INFO - [Raw response 3]: A
+2026-05-22 08:53:52,944 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 1488, 'completion_tokens': 2, 'total_tokens': 1490}
+2026-05-22 08:53:52,944 - INFO - Predicted Answer (batch): [[], [], [], []]
+2026-05-22 08:53:53,405 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:53,471 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:53,594 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:53,862 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:53,863 - INFO - [Raw response 0]: Không
+2026-05-22 08:53:53,863 - INFO - [Raw response 1]: A
+2026-05-22 08:53:53,863 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 2031, 'completion_tokens': 2, 'total_tokens': 2033}
+2026-05-22 08:53:53,864 - INFO - [Raw response 2]: C
+2026-05-22 08:53:53,864 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 868, 'completion_tokens': 2, 'total_tokens': 870}
+2026-05-22 08:53:53,864 - INFO - [Raw response 3]: C
+2026-05-22 08:53:53,864 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 707, 'completion_tokens': 2, 'total_tokens': 709}
+2026-05-22 08:53:53,864 - INFO - Predicted Answer (batch): ['Không', [], [], []]
+2026-05-22 08:53:54,558 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:54,953 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:55,196 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:55,292 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:55,293 - INFO - [Raw response 0]: B
+2026-05-22 08:53:55,293 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 2231, 'completion_tokens': 2, 'total_tokens': 2233}
+2026-05-22 08:53:55,293 - INFO - [Raw response 1]: A
+2026-05-22 08:53:55,293 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 2809, 'completion_tokens': 2, 'total_tokens': 2811}
+2026-05-22 08:53:55,293 - INFO - [Raw response 2]: B
+2026-05-22 08:53:55,293 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 916, 'completion_tokens': 2, 'total_tokens': 918}
+2026-05-22 08:53:55,293 - INFO - [Raw response 3]: A
+2026-05-22 08:53:55,293 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 1891, 'completion_tokens': 2, 'total_tokens': 1893}
+2026-05-22 08:53:55,293 - INFO - Predicted Answer (batch): [[], [], [], []]
+2026-05-22 08:53:55,730 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:56,130 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:56,225 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:56,439 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:56,440 - INFO - [Raw response 0]: Không
+2026-05-22 08:53:56,440 - INFO - [Raw response 1]: A
+2026-05-22 08:53:56,440 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 2821, 'completion_tokens': 2, 'total_tokens': 2823}
+2026-05-22 08:53:56,440 - INFO - [Raw response 2]: A
+2026-05-22 08:53:56,440 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 1700, 'completion_tokens': 2, 'total_tokens': 1702}
+2026-05-22 08:53:56,440 - INFO - [Raw response 3]: B
+2026-05-22 08:53:56,440 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 966, 'completion_tokens': 2, 'total_tokens': 968}
+2026-05-22 08:53:56,440 - INFO - Predicted Answer (batch): ['Không', [], [], []]
+2026-05-22 08:53:56,971 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:57,052 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:57,433 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:57,500 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:57,501 - INFO - [Raw response 0]: B
+2026-05-22 08:53:57,501 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 804, 'completion_tokens': 2, 'total_tokens': 806}
+2026-05-22 08:53:57,501 - INFO - [Raw response 1]: Không
+2026-05-22 08:53:57,501 - INFO - [Raw response 2]: Không
+2026-05-22 08:53:57,501 - INFO - [Raw response 3]: A
+2026-05-22 08:53:57,501 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 2822, 'completion_tokens': 2, 'total_tokens': 2824}
+2026-05-22 08:53:57,501 - INFO - Predicted Answer (batch): [[], 'Không', 'Không', []]
+2026-05-22 08:53:58,194 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:58,321 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:58,443 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:59,076 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:59,077 - INFO - [Raw response 0]: A
+2026-05-22 08:53:59,077 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 1095, 'completion_tokens': 2, 'total_tokens': 1097}
+2026-05-22 08:53:59,077 - INFO - [Raw response 1]: A
+2026-05-22 08:53:59,077 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 2180, 'completion_tokens': 2, 'total_tokens': 2182}
+2026-05-22 08:53:59,077 - INFO - [Raw response 2]: A
+2026-05-22 08:53:59,077 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 4420, 'completion_tokens': 2, 'total_tokens': 4422}
+2026-05-22 08:53:59,077 - INFO - [Raw response 3]: B
+2026-05-22 08:53:59,077 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 1041, 'completion_tokens': 2, 'total_tokens': 1043}
+2026-05-22 08:53:59,077 - INFO - Predicted Answer (batch): [[], [], [], []]
+2026-05-22 08:53:59,696 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:53:59,842 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:00,988 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:01,385 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:01,386 - INFO - [Raw response 0]: B
+2026-05-22 08:54:01,386 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 7459, 'completion_tokens': 2, 'total_tokens': 7461}
+2026-05-22 08:54:01,386 - INFO - [Raw response 1]: B
+2026-05-22 08:54:01,386 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 1258, 'completion_tokens': 2, 'total_tokens': 1260}
+2026-05-22 08:54:01,386 - INFO - [Raw response 2]: B
+2026-05-22 08:54:01,386 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 2529, 'completion_tokens': 2, 'total_tokens': 2531}
+2026-05-22 08:54:01,386 - INFO - [Raw response 3]: B
+2026-05-22 08:54:01,386 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 1206, 'completion_tokens': 2, 'total_tokens': 1208}
+2026-05-22 08:54:01,386 - INFO - Predicted Answer (batch): [[], [], [], []]
+2026-05-22 08:54:01,830 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:01,954 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:02,042 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:02,255 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:02,256 - INFO - [Raw response 0]: C
+2026-05-22 08:54:02,256 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 1075, 'completion_tokens': 2, 'total_tokens': 1077}
+2026-05-22 08:54:02,256 - INFO - [Raw response 1]: A
+2026-05-22 08:54:02,256 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 1677, 'completion_tokens': 2, 'total_tokens': 1679}
+2026-05-22 08:54:02,256 - INFO - [Raw response 2]: B
+2026-05-22 08:54:02,256 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 770, 'completion_tokens': 2, 'total_tokens': 772}
+2026-05-22 08:54:02,256 - INFO - [Raw response 3]: A
+2026-05-22 08:54:02,256 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 872, 'completion_tokens': 2, 'total_tokens': 874}
+2026-05-22 08:54:02,256 - INFO - Predicted Answer (batch): [[], [], [], []]
+2026-05-22 08:54:02,774 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:02,866 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:03,074 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:03,255 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:03,256 - INFO - [Raw response 0]: A
+2026-05-22 08:54:03,256 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 893, 'completion_tokens': 2, 'total_tokens': 895}
+2026-05-22 08:54:03,256 - INFO - [Raw response 1]: B
+2026-05-22 08:54:03,256 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 1641, 'completion_tokens': 2, 'total_tokens': 1643}
+2026-05-22 08:54:03,256 - INFO - [Raw response 2]: A
+2026-05-22 08:54:03,256 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 1484, 'completion_tokens': 2, 'total_tokens': 1486}
+2026-05-22 08:54:03,256 - INFO - [Raw response 3]: Không
+2026-05-22 08:54:03,256 - INFO - Predicted Answer (batch): [[], [], [], 'Không']
+2026-05-22 08:54:03,786 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:03,885 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:03,948 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:04,094 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:04,095 - INFO - [Raw response 0]: B
+2026-05-22 08:54:04,095 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 677, 'completion_tokens': 2, 'total_tokens': 679}
+2026-05-22 08:54:04,095 - INFO - [Raw response 1]: B
+2026-05-22 08:54:04,095 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 1183, 'completion_tokens': 2, 'total_tokens': 1185}
+2026-05-22 08:54:04,095 - INFO - [Raw response 2]: A
+2026-05-22 08:54:04,095 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 989, 'completion_tokens': 2, 'total_tokens': 991}
+2026-05-22 08:54:04,095 - INFO - [Raw response 3]: A
+2026-05-22 08:54:04,095 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 1179, 'completion_tokens': 2, 'total_tokens': 1181}
+2026-05-22 08:54:04,095 - INFO - Predicted Answer (batch): [[], [], [], []]
+2026-05-22 08:54:04,628 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:04,873 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:04,962 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:05,314 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:05,315 - INFO - [Raw response 0]: C
+2026-05-22 08:54:05,315 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 886, 'completion_tokens': 2, 'total_tokens': 888}
+2026-05-22 08:54:05,315 - INFO - [Raw response 1]: A
+2026-05-22 08:54:05,315 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 2571, 'completion_tokens': 2, 'total_tokens': 2573}
+2026-05-22 08:54:05,315 - INFO - [Raw response 2]: A
+2026-05-22 08:54:05,315 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 1938, 'completion_tokens': 2, 'total_tokens': 1940}
+2026-05-22 08:54:05,315 - INFO - [Raw response 3]: N
+2026-05-22 08:54:05,315 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 1332, 'completion_tokens': 2, 'total_tokens': 1334}
+2026-05-22 08:54:05,315 - INFO - Predicted Answer (batch): [[], [], [], []]
+2026-05-22 08:54:05,828 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:05,944 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:06,086 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:06,236 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:06,237 - INFO - [Raw response 0]: B
+2026-05-22 08:54:06,237 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 1015, 'completion_tokens': 2, 'total_tokens': 1017}
+2026-05-22 08:54:06,237 - INFO - [Raw response 1]: B
+2026-05-22 08:54:06,237 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 1135, 'completion_tokens': 2, 'total_tokens': 1137}
+2026-05-22 08:54:06,237 - INFO - [Raw response 2]: B
+2026-05-22 08:54:06,237 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 1106, 'completion_tokens': 2, 'total_tokens': 1108}
+2026-05-22 08:54:06,237 - INFO - [Raw response 3]: B
+2026-05-22 08:54:06,237 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 1205, 'completion_tokens': 2, 'total_tokens': 1207}
+2026-05-22 08:54:06,237 - INFO - Predicted Answer (batch): [[], [], [], []]
+2026-05-22 08:54:07,323 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:07,529 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:07,725 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:08,153 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:08,154 - INFO - [Raw response 0]: A
+2026-05-22 08:54:08,154 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 4646, 'completion_tokens': 2, 'total_tokens': 4648}
+2026-05-22 08:54:08,154 - INFO - [Raw response 1]: A
+2026-05-22 08:54:08,154 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 3083, 'completion_tokens': 2, 'total_tokens': 3085}
+2026-05-22 08:54:08,154 - INFO - [Raw response 2]: B
+2026-05-22 08:54:08,154 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 1548, 'completion_tokens': 2, 'total_tokens': 1550}
+2026-05-22 08:54:08,154 - INFO - [Raw response 3]: B
+2026-05-22 08:54:08,154 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 1171, 'completion_tokens': 2, 'total_tokens': 1173}
+2026-05-22 08:54:08,154 - INFO - Predicted Answer (batch): [[], [], [], []]
+2026-05-22 08:54:08,672 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:08,966 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:09,051 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:09,182 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:09,183 - INFO - [Raw response 0]: N
+2026-05-22 08:54:09,183 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 849, 'completion_tokens': 2, 'total_tokens': 851}
+2026-05-22 08:54:09,183 - INFO - [Raw response 1]: B
+2026-05-22 08:54:09,183 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 1211, 'completion_tokens': 2, 'total_tokens': 1213}
+2026-05-22 08:54:09,183 - INFO - [Raw response 2]: A
+2026-05-22 08:54:09,183 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 1120, 'completion_tokens': 2, 'total_tokens': 1122}
+2026-05-22 08:54:09,183 - INFO - [Raw response 3]: B
+2026-05-22 08:54:09,183 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 2245, 'completion_tokens': 2, 'total_tokens': 2247}
+2026-05-22 08:54:09,183 - INFO - Predicted Answer (batch): [[], [], [], []]
+2026-05-22 08:54:09,758 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:09,842 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:10,007 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:10,149 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:10,151 - INFO - [Raw response 0]: A
+2026-05-22 08:54:10,151 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 818, 'completion_tokens': 2, 'total_tokens': 820}
+2026-05-22 08:54:10,151 - INFO - [Raw response 1]: B
+2026-05-22 08:54:10,151 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 1160, 'completion_tokens': 2, 'total_tokens': 1162}
+2026-05-22 08:54:10,151 - INFO - [Raw response 2]: C
+2026-05-22 08:54:10,151 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 1535, 'completion_tokens': 2, 'total_tokens': 1537}
+2026-05-22 08:54:10,151 - INFO - [Raw response 3]: C
+2026-05-22 08:54:10,151 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 1316, 'completion_tokens': 2, 'total_tokens': 1318}
+2026-05-22 08:54:10,151 - INFO - Predicted Answer (batch): [[], [], [], []]
+2026-05-22 08:54:10,632 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:10,701 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:11,204 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:11,284 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:11,285 - INFO - [Raw response 0]: A
+2026-05-22 08:54:11,286 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 734, 'completion_tokens': 2, 'total_tokens': 736}
+2026-05-22 08:54:11,286 - INFO - [Raw response 1]: A
+2026-05-22 08:54:11,286 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 796, 'completion_tokens': 2, 'total_tokens': 798}
+2026-05-22 08:54:11,286 - INFO - [Raw response 2]: N
+2026-05-22 08:54:11,286 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 3526, 'completion_tokens': 2, 'total_tokens': 3528}
+2026-05-22 08:54:11,286 - INFO - [Raw response 3]: A
+2026-05-22 08:54:11,286 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 873, 'completion_tokens': 2, 'total_tokens': 875}
+2026-05-22 08:54:11,286 - INFO - Predicted Answer (batch): [[], [], [], []]
+2026-05-22 08:54:11,765 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:11,909 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:12,002 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:12,315 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:12,316 - INFO - [Raw response 0]: B
+2026-05-22 08:54:12,316 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 2369, 'completion_tokens': 2, 'total_tokens': 2371}
+2026-05-22 08:54:12,316 - INFO - [Raw response 1]: B
+2026-05-22 08:54:12,316 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 990, 'completion_tokens': 2, 'total_tokens': 992}
+2026-05-22 08:54:12,316 - INFO - [Raw response 2]: B
+2026-05-22 08:54:12,316 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 1231, 'completion_tokens': 2, 'total_tokens': 1233}
+2026-05-22 08:54:12,316 - INFO - [Raw response 3]: A
+2026-05-22 08:54:12,316 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 904, 'completion_tokens': 2, 'total_tokens': 906}
+2026-05-22 08:54:12,316 - INFO - Predicted Answer (batch): [[], [], [], []]
+2026-05-22 08:54:12,825 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:12,949 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:13,049 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:13,781 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:13,782 - INFO - [Raw response 0]: A
+2026-05-22 08:54:13,782 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 1132, 'completion_tokens': 2, 'total_tokens': 1134}
+2026-05-22 08:54:13,782 - INFO - [Raw response 1]: A
+2026-05-22 08:54:13,782 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 1079, 'completion_tokens': 2, 'total_tokens': 1081}
+2026-05-22 08:54:13,782 - INFO - [Raw response 2]: A
+2026-05-22 08:54:13,782 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 4993, 'completion_tokens': 2, 'total_tokens': 4995}
+2026-05-22 08:54:13,783 - INFO - [Raw response 3]: B
+2026-05-22 08:54:13,783 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 982, 'completion_tokens': 2, 'total_tokens': 984}
+2026-05-22 08:54:13,783 - INFO - Predicted Answer (batch): [[], [], [], []]
+2026-05-22 08:54:14,315 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:14,460 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:14,589 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:14,815 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:14,816 - INFO - [Raw response 0]: A
+2026-05-22 08:54:14,816 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 1246, 'completion_tokens': 2, 'total_tokens': 1248}
+2026-05-22 08:54:14,816 - INFO - [Raw response 1]: C
+2026-05-22 08:54:14,816 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 1109, 'completion_tokens': 2, 'total_tokens': 1111}
+2026-05-22 08:54:14,816 - INFO - [Raw response 2]: B
+2026-05-22 08:54:14,816 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 1787, 'completion_tokens': 2, 'total_tokens': 1789}
+2026-05-22 08:54:14,816 - INFO - [Raw response 3]: B
+2026-05-22 08:54:14,816 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 730, 'completion_tokens': 2, 'total_tokens': 732}
+2026-05-22 08:54:14,816 - INFO - Predicted Answer (batch): [[], [], [], []]
+2026-05-22 08:54:15,314 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:15,399 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:16,614 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:16,876 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:16,877 - INFO - [Raw response 0]: B
+2026-05-22 08:54:16,877 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 912, 'completion_tokens': 2, 'total_tokens': 914}
+2026-05-22 08:54:16,877 - INFO - [Raw response 1]: A
+2026-05-22 08:54:16,877 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 7880, 'completion_tokens': 2, 'total_tokens': 7882}
+2026-05-22 08:54:16,877 - INFO - [Raw response 2]: A
+2026-05-22 08:54:16,877 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 1544, 'completion_tokens': 2, 'total_tokens': 1546}
+2026-05-22 08:54:16,877 - INFO - [Raw response 3]: B
+2026-05-22 08:54:16,877 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 841, 'completion_tokens': 2, 'total_tokens': 843}
+2026-05-22 08:54:16,878 - INFO - Predicted Answer (batch): [[], [], [], []]
+2026-05-22 08:54:17,415 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:17,525 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:17,736 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:17,985 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:17,986 - INFO - [Raw response 0]: B
+2026-05-22 08:54:17,986 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 1655, 'completion_tokens': 2, 'total_tokens': 1657}
+2026-05-22 08:54:17,986 - INFO - [Raw response 1]: N
+2026-05-22 08:54:17,986 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 1968, 'completion_tokens': 2, 'total_tokens': 1970}
+2026-05-22 08:54:17,986 - INFO - [Raw response 2]: Không
+2026-05-22 08:54:17,986 - INFO - [Raw response 3]: B
+2026-05-22 08:54:17,986 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 1002, 'completion_tokens': 2, 'total_tokens': 1004}
+2026-05-22 08:54:17,986 - INFO - Predicted Answer (batch): [[], [], 'Không', []]
+2026-05-22 08:54:18,513 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:18,837 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:19,583 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:19,731 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:19,732 - INFO - [Raw response 0]: A
+2026-05-22 08:54:19,732 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 782, 'completion_tokens': 2, 'total_tokens': 784}
+2026-05-22 08:54:19,732 - INFO - [Raw response 1]: B
+2026-05-22 08:54:19,732 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 2452, 'completion_tokens': 2, 'total_tokens': 2454}
+2026-05-22 08:54:19,732 - INFO - [Raw response 2]: B
+2026-05-22 08:54:19,733 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 5042, 'completion_tokens': 2, 'total_tokens': 5044}
+2026-05-22 08:54:19,733 - INFO - [Raw response 3]: B
+2026-05-22 08:54:19,733 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 1285, 'completion_tokens': 2, 'total_tokens': 1287}
+2026-05-22 08:54:19,733 - INFO - Predicted Answer (batch): [[], [], [], []]
+2026-05-22 08:54:20,179 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:20,270 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:20,406 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:20,532 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:20,533 - INFO - [Raw response 0]: C
+2026-05-22 08:54:20,533 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 1165, 'completion_tokens': 2, 'total_tokens': 1167}
+2026-05-22 08:54:20,533 - INFO - [Raw response 1]: B
+2026-05-22 08:54:20,533 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 901, 'completion_tokens': 2, 'total_tokens': 903}
+2026-05-22 08:54:20,533 - INFO - [Raw response 2]: D
+2026-05-22 08:54:20,533 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 822, 'completion_tokens': 2, 'total_tokens': 824}
+2026-05-22 08:54:20,533 - INFO - [Raw response 3]: B
+2026-05-22 08:54:20,533 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 1067, 'completion_tokens': 2, 'total_tokens': 1069}
+2026-05-22 08:54:20,533 - INFO - Predicted Answer (batch): [[], [], [], []]
+2026-05-22 08:54:21,102 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:21,197 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:21,568 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:21,745 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:21,745 - INFO - [Raw response 0]: D
+2026-05-22 08:54:21,746 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 2701, 'completion_tokens': 2, 'total_tokens': 2703}
+2026-05-22 08:54:21,746 - INFO - [Raw response 1]: A
+2026-05-22 08:54:21,746 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 925, 'completion_tokens': 2, 'total_tokens': 927}
+2026-05-22 08:54:21,746 - INFO - [Raw response 2]: B
+2026-05-22 08:54:21,746 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 1464, 'completion_tokens': 2, 'total_tokens': 1466}
+2026-05-22 08:54:21,746 - INFO - [Raw response 3]: N
+2026-05-22 08:54:21,746 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 1515, 'completion_tokens': 2, 'total_tokens': 1517}
+2026-05-22 08:54:21,746 - INFO - Predicted Answer (batch): [[], [], [], []]
+2026-05-22 08:54:22,888 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:23,060 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:23,157 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:23,277 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:23,278 - INFO - [Raw response 0]: B
+2026-05-22 08:54:23,278 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 1015, 'completion_tokens': 2, 'total_tokens': 1017}
+2026-05-22 08:54:23,278 - INFO - [Raw response 1]: B
+2026-05-22 08:54:23,278 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 941, 'completion_tokens': 2, 'total_tokens': 943}
+2026-05-22 08:54:23,278 - INFO - [Raw response 2]: A
+2026-05-22 08:54:23,278 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 1035, 'completion_tokens': 2, 'total_tokens': 1037}
+2026-05-22 08:54:23,278 - INFO - [Raw response 3]: A
+2026-05-22 08:54:23,278 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 4969, 'completion_tokens': 2, 'total_tokens': 4971}
+2026-05-22 08:54:23,278 - INFO - Predicted Answer (batch): [[], [], [], []]
+2026-05-22 08:54:23,793 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:23,961 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:24,129 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:24,273 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:24,274 - INFO - [Raw response 0]: A
+2026-05-22 08:54:24,274 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 1109, 'completion_tokens': 2, 'total_tokens': 1111}
+2026-05-22 08:54:24,274 - INFO - [Raw response 1]: B
+2026-05-22 08:54:24,274 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 1407, 'completion_tokens': 2, 'total_tokens': 1409}
+2026-05-22 08:54:24,274 - INFO - [Raw response 2]: B
+2026-05-22 08:54:24,274 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 1246, 'completion_tokens': 2, 'total_tokens': 1248}
+2026-05-22 08:54:24,274 - INFO - [Raw response 3]: B
+2026-05-22 08:54:24,274 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 1428, 'completion_tokens': 2, 'total_tokens': 1430}
+2026-05-22 08:54:24,275 - INFO - Predicted Answer (batch): [[], [], [], []]
+2026-05-22 08:54:24,848 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:24,931 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:25,098 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:25,396 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:25,398 - INFO - [Raw response 0]: C
+2026-05-22 08:54:25,398 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 1408, 'completion_tokens': 2, 'total_tokens': 1410}
+2026-05-22 08:54:25,398 - INFO - [Raw response 1]: B
+2026-05-22 08:54:25,398 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 1294, 'completion_tokens': 2, 'total_tokens': 1296}
+2026-05-22 08:54:25,398 - INFO - [Raw response 2]: B
+2026-05-22 08:54:25,398 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 818, 'completion_tokens': 2, 'total_tokens': 820}
+2026-05-22 08:54:25,398 - INFO - [Raw response 3]: B
+2026-05-22 08:54:25,398 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 2258, 'completion_tokens': 2, 'total_tokens': 2260}
+2026-05-22 08:54:25,398 - INFO - Predicted Answer (batch): [[], [], [], []]
+2026-05-22 08:54:25,958 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:26,049 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:26,613 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:27,170 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:27,170 - INFO - [Raw response 0]: A
+2026-05-22 08:54:27,170 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 3897, 'completion_tokens': 2, 'total_tokens': 3899}
+2026-05-22 08:54:27,170 - INFO - [Raw response 1]: A
+2026-05-22 08:54:27,170 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 3994, 'completion_tokens': 2, 'total_tokens': 3996}
+2026-05-22 08:54:27,170 - INFO - [Raw response 2]: C
+2026-05-22 08:54:27,171 - WARNING - Parse returned None at index 2 | finish_reason=stop | usage={'prompt_tokens': 882, 'completion_tokens': 2, 'total_tokens': 884}
+2026-05-22 08:54:27,171 - INFO - [Raw response 3]: B
+2026-05-22 08:54:27,171 - WARNING - Parse returned None at index 3 | finish_reason=stop | usage={'prompt_tokens': 1378, 'completion_tokens': 2, 'total_tokens': 1380}
+2026-05-22 08:54:27,171 - INFO - Predicted Answer (batch): [[], [], [], []]
+2026-05-22 08:54:27,627 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:27,781 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:54:27,782 - INFO - [Raw response 0]: A
+2026-05-22 08:54:27,782 - WARNING - Parse returned None at index 0 | finish_reason=stop | usage={'prompt_tokens': 1288, 'completion_tokens': 2, 'total_tokens': 1290}
+2026-05-22 08:54:27,782 - INFO - [Raw response 1]: B
+2026-05-22 08:54:27,782 - WARNING - Parse returned None at index 1 | finish_reason=stop | usage={'prompt_tokens': 837, 'completion_tokens': 2, 'total_tokens': 839}
+2026-05-22 08:54:27,782 - INFO - Predicted Answer (batch): [[], []]

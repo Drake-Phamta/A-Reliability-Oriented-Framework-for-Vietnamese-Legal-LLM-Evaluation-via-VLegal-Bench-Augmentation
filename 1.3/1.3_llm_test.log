@@ -1948,3 +1948,978 @@ SyntaxError: invalid character '“' (U+201C)
 2026-05-20 07:38:02,099 - INFO - [Raw response 2]: A
 2026-05-20 07:38:02,099 - INFO - [Raw response 3]: C
 2026-05-20 07:38:02,100 - INFO - Predicted Answer (batch): ['B', 'B', 'A', 'C']
+2026-05-22 08:31:43,513 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:43,774 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:43,776 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:43,778 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:44,242 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:44,293 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:44,355 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:44,423 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:44,424 - INFO - [Raw response 0]: D
+2026-05-22 08:31:44,424 - INFO - [Raw response 1]: A
+2026-05-22 08:31:44,424 - INFO - [Raw response 2]: D
+2026-05-22 08:31:44,424 - INFO - [Raw response 3]: A
+2026-05-22 08:31:44,424 - INFO - Predicted Answer (batch): ['D', 'A', 'D', 'A']
+2026-05-22 08:31:44,425 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:44,426 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:44,428 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:44,429 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:44,843 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:44,900 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:44,961 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:45,010 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:45,012 - INFO - [Raw response 0]: A
+2026-05-22 08:31:45,012 - INFO - [Raw response 1]: D
+2026-05-22 08:31:45,012 - INFO - [Raw response 2]: C
+2026-05-22 08:31:45,012 - INFO - [Raw response 3]: D
+2026-05-22 08:31:45,012 - INFO - Predicted Answer (batch): ['A', 'D', 'C', 'D']
+2026-05-22 08:31:45,013 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:45,016 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:45,018 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:45,020 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:45,463 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:45,526 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:45,583 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:45,636 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:45,637 - INFO - [Raw response 0]: B
+2026-05-22 08:31:45,637 - INFO - [Raw response 1]: A
+2026-05-22 08:31:45,637 - INFO - [Raw response 2]: A
+2026-05-22 08:31:45,637 - INFO - [Raw response 3]: A
+2026-05-22 08:31:45,638 - INFO - Predicted Answer (batch): ['B', 'A', 'A', 'A']
+2026-05-22 08:31:45,638 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:45,640 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:45,641 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:45,642 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:46,062 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:46,130 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:46,190 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:46,247 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:46,248 - INFO - [Raw response 0]: B
+2026-05-22 08:31:46,248 - INFO - [Raw response 1]: B
+2026-05-22 08:31:46,248 - INFO - [Raw response 2]: A
+2026-05-22 08:31:46,248 - INFO - [Raw response 3]: A
+2026-05-22 08:31:46,248 - INFO - Predicted Answer (batch): ['B', 'B', 'A', 'A']
+2026-05-22 08:31:46,248 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:46,250 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:46,251 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:46,252 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:46,660 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:46,719 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:46,785 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:46,845 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:46,846 - INFO - [Raw response 0]: A
+2026-05-22 08:31:46,846 - INFO - [Raw response 1]: A
+2026-05-22 08:31:46,846 - INFO - [Raw response 2]: A
+2026-05-22 08:31:46,846 - INFO - [Raw response 3]: A
+2026-05-22 08:31:46,846 - INFO - Predicted Answer (batch): ['A', 'A', 'A', 'A']
+2026-05-22 08:31:46,846 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:46,848 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:46,849 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:46,850 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:47,279 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:47,347 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:47,404 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:47,468 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:47,469 - INFO - [Raw response 0]: A
+2026-05-22 08:31:47,469 - INFO - [Raw response 1]: A
+2026-05-22 08:31:47,469 - INFO - [Raw response 2]: A
+2026-05-22 08:31:47,469 - INFO - [Raw response 3]: B
+2026-05-22 08:31:47,469 - INFO - Predicted Answer (batch): ['A', 'A', 'A', 'B']
+2026-05-22 08:31:47,469 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:47,471 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:47,472 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:47,473 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:47,919 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:47,983 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:48,047 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:48,111 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:48,112 - INFO - [Raw response 0]: A
+2026-05-22 08:31:48,112 - INFO - [Raw response 1]: A
+2026-05-22 08:31:48,112 - INFO - [Raw response 2]: B
+2026-05-22 08:31:48,112 - INFO - [Raw response 3]: D
+2026-05-22 08:31:48,112 - INFO - Predicted Answer (batch): ['A', 'A', 'B', 'D']
+2026-05-22 08:31:48,112 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:48,114 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:48,115 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:48,116 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:48,538 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:48,608 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:48,672 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:48,732 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:48,733 - INFO - [Raw response 0]: A
+2026-05-22 08:31:48,733 - INFO - [Raw response 1]: A
+2026-05-22 08:31:48,733 - INFO - [Raw response 2]: A
+2026-05-22 08:31:48,733 - INFO - [Raw response 3]: A
+2026-05-22 08:31:48,733 - INFO - Predicted Answer (batch): ['A', 'A', 'A', 'A']
+2026-05-22 08:31:48,733 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:48,735 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:48,736 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:48,737 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:49,152 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:49,212 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:49,278 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:49,343 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:49,344 - INFO - [Raw response 0]: A
+2026-05-22 08:31:49,344 - INFO - [Raw response 1]: C
+2026-05-22 08:31:49,344 - INFO - [Raw response 2]: A
+2026-05-22 08:31:49,344 - INFO - [Raw response 3]: A
+2026-05-22 08:31:49,344 - INFO - Predicted Answer (batch): ['A', 'C', 'A', 'A']
+2026-05-22 08:31:49,344 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:49,346 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:49,347 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:49,349 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:49,796 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:49,861 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:49,919 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:49,983 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:49,983 - INFO - [Raw response 0]: A
+2026-05-22 08:31:49,984 - INFO - [Raw response 1]: D
+2026-05-22 08:31:49,984 - INFO - [Raw response 2]: C
+2026-05-22 08:31:49,984 - INFO - [Raw response 3]: A
+2026-05-22 08:31:49,984 - INFO - Predicted Answer (batch): ['A', 'D', 'C', 'A']
+2026-05-22 08:31:49,984 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:49,986 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:49,987 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:49,988 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:50,427 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:50,490 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:50,549 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:50,606 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:50,607 - INFO - [Raw response 0]: B
+2026-05-22 08:31:50,607 - INFO - [Raw response 1]: D
+2026-05-22 08:31:50,607 - INFO - [Raw response 2]: C
+2026-05-22 08:31:50,607 - INFO - [Raw response 3]: A
+2026-05-22 08:31:50,607 - INFO - Predicted Answer (batch): ['B', 'D', 'C', 'A']
+2026-05-22 08:31:50,607 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:50,609 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:50,610 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:50,611 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:51,028 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:51,083 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:51,140 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:51,199 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:51,200 - INFO - [Raw response 0]: A
+2026-05-22 08:31:51,200 - INFO - [Raw response 1]: A
+2026-05-22 08:31:51,200 - INFO - [Raw response 2]: A
+2026-05-22 08:31:51,200 - INFO - [Raw response 3]: A
+2026-05-22 08:31:51,200 - INFO - Predicted Answer (batch): ['A', 'A', 'A', 'A']
+2026-05-22 08:31:51,200 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:51,202 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:51,203 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:51,204 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:51,622 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:51,679 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:51,744 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:51,803 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:51,804 - INFO - [Raw response 0]: A
+2026-05-22 08:31:51,804 - INFO - [Raw response 1]: A
+2026-05-22 08:31:51,804 - INFO - [Raw response 2]: B
+2026-05-22 08:31:51,804 - INFO - [Raw response 3]: B
+2026-05-22 08:31:51,804 - INFO - Predicted Answer (batch): ['A', 'A', 'B', 'B']
+2026-05-22 08:31:51,805 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:51,806 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:51,807 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:51,808 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:52,240 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:52,304 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:52,368 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:52,435 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:52,436 - INFO - [Raw response 0]: C
+2026-05-22 08:31:52,436 - INFO - [Raw response 1]: D
+2026-05-22 08:31:52,436 - INFO - [Raw response 2]: A
+2026-05-22 08:31:52,436 - INFO - [Raw response 3]: B
+2026-05-22 08:31:52,436 - INFO - Predicted Answer (batch): ['C', 'D', 'A', 'B']
+2026-05-22 08:31:52,436 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:52,438 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:52,439 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:52,440 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:52,872 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:52,937 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:52,997 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:53,058 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:53,058 - INFO - [Raw response 0]: A
+2026-05-22 08:31:53,058 - INFO - [Raw response 1]: B
+2026-05-22 08:31:53,059 - INFO - [Raw response 2]: A
+2026-05-22 08:31:53,059 - INFO - [Raw response 3]: B
+2026-05-22 08:31:53,059 - INFO - Predicted Answer (batch): ['A', 'B', 'A', 'B']
+2026-05-22 08:31:53,059 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:53,061 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:53,063 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:53,064 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:53,489 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:53,556 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:53,627 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:53,711 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:53,712 - INFO - [Raw response 0]: C
+2026-05-22 08:31:53,712 - INFO - [Raw response 1]: C
+2026-05-22 08:31:53,713 - INFO - [Raw response 2]: C
+2026-05-22 08:31:53,713 - INFO - [Raw response 3]: A
+2026-05-22 08:31:53,713 - INFO - Predicted Answer (batch): ['C', 'C', 'C', 'A']
+2026-05-22 08:31:53,714 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:53,717 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:53,719 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:53,722 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:54,180 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:54,237 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:54,309 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:54,386 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:54,387 - INFO - [Raw response 0]: B
+2026-05-22 08:31:54,387 - INFO - [Raw response 1]: A
+2026-05-22 08:31:54,387 - INFO - [Raw response 2]: A
+2026-05-22 08:31:54,388 - INFO - [Raw response 3]: A
+2026-05-22 08:31:54,388 - INFO - Predicted Answer (batch): ['B', 'A', 'A', 'A']
+2026-05-22 08:31:54,389 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:54,391 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:54,394 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:54,397 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:54,858 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:54,916 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:54,974 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:55,040 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:55,041 - INFO - [Raw response 0]: D
+2026-05-22 08:31:55,041 - INFO - [Raw response 1]: A
+2026-05-22 08:31:55,041 - INFO - [Raw response 2]: A
+2026-05-22 08:31:55,041 - INFO - [Raw response 3]: A
+2026-05-22 08:31:55,041 - INFO - Predicted Answer (batch): ['D', 'A', 'A', 'A']
+2026-05-22 08:31:55,041 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:55,043 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:55,044 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:55,045 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:55,474 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:55,545 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:55,618 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:55,690 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:55,691 - INFO - [Raw response 0]: C
+2026-05-22 08:31:55,691 - INFO - [Raw response 1]: A
+2026-05-22 08:31:55,691 - INFO - [Raw response 2]: A
+2026-05-22 08:31:55,691 - INFO - [Raw response 3]: D
+2026-05-22 08:31:55,691 - INFO - Predicted Answer (batch): ['C', 'A', 'A', 'D']
+2026-05-22 08:31:55,692 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:55,694 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:55,695 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:55,697 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:56,159 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:56,223 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:56,301 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:56,366 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:56,367 - INFO - [Raw response 0]: C
+2026-05-22 08:31:56,367 - INFO - [Raw response 1]: A
+2026-05-22 08:31:56,367 - INFO - [Raw response 2]: B
+2026-05-22 08:31:56,367 - INFO - [Raw response 3]: C
+2026-05-22 08:31:56,367 - INFO - Predicted Answer (batch): ['C', 'A', 'B', 'C']
+2026-05-22 08:31:56,368 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:56,371 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:56,374 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:56,376 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:56,813 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:56,876 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:56,946 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:57,006 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:57,007 - INFO - [Raw response 0]: B
+2026-05-22 08:31:57,007 - INFO - [Raw response 1]: B
+2026-05-22 08:31:57,007 - INFO - [Raw response 2]: C
+2026-05-22 08:31:57,007 - INFO - [Raw response 3]: B
+2026-05-22 08:31:57,007 - INFO - Predicted Answer (batch): ['B', 'B', 'C', 'B']
+2026-05-22 08:31:57,008 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:57,009 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:57,011 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:57,012 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:57,454 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:57,519 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:57,579 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:57,648 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:57,649 - INFO - [Raw response 0]: B
+2026-05-22 08:31:57,649 - INFO - [Raw response 1]: C
+2026-05-22 08:31:57,649 - INFO - [Raw response 2]: B
+2026-05-22 08:31:57,649 - INFO - [Raw response 3]: A
+2026-05-22 08:31:57,649 - INFO - Predicted Answer (batch): ['B', 'C', 'B', 'A']
+2026-05-22 08:31:57,650 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:57,651 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:57,652 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:57,654 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:58,099 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:58,160 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:58,225 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:58,287 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:58,288 - INFO - [Raw response 0]: B
+2026-05-22 08:31:58,288 - INFO - [Raw response 1]: B
+2026-05-22 08:31:58,288 - INFO - [Raw response 2]: B
+2026-05-22 08:31:58,288 - INFO - [Raw response 3]: D
+2026-05-22 08:31:58,288 - INFO - Predicted Answer (batch): ['B', 'B', 'B', 'D']
+2026-05-22 08:31:58,288 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:58,290 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:58,291 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:58,292 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:58,716 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:58,783 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:58,863 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:58,924 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:58,925 - INFO - [Raw response 0]: A
+2026-05-22 08:31:58,925 - INFO - [Raw response 1]: C
+2026-05-22 08:31:58,925 - INFO - [Raw response 2]: B
+2026-05-22 08:31:58,925 - INFO - [Raw response 3]: C
+2026-05-22 08:31:58,925 - INFO - Predicted Answer (batch): ['A', 'C', 'B', 'C']
+2026-05-22 08:31:58,926 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:58,927 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:58,929 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:58,930 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:59,362 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:59,426 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:59,483 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:59,576 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:31:59,577 - INFO - [Raw response 0]: B
+2026-05-22 08:31:59,577 - INFO - [Raw response 1]: A
+2026-05-22 08:31:59,577 - INFO - [Raw response 2]: D
+2026-05-22 08:31:59,577 - INFO - [Raw response 3]: A
+2026-05-22 08:31:59,577 - INFO - Predicted Answer (batch): ['B', 'A', 'D', 'A']
+2026-05-22 08:31:59,577 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:59,579 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:59,580 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:31:59,581 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:00,024 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:00,078 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:00,146 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:00,203 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:00,204 - INFO - [Raw response 0]: C
+2026-05-22 08:32:00,204 - INFO - [Raw response 1]: B
+2026-05-22 08:32:00,204 - INFO - [Raw response 2]: A
+2026-05-22 08:32:00,204 - INFO - [Raw response 3]: A
+2026-05-22 08:32:00,204 - INFO - Predicted Answer (batch): ['C', 'B', 'A', 'A']
+2026-05-22 08:32:00,205 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:00,206 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:00,207 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:00,208 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:00,652 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:00,713 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:00,784 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:00,842 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:00,843 - INFO - [Raw response 0]: D
+2026-05-22 08:32:00,843 - INFO - [Raw response 1]: A
+2026-05-22 08:32:00,843 - INFO - [Raw response 2]: A
+2026-05-22 08:32:00,843 - INFO - [Raw response 3]: B
+2026-05-22 08:32:00,843 - INFO - Predicted Answer (batch): ['D', 'A', 'A', 'B']
+2026-05-22 08:32:00,843 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:00,845 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:00,846 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:00,847 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:01,298 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:01,362 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:01,421 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:01,489 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:01,490 - INFO - [Raw response 0]: D
+2026-05-22 08:32:01,490 - INFO - [Raw response 1]: C
+2026-05-22 08:32:01,490 - INFO - [Raw response 2]: D
+2026-05-22 08:32:01,490 - INFO - [Raw response 3]: B
+2026-05-22 08:32:01,490 - INFO - Predicted Answer (batch): ['D', 'C', 'D', 'B']
+2026-05-22 08:32:01,490 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:01,492 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:01,493 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:01,495 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:01,931 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:01,992 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:02,052 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:02,123 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:02,124 - INFO - [Raw response 0]: B
+2026-05-22 08:32:02,124 - INFO - [Raw response 1]: C
+2026-05-22 08:32:02,124 - INFO - [Raw response 2]: D
+2026-05-22 08:32:02,124 - INFO - [Raw response 3]: C
+2026-05-22 08:32:02,124 - INFO - Predicted Answer (batch): ['B', 'C', 'D', 'C']
+2026-05-22 08:32:02,125 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:02,126 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:02,128 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:02,129 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:02,550 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:02,621 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:02,674 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:02,732 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:02,732 - INFO - [Raw response 0]: A
+2026-05-22 08:32:02,733 - INFO - [Raw response 1]: D
+2026-05-22 08:32:02,733 - INFO - [Raw response 2]: D
+2026-05-22 08:32:02,733 - INFO - [Raw response 3]: B
+2026-05-22 08:32:02,733 - INFO - Predicted Answer (batch): ['A', 'D', 'D', 'B']
+2026-05-22 08:32:02,733 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:02,735 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:02,736 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:02,737 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:03,167 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:03,261 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:03,317 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:03,377 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:03,378 - INFO - [Raw response 0]: C
+2026-05-22 08:32:03,378 - INFO - [Raw response 1]: B
+2026-05-22 08:32:03,378 - INFO - [Raw response 2]: C
+2026-05-22 08:32:03,378 - INFO - [Raw response 3]: A
+2026-05-22 08:32:03,378 - INFO - Predicted Answer (batch): ['C', 'B', 'C', 'A']
+2026-05-22 08:32:03,379 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:03,381 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:03,382 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:03,383 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:03,798 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:03,858 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:03,914 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:03,977 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:03,978 - INFO - [Raw response 0]: A
+2026-05-22 08:32:03,978 - INFO - [Raw response 1]: A
+2026-05-22 08:32:03,978 - INFO - [Raw response 2]: B
+2026-05-22 08:32:03,979 - INFO - [Raw response 3]: A
+2026-05-22 08:32:03,979 - INFO - Predicted Answer (batch): ['A', 'A', 'B', 'A']
+2026-05-22 08:32:03,979 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:03,982 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:03,984 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:03,985 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:04,413 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:04,474 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:04,552 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:04,608 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:04,609 - INFO - [Raw response 0]: D
+2026-05-22 08:32:04,609 - INFO - [Raw response 1]: B
+2026-05-22 08:32:04,609 - INFO - [Raw response 2]: C
+2026-05-22 08:32:04,609 - INFO - [Raw response 3]: B
+2026-05-22 08:32:04,609 - INFO - Predicted Answer (batch): ['D', 'B', 'C', 'B']
+2026-05-22 08:32:04,609 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:04,611 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:04,612 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:04,614 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:05,063 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:05,133 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:05,200 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:05,263 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:05,263 - INFO - [Raw response 0]: C
+2026-05-22 08:32:05,263 - INFO - [Raw response 1]: A
+2026-05-22 08:32:05,264 - INFO - [Raw response 2]: D
+2026-05-22 08:32:05,264 - INFO - [Raw response 3]: A
+2026-05-22 08:32:05,264 - INFO - Predicted Answer (batch): ['C', 'A', 'D', 'A']
+2026-05-22 08:32:05,264 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:05,265 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:05,267 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:05,268 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:05,709 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:05,781 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:05,839 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:05,904 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:05,905 - INFO - [Raw response 0]: A
+2026-05-22 08:32:05,905 - INFO - [Raw response 1]: A
+2026-05-22 08:32:05,905 - INFO - [Raw response 2]: D
+2026-05-22 08:32:05,905 - INFO - [Raw response 3]: A
+2026-05-22 08:32:05,905 - INFO - Predicted Answer (batch): ['A', 'A', 'D', 'A']
+2026-05-22 08:32:05,906 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:05,907 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:05,908 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:05,909 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:06,335 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:06,405 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:06,464 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:06,524 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:06,525 - INFO - [Raw response 0]: D
+2026-05-22 08:32:06,525 - INFO - [Raw response 1]: C
+2026-05-22 08:32:06,525 - INFO - [Raw response 2]: C
+2026-05-22 08:32:06,525 - INFO - [Raw response 3]: C
+2026-05-22 08:32:06,525 - INFO - Predicted Answer (batch): ['D', 'C', 'C', 'C']
+2026-05-22 08:32:06,527 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:06,529 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:06,530 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:06,531 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:06,983 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:07,043 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:07,106 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:07,161 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:07,161 - INFO - [Raw response 0]: C
+2026-05-22 08:32:07,161 - INFO - [Raw response 1]: D
+2026-05-22 08:32:07,161 - INFO - [Raw response 2]: D
+2026-05-22 08:32:07,161 - INFO - [Raw response 3]: C
+2026-05-22 08:32:07,161 - INFO - Predicted Answer (batch): ['C', 'D', 'D', 'C']
+2026-05-22 08:32:07,162 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:07,164 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:07,165 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:07,166 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:07,600 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:07,660 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:07,720 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:07,781 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:07,781 - INFO - [Raw response 0]: B
+2026-05-22 08:32:07,781 - INFO - [Raw response 1]: B
+2026-05-22 08:32:07,781 - INFO - [Raw response 2]: A
+2026-05-22 08:32:07,782 - INFO - [Raw response 3]: D
+2026-05-22 08:32:07,782 - INFO - Predicted Answer (batch): ['B', 'B', 'A', 'D']
+2026-05-22 08:32:07,782 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:07,784 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:07,785 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:07,786 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:08,214 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:08,276 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:08,356 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:08,414 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:08,415 - INFO - [Raw response 0]: C
+2026-05-22 08:32:08,415 - INFO - [Raw response 1]: D
+2026-05-22 08:32:08,415 - INFO - [Raw response 2]: A
+2026-05-22 08:32:08,415 - INFO - [Raw response 3]: B
+2026-05-22 08:32:08,415 - INFO - Predicted Answer (batch): ['C', 'D', 'A', 'B']
+2026-05-22 08:32:08,415 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:08,417 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:08,418 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:08,420 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:08,866 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:08,923 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:08,983 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:09,055 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:09,057 - INFO - [Raw response 0]: C
+2026-05-22 08:32:09,057 - INFO - [Raw response 1]: A
+2026-05-22 08:32:09,057 - INFO - [Raw response 2]: A
+2026-05-22 08:32:09,057 - INFO - [Raw response 3]: B
+2026-05-22 08:32:09,057 - INFO - Predicted Answer (batch): ['C', 'A', 'A', 'B']
+2026-05-22 08:32:09,058 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:09,061 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:09,063 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:09,066 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:09,493 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:09,551 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:09,607 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:09,668 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:09,669 - INFO - [Raw response 0]: B
+2026-05-22 08:32:09,669 - INFO - [Raw response 1]: A
+2026-05-22 08:32:09,669 - INFO - [Raw response 2]: C
+2026-05-22 08:32:09,669 - INFO - [Raw response 3]: D
+2026-05-22 08:32:09,670 - INFO - Predicted Answer (batch): ['B', 'A', 'C', 'D']
+2026-05-22 08:32:09,670 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:09,672 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:09,673 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:09,674 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:10,087 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:10,146 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:10,214 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:10,278 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:10,279 - INFO - [Raw response 0]: B
+2026-05-22 08:32:10,279 - INFO - [Raw response 1]: A
+2026-05-22 08:32:10,279 - INFO - [Raw response 2]: C
+2026-05-22 08:32:10,279 - INFO - [Raw response 3]: B
+2026-05-22 08:32:10,279 - INFO - Predicted Answer (batch): ['B', 'A', 'C', 'B']
+2026-05-22 08:32:10,280 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:10,286 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:10,289 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:10,292 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:10,750 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:10,947 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:11,121 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:11,204 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:11,205 - INFO - [Raw response 0]: C
+2026-05-22 08:32:11,205 - INFO - [Raw response 1]: A
+2026-05-22 08:32:11,205 - INFO - [Raw response 2]: B
+2026-05-22 08:32:11,205 - INFO - [Raw response 3]: C
+2026-05-22 08:32:11,205 - INFO - Predicted Answer (batch): ['C', 'A', 'B', 'C']
+2026-05-22 08:32:11,206 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:11,208 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:11,210 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:11,211 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:11,649 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:11,816 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:11,888 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:12,053 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:12,054 - INFO - [Raw response 0]: D
+2026-05-22 08:32:12,054 - INFO - [Raw response 1]: C
+2026-05-22 08:32:12,054 - INFO - [Raw response 2]: A
+2026-05-22 08:32:12,054 - INFO - [Raw response 3]: C
+2026-05-22 08:32:12,054 - INFO - Predicted Answer (batch): ['D', 'C', 'A', 'C']
+2026-05-22 08:32:12,055 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:12,057 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:12,058 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:12,059 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:12,481 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:12,550 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:12,621 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:12,700 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:12,701 - INFO - [Raw response 0]: A
+2026-05-22 08:32:12,701 - INFO - [Raw response 1]: B
+2026-05-22 08:32:12,701 - INFO - [Raw response 2]: D
+2026-05-22 08:32:12,701 - INFO - [Raw response 3]: C
+2026-05-22 08:32:12,701 - INFO - Predicted Answer (batch): ['A', 'B', 'D', 'C']
+2026-05-22 08:32:12,701 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:12,703 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:12,705 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:12,707 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:13,136 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:13,253 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:13,467 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:13,558 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:13,559 - INFO - [Raw response 0]: B
+2026-05-22 08:32:13,559 - INFO - [Raw response 1]: A
+2026-05-22 08:32:13,559 - INFO - [Raw response 2]: A
+2026-05-22 08:32:13,559 - INFO - [Raw response 3]: A
+2026-05-22 08:32:13,559 - INFO - Predicted Answer (batch): ['B', 'A', 'A', 'A']
+2026-05-22 08:32:13,560 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:13,562 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:13,563 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:13,564 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:14,021 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:14,094 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:14,163 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:14,233 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:14,234 - INFO - [Raw response 0]: A
+2026-05-22 08:32:14,234 - INFO - [Raw response 1]: D
+2026-05-22 08:32:14,234 - INFO - [Raw response 2]: C
+2026-05-22 08:32:14,235 - INFO - [Raw response 3]: B
+2026-05-22 08:32:14,235 - INFO - Predicted Answer (batch): ['A', 'D', 'C', 'B']
+2026-05-22 08:32:14,236 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:14,240 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:14,243 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:14,246 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:14,744 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:14,915 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:14,976 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:15,131 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:15,131 - INFO - [Raw response 0]: B
+2026-05-22 08:32:15,132 - INFO - [Raw response 1]: A
+2026-05-22 08:32:15,132 - INFO - [Raw response 2]: A
+2026-05-22 08:32:15,132 - INFO - [Raw response 3]: C
+2026-05-22 08:32:15,132 - INFO - Predicted Answer (batch): ['B', 'A', 'A', 'C']
+2026-05-22 08:32:15,132 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:15,134 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:15,135 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:15,136 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:15,563 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:15,630 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:15,691 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:15,770 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:15,771 - INFO - [Raw response 0]: D
+2026-05-22 08:32:15,771 - INFO - [Raw response 1]: B
+2026-05-22 08:32:15,771 - INFO - [Raw response 2]: C
+2026-05-22 08:32:15,771 - INFO - [Raw response 3]: B
+2026-05-22 08:32:15,771 - INFO - Predicted Answer (batch): ['D', 'B', 'C', 'B']
+2026-05-22 08:32:15,772 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:15,776 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:15,778 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:15,781 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:16,233 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:16,293 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:16,385 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:16,447 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:16,448 - INFO - [Raw response 0]: C
+2026-05-22 08:32:16,448 - INFO - [Raw response 1]: A
+2026-05-22 08:32:16,448 - INFO - [Raw response 2]: B
+2026-05-22 08:32:16,448 - INFO - [Raw response 3]: A
+2026-05-22 08:32:16,448 - INFO - Predicted Answer (batch): ['C', 'A', 'B', 'A']
+2026-05-22 08:32:16,449 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:16,450 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:16,452 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:16,453 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:16,883 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:16,943 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:17,008 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:17,069 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:17,070 - INFO - [Raw response 0]: C
+2026-05-22 08:32:17,070 - INFO - [Raw response 1]: B
+2026-05-22 08:32:17,070 - INFO - [Raw response 2]: B
+2026-05-22 08:32:17,070 - INFO - [Raw response 3]: D
+2026-05-22 08:32:17,070 - INFO - Predicted Answer (batch): ['C', 'B', 'B', 'D']
+2026-05-22 08:32:17,071 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:17,073 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:17,074 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:17,075 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:17,513 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:17,571 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:17,666 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:17,726 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:17,728 - INFO - [Raw response 0]: A
+2026-05-22 08:32:17,728 - INFO - [Raw response 1]: C
+2026-05-22 08:32:17,728 - INFO - [Raw response 2]: A
+2026-05-22 08:32:17,728 - INFO - [Raw response 3]: C
+2026-05-22 08:32:17,728 - INFO - Predicted Answer (batch): ['A', 'C', 'A', 'C']
+2026-05-22 08:32:17,729 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:17,732 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:17,734 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:17,737 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:18,158 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:18,218 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:18,277 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:18,340 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:18,341 - INFO - [Raw response 0]: C
+2026-05-22 08:32:18,341 - INFO - [Raw response 1]: C
+2026-05-22 08:32:18,341 - INFO - [Raw response 2]: B
+2026-05-22 08:32:18,341 - INFO - [Raw response 3]: A
+2026-05-22 08:32:18,341 - INFO - Predicted Answer (batch): ['C', 'C', 'B', 'A']
+2026-05-22 08:32:18,342 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:18,343 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:18,344 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:18,346 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:18,782 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:18,847 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:18,907 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:18,967 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:18,968 - INFO - [Raw response 0]: B
+2026-05-22 08:32:18,968 - INFO - [Raw response 1]: C
+2026-05-22 08:32:18,968 - INFO - [Raw response 2]: D
+2026-05-22 08:32:18,968 - INFO - [Raw response 3]: B
+2026-05-22 08:32:18,968 - INFO - Predicted Answer (batch): ['B', 'C', 'D', 'B']
+2026-05-22 08:32:18,968 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:18,970 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:18,971 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:18,972 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:19,395 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:19,460 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:19,521 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:19,588 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:19,590 - INFO - [Raw response 0]: C
+2026-05-22 08:32:19,590 - INFO - [Raw response 1]: B
+2026-05-22 08:32:19,590 - INFO - [Raw response 2]: D
+2026-05-22 08:32:19,590 - INFO - [Raw response 3]: D
+2026-05-22 08:32:19,590 - INFO - Predicted Answer (batch): ['C', 'B', 'D', 'D']
+2026-05-22 08:32:19,591 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:19,594 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:19,597 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:19,599 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:20,051 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:20,124 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:20,192 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:20,270 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:20,271 - INFO - [Raw response 0]: C
+2026-05-22 08:32:20,271 - INFO - [Raw response 1]: B
+2026-05-22 08:32:20,271 - INFO - [Raw response 2]: B
+2026-05-22 08:32:20,271 - INFO - [Raw response 3]: A
+2026-05-22 08:32:20,271 - INFO - Predicted Answer (batch): ['C', 'B', 'B', 'A']
+2026-05-22 08:32:20,271 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:20,273 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:20,274 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:20,275 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:20,711 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:20,772 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:20,837 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:20,901 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:20,902 - INFO - [Raw response 0]: D
+2026-05-22 08:32:20,902 - INFO - [Raw response 1]: B
+2026-05-22 08:32:20,902 - INFO - [Raw response 2]: A
+2026-05-22 08:32:20,902 - INFO - [Raw response 3]: B
+2026-05-22 08:32:20,902 - INFO - Predicted Answer (batch): ['D', 'B', 'A', 'B']
+2026-05-22 08:32:20,903 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:20,906 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:20,909 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:20,911 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:21,352 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:21,420 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:21,480 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:21,540 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:21,541 - INFO - [Raw response 0]: D
+2026-05-22 08:32:21,541 - INFO - [Raw response 1]: C
+2026-05-22 08:32:21,541 - INFO - [Raw response 2]: C
+2026-05-22 08:32:21,541 - INFO - [Raw response 3]: B
+2026-05-22 08:32:21,542 - INFO - Predicted Answer (batch): ['D', 'C', 'C', 'B']
+2026-05-22 08:32:21,542 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:21,544 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:21,545 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:21,546 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:21,985 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:22,067 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:22,133 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:22,196 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:22,197 - INFO - [Raw response 0]: D
+2026-05-22 08:32:22,197 - INFO - [Raw response 1]: C
+2026-05-22 08:32:22,197 - INFO - [Raw response 2]: A
+2026-05-22 08:32:22,197 - INFO - [Raw response 3]: A
+2026-05-22 08:32:22,197 - INFO - Predicted Answer (batch): ['D', 'C', 'A', 'A']
+2026-05-22 08:32:22,198 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:22,199 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:22,201 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:22,202 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:22,638 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:22,703 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:22,793 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:22,855 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:22,856 - INFO - [Raw response 0]: A
+2026-05-22 08:32:22,856 - INFO - [Raw response 1]: A
+2026-05-22 08:32:22,856 - INFO - [Raw response 2]: B
+2026-05-22 08:32:22,856 - INFO - [Raw response 3]: A
+2026-05-22 08:32:22,856 - INFO - Predicted Answer (batch): ['A', 'A', 'B', 'A']
+2026-05-22 08:32:22,857 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:22,858 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:22,859 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:22,861 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:23,292 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:23,356 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:23,421 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:23,492 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:23,493 - INFO - [Raw response 0]: A
+2026-05-22 08:32:23,493 - INFO - [Raw response 1]: D
+2026-05-22 08:32:23,493 - INFO - [Raw response 2]: B
+2026-05-22 08:32:23,493 - INFO - [Raw response 3]: B
+2026-05-22 08:32:23,493 - INFO - Predicted Answer (batch): ['A', 'D', 'B', 'B']
+2026-05-22 08:32:23,493 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:23,495 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:23,496 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:23,497 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:23,934 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:24,002 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:24,066 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:24,127 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:24,128 - INFO - [Raw response 0]: D
+2026-05-22 08:32:24,128 - INFO - [Raw response 1]: C
+2026-05-22 08:32:24,128 - INFO - [Raw response 2]: A
+2026-05-22 08:32:24,128 - INFO - [Raw response 3]: C
+2026-05-22 08:32:24,128 - INFO - Predicted Answer (batch): ['D', 'C', 'A', 'C']
+2026-05-22 08:32:24,129 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:24,131 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:24,132 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:24,133 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:24,552 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:24,620 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:24,688 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:24,753 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:24,754 - INFO - [Raw response 0]: B
+2026-05-22 08:32:24,754 - INFO - [Raw response 1]: D
+2026-05-22 08:32:24,754 - INFO - [Raw response 2]: D
+2026-05-22 08:32:24,754 - INFO - [Raw response 3]: D
+2026-05-22 08:32:24,754 - INFO - Predicted Answer (batch): ['B', 'D', 'D', 'D']
+2026-05-22 08:32:24,755 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:24,758 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:24,760 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:24,763 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:25,210 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:25,270 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:25,350 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:25,415 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:25,416 - INFO - [Raw response 0]: A
+2026-05-22 08:32:25,416 - INFO - [Raw response 1]: C
+2026-05-22 08:32:25,416 - INFO - [Raw response 2]: C
+2026-05-22 08:32:25,416 - INFO - [Raw response 3]: A
+2026-05-22 08:32:25,416 - INFO - Predicted Answer (batch): ['A', 'C', 'C', 'A']
+2026-05-22 08:32:25,417 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:25,418 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:25,419 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:25,421 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:25,835 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:25,896 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:25,961 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:26,025 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:26,026 - INFO - [Raw response 0]: C
+2026-05-22 08:32:26,026 - INFO - [Raw response 1]: C
+2026-05-22 08:32:26,026 - INFO - [Raw response 2]: B
+2026-05-22 08:32:26,026 - INFO - [Raw response 3]: A
+2026-05-22 08:32:26,026 - INFO - Predicted Answer (batch): ['C', 'C', 'B', 'A']
+2026-05-22 08:32:26,027 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:26,029 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:26,030 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:26,031 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:26,460 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:26,524 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:26,584 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:26,644 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:26,645 - INFO - [Raw response 0]: D
+2026-05-22 08:32:26,645 - INFO - [Raw response 1]: C
+2026-05-22 08:32:26,646 - INFO - [Raw response 2]: A
+2026-05-22 08:32:26,646 - INFO - [Raw response 3]: D
+2026-05-22 08:32:26,646 - INFO - Predicted Answer (batch): ['D', 'C', 'A', 'D']
+2026-05-22 08:32:26,647 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:26,650 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:26,652 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:26,655 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:27,096 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:27,151 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:27,215 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:27,273 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:27,274 - INFO - [Raw response 0]: D
+2026-05-22 08:32:27,274 - INFO - [Raw response 1]: B
+2026-05-22 08:32:27,274 - INFO - [Raw response 2]: C
+2026-05-22 08:32:27,274 - INFO - [Raw response 3]: C
+2026-05-22 08:32:27,275 - INFO - Predicted Answer (batch): ['D', 'B', 'C', 'C']
+2026-05-22 08:32:27,275 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:27,277 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:27,278 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:27,279 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:27,732 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:27,800 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:27,858 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:27,926 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:27,927 - INFO - [Raw response 0]: C
+2026-05-22 08:32:27,927 - INFO - [Raw response 1]: B
+2026-05-22 08:32:27,927 - INFO - [Raw response 2]: D
+2026-05-22 08:32:27,927 - INFO - [Raw response 3]: A
+2026-05-22 08:32:27,927 - INFO - Predicted Answer (batch): ['C', 'B', 'D', 'A']
+2026-05-22 08:32:27,928 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:27,930 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:27,933 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:27,935 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:28,378 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:28,434 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:28,497 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:28,554 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:28,555 - INFO - [Raw response 0]: B
+2026-05-22 08:32:28,555 - INFO - [Raw response 1]: C
+2026-05-22 08:32:28,556 - INFO - [Raw response 2]: A
+2026-05-22 08:32:28,556 - INFO - [Raw response 3]: A
+2026-05-22 08:32:28,556 - INFO - Predicted Answer (batch): ['B', 'C', 'A', 'A']
+2026-05-22 08:32:28,556 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:28,558 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:28,559 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:28,560 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:28,991 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:29,050 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:29,118 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:29,187 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:29,188 - INFO - [Raw response 0]: A
+2026-05-22 08:32:29,188 - INFO - [Raw response 1]: C
+2026-05-22 08:32:29,188 - INFO - [Raw response 2]: B
+2026-05-22 08:32:29,188 - INFO - [Raw response 3]: C
+2026-05-22 08:32:29,188 - INFO - Predicted Answer (batch): ['A', 'C', 'B', 'C']
+2026-05-22 08:32:29,189 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:29,190 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:29,191 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:29,193 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:29,623 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:29,683 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:29,752 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:29,810 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:29,811 - INFO - [Raw response 0]: D
+2026-05-22 08:32:29,811 - INFO - [Raw response 1]: A
+2026-05-22 08:32:29,811 - INFO - [Raw response 2]: C
+2026-05-22 08:32:29,811 - INFO - [Raw response 3]: A
+2026-05-22 08:32:29,811 - INFO - Predicted Answer (batch): ['D', 'A', 'C', 'A']
+2026-05-22 08:32:29,812 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:29,813 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:29,814 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:29,815 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:30,251 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:30,320 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:30,385 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:30,445 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:30,446 - INFO - [Raw response 0]: B
+2026-05-22 08:32:30,446 - INFO - [Raw response 1]: D
+2026-05-22 08:32:30,446 - INFO - [Raw response 2]: A
+2026-05-22 08:32:30,446 - INFO - [Raw response 3]: B
+2026-05-22 08:32:30,446 - INFO - Predicted Answer (batch): ['B', 'D', 'A', 'B']
+2026-05-22 08:32:30,447 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:30,449 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:30,450 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:30,451 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:30,956 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:31,023 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:31,114 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:31,175 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:31,176 - INFO - [Raw response 0]: A
+2026-05-22 08:32:31,176 - INFO - [Raw response 1]: A
+2026-05-22 08:32:31,176 - INFO - [Raw response 2]: B
+2026-05-22 08:32:31,176 - INFO - [Raw response 3]: A
+2026-05-22 08:32:31,176 - INFO - Predicted Answer (batch): ['A', 'A', 'B', 'A']
+2026-05-22 08:32:31,177 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:31,179 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:31,180 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:31,181 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:31,618 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:31,684 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:31,741 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:31,804 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:31,805 - INFO - [Raw response 0]: D
+2026-05-22 08:32:31,805 - INFO - [Raw response 1]: A
+2026-05-22 08:32:31,805 - INFO - [Raw response 2]: A
+2026-05-22 08:32:31,805 - INFO - [Raw response 3]: D
+2026-05-22 08:32:31,805 - INFO - Predicted Answer (batch): ['D', 'A', 'A', 'D']
+2026-05-22 08:32:31,806 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:31,808 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:31,809 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:31,810 - WARNING - Prompt exec SyntaxError for 1.3/prompt_1_3.py (invalid character '“' (U+201C) (<string>, line 54)). Fallback to raw EXAMPLE.
+2026-05-22 08:32:32,242 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:32,303 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:32,381 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:32,465 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 08:32:32,465 - INFO - [Raw response 0]: B
+2026-05-22 08:32:32,465 - INFO - [Raw response 1]: B
+2026-05-22 08:32:32,465 - INFO - [Raw response 2]: A
+2026-05-22 08:32:32,466 - INFO - [Raw response 3]: C
+2026-05-22 08:32:32,466 - INFO - Predicted Answer (batch): ['B', 'B', 'A', 'C']

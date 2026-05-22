@@ -40,6 +40,7 @@ class VLLM:
         base_url: Optional[str] = None,
         batch_size: int = 4,
         max_model_len: Optional[int] = 4096,
+        reasoning_max_tokens: int = 2048,
         delay_between_requests: float = 1.0,
     ):
         resolved_base_url = base_url or f"{os.getenv('HOST_NAME', 'http://localhost:8000')}/v1"
@@ -55,6 +56,7 @@ class VLLM:
         self.task_type = task_type_mapping.get(self.prediction.task, "generation")
         self.batch_size = batch_size
         self.max_model_len = max_model_len
+        self.reasoning_max_tokens = max(1, reasoning_max_tokens)
         self.delay = delay_between_requests
         self.is_ollama = self._is_ollama_endpoint(self.base_url)
         self.prompt_mode = prompt_mode
@@ -69,8 +71,13 @@ class VLLM:
     def _safe_model_name(model_name: str) -> str:
         return model_name.replace("/", "_").replace(":", "_")
 
+    def _is_multiple_choice_task(self) -> bool:
+        return self.task_type in {"multiple_choices", "multiple_choices_imbalance"}
+
     def _max_completion_tokens(self) -> int:
-        if self.task_type in {"multiple_choices", "multiple_choices_imbalance"}:
+        if self.prompt_mode == "reasoning" and self._is_multiple_choice_task():
+            return self.reasoning_max_tokens
+        if self._is_multiple_choice_task():
             return 64
         return 500
 
@@ -217,6 +224,14 @@ class VLLM:
         data = self.prediction.data
         predictions = []
         batches = self.get_batch_questions(data, batch_size=self.batch_size)
+        logging.info(
+            "Run config | task=%s | task_type=%s | prompt_mode=%s | max_completion_tokens=%s | reasoning_max_tokens=%s",
+            task_name,
+            self.task_type,
+            self.prompt_mode,
+            self._max_completion_tokens(),
+            self.reasoning_max_tokens,
+        )
 
         for batch in tqdm(batches, desc="Processing batches"):
             valid_entries = []
@@ -252,6 +267,13 @@ class VLLM:
                 raw_reasoning = payload.get("reasoning", "")
 
                 logging.info(f"[Raw response {idx}]: {raw_content}")
+                logging.info(
+                    "Response meta idx=%s | finish_reason=%s | usage=%s | reasoning_chars=%s",
+                    idx,
+                    finish_reason,
+                    usage,
+                    len(raw_reasoning),
+                )
                 if not raw_content:
                     logging.warning(
                         "Empty content at index %s | finish_reason=%s | usage=%s | reasoning_chars=%s",
@@ -265,11 +287,21 @@ class VLLM:
 
                 parsed_resp = None
                 try:
-                    parsed_resp = self.prediction.parse_output(raw_content.replace("</think>", ""))
+                    if self.prompt_mode == "reasoning" and self._is_multiple_choice_task():
+                        parsed_resp = self.prediction.parse_output_with_reasoning(raw_content)
+                    else:
+                        parsed_resp = self.prediction.parse_output(raw_content)
                 except Exception as e:
                     logging.exception(f"Parsing failed at index {idx}: {e}")
 
                 if parsed_resp is None:
+                    if self.prompt_mode == "reasoning" and self._is_multiple_choice_task():
+                        logging.warning(
+                            "Reasoning parse returned None at index %s | finish_reason=%s | usage=%s | expected <output>...</output>",
+                            idx,
+                            finish_reason,
+                            usage,
+                        )
                     logging.warning(
                         "Parse returned None at index %s | finish_reason=%s | usage=%s",
                         idx,
@@ -411,9 +443,15 @@ if __name__ == "__main__":
     parser.add_argument(
         "--prompt_mode",
         type=str,
-        default="fewshot",
+        default="reasoning",
         choices=["fewshot", "zero_shot", "reasoning", "reliability"],
         help="Prompt mode for system prompt selection",
+    )
+    parser.add_argument(
+        "--reasoning_max_tokens",
+        type=int,
+        default=2048,
+        help="Max completion tokens used for multiple-choice tasks in reasoning mode",
     )
     args = parser.parse_args()
 
@@ -444,6 +482,7 @@ if __name__ == "__main__":
         prompt_mode=args.prompt_mode,
         batch_size=args.batch_size,
         max_model_len=args.max_model_len,
+        reasoning_max_tokens=args.reasoning_max_tokens,
         delay_between_requests=delay,
     )
     asyncio.run(vllm.run())

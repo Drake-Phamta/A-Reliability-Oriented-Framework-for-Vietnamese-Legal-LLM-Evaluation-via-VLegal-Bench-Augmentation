@@ -218,3 +218,223 @@ Traceback (most recent call last):
     with open(prompt_path, "r", encoding="utf-8") as f:
          ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-22 08:57:39,745 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 241, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 142, in ask
+    system_prompt = self.get_system_prompt()
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 81, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-22 08:57:39,746 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 241, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 142, in ask
+    system_prompt = self.get_system_prompt()
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 81, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-22 08:57:39,746 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 241, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 142, in ask
+    system_prompt = self.get_system_prompt()
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 81, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-22 08:57:39,747 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 241, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 142, in ask
+    system_prompt = self.get_system_prompt()
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 81, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-22 08:57:39,747 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 241, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 142, in ask
+    system_prompt = self.get_system_prompt()
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 81, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-22 08:57:39,748 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 241, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 142, in ask
+    system_prompt = self.get_system_prompt()
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 81, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-22 08:57:39,748 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 241, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 142, in ask
+    system_prompt = self.get_system_prompt()
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 81, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-22 08:57:39,749 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 241, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 142, in ask
+    system_prompt = self.get_system_prompt()
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 81, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-22 08:57:39,749 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 241, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 142, in ask
+    system_prompt = self.get_system_prompt()
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 81, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-22 08:57:39,750 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 241, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 142, in ask
+    system_prompt = self.get_system_prompt()
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 81, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-22 08:57:39,750 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 241, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 142, in ask
+    system_prompt = self.get_system_prompt()
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 81, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-22 08:57:39,751 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 241, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 142, in ask
+    system_prompt = self.get_system_prompt()
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 81, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-22 08:57:39,751 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 241, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 142, in ask
+    system_prompt = self.get_system_prompt()
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 81, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-22 08:57:39,752 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 241, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 142, in ask
+    system_prompt = self.get_system_prompt()
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 81, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-22 08:57:39,752 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 241, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 142, in ask
+    system_prompt = self.get_system_prompt()
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 81, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-22 08:57:39,753 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 241, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 142, in ask
+    system_prompt = self.get_system_prompt()
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 81, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-22 08:57:39,753 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 241, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 142, in ask
+    system_prompt = self.get_system_prompt()
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 81, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-22 08:57:39,754 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 241, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 142, in ask
+    system_prompt = self.get_system_prompt()
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 81, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-22 08:57:39,754 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 241, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 142, in ask
+    system_prompt = self.get_system_prompt()
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 81, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-22 08:57:39,754 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 241, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 142, in ask
+    system_prompt = self.get_system_prompt()
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 81, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-22 08:57:39,755 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 241, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 142, in ask
+    system_prompt = self.get_system_prompt()
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 81, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+2026-05-22 08:57:39,755 - ERROR - Error during gathering responses: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
+Traceback (most recent call last):
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 241, in run
+    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 142, in ask
+    system_prompt = self.get_system_prompt()
+  File "/root/A-Reliability-Oriented-Framework-for-Vietnamese-Legal-LLM-Evaluation-via-VLegal-Bench-Augmentation/inference.py", line 81, in get_system_prompt
+    with open(prompt_path, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '5.3/prompt_5_3.py'
