@@ -36,6 +36,7 @@ class VLLM:
         api_key: str,
         model: str,
         dataset_path: str,
+        prompt_mode: str = "fewshot",
         base_url: Optional[str] = None,
         batch_size: int = 4,
         max_model_len: Optional[int] = 4096,
@@ -56,6 +57,7 @@ class VLLM:
         self.max_model_len = max_model_len
         self.delay = delay_between_requests
         self.is_ollama = self._is_ollama_endpoint(self.base_url)
+        self.prompt_mode = prompt_mode
 
     @staticmethod
     def _is_ollama_endpoint(base_url: str) -> bool:
@@ -81,7 +83,23 @@ class VLLM:
 
         try:
             exec(code, namespace)
-            return namespace.get("EXAMPLE") or ""
+            mode_to_prompt_key = {
+                "fewshot": "EXAMPLE_FEWSHOT",
+                "zero_shot": "EXAMPLE",
+                "reasoning": "EXAMPLE_REASONING",
+                "reliability": "EXAMPLE_RELIABILITY",
+            }
+            prompt_key = mode_to_prompt_key.get(self.prompt_mode, "EXAMPLE")
+            selected_prompt = namespace.get(prompt_key)
+            if selected_prompt:
+                return selected_prompt
+            fallback = namespace.get("EXAMPLE") or ""
+            logging.warning(
+                "Prompt key '%s' is missing in %s. Falling back to EXAMPLE.",
+                prompt_key,
+                prompt_path,
+            )
+            return fallback
         except SyntaxError as e:
             fallback = self._extract_example_from_raw(code)
             if fallback:
@@ -390,6 +408,13 @@ if __name__ == "__main__":
         default=4,
         help="Batch size for processing",
     )
+    parser.add_argument(
+        "--prompt_mode",
+        type=str,
+        default="fewshot",
+        choices=["fewshot", "zero_shot", "reasoning", "reliability"],
+        help="Prompt mode for system prompt selection",
+    )
     args = parser.parse_args()
 
     model_name = args.model_name
@@ -416,6 +441,7 @@ if __name__ == "__main__":
         model=model_name,
         base_url=base_url,
         dataset_path=args.dataset_path,
+        prompt_mode=args.prompt_mode,
         batch_size=args.batch_size,
         max_model_len=args.max_model_len,
         delay_between_requests=delay,

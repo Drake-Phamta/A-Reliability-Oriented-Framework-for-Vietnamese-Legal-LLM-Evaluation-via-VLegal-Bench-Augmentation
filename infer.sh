@@ -8,6 +8,7 @@ TASK_FILE="${TASK//./_}"
 BATCH_SIZE=${BATCH_SIZE:-4}
 MODEL_NAME=${MODEL_NAME:-"gemma4:e4b-it-q8_0"}
 MAX_MODEL_LEN=${MAX_MODEL_LEN:-32768}
+PROMPT_MODE=${PROMPT_MODE:-fewshot}
 
 # === New option — default false ===
 USE_REMOVE_CONTENT=${USE_REMOVE_CONTENT:-false}
@@ -40,6 +41,7 @@ fi
 echo "[INFO] Using dataset: $DATASET_FILE"
 echo "[INFO] Model: $MODEL_NAME"
 echo "[INFO] Batch size: $BATCH_SIZE | Max model len: $MAX_MODEL_LEN"
+echo "[INFO] Prompt mode: $PROMPT_MODE"
 echo "[INFO] OPENAI_BASE_URL: ${OPENAI_BASE_URL:-"(default from inference.py)"}"
 
 if [ -z "$DATASET_FILE" ]; then
@@ -52,4 +54,5 @@ fi
        --dataset_path "$DATASET_FILE" \
        --model_name "$MODEL_NAME" \
        --max_model_len "$MAX_MODEL_LEN" \
-       --batch_size "$BATCH_SIZE" 
+       --batch_size "$BATCH_SIZE" \
+       --prompt_mode "$PROMPT_MODE"
