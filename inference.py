@@ -17,6 +17,8 @@ from src.evaluation import Metrics, Prediction, task_type_mapping
 
 load_dotenv()
 
+RAW_RESPONSE_LOG_PREVIEW_CHARS = 800
+
 
 def truncate_text_to_tokens(
     text: str, max_tokens: Optional[int], encoding_name: str = "p50k_base"
@@ -41,6 +43,10 @@ class VLLM:
         batch_size: int = 1,
         max_model_len: Optional[int] = 4096,
         reasoning_max_tokens: int = 2048,
+        reasoning_fast_tokens: int = 256,
+        reasoning_fallback_tokens: Optional[int] = None,
+        max_concurrency: int = 4,
+        max_empty_retries: int = 1,
         delay_between_requests: float = 1.0,
     ):
         resolved_base_url = base_url or f"{os.getenv('HOST_NAME', 'http://localhost:8000')}/v1"
@@ -57,9 +63,19 @@ class VLLM:
         self.batch_size = batch_size
         self.max_model_len = max_model_len
         self.reasoning_max_tokens = max(1, reasoning_max_tokens)
+        if reasoning_fallback_tokens is None:
+            reasoning_fallback_tokens = self.reasoning_max_tokens
+        self.reasoning_fast_tokens = max(1, reasoning_fast_tokens)
+        self.reasoning_fallback_tokens = max(
+            self.reasoning_fast_tokens, reasoning_fallback_tokens
+        )
+        self.max_concurrency = max(1, max_concurrency)
+        self.max_empty_retries = max(0, max_empty_retries)
         self.delay = delay_between_requests
         self.is_ollama = self._is_ollama_endpoint(self.base_url)
         self.prompt_mode = prompt_mode
+        self._system_prompt_cache: Optional[str] = None
+        self._request_semaphore = asyncio.Semaphore(self.max_concurrency)
 
     @staticmethod
     def _is_ollama_endpoint(base_url: str) -> bool:
@@ -74,7 +90,14 @@ class VLLM:
     def _is_multiple_choice_task(self) -> bool:
         return self.task_type in {"multiple_choices", "multiple_choices_imbalance"}
 
-    def _max_completion_tokens(self) -> int:
+    def _reasoning_speedup_enabled(self) -> bool:
+        return self.prompt_mode == "reasoning" and self._is_multiple_choice_task()
+
+    def _max_completion_tokens(self, stage: str = "default") -> int:
+        if self._reasoning_speedup_enabled():
+            if stage == "fast":
+                return self.reasoning_fast_tokens
+            return self.reasoning_fallback_tokens
         if self.prompt_mode == "reasoning" and self._is_multiple_choice_task():
             return self.reasoning_max_tokens
         if self._is_multiple_choice_task():
@@ -82,6 +105,9 @@ class VLLM:
         return 500
 
     def get_system_prompt(self) -> str:
+        if self._system_prompt_cache is not None:
+            return self._system_prompt_cache
+
         task_name = self.task_folder.replace(".", "_")
         namespace: Dict[str, Any] = {}
         prompt_path = Path(f"./{self.task_folder}/prompt_{task_name}.py")
@@ -99,6 +125,7 @@ class VLLM:
             prompt_key = mode_to_prompt_key.get(self.prompt_mode, "EXAMPLE")
             selected_prompt = namespace.get(prompt_key)
             if selected_prompt:
+                self._system_prompt_cache = selected_prompt
                 return selected_prompt
             fallback = namespace.get("EXAMPLE") or ""
             logging.warning(
@@ -106,6 +133,7 @@ class VLLM:
                 prompt_key,
                 prompt_path,
             )
+            self._system_prompt_cache = fallback
             return fallback
         except SyntaxError as e:
             fallback = self._extract_example_from_raw(code)
@@ -115,6 +143,7 @@ class VLLM:
                     prompt_path,
                     e,
                 )
+                self._system_prompt_cache = fallback
                 return fallback
             raise
 
@@ -145,16 +174,23 @@ class VLLM:
             batches.append(current)
         return batches
 
-    async def ask(self, user_prompt: str, model: str) -> Dict[str, Any]:
-        system_prompt = self.get_system_prompt()
+    async def ask(
+        self,
+        user_prompt: str,
+        model: str,
+        max_tokens_override: Optional[int] = None,
+        system_prompt_override: Optional[str] = None,
+    ) -> Dict[str, Any]:
+        system_prompt = system_prompt_override or self.get_system_prompt()
         user_prompt = truncate_text_to_tokens(user_prompt, self.max_model_len)
+        max_tokens = max_tokens_override or self._max_completion_tokens()
         request_kwargs: Dict[str, Any] = {
             "model": model,
             "messages": [
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt},
             ],
-            "max_tokens": self._max_completion_tokens(),
+            "max_tokens": max_tokens,
             "temperature": 0,
             "response_format": {"type": "text"},
         }
@@ -162,12 +198,13 @@ class VLLM:
             request_kwargs["extra_body"] = {
                 "options": {
                     "num_ctx": 8192,  # Nới rộng ngữ cảnh lên 8k tokens để gánh prompt dài + 2k token output
-                    "num_predict": self._max_completion_tokens()
+                    "num_predict": max_tokens
                 }
             }
 
         try:
-            response = await self.client.chat.completions.create(**request_kwargs)
+            async with self._request_semaphore:
+                response = await self.client.chat.completions.create(**request_kwargs)
         except Exception as first_err:
             logging.warning(f"Primary request failed, fallback to assistant-role prompt: {first_err}")
             fallback_kwargs = dict(request_kwargs)
@@ -175,7 +212,8 @@ class VLLM:
                 {"role": "assistant", "content": system_prompt},
                 {"role": "user", "content": user_prompt},
             ]
-            response = await self.client.chat.completions.create(**fallback_kwargs)
+            async with self._request_semaphore:
+                response = await self.client.chat.completions.create(**fallback_kwargs)
 
         await asyncio.sleep(self.delay)
 
@@ -214,6 +252,80 @@ class VLLM:
             "usage": usage_payload,
         }
 
+    def _format_rescue_system_prompt(self) -> str:
+        return (
+            f"{self.get_system_prompt()}\n\n"
+            "BAT BUOC DINH DANG:\n"
+            "- Tu duy ngan gon trong <think>...</think>.\n"
+            "- Cau tra loi cuoi cung trong <output>...</output>.\n"
+            "- CHI ghi dap an hop le cho bai trac nghiem trong output, khong viet them."
+        )
+
+    def _format_rescue_user_prompt(self, user_prompt: str) -> str:
+        return (
+            f"{user_prompt}\n\n"
+            "Nhac lai: Chi tra loi theo dung 2 the <think>...</think> va <output>...</output>."
+        )
+
+    def _parse_payload(self, payload: Dict[str, Any]):
+        raw_content = payload.get("content", "")
+        if not raw_content:
+            return None
+        try:
+            if self.prompt_mode == "reasoning" and self._is_multiple_choice_task():
+                return self.prediction.parse_output_with_reasoning(raw_content)
+            return self.prediction.parse_output(raw_content)
+        except Exception as parse_err:
+            logging.exception("Parsing failed in payload processing: %s", parse_err)
+            return None
+
+    @staticmethod
+    def _is_prediction_empty(parsed_resp) -> bool:
+        if parsed_resp is None:
+            return True
+        if isinstance(parsed_resp, str):
+            return not parsed_resp.strip()
+        if isinstance(parsed_resp, (list, tuple, dict, set)):
+            return len(parsed_resp) == 0
+        return False
+
+    async def _ask_with_reasoning_fallback(self, user_prompt: str, model: str):
+        """Reasoning-only speed path: fast -> fallback retries -> rescue format pass."""
+        if not self._reasoning_speedup_enabled():
+            payload = await self.ask(user_prompt, model)
+            parsed_resp = self._parse_payload(payload)
+            return payload, parsed_resp, "default"
+
+        fast_payload = await self.ask(
+            user_prompt,
+            model,
+            max_tokens_override=self._max_completion_tokens("fast"),
+        )
+        fast_parsed = self._parse_payload(fast_payload)
+        if not self._is_prediction_empty(fast_parsed):
+            return fast_payload, fast_parsed, "fast"
+
+        for retry_idx in range(self.max_empty_retries):
+            fallback_payload = await self.ask(
+                user_prompt,
+                model,
+                max_tokens_override=self._max_completion_tokens("fallback"),
+            )
+            fallback_parsed = self._parse_payload(fallback_payload)
+            if not self._is_prediction_empty(fallback_parsed):
+                return fallback_payload, fallback_parsed, f"fallback_{retry_idx + 1}"
+
+        rescue_payload = await self.ask(
+            self._format_rescue_user_prompt(user_prompt),
+            model,
+            max_tokens_override=self._max_completion_tokens("fallback"),
+            system_prompt_override=self._format_rescue_system_prompt(),
+        )
+        rescue_parsed = self._parse_payload(rescue_payload)
+        if not self._is_prediction_empty(rescue_parsed):
+            return rescue_payload, rescue_parsed, "rescue"
+        return rescue_payload, rescue_parsed, "rescue_failed"
+
     async def run(self):
         task_name = self.task_folder
         add_content = "remove_content" not in str(self.dataset_path)
@@ -230,12 +342,17 @@ class VLLM:
         predictions = []
         batches = self.get_batch_questions(data, batch_size=self.batch_size)
         logging.info(
-            "Run config | task=%s | task_type=%s | prompt_mode=%s | max_completion_tokens=%s | reasoning_max_tokens=%s",
+            "Run config | task=%s | task_type=%s | prompt_mode=%s | max_completion_tokens=%s | reasoning_max_tokens=%s | reasoning_fast_tokens=%s | reasoning_fallback_tokens=%s | max_concurrency=%s | max_empty_retries=%s | reasoning_speedup_enabled=%s",
             task_name,
             self.task_type,
             self.prompt_mode,
             self._max_completion_tokens(),
             self.reasoning_max_tokens,
+            self.reasoning_fast_tokens,
+            self.reasoning_fallback_tokens,
+            self.max_concurrency,
+            self.max_empty_retries,
+            self._reasoning_speedup_enabled(),
         )
 
         for batch in tqdm(batches, desc="Processing batches"):
@@ -257,24 +374,34 @@ class VLLM:
                 continue
 
             try:
-                response_payloads = list(
-                    await asyncio.gather(*(self.ask(q, self.model) for q in user_questions))
+                response_tuples = list(
+                    await asyncio.gather(
+                        *(self._ask_with_reasoning_fallback(q, self.model) for q in user_questions)
+                    )
                 )
             except Exception as e:
                 logging.exception(f"Error during gathering responses: {e}")
                 continue
 
             parsed_responses = []
-            for idx, payload in enumerate(response_payloads):
+            for idx, response_tuple in enumerate(response_tuples):
+                payload, parsed_resp, stage = response_tuple
                 raw_content = payload.get("content", "")
                 finish_reason = payload.get("finish_reason")
                 usage = payload.get("usage", {})
                 raw_reasoning = payload.get("reasoning", "")
 
-                logging.info(f"[Raw response {idx}]: {raw_content}")
+                log_preview = raw_content
+                if len(log_preview) > RAW_RESPONSE_LOG_PREVIEW_CHARS:
+                    log_preview = (
+                        f"{raw_content[:RAW_RESPONSE_LOG_PREVIEW_CHARS]}... [truncated "
+                        f"{len(raw_content) - RAW_RESPONSE_LOG_PREVIEW_CHARS} chars]"
+                    )
+                logging.info("[Raw response %s | stage=%s]: %s", idx, stage, log_preview)
                 logging.info(
-                    "Response meta idx=%s | finish_reason=%s | usage=%s | reasoning_chars=%s",
+                    "Response meta idx=%s | stage=%s | finish_reason=%s | usage=%s | reasoning_chars=%s",
                     idx,
+                    stage,
                     finish_reason,
                     usage,
                     len(raw_reasoning),
@@ -290,26 +417,19 @@ class VLLM:
                     parsed_responses.append([])
                     continue
 
-                parsed_resp = None
-                try:
-                    if self.prompt_mode == "reasoning" and self._is_multiple_choice_task():
-                        parsed_resp = self.prediction.parse_output_with_reasoning(raw_content)
-                    else:
-                        parsed_resp = self.prediction.parse_output(raw_content)
-                except Exception as e:
-                    logging.exception(f"Parsing failed at index {idx}: {e}")
-
-                if parsed_resp is None:
+                if self._is_prediction_empty(parsed_resp):
                     if self.prompt_mode == "reasoning" and self._is_multiple_choice_task():
                         logging.warning(
-                            "Reasoning parse returned None at index %s | finish_reason=%s | usage=%s | expected <output>...</output>",
+                            "Reasoning parse returned empty at index %s | stage=%s | finish_reason=%s | usage=%s | expected <output>...</output>",
                             idx,
+                            stage,
                             finish_reason,
                             usage,
                         )
                     logging.warning(
-                        "Parse returned None at index %s | finish_reason=%s | usage=%s",
+                        "Parse returned empty at index %s | stage=%s | finish_reason=%s | usage=%s",
                         idx,
+                        stage,
                         finish_reason,
                         usage,
                     )
@@ -458,6 +578,30 @@ if __name__ == "__main__":
         default=2048,
         help="Max completion tokens used for multiple-choice tasks in reasoning mode",
     )
+    parser.add_argument(
+        "--reasoning_fast_tokens",
+        type=int,
+        default=256,
+        help="Fast-pass max tokens for reasoning mode multiple-choice tasks",
+    )
+    parser.add_argument(
+        "--reasoning_fallback_tokens",
+        type=int,
+        default=None,
+        help="Fallback max tokens for reasoning mode multiple-choice tasks (default: reasoning_max_tokens)",
+    )
+    parser.add_argument(
+        "--max_concurrency",
+        type=int,
+        default=4,
+        help="Maximum concurrent requests per batch",
+    )
+    parser.add_argument(
+        "--max_empty_retries",
+        type=int,
+        default=1,
+        help="Number of fallback retries for empty/invalid reasoning parse",
+    )
     args = parser.parse_args()
 
     model_name = args.model_name
@@ -488,6 +632,10 @@ if __name__ == "__main__":
         batch_size=args.batch_size,
         max_model_len=args.max_model_len,
         reasoning_max_tokens=args.reasoning_max_tokens,
+        reasoning_fast_tokens=args.reasoning_fast_tokens,
+        reasoning_fallback_tokens=args.reasoning_fallback_tokens,
+        max_concurrency=args.max_concurrency,
+        max_empty_retries=args.max_empty_retries,
         delay_between_requests=delay,
     )
     asyncio.run(vllm.run())

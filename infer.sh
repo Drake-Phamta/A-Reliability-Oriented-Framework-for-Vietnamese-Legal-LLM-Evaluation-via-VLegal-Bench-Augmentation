@@ -9,7 +9,11 @@ BATCH_SIZE=${BATCH_SIZE:-1}
 MODEL_NAME=${MODEL_NAME:-"gemma4:e4b-it-q8_0"}
 MAX_MODEL_LEN=${MAX_MODEL_LEN:-32768}
 PROMPT_MODE=${PROMPT_MODE:-reasoning}
-REASONING_MAX_TOKENS=${REASONING_MAX_TOKENS:-2048}
+REASONING_MAX_TOKENS=${REASONING_MAX_TOKENS:-${MAX_OUTPUT_TOKENS:-2048}}
+REASONING_FAST_TOKENS=${REASONING_FAST_TOKENS:-256}
+REASONING_FALLBACK_TOKENS=${REASONING_FALLBACK_TOKENS:-$REASONING_MAX_TOKENS}
+MAX_CONCURRENCY=${MAX_CONCURRENCY:-4}
+MAX_EMPTY_RETRIES=${MAX_EMPTY_RETRIES:-1}
 
 # === New option — default false ===
 USE_REMOVE_CONTENT=${USE_REMOVE_CONTENT:-false}
@@ -44,6 +48,13 @@ echo "[INFO] Model: $MODEL_NAME"
 echo "[INFO] Batch size: $BATCH_SIZE | Max model len: $MAX_MODEL_LEN"
 echo "[INFO] Prompt mode: $PROMPT_MODE"
 echo "[INFO] Reasoning max tokens: $REASONING_MAX_TOKENS"
+if [ "$PROMPT_MODE" = "reasoning" ]; then
+    echo "[INFO] Reasoning fast tokens: $REASONING_FAST_TOKENS"
+    echo "[INFO] Reasoning fallback tokens: $REASONING_FALLBACK_TOKENS"
+    echo "[INFO] Max concurrency: $MAX_CONCURRENCY | Max empty retries: $MAX_EMPTY_RETRIES"
+else
+    echo "[INFO] Reasoning speedup params are configured but ignored because PROMPT_MODE=$PROMPT_MODE"
+fi
 echo "[INFO] OPENAI_BASE_URL: ${OPENAI_BASE_URL:-"(default from inference.py)"}"
 
 if [ -z "$DATASET_FILE" ]; then
@@ -58,4 +69,8 @@ fi
        --max_model_len "$MAX_MODEL_LEN" \
        --batch_size "$BATCH_SIZE" \
        --prompt_mode "$PROMPT_MODE" \
-       --reasoning_max_tokens "$REASONING_MAX_TOKENS"
+       --reasoning_max_tokens "$REASONING_MAX_TOKENS" \
+       --reasoning_fast_tokens "$REASONING_FAST_TOKENS" \
+       --reasoning_fallback_tokens "$REASONING_FALLBACK_TOKENS" \
+       --max_concurrency "$MAX_CONCURRENCY" \
+       --max_empty_retries "$MAX_EMPTY_RETRIES"
