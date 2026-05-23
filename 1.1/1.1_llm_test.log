@@ -323,3 +323,1540 @@
 2026-05-22 11:38:30,071 - INFO - Response meta idx=3 | finish_reason=stop | usage={'prompt_tokens': 758, 'completion_tokens': 627, 'total_tokens': 1385} | reasoning_chars=0
 2026-05-22 11:38:30,071 - INFO - Extracted output tag content: C
 2026-05-22 11:38:30,071 - INFO - Predicted Answer (batch): ['C', 'B', 'B', 'C']
+2026-05-24 00:30:38,330 - INFO - Run config | task=1.1 | task_type=multiple_choices | prompt_mode=reasoning | max_completion_tokens=2048 | reasoning_max_tokens=2048
+2026-05-24 00:30:58,966 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:30:58,970 - INFO - [Raw response 0]: <think>
+1. **Phân tích văn bản và trích xuất thực thể:**
+Văn bản: "Chính phủ và chính quyền các cấp; sự nỗ lực đổi mới nội dung, phương thức hoạt động của Quốc hội, hội đồng nhân dân các cấp; sự tham gia tích cực, hiệu quả của Mặt trận Tổ quốc Việt Nam, các tổ chức chính trị - xã hội; sự đồng thuận, phối hợp đồng bộ, nhịp nhàng của cả hệ thống chính trị và sự nỗ lực của đội ngũ cán bộ, đảng viên. Đặc biệt, đó là thành quả của việc Đảng ta đã khơi dậy và phát huy được truyền thống yêu nước, ý chí tự lực, tự cường, tinh thần lao động sáng tạo, trách nhiệm, quyết tâm và khát vọng phát triển của toàn thể Nhân dân, kết hợp sức mạnh dân tộc với sức mạnh thời đại, tạo nên sức mạnh tổng hợp to lớn cho công cuộc xây dựng, phát triển đất nước và bảo vệ Tổ quốc."
+
+Các thực thể được xác định và phân loại:
+* Chính phủ -> POLITICAL_BODY
+* Chính quyền các cấp -> POLITICAL_BODY
+* Quốc hội -> POLITICAL_BODY
+* Hội đồng nhân dân các cấp -> POLITICAL_BODY
+* Mặt trận Tổ quốc Việt Nam -> ORGANIZATION
+* Nhân dân -> SOCIAL_ROLE
+* Tổ quốc/Đất nước -> LOCATION
+
+2. **So sánh với các đáp án:**
+
+* **A:** POLITICAL_BODY: Chính phủ; POLITICAL_BODY: Quốc hội; ORGANIZATION: Mặt trận Tổ quốc Việt Nam; SOCIAL_ROLE: Người dân; LOCATION: Tổ quốc. (Thiếu "Chính quyền các cấp", "Hội đồng nhân dân"; dùng "Người dân" thay vì "Nhân dân").
+* **B:** POLITICAL_BODY: Chính phủ; POLITICAL_BODY: Hội đồng nhân dân; ORGANIZATION: Mặt trận Tổ quốc Việt Nam; SOCIAL_ROLE: Nhân dân; LOCATION: Tổ quốc. (Thiếu "Quốc hội" và "Chính quyền các cấp").
+* **C:** POLITICAL_BODY: Chính phủ; POLITICAL_BODY: Quốc hội; ORGANIZATION: Mặt trận Tổ quốc Việt Nam; SOCIAL_ROLE: Nhân dân; LOCATION: Tổ quốc. (Bỏ qua "Chính quyền các cấp" và "Hội đồng nhân dân các cấp").
+* **D:** POLITICAL_BODY: Chính quyền các cấp; POLITICAL_BODY: Quốc hội; ORGANIZATION: Mặt trận Tổ quốc Việt Nam; SOCIAL_ROLE: Nhân dân; LOCATION: Tổ quốc. (Bao gồm các thực thể quan trọng nhất: Chính quyền các cấp, Quốc hội, Mặt trận Tổ quốc Việt Nam, Nhân dân, Tổ quốc. Đây là sự đại diện tốt nhất cho các thực thể chính trong văn bản).
+
+3. **Kết luận:**
+Đáp án D bao gồm các thực thể chính và quan trọng nhất được đề cập trong văn bản, đặc biệt là việc bao gồm "Chính quyền các cấp" (một phần của cụm "Chính phủ và chính quyền các cấp") và "Nhân dân" (chính xác hơn so với "Người dân" trong đáp án A).
+</think>
+<output>D</output>
+2026-05-24 00:30:58,971 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 821, 'completion_tokens': 1803, 'total_tokens': 2624} | reasoning_chars=4207
+2026-05-24 00:30:58,971 - INFO - Extracted output tag content: D
+2026-05-24 00:30:58,971 - INFO - Predicted Answer (batch): ['D']
+2026-05-24 00:31:19,071 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:31:19,072 - INFO - [Raw response 0]: <think>
+1. **Phân tích yêu cầu:** Nhiệm vụ là trích xuất tất cả các thực thể (PERSON, ORGANIZATION, LEGAL_ROLE, DATE, MONEY) từ đoạn văn pháp lý và chọn đáp án chính xác nhất.
+2. **Trích xuất thực thể từ văn bản:**
+    * **PERSON:** Hồ Đại Dũng, Mr. Michael.
+    * **ORGANIZATION:** King Club, UBND tỉnh Phú Thọ.
+    * **LEGAL_ROLE:** Phó Chủ tịch UBND tỉnh Phú Thọ (chức vụ).
+    * **DATE:** đầu tháng 6/2020 (hoặc tháng 6/2020), tháng 2 đến tháng 6/2024.
+    * **MONEY:** hơn 7 triệu USD, hơn 331.000 USD, hơn 4.900 USD, hơn 759.000 USD, hơn 18 tỷ đồng.
+3. **Đánh giá các đáp án:**
+    * **A:** LEGAL_ROLE: "Công chức Phó Chủ tịch UBND tỉnh Phú Thọ" (Thêm thông tin "Công chức" không có trong văn bản gốc).
+    * **B:** LEGAL_ROLE: "Phó chủ tịch UBND tỉnh Phú Thọ" (Chính xác về mặt nội dung, nhưng thiếu sự chuẩn hóa về chữ hoa so với văn bản gốc).
+    * **C:** LEGAL_ROLE: "Phó Chủ tịch UBND tỉnh Phú Thọ" (Chính xác về nội dung và chữ hoa, khớp với văn bản gốc).
+    * **D:** DATE: "ngày 6 tháng 2020" (Sai, văn bản ghi "đầu tháng 6/2020"). MONEY: "7 triệu đồng" (Sai, văn bản ghi "7 triệu USD").
+4. **So sánh và lựa chọn:** Đáp án C trích xuất đầy đủ và chính xác nhất tất cả các thực thể, bao gồm cả việc giữ nguyên cách viết hoa của chức danh trong văn bản gốc ("Phó Chủ tịch UBND tỉnh Phú Thọ").
+</think>
+<output>C</output>
+2026-05-24 00:31:19,072 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 1103, 'completion_tokens': 2002, 'total_tokens': 3105} | reasoning_chars=4393
+2026-05-24 00:31:19,072 - INFO - Extracted output tag content: C
+2026-05-24 00:31:19,072 - INFO - Predicted Answer (batch): ['C']
+2026-05-24 00:31:31,686 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:31:31,687 - INFO - [Raw response 0]: <think>
+1.  **Phân tích yêu cầu:** Nhiệm vụ là trích xuất tất cả các thực thể (PERSON, ORGANIZATION, PROJECT, DATE, SOCIAL_ROLE) từ đoạn văn bản và chọn đáp án chính xác nhất.
+2.  **Trích xuất thực thể từ văn bản:**
+    *   **PERSON:** TS. Vũ Hoài Nam
+    *   **ORGANIZATION:** Báo PLVN
+    *   **PROJECT:** Mái ấm Tư pháp
+    *   **DATE:** 2025 (và các năm tiếp theo)
+    *   **SOCIAL_ROLE:** cán bộ tư pháp; những người dân có hoàn cảnh đặc biệt khó khăn
+3.  **Đánh giá các đáp án:**
+    *   **A:** Thiếu chi tiết về nhóm đối tượng (chỉ ghi "những người dân" thay vì "những người dân có hoàn cảnh đặc biệt khó khăn").
+    *   **B:** Thiếu danh xưng (TS.) của người; thiếu một nhóm đối tượng (cán bộ tư pháp).
+    *   **C:**
+        *   PERSON: TS. Vũ Hoài Nam (Đúng)
+        *   ORGANIZATION: Báo PLVN (Đúng)
+        *   PROJECT: Mái ấm Tư pháp (Đúng)
+        *   DATE: năm 2025 (Đúng)
+        *   SOCIAL_ROLE: cán bộ tư pháp (Đúng)
+        *   SOCIAL_ROLE: những người dân có hoàn cảnh đặc biệt khó khăn (Đúng và đầy đủ)
+        -> Đây là đáp án đầy đủ và chính xác nhất.
+    *   **D:** Thiếu một nhóm đối tượng (những người dân có hoàn cảnh đặc biệt khó khăn).
+4.  **Kết luận:** Đáp án C là lựa chọn chính xác nhất vì nó bao gồm đầy đủ và chi tiết tất cả các thực thể được đề cập trong văn bản.
+</think>
+<output>C</output>
+2026-05-24 00:31:31,687 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 852, 'completion_tokens': 1253, 'total_tokens': 2105} | reasoning_chars=2745
+2026-05-24 00:31:31,687 - INFO - Extracted output tag content: C
+2026-05-24 00:31:31,687 - INFO - Predicted Answer (batch): ['C']
+2026-05-24 00:31:52,194 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:31:52,194 - INFO - [Raw response 0]: <think>
+1.  **Phân tích văn bản và trích xuất thực thể:**
+    *   **DATE (Ngày):** 30/11/2024
+    *   **PERSON (Người):** Bông Văn Giõi, N.T.Y.N., Danh Trường, Danh Phụng
+    *   **LOCATION (Địa điểm):** khu phố Minh Thành, thị trấn Minh Lương, huyện Châu Thành (cũ), xã Châu Thành, tỉnh An Giang
+    *   **ASSET (Tài sản):** xe mô tô
+
+2.  **So sánh với các đáp án:**
+
+    *
+2026-05-24 00:31:52,195 - INFO - Response meta idx=0 | finish_reason=length | usage={'prompt_tokens': 940, 'completion_tokens': 2048, 'total_tokens': 2988} | reasoning_chars=6261
+2026-05-24 00:31:52,195 - WARNING - Could not find <output>...</output> in reasoning response.
+2026-05-24 00:31:52,195 - WARNING - Reasoning parse returned None at index 0 | finish_reason=length | usage={'prompt_tokens': 940, 'completion_tokens': 2048, 'total_tokens': 2988} | expected <output>...</output>
+2026-05-24 00:31:52,195 - WARNING - Parse returned None at index 0 | finish_reason=length | usage={'prompt_tokens': 940, 'completion_tokens': 2048, 'total_tokens': 2988}
+2026-05-24 00:31:52,195 - INFO - Predicted Answer (batch): [[]]
+2026-05-24 00:32:11,765 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:32:11,766 - INFO - [Raw response 0]: <think>
+1. **Phân tích yêu cầu:** Nhiệm vụ là trích xuất tất cả các thực thể (PERSON, ORGANIZATION, ARTICLE, LAW, DATE, POLITICAL_BODY) từ đoạn văn pháp lý và chọn đáp án chính xác nhất.
+2. **Trích xuất thực thể từ văn bản:**
+    * **PERSON:** ông N.Đ.H.V. (người thừa nhận vi phạm); ông V. (người bị lập biên bản).
+    * **ORGANIZATION:** Phòng An ninh mạng và phòng chống tội phạm sử dụng công nghệ cao; Công an tỉnh Đồng Nai.
+    * **ARTICLE:** Điều 101.
+    * **LAW:** Nghị định 15/2020/NĐ-CP.
+    * **DATE:** ngày 3/2/2020.
+    * **POLITICAL_BODY:** Chính phủ.
+3. **So sánh với các đáp án:**
+    * **A:** Thiếu tên đầy đủ của phòng ban ("Phòng An ninh mạng" thay vì "Phòng An ninh mạng và phòng chống tội phạm sử dụng công nghệ cao").
+    * **B:** Thiếu tên đầy đủ của phòng ban và bỏ qua N.Đ.H.V.
+    * **C:**
+        * PERSON: N.Đ.H.V. (Đúng)
+        * ORGANIZATION: Phòng An ninh mạng và phòng chống tội phạm sử dụng công nghệ cao (Đúng, đầy đủ)
+        * ORGANIZATION: Công an tỉnh Đồng Nai (Đúng)
+        * ARTICLE: Điều 101 (Đúng)
+        * LAW: Nghị định 15/2020/NĐ-CP (Đúng)
+        * DATE: 3/2/2020 (Đúng)
+        * POLITICAL_BODY: Chính phủ (Đúng)
+        * *Đây là lựa chọn đầy đủ và chính xác nhất.*
+    * **D:** Tương tự C, nhưng sử dụng định dạng ngày "03/02/2020". Về mặt nội dung, C và D đều chính xác. Tuy nhiên, C sử dụng định dạng ngày đơn giản hơn (3/2/2020) và bao gồm tất cả các thực thể quan trọng một cách hoàn chỉnh.
+4. **Kết luận:** Đáp án C cung cấp sự trích xuất thực thể toàn diện và chính xác nhất theo văn bản.
+</think>
+<output>C</output>
+2026-05-24 00:32:11,766 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 964, 'completion_tokens': 1952, 'total_tokens': 2916} | reasoning_chars=4512
+2026-05-24 00:32:11,766 - INFO - Extracted output tag content: C
+2026-05-24 00:32:11,766 - INFO - Predicted Answer (batch): ['C']
+2026-05-24 00:32:26,790 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:32:26,790 - INFO - [Raw response 0]: <think>
+1. **Phân tích văn bản:** Văn bản là: "Buộc bà Lê Thị C có trách nhiệm thanh toán cho Q trợ vốn xã viên hợp tác xã Thành phố H số nợ theo Đơn đề nghị trợ vốn ngày 28/6/2019 số 10.300.000 (mười triệu ba trăm nghìn) đồng (trong đó nợ gốc là 6.900.000 (sáu triệu chín trăm nghìn) đồng, nợ lãi (phí) là 3.400.000 (ba triệu bốn trăm nghìn) đồng)."
+2. **Trích xuất thực thể:**
+    * **PERSON (Người):** Lê Thị C (hoặc Bà Lê Thị C).
+    * **ORGANIZATION (Tổ chức):** Hợp tác xã Thành phố H.
+    * **LEGAL_DOCUMENT (Văn bản pháp lý):** Đơn đề nghị trợ vốn.
+    * **DATE (Ngày tháng):** 28/6/2019.
+    * **MONEY (Số tiền):**
+        * Tổng nợ: 10.300.000.
+        * Nợ gốc: 6.900.000.
+        * Nợ lãi (phí): 3.400.000.
+3. **So sánh với các đáp án:**
+    * **A:** Thiếu 3.400.000. (Sai)
+    * **B:** PERSON: Lê Thị C; ORGANIZATION: Hợp tác xã Thành phố H; LEGAL_DOCUMENT: Đơn đề nghị trợ vốn; DATE: 28/6/2019; MONEY: 10.300.000; MONEY: 6.900.000; MONEY: 3.400.000. (Đúng, bao gồm tất cả các thực thể chính xác).
+    * **C:** Thêm MONEY: 1.500.000 (không có trong văn bản). (Sai)
+    * **D:** Thiếu 6.900.000. (Sai)
+4. **Kết luận:** Đáp án B là đáp án chính xác nhất.
+</think>
+<output>B</output>
+2026-05-24 00:32:26,790 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 925, 'completion_tokens': 1497, 'total_tokens': 2422} | reasoning_chars=2462
+2026-05-24 00:32:26,790 - INFO - Extracted output tag content: B
+2026-05-24 00:32:26,790 - INFO - Predicted Answer (batch): ['B']
+2026-05-24 00:32:38,466 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:32:38,467 - INFO - [Raw response 0]: <think>
+1.  **Phân tích văn bản:** Văn bản mô tả một vụ lừa đảo, trong đó các thực thể cần được trích xuất bao gồm:
+    *   **PERSON (Người):** Bà L.T.L.
+    *   **LOCATION (Địa điểm):** thôn 8, xã Hoàn Lão.
+    *   **ORGANIZATION (Tổ chức):** Cục Cảnh sát điều tra tội phạm về ma tuý.
+    *   **LEGAL_CONCEPT (Khái niệm pháp lý):** buôn bán chất ma tuý.
+
+2.  **Đánh giá các đáp án:**
+    *   **A:** ORGANIZATION là "Cục cảnh sát hình sự" (Sai, văn bản ghi "Cục Cảnh sát điều tra tội phạm về ma tuý").
+    *   **B:**
+        *   PERSON: L.T.L (Đúng).
+        *   LOCATION: thôn 8, xã Hoàn Lão (Đúng).
+        *   ORGANIZATION: Cục Cảnh sát điều tra tội phạm về ma tuý (Đúng, khớp chính xác với văn bản).
+        *   LEGAL_CONCEPT: buôn bán chất ma tuý (Đúng, khớp chính xác với văn bản).
+    *   **C:** LOCATION là "hoàn lão" (Thiếu thông tin "thôn 8, xã").
+    *   **D:** ORGANIZATION là "Cục Cảnh sát nhân dân" (Quá chung chung và không chính xác bằng tên đơn vị được nhắc đến trong văn bản).
+
+3.  **Kết luận:** Đáp án B là lựa chọn chính xác nhất vì nó trích xuất đầy đủ và chính xác tất cả các thực thể theo nội dung của đoạn văn.
+</think>
+<output>B</output>
+2026-05-24 00:32:38,467 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 781, 'completion_tokens': 1161, 'total_tokens': 1942} | reasoning_chars=2487
+2026-05-24 00:32:38,467 - INFO - Extracted output tag content: B
+2026-05-24 00:32:38,467 - INFO - Predicted Answer (batch): ['B']
+2026-05-24 00:32:49,164 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:32:49,165 - INFO - [Raw response 0]: <think>
+1.  **Phân tích văn bản:** Văn bản là: "Phòng Cảnh sát kinh tế mới ra Quyết định khởi tố vụ án, khởi tố bị can, ra lệnh bắt bị can để tạm giam đối với Trần Ngọc Doanh (sinh năm 1987, trú tại xã Rạng Đông, tỉnh Ninh Bình) để điều tra về hành vi Lạm dụng chức vụ, quyền hạn chiếm đoạt tài sản."
+2.  **Trích xuất thực thể:**
+    *   **ORGANIZATION (Tổ chức):** Phòng Cảnh sát kinh tế
+    *   **PERSON (Người):** Trần Ngọc Doanh
+    *   **DATE (Thời gian/Năm sinh):** 1987
+    *   **LOCATION (Địa điểm):** xã Rạng Đông
+    *   **LOCATION (Địa điểm):** tỉnh Ninh Bình
+    *   **LEGAL_CONCEPT (Khái niệm pháp lý/Tội danh):** Lạm dụng chức vụ, quyền hạn chiếm đoạt tài sản
+3.  **So sánh với các đáp án:**
+    *   **A:** Thiếu ORGANIZATION (Phòng Cảnh sát kinh tế).
+    *   **B:** Thiếu LOCATION (xã Rạng Đông).
+    *   **C:** Bao gồm đầy đủ tất cả các thực thể đã trích xuất: ORGANIZATION (Phòng Cảnh sát kinh tế), PERSON (Trần Ngọc Doanh), DATE (1987), LOCATION (xã Rạng Đông), LOCATION (tỉnh Ninh Bình), LEGAL_CONCEPT (Lạm dụng chức vụ, quyền hạn chiếm đoạt tài sản).
+    *   **D:** Thiếu tính chính xác (ORGANIZATION bị rút gọn, LOCATION bị rút gọn).
+4.  **Kết luận:** Đáp án C là đáp án chính xác và đầy đủ nhất.
+</think>
+<output>C</output>
+2026-05-24 00:32:49,165 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 760, 'completion_tokens': 1061, 'total_tokens': 1821} | reasoning_chars=2176
+2026-05-24 00:32:49,165 - INFO - Extracted output tag content: C
+2026-05-24 00:32:49,165 - INFO - Predicted Answer (batch): ['C']
+2026-05-24 00:33:00,248 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:33:00,249 - INFO - [Raw response 0]: <think>
+1. **Phân tích văn bản:** Văn bản là: "Đề nghị Bộ Công an chỉ đạo các Trại giam tăng cường phối hợp với thi hành án dân sự thành phố trong công tác thông báo xác minh điều kiện giáo dục, động viên người đang chấp hành án hình sự, thực hiện phần nghĩa vụ dân sự theo quy định".
+2. **Xác định các thực thể:**
+    * **Bộ Công an:** Tổ chức (ORGANIZATION).
+    * **Trại giam:** Tổ chức (ORGANIZATION).
+    * **thi hành án dân sự thành phố:** Tổ chức (ORGANIZATION).
+    * **án hình sự:** Khái niệm pháp lý (LEGAL_CONCEPT).
+    * **nghĩa vụ dân sự:** Khái niệm pháp lý (LEGAL_CONCEPT).
+3. **So sánh với các đáp án:**
+    * **A:** ORGANIZATION: Bộ Công an; ORGANIZATION: Trại giam; ORGANIZATION: thi hành án dân sự thành phố; LEGAL_CONCEPT: nghĩa vụ dân sự; LEGAL_CONCEPT: tình hình án hình sự. (Sai vì "tình hình án hình sự" không chính xác bằng "án hình sự").
+    * **B:** ORGANIZATION: Bộ Công an; ORGANIZATION: Trại giam; LEGAL_CONCEPT: án hình sự; LEGAL_CONCEPT: nghĩa vụ dân sự; ORGANIZATION: cục thi hành án dân sự. (Sai vì thay thế "thi hành án dân sự thành phố" bằng "cục thi hành án dân sự", làm mất tính cụ thể).
+    * **C:** ORGANIZATION: Bộ Công an; ORGANIZATION: Trại giam; ORGANIZATION: thi hành án dân sự thành phố; LEGAL_CONCEPT: án hình sự; LEGAL_CONCEPT: nghĩa vụ dân sự. (Chính xác, bao gồm tất cả các thực thể đã trích xuất).
+    * **D:** ORGANIZATION: Bộ Công an; LEGAL_CONCEPT: án hình sự; LEGAL_CONCEPT: nghĩa vụ dân sự; ORGANIZATION: cơ quan thi hành án; ORGANIZATION: Trại giam. (Sai vì "thi hành án dân sự thành phố" là một tổ chức cụ thể, không chỉ là "cơ quan thi hành án").
+4. **Kết luận:** Đáp án C là đáp án đúng nhất.
+</think>
+<output>C</output>
+2026-05-24 00:33:00,249 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 712, 'completion_tokens': 1101, 'total_tokens': 1813} | reasoning_chars=2330
+2026-05-24 00:33:00,249 - INFO - Extracted output tag content: C
+2026-05-24 00:33:00,249 - INFO - Predicted Answer (batch): ['C']
+2026-05-24 00:33:08,016 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:33:08,017 - INFO - [Raw response 0]: <think>
+1. **Phân tích văn bản:** Văn bản là: "Dự thảo quy định điều kiện thành lập Văn phòng giám định tư pháp theo hướng cắt giảm tối đa điều kiện, yêu cầu đối với cá nhân đề nghị thành lập, góp phần thực thi có hiệu quả phương án đơn giản hóa thủ tục hành chính, cắt giảm điều kiện kinh doanh theo chủ trương của Chính phủ, chủ trương xã hội hoá hoạt động giám định tư pháp, bảo đảm tính ổn định của Luật."
+
+2. **Trích xuất và phân loại thực thể:**
+    * **Chính phủ:** Đây là cơ quan nhà nước, thuộc loại POLITICAL_BODY.
+    * **Luật:** Đây là văn bản pháp quy, thuộc loại LAW.
+    * **Văn phòng giám định tư pháp:** Đây là một tổ chức/đơn vị được thành lập, thuộc loại ORGANIZATION.
+
+3. **So sánh với các đáp án:**
+    * A: POLITICAL_BODY: Chính phủ; LAW: Luật; ORGANIZATION: Văn phòng giám định tư pháp (Khớp hoàn toàn)
+    * B: ORGANIZATION: Chính phủ; LAW: Luật; ORGANIZATION: Văn phòng giám định tư pháp (Sai phân loại Chính phủ)
+    * C: POLITICAL_BODY: Chính phủ; LAW: Luật; LOCATION: Văn phòng giám định tư pháp (Sai phân loại Văn phòng giám định tư pháp)
+    * D: POLITICAL_BODY: Chính phủ; LAW: Luật; ORGANIZATION: Văn phòng giám định tư pháp (Khớp hoàn toàn, giống đáp án A)
+
+4. **Lựa chọn đáp án:** Cả A và D đều chính xác. Tôi chọn A.
+</think>
+<output>A</output>
+2026-05-24 00:33:08,017 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 658, 'completion_tokens': 764, 'total_tokens': 1422} | reasoning_chars=1665
+2026-05-24 00:33:08,017 - INFO - Extracted output tag content: A
+2026-05-24 00:33:08,017 - INFO - Predicted Answer (batch): ['A']
+2026-05-24 00:33:22,070 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:33:22,071 - INFO - [Raw response 0]: <think>
+1.  **Phân tích văn bản:** Văn bản là một đoạn phát biểu của Chánh án TAND tỉnh Đồng Nai Nguyễn Thị Tuyết Thanh.
+2.  **Xác định các thực thể:**
+    *   **PERSON (Người):** Nguyễn Thị Tuyết Thanh.
+    *   **COURT (Tòa án/Cơ quan tư pháp):** TAND tỉnh Đồng Nai (Tòa án nhân dân tỉnh Đồng Nai).
+    *   **ORGANIZATION (Tổ chức/Đơn vị):** Cụm thi đua số VI.
+    *   **DATE (Thời gian):** 2025, 2026.
+3.  **Đánh giá các đáp án:**
+    *   **A:** PERSON: Nguyễn Thị Tuyết Thanh; COURT: TAND tỉnh Đồng Nai; ORGANIZATION: Cụm thi đua số VI; DATE: 2025; DATE: 2026. (Phù hợp hoàn toàn với phân tích).
+    *   **B:** PERSON: Nguyễn Thị Tuyết Thanh; COURT: TAND tỉnh Đồng Nai; ORGANIZATION: Cụm thi đua số VI; DATE: năm 2025; DATE: năm 2026. (Chính xác về mặt nội dung, nhưng A sử dụng định dạng số gọn hơn, thường được ưu tiên trong trích xuất thực thể).
+    *   **C:** PERSON: Nguyễn Thị Tuyết Thanh; ORGANIZATION: TAND tỉnh Đồng Nai; COURT: Cụm thi đua số VI; DATE: năm 2025; DATE: năm 2026. (Sai phân loại: TAND là COURT, Cụm thi đua là ORGANIZATION).
+    *   **D:** PERSON: Nguyễn Thị Tuyết Thanh; ORGANIZATION: TAND tỉnh Đồng Nai; ORGANIZATION: Cụm thi đua số VI; DATE: năm 2025; DATE: năm 2026. (Sai phân loại: TAND là COURT).
+4.  **Kết luận:** Đáp án A là lựa chọn chính xác nhất và chuẩn xác nhất về mặt phân loại thực thể.
+</think>
+<output>A</output>
+2026-05-24 00:33:22,071 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 799, 'completion_tokens': 1403, 'total_tokens': 2202} | reasoning_chars=3027
+2026-05-24 00:33:22,071 - INFO - Extracted output tag content: A
+2026-05-24 00:33:22,071 - INFO - Predicted Answer (batch): ['A']
+2026-05-24 00:33:40,350 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:33:40,351 - INFO - [Raw response 0]: <think>
+1.  **Phân tích văn bản:** Văn bản nói về tầm quan trọng của việc bảo vệ không gian mạng và dữ liệu cá nhân trong kỷ nguyên số. Nó nhấn mạnh rằng việc bảo vệ này là một nghĩa vụ đạo đức và pháp lý của mọi chủ thể, nhằm bảo vệ quyền con người trên không gian số.
+2.  **Xác định các thực thể và phân loại:**
+    *   "dữ liệu cá nhân" -> Liên quan đến tấn công dữ liệu cá nhân. (LEGAL_CONCEPT)
+    *   "tấn công" -> Hành động vi phạm. (LEGAL_CONCEPT)
+    *   "hành vi vi phạm" -> Hành vi trái pháp luật. (LEGAL_CONCEPT)
+    *   "bảo vệ không gian mạng" -> Hành động pháp lý cần thiết. (LEGAL_CONCEPT)
+    *   "nghĩa vụ đạo đức và pháp lý" -> Trách nhiệm pháp lý. (LEGAL_CONCEPT)
+    *   "mọi chủ thể trong xã hội" -> Các bên chịu trách nhiệm. (SOCIAL_ROLE)
+    *   "quyền con người trên không gian số" -> Quyền được bảo vệ. (LEGAL_CONCEPT)
+3.  **Đánh giá các đáp án:**
+    *   A: Thiếu "nghĩa vụ pháp lý" rõ ràng, "mỗi dữ liệu cá nhân" quá cụ thể.
+    *   B: Thiếu các khái niệm cốt lõi như "dữ liệu cá nhân", "nghĩa vụ pháp lý", "quyền con người".
+    *   C: Bao gồm "nghĩa vụ pháp lý" và "quyền con người", nhưng các khái niệm "mục tiêu tấn công" và "sự thờ ơ" không phải là thực thể pháp lý cốt lõi.
+    *   D: Bao gồm các thực thể quan trọng và chính xác nhất: "tấn công dữ liệu cá nhân" (mối đe dọa), "hành vi vi phạm" (hậu quả), "bảo vệ không gian mạng" (giải pháp), "nghĩa vụ pháp lý" (yêu cầu), "mọi chủ thể" (chủ thể), và "quyền con người" (mục tiêu bảo vệ).
+
+4.  **Kết luận:** Đáp án D trích xuất đầy đủ và chính xác nhất các thực thể pháp lý và xã hội từ đoạn văn.
+</think>
+<output>D</output>
+2026-05-24 00:33:40,351 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 797, 'completion_tokens': 1830, 'total_tokens': 2627} | reasoning_chars=4330
+2026-05-24 00:33:40,351 - INFO - Extracted output tag content: D
+2026-05-24 00:33:40,351 - INFO - Predicted Answer (batch): ['D']
+2026-05-24 00:33:55,015 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:33:55,015 - INFO - [Raw response 0]: <think>
+1. **Phân tích văn bản:** Văn bản là một đoạn trích về việc triển khai các quy định liên quan đến giấy tờ và dữ liệu.
+2. **Trích xuất thực thể:**
+    *   **ORGANIZATION (Tổ chức):** "Bộ Công an" (đơn vị ban hành hướng dẫn).
+    *   **DATE (Ngày tháng):** "ngày 15/11/2025" (thời điểm triển khai).
+    *   **LEGAL_DOCUMENT (Tài liệu pháp lý/Đối tượng pháp lý):** "15 loại giấy tờ" hoặc "15 nhóm giấy tờ" (đối tượng được đề cập đến).
+    *   **LEGAL_CONCEPT (Khái niệm pháp lý):** Các hành động như "số hóa", "làm sạch" dữ liệu nhằm mục đích cải thiện hệ thống, giảm tải, và nâng cao hiệu quả. Khái niệm bao quát nhất cho quá trình này là "tối ưu hóa" (optimization).
+3. **So sánh với các đáp án:**
+    *   A: ORGANIZATION: Bộ Công an; DATE: 15/11/2025; LEGAL_DOCUMENT: 15 nhóm giấy tờ; LEGAL_CONCEPT: cắt giảm thủ tục. (Concept "cắt giảm thủ tục" là một kết quả, nhưng "tối ưu hóa" bao quát hơn).
+    *   B: ORGANIZATION: Bộ Công an; DATE: 15/11/2025; LEGAL_DOCUMENT: 15; LEGAL_CONCEPT: tối ưu hóa. (LEGAL_DOCUMENT thiếu chi tiết "nhóm giấy tờ").
+    *   C: ORGANIZATION: Bộ Công an; DATE: 15; LEGAL_DOCUMENT: 15 nhóm giấy tờ; LEGAL_CONCEPT: tối ưu hóa. (DATE thiếu tháng và năm).
+    *   D: ORGANIZATION: Bộ Công an; DATE: 15/11/2025; LEGAL_DOCUMENT: 15 nhóm giấy tờ; LEGAL_CONCEPT: tối ưu hóa. (Tất cả các thực thể được trích xuất đều chính xác và đầy đủ).
+4. **Kết luận:** Đáp án D là chính xác nhất.
+</think>
+<output>D</output>
+2026-05-24 00:33:55,015 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 746, 'completion_tokens': 1467, 'total_tokens': 2213} | reasoning_chars=3319
+2026-05-24 00:33:55,016 - INFO - Extracted output tag content: D
+2026-05-24 00:33:55,016 - INFO - Predicted Answer (batch): ['D']
+2026-05-24 00:34:08,649 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:34:08,649 - INFO - [Raw response 0]: <think>
+1.  **Phân tích văn bản:** Văn bản là: "Ban Chỉ huy BĐBP tỉnh phối hợp với Sở NN&MT xây dựng kế hoạch liên ngành, duy trì chốt chặn 24/24 giờ tại cửa sông, ven biển; kiểm soát chặt, ngăn không cho tàu cá thiếu thủ tục vươn khơi. Khi phát hiện tàu mất kết nối VMS từ 2h, 4h đến trên 6h, lực lượng thường trực lập tức liên lạc, yêu cầu chủ tàu kiểm tra, khắc phục; nếu cố tình không chấp hành sẽ tiến hành xác minh, xử lý theo quy định."
+2.  **Trích xuất thực thể:**
+    *   **ORGANIZATION (Tổ chức):**
+        *   Ban Chỉ huy BĐBP tỉnh
+        *   Sở NN&MT
+    *   **LEGAL_CONCEPT (Khái niệm pháp lý/quy định):**
+        *   VMS (Hệ thống giám sát tàu)
+    *   **DATE (Thời gian):**
+        *   24/24 giờ (Thời gian duy trì chốt chặn)
+        *   2h (Thời điểm bắt đầu mất kết nối)
+        *   4h (Thời điểm mất kết nối)
+        *   6h (Thời điểm kết thúc/ngưỡng mất kết nối)
+3.  **So sánh với các đáp án:**
+    *   **A:** ORGANIZATION: Ban Chỉ huy BĐBP tỉnh; ORGANIZATION: Sở NN&MT; LEGAL_CONCEPT: VMS; DATE: 24/24 giờ; DATE: 2h; DATE: 4h; DATE: 6h. (Hoàn toàn khớp với các thực thể đã trích xuất).
+    *   **B:** Thiếu các mốc thời gian chính xác (3h, 5h) và phân loại sai 24/24 giờ.
+    *   **C:** Thiếu tổ chức "Sở NN&MT".
+    *   **D:** Bao gồm mốc thời gian không có trong văn bản (5h) và thiếu mốc thời gian 24/24 giờ.
+4.  **Kết luận:** Đáp án A là đáp án chính xác nhất.
+</think>
+<output>A</output>
+2026-05-24 00:34:08,649 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 802, 'completion_tokens': 1358, 'total_tokens': 2160} | reasoning_chars=2585
+2026-05-24 00:34:08,649 - INFO - Extracted output tag content: A
+2026-05-24 00:34:08,650 - INFO - Predicted Answer (batch): ['A']
+2026-05-24 00:34:22,637 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:34:22,638 - INFO - [Raw response 0]: <think>
+1. **Phân tích văn bản và trích xuất thực thể:**
+   * Văn bản: "Cơ quan chức năng cũng đã chỉ ra một số khó khăn trong cuộc chiến chống buôn người. Đó là phần lớn vụ việc xảy ra ở nước ngoài; việc xác định nạn nhân, thu thập chứng cứ, phối hợp điều tra đòi hỏi sự liên kết chặt chẽ giữa các cơ quan trong và ngoài nước. Thủ đoạn của tội phạm ngày càng tinh vi, lập nhóm kín trên mạng xã hội để trao đổi, dụ dỗ, giao dịch. Nhiều đối tượng có kiến thức công nghệ cao, sử dụng mạng xã hội ẩn danh khiến việc lần tìm dấu vết trở nên khó khăn."
+   * **Cơ quan chức năng**: ORGANIZATION.
+   * **buôn người**: LEGAL_CONCEPT (Tội phạm).
+   * **nước ngoài**: LOCATION.
+   * **tội phạm**: LEGAL_CONCEPT.
+   * **mạng xã hội**: LEGAL_CONCEPT (Công cụ/Phương tiện phạm tội).
+   * **Bối cảnh**: Việc sử dụng mạng xã hội, kiến thức công nghệ cao để thực hiện tội phạm (buôn người/tội phạm) cho thấy đây là tội phạm mạng (cybercrime).
+
+2. **Đánh giá các phương án:**
+   * **A:** ORGANIZATION: Cơ quan chức năng; LOCATION: nước ngoài; LEGAL_DOCUMENT: buôn người; LEGAL_CONCEPT: mạng xã hội. (Sai vì "buôn người" là LEGAL_CONCEPT, không phải LEGAL_DOCUMENT).
+   * **B:** ORGANIZATION: Cơ quan chức năng; LOCATION: nước ngoài; LEGAL_CONCEPT: tội phạm mạng; LEGAL_CONCEPT: mạng xã hội. (Phù hợp nhất. "Tội phạm mạng" là sự suy luận hợp lý từ việc sử dụng mạng xã hội và công nghệ cao để thực hiện tội phạm. Các thực thể khác đều chính xác).
+   * **C:** ORGANIZATION: Cơ quan chức năng; LOCATION: nước ngoài; LEGAL_CONCEPT: mạng xã hội. (Thiếu tính toàn diện, bỏ qua khái niệm tội phạm/tội phạm mạng).
+   * **D:** ORGANIZATION: Cơ quan chức năng; LEGAL_CONCEPT: mạng xã hội; LOCATION: châu Âu. (Sai vì "châu Âu" không có trong văn bản).
+
+3. **Kết luận:** Phương án B trích xuất đầy đủ và chính xác nhất các thực thể chính, bao gồm cả việc suy luận hợp lý về loại hình tội phạm (tội phạm mạng) dựa trên ngữ cảnh.
+</think>
+<output>B</output>
+2026-05-24 00:34:22,638 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 712, 'completion_tokens': 1396, 'total_tokens': 2108} | reasoning_chars=3253
+2026-05-24 00:34:22,638 - INFO - Extracted output tag content: B
+2026-05-24 00:34:22,638 - INFO - Predicted Answer (batch): ['B']
+2026-05-24 00:34:40,987 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:34:40,988 - INFO - [Raw response 0]: <think>
+1.  **Phân tích văn bản:** Văn bản cung cấp các thông tin về thời gian (DATE), số lượng/giá trị (MONEY/QUANTITY), và tài sản/cơ sở vật chất (ASSET).
+2.  **Trích xuất thực thể:**
+    *   DATE: "năm 2024"
+    *   DATE: "giai đoạn 2021 - 2025"
+    *   QUANTITY/MONEY: "15 triệu lượt" (số lượt khám chữa bệnh)
+    *   ASSET/QUANTITY: "11.000 trạm y tế xã" (số lượng trạm y tế)
+3.  **Đánh giá các đáp án:**
+    *   **A:** DATE: 2024; MONEY: 15 triệu (thiếu "lượt"); DATE: đến năm 2025; ASSET: 11.000 trạm y tế (thiếu "xã").
+    *   **B:** DATE: năm 2024; MONEY: 15 triệu (thiếu "lượt"); DATE: 2021 - 2025; ASSET: trạm y tế xã đạt chuẩn quốc gia (thiếu số lượng 11.000).
+    *   **C:** DATE: 2024; MONEY: 15 triệu (thiếu "lượt"); DATE: 2021 - 2025; ASSET: 11.000 trạm y tế xã (Rất đầy đủ, bao gồm cả số lượng và loại tài sản).
+    *   **D:** DATE: 2024; MONEY: 15 triệu lượt (Rất chính xác); DATE: từ 2021 đến 2025; ASSET: trạm y tế xã (Thiếu số lượng 11.000).
+4.  **So sánh và lựa chọn:** Cả C và D đều có một điểm thiếu sót nhỏ (C thiếu "lượt" ở 15 triệu; D thiếu số lượng 11.000 ở ASSET). Tuy nhiên, đáp án C cung cấp thông tin đầy đủ nhất về thực thể ASSET (11.000 trạm y tế xã), một thực thể phức tạp và quan trọng trong đoạn văn. Trong bối cảnh trích xuất thực thể, việc giữ lại số lượng cụ thể của tài sản (11.000) là ưu tiên cao. Do đó, C là lựa chọn tốt nhất.
+</think>
+<output>C</output>
+2026-05-24 00:34:40,988 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 803, 'completion_tokens': 1836, 'total_tokens': 2639} | reasoning_chars=3611
+2026-05-24 00:34:40,988 - INFO - Extracted output tag content: C
+2026-05-24 00:34:40,988 - INFO - Predicted Answer (batch): ['C']
+2026-05-24 00:34:54,824 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:34:54,825 - INFO - [Raw response 0]: <think>
+1. **Phân tích yêu cầu:** Nhiệm vụ là trích xuất tất cả các thực thể (ORGANIZATION và SOCIAL_ROLE) từ đoạn văn bản pháp lý/khuyến cáo và chọn đáp án chính xác nhất.
+2. **Trích xuất thực thể từ văn bản:**
+    * "Công an xã Hoàn Lão": Đây là một đơn vị tổ chức cụ thể. -> ORGANIZATION: Công an xã Hoàn Lão.
+    * "người dân": Đây là nhóm xã hội. -> SOCIAL_ROLE: người dân.
+    * "các đối tượng tự xưng là cán bộ cơ quan chức năng": Đây là một vai trò xã hội được nhắc đến trong cảnh báo. -> SOCIAL_ROLE: cán bộ cơ quan chức năng.
+    * "cơ quan Công an": Đây là tổ chức chung. -> ORGANIZATION: Công an.
+3. **Đánh giá các phương án:**
+    * **A:** ORGANIZATION: Công an xã Hoàn Lão; SOCIAL_ROLE: người dân; SOCIAL_ROLE: cán bộ chức năng; ORGANIZATION: Công an huyện. (Sai vì có "Công an huyện" không có trong văn bản).
+    * **B:** ORGANIZATION: Công an xã Hoàn Lão; SOCIAL_ROLE: cán bộ cơ quan chức năng; SOCIAL_ROLE: công dân; ORGANIZATION: Công an. (Đúng về mặt nội dung, nhưng dùng "công dân" thay vì "người dân" và thiếu "người dân" nếu xét theo thứ tự xuất hiện).
+    * **C:** ORGANIZATION: Công an xã Hoàn Lão; SOCIAL_ROLE: người dân; SOCIAL_ROLE: cán bộ cơ quan chức năng; ORGANIZATION: Công an. (Hoàn toàn khớp với các thực thể và thuật ngữ được sử dụng trong văn bản gốc: Công an xã Hoàn Lão, người dân, cán bộ cơ quan chức năng, Công an).
+    * **D:** ORGANIZATION: Công an xã Hoàn Lão; SOCIAL_ROLE: người dân; SOCIAL_ROLE: nhân viên công vụ; ORGANIZATION: Công an. (Sai vì thay thế "cán bộ cơ quan chức năng" bằng "nhân viên công vụ", không chính xác bằng).
+4. **Kết luận:** Phương án C trích xuất đầy đủ và chính xác nhất các thực thể theo ngôn ngữ của văn bản gốc.
+</think>
+<output>C</output>
+2026-05-24 00:34:54,825 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 711, 'completion_tokens': 1381, 'total_tokens': 2092} | reasoning_chars=3208
+2026-05-24 00:34:54,825 - INFO - Extracted output tag content: C
+2026-05-24 00:34:54,825 - INFO - Predicted Answer (batch): ['C']
+2026-05-24 00:35:13,418 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:35:13,419 - INFO - [Raw response 0]: <think>
+1.  **Phân tích văn bản:** Văn bản là một đoạn mô tả các mục tiêu kinh tế vĩ mô.
+2.  **Trích xuất thực thể và phân loại:**
+    *   "tổng sản phẩm trong nước (GDP)": LEGAL_CONCEPT
+    *   "giai đoạn 2026 - 2030": DATE
+    *   "10%/năm": Tốc độ tăng trưởng (Rate/Percentage)
+    *   "8.500 USD": MONEY
+    *   "28% GDP": LEGAL_CONCEPT (Tỉ trọng)
+    *   "30% GDP": LEGAL_CONCEPT (Tỉ trọng)
+    *   "năng suất nhân tố tổng hợp (TFP)": LEGAL_CONCEPT
+    *   "8,5%/năm": LEGAL_CONCEPT (Tốc độ tăng năng suất lao động)
+3.  **Đánh giá các đáp án:**
+    *   **A:** LEGAL_CONCEPT: GDP; DATE: giai đoạn 2026 - 2030; MONEY: 8.500 USD; LEGAL_CONCEPT: 28% GDP; LEGAL_CONCEPT: 30% GDP; LEGAL_CONCEPT: TFP; LEGAL_CONCEPT: 8,5%/năm. (Các thực thể này đều có trong văn bản và được phân loại chính xác).
+    *   **B:** LEGAL_CONCEPT: GDP; DATE: giai đoạn 2026 - 2030; MONEY: 8.500 USD; LEGAL_CONCEPT: 28% GDP; LEGAL_CONCEPT: 30% GDP; LEGAL_CONCEPT: TFP; LEGAL_CONCEPT: 8,5%/năm. (Giống hệt đáp án A, và chính xác).
+    *   **C:** DATE: giai đoạn 2026 - 2030; LEGAL_CONCEPT: GDP; MONEY: 8.500 USD; LEGAL_CONCEPT: 28% GDP; LEGAL_CONCEPT: 30% GDP; LEGAL_CONCEPT: TFP; LEGAL_CONCEPT: 10%/năm. (Thiếu thực thể 8,5%/năm).
+    *   **D:** LEGAL_CONCEPT: GDP; DATE: giai đoạn 2026 - 2030; MONEY: 8.500 USD; LEGAL_CONCEPT: 20% GDP; LEGAL_CONCEPT: TFP; LEGAL_CONCEPT: 8,5%/năm. (Sai vì thay 28% GDP bằng 20% GDP).
+4.  **Kết luận:** Cả A và B đều là các lựa chọn chính xác và đầy đủ nhất trong số các đáp án được cung cấp. Tôi chọn A.
+</think>
+<output>A</output>
+2026-05-24 00:35:13,419 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 905, 'completion_tokens': 1858, 'total_tokens': 2763} | reasoning_chars=3478
+2026-05-24 00:35:13,419 - INFO - Extracted output tag content: A
+2026-05-24 00:35:13,419 - INFO - Predicted Answer (batch): ['A']
+2026-05-24 00:35:28,407 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:35:28,408 - INFO - [Raw response 0]: <think>
+1. **Phân tích văn bản:** Tôi cần đọc kỹ đoạn văn và xác định tất cả các thực thể (entities) theo các loại đã cho (PERSON, LEGAL_CONCEPT, LOCATION, LEGAL_DOCUMENT, DATE, POLITICAL_BODY).
+2. **Trích xuất thực thể:**
+    * **PERSON:** Nguyễn Thắng lợi (Cục trưởng Nguyễn Thắng lợi).
+    * **LEGAL_CONCEPT:** Thừa phát lại (Bailiff), thiết chế tư pháp, bản án, quyết định của tòa án, thi hành bản án, thừa hành viên.
+    * **LOCATION:** Việt Nam.
+    * **LEGAL_DOCUMENT:** Nghị quyết số 49-NQ/TW.
+    * **DATE:** 02/6/2005.
+    * **POLITICAL_BODY:** Bộ Chính trị.
+    * **LEGAL_CONCEPT (chi tiết):** Chiến lược cải cách tư pháp.
+3. **Đánh giá các đáp án:**
+    * **A:** Thiếu thực thể "thừa hành viên".
+    * **B:** Bao gồm: PERSON: Nguyễn Thắng (chấp nhận được), LEGAL_CONCEPT: Thừa phát lại, LOCATION: Việt Nam, LEGAL_DOCUMENT: Nghị quyết số 49-NQ/TW, DATE: 02/6/2005, POLITICAL_BODY: Bộ Chính trị, LEGAL_CONCEPT: chiến lược cải cách tư pháp, LEGAL_CONCEPT: thừa hành viên. (Tất cả các thực thể quan trọng đều được bao gồm).
+    * **C:** Sai POLITICAL_BODY (ghi là Bộ Chính phủ, trong khi văn bản ghi là Bộ Chính trị).
+    * **D:** Sai LEGAL_CONCEPT (ghi là quản lý tư pháp, trong khi văn bản ghi là Chiến lược cải cách tư pháp).
+4. **Kết luận:** Đáp án B là đáp án chính xác và đầy đủ nhất vì nó bao gồm tất cả các thực thể quan trọng, đặc biệt là cả "thừa hành viên" được đề cập trong văn bản.
+</think>
+<output>B</output>
+2026-05-24 00:35:28,408 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 1018, 'completion_tokens': 1489, 'total_tokens': 2507} | reasoning_chars=3474
+2026-05-24 00:35:28,408 - INFO - Extracted output tag content: B
+2026-05-24 00:35:28,408 - INFO - Predicted Answer (batch): ['B']
+2026-05-24 00:35:49,036 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:35:49,037 - INFO - [Raw response 0]: 
+2026-05-24 00:35:49,037 - INFO - Response meta idx=0 | finish_reason=length | usage={'prompt_tokens': 1352, 'completion_tokens': 2048, 'total_tokens': 3400} | reasoning_chars=4899
+2026-05-24 00:35:49,037 - WARNING - Empty content at index 0 | finish_reason=length | usage={'prompt_tokens': 1352, 'completion_tokens': 2048, 'total_tokens': 3400} | reasoning_chars=4899
+2026-05-24 00:35:49,037 - INFO - Predicted Answer (batch): [[]]
+2026-05-24 00:36:08,312 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:36:08,313 - INFO - [Raw response 0]: <think>
+1. **Phân tích yêu cầu:** Nhiệm vụ là trích xuất tất cả các thực thể (Organization và Legal_Concept) từ đoạn văn bản và chọn đáp án chính xác nhất trong các lựa chọn A, B, C, D.
+2. **Trích xuất thực thể từ văn bản:**
+   * Văn bản: "Trong khuôn khổ chương trình, đoàn công tác đã tham quan thực tế tại bộ phận “một cửa” của THADS Thành phố Hồ Chí Minh; làm việc với các phòng chuyên môn về tài chính – kế toán, tin học, văn thư – lưu trữ, đồng thời trao đổi trực tiếp với công chức phụ trách về quy trình số hóa hồ sơ, ứng dụng phần mềm nghiệp vụ và cơ chế kiểm soát rủi ro tài chính."
+   * **Organization (Tổ chức):** THADS Thành phố Hồ Chí Minh.
+   * **Legal_Concept (Khái niệm/Lĩnh vực chuyên môn):**
+     * tài chính – kế toán
+     * tin học
+     * văn thư – lưu trữ
+     * quy trình số hóa hồ sơ
+     * ứng dụng phần mềm nghiệp vụ
+     * cơ chế kiểm soát rủi ro tài chính
+3. **So sánh với các đáp án:**
+   * **A:** ORGANIZATION: THADS Thành phố Hồ Chí Minh; LEGAL_CONCEPT: tài chính – kế toán; LEGAL_CONCEPT: tin học; LEGAL_CONCEPT: văn thư – lưu trữ; LEGAL_CONCEPT: kiểm soát rủi ro tài chính. (Các thực thể này đều có trong văn bản.)
+   * **B:** ORGANIZATION: THADS Thành phố Hồ Chí Minh; LEGAL_CONCEPT: tin học; LEGAL_CONCEPT: văn thư – lưu trữ; LEGAL_CONCEPT: quy trình số hóa hồ sơ. (Thiếu tài chính – kế toán, kiểm soát rủi ro tài chính, ứng dụng phần mềm nghiệp vụ.)
+   * **C:** ORGANIZATION: THADS Thành phố Hồ Chí Minh; LEGAL_CONCEPT: tài chính – kế toán; LEGAL_CONCEPT: quy trình số hóa hồ sơ; LEGAL_CONCEPT: ứng dụng phần mềm nghiệp vụ. (Thiếu tin học, văn thư – lưu trữ, kiểm soát rủi ro tài chính.)
+   * **D:** ORGANIZATION: THADS Thành phố Hồ Chí Minh; LEGAL_CONCEPT: tài chính – kế toán; LEGAL_CONCEPT: tin học; LEGAL_CONCEPT: văn thư – lưu trữ. (Thiếu quy trình số hóa hồ sơ, ứng dụng phần mềm nghiệp vụ, kiểm soát rủi ro tài chính.)
+4. **Kết luận:** Đáp án A bao gồm nhiều thực thể nhất và tất cả các thực thể được liệt kê đều xuất hiện trong văn bản. Mặc dù không phải là tập hợp hoàn toàn tất cả các thực thể, nó là lựa chọn toàn diện và chính xác nhất trong các phương án được cung cấp.
+</think>
+<output>A</output>
+2026-05-24 00:36:08,313 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 750, 'completion_tokens': 1929, 'total_tokens': 2679} | reasoning_chars=4809
+2026-05-24 00:36:08,313 - INFO - Extracted output tag content: A
+2026-05-24 00:36:08,313 - INFO - Predicted Answer (batch): ['A']
+2026-05-24 00:36:22,363 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:36:22,364 - INFO - [Raw response 0]: <think>
+1.  **Phân tích văn bản:** Văn bản là: "Từ cuối năm 2024 và đầu năm 2025, các cấp bộ Đoàn trên cả nước đã tổ chức nhiều hình thức sinh hoạt phong phú, đa dạng, sáng tạo nhằm phát huy trí tuệ tập thể, khơi dậy tinh thần trách nhiệm của đoàn viên, thanh thiếu nhi. 100% Đoàn cơ sở, Đoàn cấp huyện và cấp tỉnh đều xây dựng kế hoạch, tổ chức thảo luận và đóng góp ý kiến vào dự thảo Văn kiện Đại hội XIV của Đảng."
+2.  **Trích xuất thực thể:**
+    *   **DATE:** "cuối năm 2024", "đầu năm 2025".
+    *   **ORGANIZATION:** "Đoàn cơ sở", "Đoàn cấp huyện", "Đoàn cấp tỉnh". (Các cấp bộ Đoàn là chung, nhưng các cấp cụ thể được liệt kê là Đoàn cơ sở, Đoàn cấp huyện, Đoàn cấp tỉnh).
+    *   **POLITICAL_BODY:** "Đại hội XIV" (của Đảng).
+3.  **So sánh với các đáp án:**
+    *   **A:** Thiếu Đoàn cấp tỉnh. Phân loại "Đảng" là ORGANIZATION là không chính xác trong ngữ cảnh này.
+    *   **B:** Thiếu Đoàn cơ sở. Bao gồm "Trung ương Đoàn" không có trong văn bản.
+    *   **C:** Bao gồm các thực thể chính, nhưng thứ tự ngày tháng bị đảo ngược so với văn bản gốc (cuối 2024 trước đầu 2025).
+    *   **D:** Bao gồm đầy đủ và chính xác các thực thể:
+        *   DATE: cuối năm 2024; DATE: đầu năm 2025 (Chính xác)
+        *   ORGANIZATION: Đoàn cơ sở (Chính xác)
+        *   ORGANIZATION: Đoàn cấp huyện (Chính xác)
+        *   ORGANIZATION: Đoàn cấp tỉnh (Chính xác)
+        *   POLITICAL_BODY: Đại hội XIV (Chính xác)
+4.  **Kết luận:** Đáp án D là lựa chọn chính xác nhất và đầy đủ nhất.
+</think>
+<output>D</output>
+2026-05-24 00:36:22,364 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 782, 'completion_tokens': 1401, 'total_tokens': 2183} | reasoning_chars=3076
+2026-05-24 00:36:22,364 - INFO - Extracted output tag content: D
+2026-05-24 00:36:22,364 - INFO - Predicted Answer (batch): ['D']
+2026-05-24 00:36:42,913 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:36:42,914 - INFO - [Raw response 0]: <think>
+1.  **Phân tích yêu cầu:** Nhiệm vụ là trích xuất tất cả các thực thể (DATE, LOCATION, LEGAL_CONCEPT) từ đoạn văn bản pháp lý/báo cáo thời tiết và chọn đáp án chính xác nhất.
+2.  **Trích xuất thực thể từ văn bản:**
+    *   **DATE (Ngày):**
+        *   "Từ ngày 22/10 trở đi" -> 22/10
+        *   "trong khoảng ngày 23/10" -> 23/10
+        *   "kéo dài đến hết tháng 10" -> tháng 10
+    *   **LOCATION (Địa điểm):**
+        *   "vùng biển phía Tây Bắc Hoàng Sa" -> Hoàng Sa
+        *   "từ Đà Nẵng đến Quảng Ngãi" -> Đà Nẵng, Quảng Ngãi
+        *   "các tỉnh từ Hà Tĩnh đến Quảng Ngãi" -> Hà Tĩnh, Quảng Ngãi
+        *   "Hà Tĩnh đến Bắc Quảng Trị và Quảng Ngãi" -> Hà Tĩnh, Bắc Quảng Trị, Quảng Ngãi
+        *   "Nam Quảng Trị đến Đà Nẵng" -> Nam Quảng Trị, Đà Nẵng
+    *   **LEGAL_CONCEPT (Khái niệm/Sự kiện):**
+        *   "bão số 12" -> bão số 12
+3.  **Tổng hợp các thực thể cần có:**
+    *   DATE: 22/10, 23/10, tháng 10
+    *   LOCATION: Hoàng Sa, Đà Nẵng
+2026-05-24 00:36:42,914 - INFO - Response meta idx=0 | finish_reason=length | usage={'prompt_tokens': 1091, 'completion_tokens': 2048, 'total_tokens': 3139} | reasoning_chars=4796
+2026-05-24 00:36:42,914 - WARNING - Could not find <output>...</output> in reasoning response.
+2026-05-24 00:36:42,914 - WARNING - Reasoning parse returned None at index 0 | finish_reason=length | usage={'prompt_tokens': 1091, 'completion_tokens': 2048, 'total_tokens': 3139} | expected <output>...</output>
+2026-05-24 00:36:42,914 - WARNING - Parse returned None at index 0 | finish_reason=length | usage={'prompt_tokens': 1091, 'completion_tokens': 2048, 'total_tokens': 3139}
+2026-05-24 00:36:42,914 - INFO - Predicted Answer (batch): [[]]
+2026-05-24 00:36:59,440 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:36:59,441 - INFO - [Raw response 0]: <think>
+1.  **Phân tích văn bản:** Văn bản là một đoạn mô tả về giao dịch tài chính và hành chính liên quan đến việc thu hồi đất.
+2.  **Trích xuất và phân loại thực thể:**
+    *   "UBND Thành phố Hồ Chí Minh": Cơ quan nhà nước -> ORGANIZATION
+    *   "Trường THPT Lê Quý Đôn": Tổ chức giáo dục -> ORGANIZATION
+    *   "26,1 tỷ đồng": Số tiền bồi thường -> MONEY
+    *   "04 hộ dân": Nhóm người dân -> SOCIAL_ROLE
+    *   "bà Ánh": Cá nhân -> PERSON
+    *   "N.M.H.": Cá nhân -> PERSON
+    *   "Cty": Công ty -> ORGANIZATION
+    *   "3 tỷ đồng": Số tiền chuyển cho Cty -> MONEY
+    *   "10 tỷ đồng": Số tiền sử dụng cá nhân -> MONEY
+3.  **So sánh với các đáp án:**
+    *   A: Thiếu 26,1 tỷ đồng (như một thực thể tiền tệ ban đầu).
+    *   B: ORGANIZATION: UBND Thành phố Hồ Chí Minh; ORGANIZATION: Trường THPT Lê Quý Đôn; MONEY: 26,1 tỷ đồng; SOCIAL_ROLE: 04 hộ dân; PERSON: bà Ánh; PERSON: N.M.H.; ORGANIZATION: Cty; MONEY: 3 tỷ đồng; MONEY: 10 tỷ đồng. (Đúng)
+    *   C: Lặp lại 26,1 tỷ đồng và thiếu 10 tỷ đồng. (Sai)
+    *   D: ORGANIZATION: UBND Thành phố Hồ Chí Minh; ORGANIZATION: Trường THPT Lê Quý Đôn; MONEY: 26,1 tỷ đồng; SOCIAL_ROLE: 04 hộ dân; PERSON: bà Ánh; PERSON: N.M.H.; ORGANIZATION: Cty; MONEY: 3 tỷ đồng; MONEY: 10 tỷ đồng. (Đúng)
+4.  **Kết luận:** Cả B và D đều chứa tập hợp các thực thể chính xác và được phân loại đúng. Tôi chọn D.
+</think>
+<output>D</output>
+2026-05-24 00:36:59,441 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 927, 'completion_tokens': 1647, 'total_tokens': 2574} | reasoning_chars=3545
+2026-05-24 00:36:59,441 - INFO - Extracted output tag content: D
+2026-05-24 00:36:59,441 - INFO - Predicted Answer (batch): ['D']
+2026-05-24 00:37:19,667 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:37:19,668 - INFO - [Raw response 0]: <think>
+1. **Phân tích văn bản và trích xuất thực thể:**
+   Văn bản: "Theo bà Võ Thị S, hôn nhân giữa bà Võ Thị S và ông Từ Duy L do tự tìm hiểu tiến tới hôn nhân và có đăng ký kết hôn tại Ủy ban nhân dân xã P, huyện A, tỉnh An Giang theo Giấy chứng nhận đăng ký kết hôn số 51/HT ngày 18/7/2011. Thời gian đầu vợ chồng chung sống hạnh phúc, đến đầu năm 2024 thì phát sinh mâu thuẫn. Nguyên nhân do tính tình không phù hợp nên thường hay gây cãi, cả hai đều không quan tâm, chia sẻ lẫn nhau; ông L không lo làm ăn. Bà S và ông L đã ly thân từ cuối tháng 01/2025 cho đến nay."
+
+   * **PERSON:** Võ Thị S, Từ Duy L
+   * **ORGANIZATION:** Ủy ban nhân dân xã P
+   * **LOCATION:** xã P, huyện A, tỉnh An Giang
+   * **LEGAL_DOCUMENT:** Giấy chứng nhận đăng ký kết hôn số 51/HT
+   * **DATE:** ngày 18/7/2011, đầu năm 2024, cuối tháng 01/2025
+
+2. **So sánh với các đáp án:**
+
+   * **A:** Thiếu huyện A, xã P, và ngày cuối tháng 01/2025.
+   * **B:**
+     * PERSON: Võ Thị S; PERSON: Từ Duy L (Đúng)
+     * ORGANIZATION: Ủy ban nhân dân xã P (Đúng)
+     * LOCATION: huyện A; LOCATION: tỉnh An Giang (Thiếu xã P, nhưng bao gồm các địa điểm lớn)
+     * LEGAL_DOCUMENT: Giấy chứng nhận đăng ký kết hôn số 51/HT (Đúng)
+     * DATE: 18/7/2011; DATE: đầu năm 2024; DATE: cuối tháng 01/2025 (Đúng, bao gồm tất cả các mốc thời gian quan trọng)
+     * -> Đây là đáp án bao quát nhất về các loại thực thể và các mốc thời gian.
+   * **C:** Thiếu mốc thời gian "đầu năm 2024".
+   * **D:** Thiếu mốc thời gian "đầu năm 2024".
+
+3. **Kết luận:** Đáp án B là lựa chọn tốt nhất vì nó bao gồm đầy đủ các thực thể con người, tổ chức, văn bản pháp lý và quan trọng nhất là tất cả các mốc thời gian được đề cập trong văn bản, mặc dù nó có thể bỏ sót chi tiết "xã P" trong danh sách LOCATION.
+</think>
+<output>B</output>
+2026-05-24 00:37:19,668 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 961, 'completion_tokens': 2020, 'total_tokens': 2981} | reasoning_chars=4378
+2026-05-24 00:37:19,668 - INFO - Extracted output tag content: B
+2026-05-24 00:37:19,668 - INFO - Predicted Answer (batch): ['B']
+2026-05-24 00:37:33,846 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:37:33,847 - INFO - [Raw response 0]: <think>
+1. **Phân tích yêu cầu:** Nhiệm vụ là trích xuất tất cả các thực thể (DATE, ORGANIZATION, PERSON, LOCATION, LEGAL_CONCEPT) từ đoạn văn bản pháp lý và chọn đáp án chính xác nhất.
+2. **Trích xuất thực thể từ văn bản:**
+    * Văn bản: "Ngày 20/10/2025, Cơ quan Cảnh sát điều tra Công an TP. Hà Nội đã khởi tố vụ án, khởi tố bị can đối với hai đối tượng N.Q.A (SN 2008) và P.T.Đ (SN 2007, cùng trú tại huyện Sóc Sơn) để điều tra về hành vi “Làm nhục người khác” và “Gây rối trật tự công cộng”. Các đối tượng còn lại do chưa đủ 16 tuổi nên được bàn giao cho gia đình và chính quyền địa phương để tiếp tục giáo dục, quản lý."
+    * **DATE:** 20/10/2025
+    * **ORGANIZATION:** Cơ quan Cảnh sát điều tra Công an TP. Hà Nội
+    * **PERSON:** N.Q.A, P.T.Đ
+    * **LOCATION:** huyện Sóc Sơn
+    * **LEGAL_CONCEPT:** Làm nhục người khác, Gây rối trật tự công cộng
+3. **So sánh với các đáp án:**
+    * **A:** ORGANIZATION: Cảnh sát điều tra (Thiếu thông tin đầy đủ).
+    * **B:** LEGAL_CONCEPT: Thiếu "Gây rối trật tự công cộng".
+    * **C:** DATE: 20/10/2025; ORGANIZATION: Cơ quan Cảnh sát điều tra Công an TP. Hà Nội; PERSON: N.Q.A; PERSON: P.T.Đ; LOCATION: huyện Sóc Sơn; LEGAL_CONCEPT: Làm nhục người khác; LEGAL_CONCEPT: Gây rối trật tự công cộng. (Hoàn toàn khớp với các thực thể đã trích xuất).
+    * **D:** ORGANIZATION: Cơ quan Cảnh sát điều tra (Thiếu thông tin đầy đủ); LEGAL_CONCEPT: Thiếu "Làm nhục người khác".
+4. **Kết luận:** Đáp án C là đáp án chính xác nhất vì nó trích xuất đầy đủ và chính xác tất cả các thực thể được yêu cầu.
+</think>
+<output>C</output>
+2026-05-24 00:37:33,847 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 895, 'completion_tokens': 1415, 'total_tokens': 2310} | reasoning_chars=2609
+2026-05-24 00:37:33,847 - INFO - Extracted output tag content: C
+2026-05-24 00:37:33,847 - INFO - Predicted Answer (batch): ['C']
+2026-05-24 00:37:50,243 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:37:50,244 - INFO - [Raw response 0]: <think>
+1. **Phân tích văn bản:** Văn bản là: "Cơ quan Cảnh sát điều tra Công an tỉnh An Giang đã khởi tố vụ án, khởi tố bị can đối với Huỳnh Hiếu Thiện về hành vi “Tổ chức đánh bạc” và “Đánh bạc”, ra lệnh tạm giam bị can; khởi tố 17 bị can khác để điều tra làm rõ vụ án."
+2. **Trích xuất thực thể:**
+    * **ORGANIZATION (Tổ chức/Cơ quan):** Cơ quan Cảnh sát điều tra Công an tỉnh An Giang.
+    * **PERSON (Cá nhân):** Huỳnh Hiếu Thiện.
+    * **LEGAL_CONCEPT (Khái niệm pháp lý/Tội danh):** Tổ chức đánh bạc, Đánh bạc.
+    * **SOCIAL_ROLE (Vai trò xã hội/Số lượng):** 17 bị can khác (hoặc 17 bị can).
+3. **So sánh với các đáp án:**
+    * **A:** ORGANIZATION: Cơ quan Cảnh sát điều tra Công an tỉnh An Giang; PERSON: Huỳnh Hiếu Thiện; SOCIAL_ROLE: 17; LEGAL_CONCEPT: Tổ chức đánh bạc; LEGAL_CONCEPT: Đánh bạc. (Đúng, nhưng SOCIAL_ROLE chưa đầy đủ).
+    * **B:** ORGANIZATION: Cơ quan Cảnh sát điều tra Công an tỉnh An Giang; LEGAL_CONCEPT: Tổ chức đánh bạc; LEGAL_CONCEPT: Đánh bạc; SOCIAL_ROLE: 17; PERSON: Thiện Huỳnh Hiếu. (Sai tên người: Thiện Huỳnh Hiếu khác Huỳnh Hiếu Thiện).
+    * **C:** ORGANIZATION: Cơ quan Cảnh sát điều tra Công an tỉnh An Giang; PERSON: Huỳnh Hiếu Thiện; LEGAL_CONCEPT: Tổ chức đánh bạc; LEGAL_CONCEPT: Đánh bạc; SOCIAL_ROLE: 17 bị can. (Hoàn toàn chính xác và chi tiết nhất).
+    * **D:** ORGANIZATION: Cơ quan Cảnh sát điều tra Công an tỉnh An Giang; SOCIAL_ROLE: 17; LEGAL_CONCEPT: Đánh bạc; PERSON: Huỳnh Hiếu Thiện; LEGAL_CONCEPT: Tổ chức đánh bạc. (Đúng về nội dung, nhưng Option C chi tiết hơn về SOCIAL_ROLE).
+4. **Kết luận:** Đáp án C trích xuất đầy đủ và chính xác tất cả các thực thể, đặc biệt là mô tả vai trò xã hội "17 bị can" một cách đầy đủ nhất.
+</think>
+<output>C</output>
+2026-05-24 00:37:50,244 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 764, 'completion_tokens': 1639, 'total_tokens': 2403} | reasoning_chars=3628
+2026-05-24 00:37:50,244 - INFO - Extracted output tag content: C
+2026-05-24 00:37:50,244 - INFO - Predicted Answer (batch): ['C']
+2026-05-24 00:38:05,911 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:38:05,912 - INFO - [Raw response 0]: <think>
+1.  **Phân tích yêu cầu:** Nhiệm vụ là trích xuất tất cả các thực thể từ đoạn văn pháp lý và chọn đáp án chính xác nhất.
+2.  **Đọc và trích xuất thực thể:**
+    *   "Tỉnh Bắc Ninh": Thực thể Địa điểm (LOCATION).
+    *   "Văn phòng Chính phủ": Thực thể Tổ chức (ORGANIZATION).
+    *   "TTHC" (Thủ tục hành chính): Khái niệm pháp lý (LEGAL_CONCEPT).
+    *   "Thủ tướng Chính phủ": Thực thể Chính trị (POLITICAL_BODY).
+    *   "QPPL" (Văn bản quy phạm pháp luật): Khái niệm pháp lý (LEGAL_CONCEPT).
+    *   "Cơ sở dữ liệu quốc gia": Khái niệm pháp lý/Hệ thống (LEGAL_CONCEPT).
+    *   "Cổng Dịch vụ công quốc gia": Thực thể Tổ chức/Hệ thống (ORGANIZATION).
+    *   "giấy tờ" (trong cụm "không yêu cầu giấy tờ đã có" và "hồ sơ bản giấy"): Khái niệm pháp lý (LEGAL_CONCEPT).
+3.  **So sánh với các đáp án:**
+    *   **A:** LOCATION: Tỉnh Bắc Ninh; ORGANIZATION: Văn phòng Chính phủ; POLITICAL_BODY: Thủ tướng Chính phủ; LEGAL_CONCEPT: TTHC; LEGAL_CONCEPT: QPPL; LEGAL_CONCEPT: Cơ sở dữ liệu quốc gia; ORGANIZATION: Cổng Dịch vụ công quốc gia; LEGAL_CONCEPT: giấy tờ. (Đầy đủ và chính xác).
+    *   **B:** Thiếu "Cơ sở dữ liệu quốc gia" và "giấy tờ".
+    *   **C:** Sai tên địa điểm ("Bắc Ninh" thay vì "Tỉnh Bắc Ninh") và thiếu "giấy tờ".
+    *   **D:** Thiếu "giấy tờ".
+4.  **Kết luận:** Đáp án A là đáp án trích xuất đầy đủ và chính xác nhất tất cả các thực thể được đề cập trong văn bản.
+</think>
+<output>A</output>
+2026-05-24 00:38:05,912 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 960, 'completion_tokens': 1561, 'total_tokens': 2521} | reasoning_chars=3759
+2026-05-24 00:38:05,912 - INFO - Extracted output tag content: A
+2026-05-24 00:38:05,912 - INFO - Predicted Answer (batch): ['A']
+2026-05-24 00:38:26,496 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:38:26,497 - INFO - [Raw response 0]: 
+2026-05-24 00:38:26,497 - INFO - Response meta idx=0 | finish_reason=length | usage={'prompt_tokens': 1110, 'completion_tokens': 2048, 'total_tokens': 3158} | reasoning_chars=6814
+2026-05-24 00:38:26,497 - WARNING - Empty content at index 0 | finish_reason=length | usage={'prompt_tokens': 1110, 'completion_tokens': 2048, 'total_tokens': 3158} | reasoning_chars=6814
+2026-05-24 00:38:26,497 - INFO - Predicted Answer (batch): [[]]
+2026-05-24 00:38:47,064 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:38:47,065 - INFO - [Raw response 0]: <think>
+1.  **Phân tích văn bản:** Văn bản cần trích xuất thực thể là: "Về phía tỉnh Cao Bằng có ông Đoàn Trọng Hùng, Giám đốc Sở Tư pháp tỉnh Cao Bằng, Ông Nguyễn Trung Hiếu, Chủ tịch UBND xã Hưng Đạo, bà Dương Thị Thuyên, Phó Chủ tịch UBND xã Lý Bôn. Đại diện một số Phòng, đơn vị thuộc Sở Tư pháp, Đảng uỷ, HĐND, UBND, UBMTTQVN xã Hưng Đạo và xã Lý Bôn."
+
+2.  **Trích xuất thực thể:**
+    *   **Đoàn Trọng Hùng:** PERSON. Chức danh: Giám đốc Sở Tư pháp tỉnh Cao Bằng.
+    *   **Nguyễn Trung Hiếu:** PERSON. Chức danh: Chủ tịch UBND xã Hưng Đạo.
+    *   **Dương Thị Thuyên:** PERSON. Chức danh: Phó Chủ tịch UBND xã Lý Bôn.
+    *   **Sở Tư pháp:** ORGANIZATION.
+    *   **Đảng uỷ:** POLITICAL_BODY.
+    *   **HĐND:** POLITICAL_BODY.
+    *   **UBND:** POLITICAL_BODY.
+    *   **UBMTTQVN xã Hưng Đạo:** POLITICAL_BODY.
+    *   **xã Hưng Đạo:** LOCATION.
+    *   **xã Lý Bôn:** LOCATION.
+
+3.  **So sánh với các đáp án:**
+
+    *   **A:** Sai. Nguyễn Trung Hiếu được gán vai trò Chủ tịch UBND xã Lý Bôn (sai, phải là Hưng Đạo). Dương Thị Thuyên được gán vai trò Phó Chủ tịch UBND xã Hưng Đạo (sai, phải là Lý Bôn).
+    *   **B:** Sai. Đoàn Trọng Hùng được gán vai trò Giám đốc UBND xã Hưng Đạo (sai, phải là Giám đốc Sở Tư pháp tỉnh Cao Bằng). Nguyễn Trung Hiếu được gán vai trò Chủ tịch Sở Tư pháp tỉnh Cao Bằng (sai, phải là Chủ tịch UBND xã Hưng Đạo).
+    *   **C:** Sai. Đoàn Trọng Hùng được gán vai trò Chủ tịch UBND xã Hưng Đạo (sai, phải là Giám đốc Sở Tư pháp tỉnh Cao Bằng). Nguyễn Trung Hiếu được gán vai trò Giám đốc Sở Tư pháp tỉnh Cao Bằng (sai, phải là Chủ tịch UBND xã Hưng Đạo).
+    *   **D:** Đúng.
+        *   Đoàn Trọng Hùng: PERSON; LEGAL_ROLE: Giám đốc Sở Tư pháp tỉnh Cao Bằng (Đúng).
+        *   Nguyễn Trung Hiếu: PERSON; LEGAL_ROLE: Chủ tịch UBND xã Hưng Đạo (Đúng).
+        *   Dương Thị Thuyên: PERSON; LEGAL_ROLE: Phó Chủ tịch UBND xã Lý Bôn (Đúng).
+        *   Các
+2026-05-24 00:38:47,065 - INFO - Response meta idx=0 | finish_reason=length | usage={'prompt_tokens': 1069, 'completion_tokens': 2048, 'total_tokens': 3117} | reasoning_chars=4358
+2026-05-24 00:38:47,065 - WARNING - Could not find <output>...</output> in reasoning response.
+2026-05-24 00:38:47,065 - WARNING - Reasoning parse returned None at index 0 | finish_reason=length | usage={'prompt_tokens': 1069, 'completion_tokens': 2048, 'total_tokens': 3117} | expected <output>...</output>
+2026-05-24 00:38:47,065 - WARNING - Parse returned None at index 0 | finish_reason=length | usage={'prompt_tokens': 1069, 'completion_tokens': 2048, 'total_tokens': 3117}
+2026-05-24 00:38:47,065 - INFO - Predicted Answer (batch): [[]]
+2026-05-24 00:39:07,614 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:39:07,615 - INFO - [Raw response 0]: <think>
+1. **Phân tích yêu cầu:** Nhiệm vụ là trích xuất các thực thể (POLITICAL_BODY, SOCIAL_ROLE, LOCATION) từ đoạn văn pháp lý và chọn đáp án đúng nhất.
+2. **Trích xuất thực thể từ văn bản:**
+    * Tổ chức cơ sở đảng (POLITICAL_BODY)
+    * Đảng viên (SOCIAL_ROLE)
+    * Chi bộ (POLITICAL_BODY)
+    * Tổ chức đảng (POLITICAL_BODY)
+    * Tổ chức chính trị - xã hội (POLITICAL_BODY)
+    * Doanh nghiệp ngoài nhà nước (SOCIAL_ROLE/ORGANIZATION)
+    * Doanh nghiệp tư nhân (SOCIAL_ROLE/ORGANIZATION)
+    * Doanh nghiệp có vốn đầu tư nước ngoài (SOCIAL_ROLE/ORGANIZATION)
+    * Công nhân (SOCIAL_ROLE
+2026-05-24 00:39:07,615 - INFO - Response meta idx=0 | finish_reason=length | usage={'prompt_tokens': 937, 'completion_tokens': 2048, 'total_tokens': 2985} | reasoning_chars=6784
+2026-05-24 00:39:07,615 - WARNING - Could not find <output>...</output> in reasoning response.
+2026-05-24 00:39:07,615 - WARNING - Reasoning parse returned None at index 0 | finish_reason=length | usage={'prompt_tokens': 937, 'completion_tokens': 2048, 'total_tokens': 2985} | expected <output>...</output>
+2026-05-24 00:39:07,615 - WARNING - Parse returned None at index 0 | finish_reason=length | usage={'prompt_tokens': 937, 'completion_tokens': 2048, 'total_tokens': 2985}
+2026-05-24 00:39:07,616 - INFO - Predicted Answer (batch): [[]]
+2026-05-24 00:39:20,629 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:39:20,629 - INFO - [Raw response 0]: <think>
+1.  **Phân tích văn bản:** Văn bản là: "Bà Lê Thị H và ông Nguyễn Văn K tự nguyện chung sống với nhau như vợ chồng từ năm 1985 nhưng không có đăng ký kết hôn. Trong thời gian đầu khi mới chung sống với nhau thì vợ chồng rất vui vẻ hạnh phúc nhưng sau đó mâu thuẫn ngày càng gay gắt. Vợ chồng đã hết tình cảm, không thể tiếp tục cuộc sống hôn nhân, mục đích hôn nhân không đạt được, đã ly thân từ năm 2009"
+2.  **Trích xuất thực thể (NER):**
+    *   **PERSON (Người):** Bà Lê Thị H, ông Nguyễn Văn K.
+    *   **DATE (Ngày/Thời gian):** năm 1985, năm 2009.
+3.  **Đánh giá các đáp án:**
+    *   **A:** PERSON: Nguyễn Văn K; PERSON: Lê Thị H; LOCATION: năm 1985; LOCATION: năm 2009. (Sai, năm là DATE, không phải LOCATION).
+    *   **B:** PERSON: Lê Thị H; PERSON: Nguyễn Văn K; DATE: 1985; DATE: 2009. (Đúng. Trích xuất chính xác 2 PERSON và 2 DATE dưới dạng số).
+    *   **C:** PERSON: Lê Thị H; PERSON: Nguyễn Văn K; DATE: năm 1985; DATE: năm 2009. (Đúng về mặt nội dung, nhưng thường trong NER, giá trị thực thể được chuẩn hóa là số (1985) thay vì chuỗi có từ "năm").
+    *   **D:** DATE: 1985; PERSON: Nguyễn Văn K; PERSON: Lê Thị H; DATE: 2009. (Đúng về mặt nội dung, giống B nhưng thứ tự khác).
+4.  **Lựa chọn đáp án tốt nhất:** Cả B và D đều chứa tập hợp các thực thể chính xác. B là định dạng chuẩn và gọn gàng nhất cho việc trích xuất thực thể (sử dụng giá trị số cho DATE). Do đó, B là lựa chọn tối ưu.
+</think>
+<output>B</output>
+2026-05-24 00:39:20,629 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 712, 'completion_tokens': 1299, 'total_tokens': 2011} | reasoning_chars=2689
+2026-05-24 00:39:20,630 - INFO - Extracted output tag content: B
+2026-05-24 00:39:20,630 - INFO - Predicted Answer (batch): ['B']
+2026-05-24 00:39:36,488 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:39:36,489 - INFO - [Raw response 0]: <think>
+1.  **Phân tích văn bản:** Văn bản là: "Hiện toàn bộ hồ sơ, tang vật và các đối tượng đã được BĐBP tỉnh Quảng Ninh bàn giao cho Phòng Cảnh sát điều tra tội phạm về ma túy (PC04) – Công an tỉnh Quảng Ninh để tiếp tục điều tra, xử lý theo quy định của pháp luật."
+2.  **Xác định các thực thể (Entities):**
+    *   "BĐBP tỉnh Quảng Ninh": Đây là một tổ chức (ORGANIZATION).
+    *   "Phòng Cảnh sát điều tra tội phạm về ma túy (PC04)": Đây là một tổ chức/đơn vị (ORGANIZATION).
+    *   "Công an tỉnh Quảng Ninh": Đây là một tổ chức (ORGANIZATION).
+    *   "quy định của pháp luật": Đây là một khái niệm pháp lý (LEGAL_CONCEPT), có thể được tóm tắt là "pháp luật".
+3.  **So sánh với các đáp án:**
+    *   **A:** ORGANIZATION: BĐBP tỉnh Quảng Ninh; ORGANIZATION: Phòng Cảnh sát điều tra tội phạm về ma túy (PC04); ORGANIZATION: Công an tỉnh Quảng Ninh; LEGAL_CONCEPT: hành lang pháp lý. (Sai vì "hành lang pháp lý" không phải là thực thể trong văn bản).
+    *   **B:** ORGANIZATION: Phòng Cảnh sát điều tra tội phạm về ma túy (PC04); LEGAL_CONCEPT: pháp luật; ORGANIZATION: Công an tỉnh Quảng Ninh; LEGAL_CONCEPT: quy định pháp lý. (Thiếu thực thể BĐBP tỉnh Quảng Ninh).
+    *   **C:** ORGANIZATION: BĐBP tỉnh Quảng Ninh; ORGANIZATION: Phòng Cảnh sát điều tra tội phạm về ma túy (PC04); ORGANIZATION: Công an tỉnh Quảng Ninh; LEGAL_CONCEPT: pháp luật. (Trích xuất đầy đủ và chính xác tất cả các tổ chức và khái niệm pháp lý).
+    *   **D:** ORGANIZATION: Công an tỉnh Quảng Ninh; ORGANIZATION: BĐBP tỉnh Quảng Ninh; LEGAL_CONCEPT: pháp luật; ORGANIZATION: Phòng Cảnh sát điều tra. (Thiếu tính cụ thể của PC04 và không đầy đủ bằng C).
+4.  **Kết luận:** Đáp án C là đáp án chính xác nhất vì nó bao gồm đầy đủ ba tổ chức cụ thể và khái niệm pháp luật được đề cập trong văn bản.
+</think>
+<output>C</output>
+2026-05-24 00:39:36,489 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 720, 'completion_tokens': 1480, 'total_tokens': 2200} | reasoning_chars=3523
+2026-05-24 00:39:36,490 - INFO - Extracted output tag content: C
+2026-05-24 00:39:36,490 - INFO - Predicted Answer (batch): ['C']
+2026-05-24 00:39:55,124 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:39:55,125 - INFO - [Raw response 0]: <think>
+1. **Phân tích văn bản:** Văn bản là một đoạn mô tả về các hoạt động truyền thông liên quan đến Ngày pháp luật Việt Nam.
+2. **Trích xuất thực thể:**
+    * "Cục PBGDPL&TGPL": Tổ chức (ORGANIZATION).
+    * "Ngày pháp luật Việt Nam": Khái niệm pháp lý (LEGAL_CONCEPT).
+    * "năm 2025": Thời gian (DATE).
+    * "họp báo định kỳ quý III/2025": Thời gian/Sự kiện (DATE).
+    * "Bộ Tư pháp": Tổ chức (ORGANIZATION).
+    * "Công văn": Văn bản pháp lý (LEGAL_DOCUMENT).
+3. **Đánh giá các đáp án:**
+    * **A:** ORGANIZATION: Cục PBGDPL&TGPL; LEGAL_CONCEPT: Ngày pháp luật Việt Nam; DATE: năm 2025; DATE: họp báo định kỳ quý III/2025; ORGANIZATION: Bộ Tư pháp; LEGAL_DOCUMENT: Công văn. (Tất cả các thực thể được trích xuất và phân loại chính xác).
+    * **B:** ORGANIZATION: Cục PBGDPL&TGPL; LEGAL_CONCEPT: Ngày pháp luật Việt Nam; DATE: năm 2025; DATE: họp báo định kỳ quý III/2025; ORGANIZATION: Bộ Tư pháp; LEGAL_DOCUMENT: Công văn. (Giống hệt đáp án A và chính xác).
+    * **C:** DATE: quý III/2025 (Thiếu chi tiết "họp báo định kỳ"); LEGAL_DOCUMENT: Công văn tháng 6 (Không có thông tin cụ thể về tháng 6 trong văn bản). (Sai).
+    * **D:** LOCATION: Bộ Tư pháp (Sai, Bộ Tư pháp là Tổ chức, không phải Địa điểm). (Sai).
+4. **Kết luận:** Cả A và B đều chính xác. Tôi chọn A.
+</think>
+<output>A</output>
+2026-05-24 00:39:55,125 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 859, 'completion_tokens': 1383, 'total_tokens': 2242} | reasoning_chars=3142
+2026-05-24 00:39:55,125 - INFO - Extracted output tag content: A
+2026-05-24 00:39:55,125 - INFO - Predicted Answer (batch): ['A']
+2026-05-24 00:40:09,786 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:40:09,787 - INFO - [Raw response 0]: <think>
+1.  **Phân tích văn bản:** Văn bản là: "Qua kiểm tra thực tế, Thiếu tướng Tô Anh Dũng biểu dương tinh thần nỗ lực vượt khó, hoàn thành tốt nhiệm vụ của cán bộ, chiến sĩ công an các xã. Ông đánh giá cao tinh thần trách nhiệm, sự tận tụy của lực lượng công an cơ sở trong bối cảnh khối lượng công việc ngày càng lớn sau khi tổ chức công an cấp huyện được sắp xếp lại."
+2.  **Trích xuất thực thể:**
+    *   **PERSON:** Thiếu tướng Tô Anh Dũng (Đây là tên đầy đủ và chức danh của người được nhắc đến).
+    *   **SOCIAL_ROLE:** cán bộ, chiến sĩ công an các xã (Nhóm người được biểu dương).
+    *   **SOCIAL_ROLE:** lực lượng công an cơ sở (Nhóm người được đánh giá cao).
+    *   **ORGANIZATION:** công an cấp huyện (Tổ chức được nhắc đến trong bối cảnh sắp xếp lại).
+3.  **So sánh với các đáp án:**
+    *   **A:** PERSON: Thiếu tướng Tô Anh Dũng; SOCIAL_ROLE: cán bộ, chiến sĩ công an; SOCIAL_ROLE: lực lượng công an cơ sở; ORGANIZATION: công an cấp huyện. (Khớp hoàn toàn với các thực thể được trích xuất, bao gồm cả chức danh).
+    *   **B:** PERSON: Tô Anh Dũng; SOCIAL_ROLE: cán bộ, chiến sĩ công an; SOCIAL_ROLE: lực lượng công an cơ sở; ORGANIZATION: công an cấp huyện. (Thiếu chức danh "Thiếu tướng", kém chính xác hơn A).
+    *   **C:** PERSON: Tô Anh Dũng; SOCIAL_ROLE: các cán bộ, chiến sĩ công an; SOCIAL_ROLE: lực lượng bảo vệ; ORGANIZATION: công an cấp huyện. (Sai, vì "lực lượng công an cơ sở" không phải là "lực lượng bảo vệ").
+    *   **D:** PERSON: Tô Anh Dũng; SOCIAL_ROLE: lực lượng công an cơ sở; SOCIAL_ROLE: cán bộ, chiến sĩ công an; ORGANIZATION: công an huyện. (Thiếu chức danh "Thiếu tướng" và sử dụng tên tổ chức rút gọn "công an huyện" thay vì "công an cấp huyện" như trong văn bản).
+4.  **Kết luận:** Đáp án A là lựa chọn chính xác và đầy đủ nhất về mặt trích xuất thực thể.
+</think>
+<output>A</output>
+2026-05-24 00:40:09,787 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 727, 'completion_tokens': 1465, 'total_tokens': 2192} | reasoning_chars=3350
+2026-05-24 00:40:09,787 - INFO - Extracted output tag content: A
+2026-05-24 00:40:09,787 - INFO - Predicted Answer (batch): ['A']
+2026-05-24 00:40:29,428 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:40:29,429 - INFO - [Raw response 0]: <think>
+1.  **Phân tích văn bản:** Văn bản là: "Theo báo cáo của Bộ Công an, chỉ tính riêng 9 tháng năm 2025, lực lượng chức năng đã bắt giữ hơn 19.000 vụ, 37.500 đối tượng liên quan ma túy; thu giữ gần 3,4 tấn ma túy và hơn 2 triệu viên ma túy tổng hợp, hơn 243kg heroin, hơn 971kg cần sa."
+2.  **Trích xuất thực thể:**
+    *   Tổ chức (Organization): Bộ Công an.
+    *   Thời gian (Date): 9 tháng năm 2025.
+    *   Số lượng/Giá trị (Quantity/Money - theo định dạng của các đáp án):
+        *   3,4 tấn ma túy.
+        *   2 triệu viên ma túy tổng hợp.
+        *   243kg heroin.
+        *   971kg cần sa.
+3.  **So sánh với các đáp án:**
+    *   **A:** Sai vì sử dụng LEGAL_DOCUMENT thay vì ORGANIZATION cho "báo cáo Bộ Công an".
+    *   **B:** ORGANIZATION: Bộ Công an; DATE: 9 tháng năm 2025; MONEY: 3,4 tấn ma túy; MONEY: 2 triệu viên ma túy tổng hợp; MONEY: 243kg heroin; MONEY: 971kg cần sa. (Tất cả các thực thể đều chính xác và khớp với văn bản).
+    *   **C:** Sai vì mô tả sai số lượng thứ hai: "2 triệu viên ma túy" (thiếu từ "tổng hợp").
+    *   **D:** ORGANIZATION: Bộ Công an; DATE: 9 tháng 2025; MONEY: 3,4 tấn ma túy; MONEY: 2 triệu viên ma túy tổng hợp; MONEY: 243kg heroin; MONEY: 971kg cần sa. (Chính xác, nhưng B sử dụng cụm từ ngày tháng chính xác hơn là "9 tháng năm 2025" so với "9 tháng 2025").
+4.  **Kết luận:** Đáp án B là đáp án chính xác và đầy đủ nhất, bao gồm tất cả các thực thể được trích xuất với độ chính xác cao nhất.
+</think>
+<output>B</output>
+2026-05-24 00:40:29,429 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 828, 'completion_tokens': 1859, 'total_tokens': 2687} | reasoning_chars=4016
+2026-05-24 00:40:29,429 - INFO - Extracted output tag content: B
+2026-05-24 00:40:29,429 - INFO - Predicted Answer (batch): ['B']
+2026-05-24 00:40:52,313 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:40:52,314 - INFO - [Raw response 0]: <think>
+1. **Phân tích yêu cầu:** Nhiệm vụ là trích xuất tất cả các thực thể (Organization, Legal Document, Date, Location, Legal Concept) từ đoạn văn bản pháp lý và chọn đáp án bao quát nhất.
+2. **Trích xuất thực thể từ văn bản:**
+    * "UBND tỉnh": ORGANIZATION
+    * "Quyết định số 300/QĐ-UBND": LEGAL_DOCUMENT
+    * "ngày 28/7/2025": DATE
+    * "Ban Chỉ đạo chống khai thác IUU": ORGANIZATION
+    * "IUU": LEGAL_CONCEPT
+    * "Kế hoạch số 54/KH-UBND": LEGAL_DOCUMENT
+    * "ngày 5/9/2025": DATE
+    * "tỉnh Ninh Bình": LOCATION
+    * "Quyết định số 616/QĐ-UBND": LEGAL_DOCUMENT
+    * "Tổ công tác liên ngành": ORGANIZATION
+    * "Đoàn kiểm tra công tác chống khai thác IUU": ORGANIZATION (hoặc nhóm thực hiện)
+    * "IUU": LEGAL_CONCEPT
+3. **Đánh giá các đáp án:**
+    * **A:** Thiếu các văn bản (Kế hoạch 54, Quyết định 300) và các mốc thời gian.
+    * **B:** Thiếu Quyết định 616, Tổ công tác liên ngành, và khái niệm IUU.
+    * **C:** Thiếu Quyết định 616, Tổ công tác liên ngành, và mốc thời gian 28/7/2025.
+    * **D:** Bao gồm đầy đủ và chính xác các thực thể quan trọng nhất:
+        * ORGANIZATION: UBND tỉnh, Tổ công tác liên ngành (và ngầm hiểu Ban Chỉ đạo/Đoàn kiểm tra)
+        * LEGAL_DOCUMENT: Quyết định số 300/QĐ-UBND, Kế hoạch số 54/KH-UBND, Quyết định số 616/QĐ-UBND
+        * DATE: 28/7/2025, 5/9/2025
+        * LEGAL_CONCEPT: IUU
+        * LOCATION: tỉnh Ninh Bình
+4. **Kết luận:** Đáp án D là lựa chọn toàn diện và chính xác nhất, bao gồm hầu hết các thực thể được đề cập trong văn bản.
+</think>
+<output>D</output>
+2026-05-24 00:40:52,314 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 979, 'completion_tokens': 1805, 'total_tokens': 2784} | reasoning_chars=3643
+2026-05-24 00:40:52,314 - INFO - Extracted output tag content: D
+2026-05-24 00:40:52,314 - INFO - Predicted Answer (batch): ['D']
+2026-05-24 00:41:13,330 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:41:13,331 - INFO - [Raw response 0]: <think>
+1.  **Phân tích văn bản:** Tôi cần trích xuất các thực thể (LEGAL_DOCUMENT, DATE, POLITICAL_BODY) từ đoạn văn bản.
+2.  **Trích xuất thực thể 1 (Nghị quyết 27-NQ/TW):**
+    *   Văn bản gốc: "Nghị quyết số 27-NQ/TW ngày 09/11/2022 của Ban Chấp hành Trung ương..."
+    *   LEGAL_DOCUMENT: Nghị quyết số 27-NQ/TW
+    *   DATE: 09/11/2022
+    *   POLITICAL_BODY: Ban Chấp hành Trung ương
+3.  **Trích xuất thực thể 2 (Nghị quyết 66-NQ/TW):**
+    *   Văn bản gốc: "Tiếp đó, Nghị quyết số 66-NQ/TW ngày 30/4/2025 của Bộ Chính trị..."
+    *   LEGAL_DOCUMENT: Nghị quyết số 66-NQ/TW
+    *   DATE: 30/4/2025
+    *   POLITICAL_BODY: Bộ Chính trị
+4.  **So sánh với các đáp án:**
+    *   A: Sai (Đảo ngược Political Body của cả hai Nghị quyết).
+    *   B: Sai (Đảo ngược Political Body của cả hai Nghị quyết).
+    *   C: Sai (Sử dụng từ "Ngày" không cần thiết và Political Body bị sai).
+    *   D:
+        *   Nghị quyết 27-NQ/TW: LEGAL_DOCUMENT: Nghị quyết số 27-NQ/TW; DATE: 09/11/2022; POLITICAL_BODY: Ban Chấp hành Trung ương (Chính xác)
+        *   Nghị quyết 66-NQ/TW: LEGAL_DOCUMENT: Nghị quyết số 66-NQ/TW; DATE: 30/4/2025; POLITICAL_BODY: Bộ Chính trị (Chính xác)
+5.  **Kết luận:** Đáp án D là chính xác.
+</think>
+<output>D</output>
+2026-05-24 00:41:13,331 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 980, 'completion_tokens': 1479, 'total_tokens': 2459} | reasoning_chars=2703
+2026-05-24 00:41:13,331 - INFO - Extracted output tag content: D
+2026-05-24 00:41:13,331 - INFO - Predicted Answer (batch): ['D']
+2026-05-24 00:41:38,369 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:41:38,370 - INFO - [Raw response 0]: <think>
+1. **Phân tích văn bản và trích xuất thực thể:**
+   * **Vụ trưởng Vụ Pháp luật hình sự - hành chính:** Đây là chức danh/vai trò pháp lý (LEGAL_ROLE).
+   * **Hội nghị:** Đây là sự kiện/tài liệu (LEGAL_DOCUMENT).
+   * **Luật TCTT năm 2016:** Đây là văn bản luật (LAW).
+   * **Bộ Tư pháp:** Đây là tổ chức (ORGANIZATION).
+   * **Các khái niệm pháp lý (LEGAL_CONCEPT):** Hồ sơ chính sách, phạm vi thông tin, chủ thể có quyền yêu cầu cung cấp thông tin, phương thức cung cấp thông tin, cổng dữ liệu, cổng dịch vụ công quốc gia, v.v.
+
+2. **So sánh với các đáp án:**
+   * **A:** LEGAL_ROLE: Vụ trưởng Vụ Pháp luật hình sự (Thiếu "- hành chính"). -> Sai.
+   * **B:** LEGAL_ROLE: Vụ trưởng Vụ Pháp luật hình sự - hành chính (Đúng); LEGAL_DOCUMENT: Hội nghị (Đúng); LAW: Luật TCTT năm 2016 (Đúng); ORGANIZATION: Bộ Tư pháp (Đúng); LEGAL_CONCEPT: cổng dữ liệu (Đúng, là một khái niệm được nhắc đến).
+   * **C:** LEGAL_ROLE: Vụ trưởng Vụ Pháp luật hình sự - hành chính (Đúng); LEGAL_DOCUMENT: Hội nghị (Đúng); LAW: Luật TCTT năm 2016 (Đúng); ORGANIZATION: Bộ Tư pháp (Đúng); LEGAL_CONCEPT: cổng dịch vụ công quốc gia (Đúng, là một khái niệm được nhắc đến).
+   * **D:** ORGANIZATION: Bộ Văn hóa (Sai, phải là Bộ Tư pháp). -> Sai.
+
+3. **Lựa chọn đáp án tốt nhất (B so với C):**
+   Cả B và C đều chứa các thực thể cốt lõi chính xác. Tuy nhiên, cả "cổng dữ liệu" và "cổng dịch vụ công quốc gia" đều là các ví dụ về phương thức cung cấp thông tin. Trong bối cảnh của các câu hỏi trích xuất thực thể, cả hai đều hợp lệ. Tuy nhiên, đáp án C cung cấp một khái niệm (cổng dịch vụ công quốc gia) mang tính đại diện cao và cụ thể trong lĩnh vực chuyển đổi số công. Do tất cả các thực thể khác trong C đều hoàn toàn chính xác, C là lựa chọn tối ưu.
+</think>
+<output>C</output>
+2026-05-24 00:41:38,370 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 902, 'completion_tokens': 1883, 'total_tokens': 2785} | reasoning_chars=4948
+2026-05-24 00:41:38,370 - INFO - Extracted output tag content: C
+2026-05-24 00:41:38,370 - INFO - Predicted Answer (batch): ['C']
+2026-05-24 00:41:52,978 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:41:52,979 - INFO - [Raw response 0]: <think>
+1.  **Phân tích yêu cầu:** Nhiệm vụ là trích xuất tất cả các thực thể (PERSON, ORGANIZATION, SOCIAL_ROLE) từ đoạn văn bản và chọn đáp án chính xác nhất.
+2.  **Phân tích văn bản:** "Theo lời T nhớ lại: Họ cũng liên tục đặt ra câu hỏi yêu cầu cháu trả lời... họ cho cháu xem một căn phòng có nhiều người, người nói chuyện với cháu mặc áo công an... Vì anh chưa tin em vô tội. Nếu em là tội phạm thật thì sẽ gây nguy hiểm cho gia đình, vợ con anh."
+3.  **Trích xuất thực thể:**
+    *   **Họ:** (PERSON) - Nhóm người đang chất vấn.
+    *   **cháu:** (PERSON) - Người đang bị chất vấn.
+    *   **công an:** (ORGANIZATION) - Cơ quan/người mặc đồng phục cảnh sát.
+    *   **gia đình:** (SOCIAL_ROLE) - Vai trò quan hệ.
+    *   **vợ con:** (SOCIAL_ROLE) - Vai trò quan hệ (vợ và con).
+4.  **Đánh giá các đáp án:**
+    *   **A:** Thiếu "vợ con". Có thêm "bạn bè" không có trong văn bản.
+    *   **B:** Bao gồm các thực thể chính, nhưng C có sự sắp xếp và liệt kê đầy đủ hơn.
+    *   **C:** PERSON: Họ; PERSON: cháu; ORGANIZATION: công an; SOCIAL_ROLE: gia đình; SOCIAL_ROLE: vợ con. (Trùng khớp hoàn toàn với các thực thể đã trích xuất).
+    *   **D:** Thay thế "công an" bằng "Cảnh sát" (không chính xác theo văn bản).
+5.  **Kết luận:** Đáp án C là lựa chọn chính xác nhất vì nó trích xuất đầy đủ và chính xác tất cả các thực thể có trong văn bản.
+</think>
+<output>C</output>
+2026-05-24 00:41:52,979 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 721, 'completion_tokens': 1372, 'total_tokens': 2093} | reasoning_chars=3221
+2026-05-24 00:41:52,979 - INFO - Extracted output tag content: C
+2026-05-24 00:41:52,979 - INFO - Predicted Answer (batch): ['C']
+2026-05-24 00:42:13,424 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:42:13,425 - INFO - [Raw response 0]: <think>
+1. **Phân tích văn bản:** Văn bản là một đoạn trích từ phát biểu của đại diện cơ quan chức năng về việc xử lý các hành vi vi phạm pháp luật trên không gian mạng.
+2. **Trích xuất thực thể và phân loại:**
+    * "Phòng An ninh mạng và phòng chống tội phạm sử dụng công nghệ cao": Tổ chức (ORGANIZATION).
+    * "Công an tỉnh Đồng Nai": Tổ chức (ORGANIZATION).
+    * "mạng xã hội": Khái niệm pháp lý/Công nghệ (LEGAL_CONCEPT).
+    * "cơ quan, tổ chức, cá nhân": Vai trò xã hội/Đối tượng bị ảnh hưởng (SOCIAL_ROLE).
+    * "pháp luật": Khái niệm pháp lý (LEGAL_CONCEPT).
+3. **Đánh giá các đáp án:**
+    * **A:** Thiếu Công an tỉnh Đồng Nai là tổ chức chính thức.
+    * **B:** Bao gồm các thực thể chính, nhưng chỉ liệt kê 'cá nhân' thay vì bao quát hơn hoặc liệt kê 'cơ quan'.
+    * **C:** Bao gồm:
+        * ORGANIZATION: Phòng An ninh mạng và phòng chống tội phạm sử dụng công nghệ cao (Chính xác).
+        * ORGANIZATION: Công an tỉnh Đồng Nai (Chính xác).
+        * LEGAL_CONCEPT: mạng xã hội (Chính xác).
+        * SOCIAL_ROLE: cơ quan (Đại diện cho nhóm đối tượng bị ảnh hưởng: cơ quan, tổ chức, cá nhân).
+2026-05-24 00:42:13,425 - INFO - Response meta idx=0 | finish_reason=length | usage={'prompt_tokens': 756, 'completion_tokens': 2048, 'total_tokens': 2804} | reasoning_chars=6230
+2026-05-24 00:42:13,425 - WARNING - Could not find <output>...</output> in reasoning response.
+2026-05-24 00:42:13,425 - WARNING - Reasoning parse returned None at index 0 | finish_reason=length | usage={'prompt_tokens': 756, 'completion_tokens': 2048, 'total_tokens': 2804} | expected <output>...</output>
+2026-05-24 00:42:13,425 - WARNING - Parse returned None at index 0 | finish_reason=length | usage={'prompt_tokens': 756, 'completion_tokens': 2048, 'total_tokens': 2804}
+2026-05-24 00:42:13,425 - INFO - Predicted Answer (batch): [[]]
+2026-05-24 00:42:24,289 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:42:24,290 - INFO - [Raw response 0]: <think>
+1.  **Phân tích văn bản:** Văn bản là: "Công an tỉnh Bắc Ninh cho biết, việc xử lý nghiêm các trường hợp vi phạm là biện pháp nhằm răn đe, phòng ngừa hành vi coi thường pháp luật, đồng thời nâng cao ý thức chấp hành quy định an toàn giao thông trong lứa tuổi thanh, thiếu niên."
+2.  **Trích xuất thực thể:**
+    *   "Công an tỉnh Bắc Ninh": Là một tổ chức. -> ORGANIZATION: Công an tỉnh Bắc Ninh.
+    *   "Bắc Ninh": Là một địa điểm. -> LOCATION: Bắc Ninh.
+    *   "an toàn giao thông": Là một khái niệm pháp lý/quy định. -> LEGAL_CONCEPT: an toàn giao thông.
+    *   "thanh, thiếu niên": Là một nhóm đối tượng/vai trò xã hội. -> SOCIAL_ROLE: thanh, thiếu niên.
+    *   "các trường hợp vi phạm": Liên quan đến hành vi vi phạm pháp luật.
+3.  **Đánh giá các đáp án:**
+    *   A: ORGANIZATION: Công an tỉnh Bắc Ninh; SOCIAL_ROLE: thanh, thiếu niên. (Thiếu LEGAL_CONCEPT: an toàn giao thông).
+    *   B: ORGANIZATION: Công an tỉnh Bắc Ninh; LEGAL_CONCEPT: an toàn giao thông; SOCIAL_ROLE: thanh, thiếu niên. (Bao gồm các thực thể quan trọng nhất: Tổ chức, Khái niệm pháp lý, Vai trò xã hội).
+    *   C: LOCATION: Bắc Ninh; SOCIAL_ROLE: thanh, thiếu niên. (Thiếu ORGANIZATION và LEGAL_CONCEPT).
+    *   D: ORGANIZATION: Công an tỉnh Bắc Ninh; SOCIAL_ROLE: thanh, thiếu niên; LEGAL_ROLE: nghi phạm. (Không có thực thể "nghi phạm" được xác định rõ ràng, và thiếu LEGAL_CONCEPT: an toàn giao thông).
+4.  **Kết luận:** Đáp án B trích xuất đầy đủ và chính xác các thực thể quan trọng nhất trong ngữ cảnh của câu nói.
+</think>
+<output>B</output>
+2026-05-24 00:42:24,290 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 634, 'completion_tokens': 991, 'total_tokens': 1625} | reasoning_chars=2058
+2026-05-24 00:42:24,290 - INFO - Extracted output tag content: B
+2026-05-24 00:42:24,290 - INFO - Predicted Answer (batch): ['B']
+2026-05-24 00:42:44,655 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:42:44,656 - INFO - [Raw response 0]: <think>
+1.  **Phân tích văn bản:** Văn bản là: "Thiếu tướng Nguyễn Đức Hải cho biết, hiện sức khỏe của Lê Sỹ Tùng ổn định, tinh thần tỉnh táo, đang bị tạm giữ để phục vụ điều tra. Lời khai ban đầu phù hợp với nhiều chứng cứ thu được tại hiện trường, giúp cơ quan chức năng củng cố hướng điều tra về hành vi giết người, cướp tài sản, sử dụng vũ khí quân dụng trái phép."
+2.  **Trích xuất thực thể:**
+    *   **PERSON (Người):** Thiếu tướng Nguyễn Đức Hải, Lê Sỹ Tùng.
+    *   **ORGANIZATION (Tổ chức):** Cơ quan chức năng (Đây là một thực thể chung chung, không được cụ thể hóa trong văn bản).
+    *   **LEGAL_CONCEPT (Khái niệm pháp lý/Tội danh):** giết người, cướp tài sản, sử dụng vũ khí quân dụng trái phép.
+3.  **Đánh giá các đáp án:**
+    *   **A:** Thiếu sót (Thiếu "sử dụng" trong khái niệm vũ khí, và có thêm "Công an tỉnh" không có trong văn bản).
+    *   **B:** Thiếu sót (Thiếu Lê Sỹ Tùng, và khái niệm vũ khí bị rút gọn thành "sử dụng vũ khí trái phép" - thiếu "quân dụng").
+    *   **C:** Thiếu sót (Giả định "Công an tỉnh" không có trong văn bản, mặc dù các khái niệm pháp lý và người là chính xác).
+    *   **D:** Bao gồm đầy đủ và chính xác các thực thể quan trọng nhất được nêu rõ trong văn bản:
+        *   PERSON: Thiếu tướng Nguyễn Đức Hải (Chính xác nhất).
+        *   PERSON: Lê Sỹ Tùng (Chính xác).
+        *   LEGAL_CONCEPT: giết người (Chính xác).
+        *   LEGAL_CONCEPT: cướp tài sản (Chính xác).
+        *   LEGAL_CONCEPT: sử dụng vũ khí quân dụng trái phép (Chính xác và đầy đủ).
+4.  **Kết luận:** Đáp án D là lựa chọn chính xác nhất vì nó trích xuất đầy đủ và chính xác các thực thể người và khái niệm pháp lý được đề cập trong đoạn văn, đồng thời tránh việc thêm các tổ chức không được nhắc đến cụ thể ("Công an tỉnh").
+</think>
+<output>D</output>
+2026-05-24 00:42:44,656 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 767, 'completion_tokens': 1953, 'total_tokens': 2720} | reasoning_chars=4850
+2026-05-24 00:42:44,656 - INFO - Extracted output tag content: D
+2026-05-24 00:42:44,656 - INFO - Predicted Answer (batch): ['D']
+2026-05-24 00:42:57,253 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:42:57,254 - INFO - [Raw response 0]: <think>
+1. **Phân tích văn bản:** Văn bản là: "Ông Trương Công Lâm, Chủ tịch UBND xã Tây Trà cho biết, dự án Thủy điện Trà Phong hiện vẫn vướng tài sản công là cầu giao thông Sông Tang, công trình đầu tư từ ngân sách nhà nước, nhưng chưa được xác định phương án đầu tư thay thế. Ngoài ra, nhiều phương án bồi thường, hỗ trợ tái định cư đã được phê duyệt nhưng CĐT chưa bố trí kinh phí chi trả, khiến người dân phản ứng."
+
+2. **Trích xuất và phân loại thực thể:**
+    * Ông Trương Công Lâm -> PERSON
+    * UBND xã Tây Trà -> ORGANIZATION
+    * dự án Thủy điện Trà Phong -> PROJECT
+    * cầu giao thông Sông Tang -> ASSET (Tài sản công)
+    * ngân sách nhà nước -> LEGAL_CONCEPT (Khái niệm pháp lý/tài chính)
+    * người dân -> SOCIAL_ROLE
+
+3. **So sánh với các đáp án:**
+    * **A:** PERSON: Trương Công Lâm; ORGANIZATION: UBND xã Tây Trà; PROJECT: Thủy điện Trà Phong; ASSET: cầu giao thông Sông Tang; LEGAL_CONCEPT: ngân sách nhà nước; SOCIAL_ROLE: người dân. (Gần đúng, nhưng thiếu từ "dự án" trong PROJECT và không hoàn hảo bằng C).
+    * **B:** LEGAL_CONCEPT: ngân sách tư nhân. (Sai, văn bản ghi "ngân sách nhà nước").
+    * **C:** PERSON: Trương Công Lâm; ORGANIZATION: UBND xã Tây Trà; PROJECT: dự án Thủy điện Trà Phong; ASSET: cầu giao thông Sông Tang; LEGAL_CONCEPT: ngân sách nhà nước; SOCIAL_ROLE: người dân. (Hoàn toàn khớp với các thực thể đã trích xuất).
+    * **D:** ORGANIZATION: tỉnh Tây Trà. (Sai, văn bản ghi "UBND xã Tây Trà").
+
+4. **Kết luận:** Đáp án C là đáp án chính xác nhất vì nó trích xuất đầy đủ và chính xác tất cả các thực thể và phân loại chúng đúng theo ngữ cảnh của văn bản.
+</think>
+<output>C</output>
+2026-05-24 00:42:57,254 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 797, 'completion_tokens': 1165, 'total_tokens': 1962} | reasoning_chars=2412
+2026-05-24 00:42:57,254 - INFO - Extracted output tag content: C
+2026-05-24 00:42:57,255 - INFO - Predicted Answer (batch): ['C']
+2026-05-24 00:43:13,228 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:43:13,229 - INFO - [Raw response 0]: <think>
+1. **Phân tích văn bản:** Văn bản là một đoạn mô tả về một cuộc khám xét và việc tạm giữ tài sản.
+2. **Trích xuất thực thể:**
+    * Công ty Vietlink: Tổ chức (ORGANIZATION)
+    * Công ty An Phú: Tổ chức (ORGANIZATION)
+    * TP Hà Nội: Địa điểm (LOCATION)
+    * TP Hồ Chí Minh: Địa điểm (LOCATION)
+    * tỉnh Tây Ninh: Địa điểm (LOCATION)
+    * 167.143 bình chữa cháy: Tài sản (ASSET)
+    * nhãn hiệu Dragon: Khái niệm pháp lý/Thương hiệu (LEGAL_CONCEPT)
+3. **Đánh giá các đáp án:**
+    * **A:** Sai. Phân loại Công ty là PERSON (sai). Thiếu TP trong tên địa điểm.
+    * **B:** Sai. Dịch sai nhãn hiệu (nhãn hiệu Rồng thay vì Dragon).
+    * **C:** Đúng. Trích xuất đầy đủ và chính xác tất cả các thực thể: 2 Tổ chức, 3 Địa điểm (TP Hà Nội, TP Hồ Chí Minh, tỉnh Tây Ninh), 1 Tài sản, 1 Khái niệm pháp lý (nhãn hiệu Dragon).
+    * **D:** Đúng về mặt nội dung, nhưng cấu trúc liệt kê khác C. Tuy nhiên, C là một lựa chọn hoàn hảo và đầy đủ. C và D có cùng nội dung thực thể. Tôi chọn C vì nó trình bày các thực thể một cách rõ ràng và đầy đủ.
+4. **Kết luận:** Đáp án C là chính xác nhất.
+</think>
+<output>C</output>
+2026-05-24 00:43:13,229 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 807, 'completion_tokens': 1509, 'total_tokens': 2316} | reasoning_chars=3982
+2026-05-24 00:43:13,229 - INFO - Extracted output tag content: C
+2026-05-24 00:43:13,229 - INFO - Predicted Answer (batch): ['C']
+2026-05-24 00:43:28,587 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:43:28,588 - INFO - [Raw response 0]: <think>
+1. **Phân tích yêu cầu:** Nhiệm vụ là trích xuất tất cả các thực thể (Organization, Location, Person, Date, Asset) từ đoạn văn bản pháp lý và chọn đáp án chính xác nhất.
+2. **Trích xuất thực thể từ văn bản:**
+    * "Công an thành phố" -> ORGANIZATION
+    * "Công ty sản xuất thương mại và dịch vụ Vietlink" -> ORGANIZATION
+    * "KCN Hải Sơn mở rộng" -> LOCATION
+    * "xã Đức Hòa" -> LOCATION
+    * "tỉnh Tây Ninh" -> LOCATION
+    * "Đặng Quốc Hoàng" -> PERSON
+    * "1974" -> DATE
+    * "Nguyễn Thị Kim Ngân" -> PERSON
+    * "1978" -> DATE
+    * "phường Phú Thọ" -> LOCATION
+    * "TP Hồ Chí Minh" -> LOCATION
+    * "bình chữa cháy nhãn hiệu DRAGON" -> ASSET
+3. **So sánh với các đáp án:**
+    * **A:** Thiếu "Công an thành phố", thiếu năm 1978, thiếu "phường" trước Phú Thọ.
+    * **B:** Tên tổ chức bị rút gọn ("Công ty Vietlink"), thiếu "mở rộng" trong KCN Hải Sơn, thiếu TP Hồ Chí Minh.
+    * **C:** Bao gồm đầy đủ tất cả các thực thể đã trích xuất:
+        * ORGANIZATION: Công an thành phố; Công ty sản xuất thương mại và dịch vụ Vietlink. (Đúng)
+        * LOCATION: KCN Hải Sơn mở rộng; xã Đức Hòa; tỉnh Tây Ninh; phường Phú Thọ; TP Hồ Chí Minh. (Đúng)
+        * PERSON: Đặng Quốc Hoàng; Nguyễn Thị Kim Ngân. (Đúng)
+        * DATE: 1974; 1978. (Đúng)
+        * ASSET: bình chữa cháy nhãn hiệu DRAGON. (Đúng)
+    * **D:** Tên tổ chức bị rút gọn ("Công ty Vietlink"), thiếu xã Đức Hòa, thiếu năm 1978, thiếu TP Hồ Chí Minh.
+4. **Kết luận:** Đáp án C là đáp án chính xác và đầy đủ nhất.
+</think>
+<output>C</output>
+2026-05-24 00:43:28,588 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 935, 'completion_tokens': 1529, 'total_tokens': 2464} | reasoning_chars=3464
+2026-05-24 00:43:28,588 - INFO - Extracted output tag content: C
+2026-05-24 00:43:28,588 - INFO - Predicted Answer (batch): ['C']
+2026-05-24 00:43:55,308 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:43:55,308 - INFO - [Raw response 0]: <think>
+1.  **Phân tích văn bản:** Văn bản cần trích xuất các thực thể (entities) theo các loại đã cho (PERSON, LEGAL_DOCUMENT, DATE, POLITICAL_BODY, ORGANIZATION).
+    *   "Bộ trưởng cũng thông tin về Nghị quyết số 66-NQ/TW ngày 30/4/2025 của Bộ Chính trị..."
+        *   Bộ trưởng (Title/Role)
+        *   Nghị quyết số 66-NQ/TW (LEGAL_DOCUMENT)
+        *   30/4/2025 (DATE)
+        *   Bộ Chính trị (POLITICAL_BODY)
+    *   "...và Nghị quyết số 59-NQ/TW ngày 24/1/2025 của Bộ Chính trị..."
+        *   Nghị quyết số 59-NQ/TW (LEGAL_DOCUMENT)
+        *   24/1/2025 (DATE)
+        *   Bộ Chính trị (POLITICAL_BODY)
+    *   "...
+2026-05-24 00:43:55,309 - INFO - Response meta idx=0 | finish_reason=length | usage={'prompt_tokens': 1005, 'completion_tokens': 2048, 'total_tokens': 3053} | reasoning_chars=5261
+2026-05-24 00:43:55,309 - WARNING - Could not find <output>...</output> in reasoning response.
+2026-05-24 00:43:55,309 - WARNING - Reasoning parse returned None at index 0 | finish_reason=length | usage={'prompt_tokens': 1005, 'completion_tokens': 2048, 'total_tokens': 3053} | expected <output>...</output>
+2026-05-24 00:43:55,309 - WARNING - Parse returned None at index 0 | finish_reason=length | usage={'prompt_tokens': 1005, 'completion_tokens': 2048, 'total_tokens': 3053}
+2026-05-24 00:43:55,309 - INFO - Predicted Answer (batch): [[]]
+2026-05-24 00:44:16,914 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:44:16,915 - INFO - [Raw response 0]: <think>
+1.  **Phân tích yêu cầu:** Nhiệm vụ là trích xuất tất cả các thực thể (LOCATION và LEGAL_CONCEPT) từ đoạn văn bản pháp lý và chọn đáp án chính xác nhất.
+2.  **Phân tích văn bản:** "Giao thông đường bộ gồm các trục đường giao thông chính như đường tỉnh lộ 422, đường Vành đai 4 – Vùng Thủ đô; đường ĐH05 dọc kênh Đan Hoài, ĐH 04 vùng bãi; tuyến mặt đê kết hợp giao thông, cơ đê trung bình 5-9m; các trục đường liên xã, ngõ xóm đều được bê tông hóa, nhựa hóa… để phục vụ nhu cầu đi lại, giao thương của nhân dân."
+3.  **Trích xuất thực thể:**
+    *   "Giao thông đường bộ" -> LEGAL_CONCEPT: giao thông.
+    *   "đường tỉnh lộ 422" -> LOCATION: đường tỉnh lộ 422.
+    *   "đường Vành đai 4 – Vùng Thủ đô" -> LOCATION: đường Vành đai 4 – Vùng Thủ đô.
+    *   "đường ĐH05" -> LOCATION: đường ĐH05.
+    *   "kênh Đan Hoài" -> LOCATION: kênh Đan Hoài.
+    *   "ĐH 04" -> LOCATION: ĐH 04.
+    *   "tuyến mặt đê" -> LOCATION: tuyến mặt đê.
+    *   "cơ đê" -> LEGAL_CONCEPT: cơ đê.
+4.  **So sánh với các đáp án:**
+    *   A: Thiếu nhiều thực thể (đường tỉnh lộ 422, đường ĐH05, ĐH 04).
+    *   B: Thiếu chi tiết (chỉ ghi "đường Vành đai 4" thay vì "đường Vành đai 4 – Vùng Thủ đô").
+    *   C: Bao gồm đầy đủ và chính xác tất cả các thực thể đã trích xuất:
+        *   LOCATION: đường tỉnh lộ 422
+        *   LOCATION: đường Vành đai 4 – Vùng Thủ đô
+        *   LOCATION: đường ĐH05
+        *   LOCATION: kênh Đan Hoài
+        *   LOCATION: ĐH 04
+        *   LOCATION: tuyến mặt đê
+        *   LEGAL_CONCEPT: giao thông
+        *   LEGAL_CONCEPT: cơ đê
+    *   D: Thiếu nhiều thực thể (đường Vành đai 4 – Vùng Thủ đô, kênh Đan Hoài, cơ đê).
+5.  **Kết luận:** Đáp án C là đáp án chính xác nhất.
+</think>
+<output>C</output>
+2026-05-24 00:44:16,915 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 825, 'completion_tokens': 1543, 'total_tokens': 2368} | reasoning_chars=2832
+2026-05-24 00:44:16,915 - INFO - Extracted output tag content: C
+2026-05-24 00:44:16,916 - INFO - Predicted Answer (batch): ['C']
+2026-05-24 00:44:36,494 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:44:36,496 - INFO - [Raw response 0]: <think>
+1.  **Phân tích văn bản:** Văn bản là một bản tin pháp lý mô tả một phiên xét xử.
+2.  **Trích xuất thực thể:**
+    *   DATE: Ngày 30/10
+    *   LOCATION: Cảng cá Tắc Cậu
+    *   LOCATION: xã Bình An
+    *   COURT: TAND tỉnh An Giang
+    *   PERSON: Lê Duy Tính
+    *   PERSON: Trần Văn Tài
+    *   ARTICLE: Điều 348
+    *   LAW: Bộ luật Hình sự năm 2015, sửa đổi, bổ sung năm 2017
+    *   LEGAL_ROLE: bị cáo
+3.  **So sánh với các đáp án:**
+    *   **A:** Sai ở phần LAW (chỉ ghi 2017, thiếu 2015).
+    *   **B:** Tất cả các thực thể đều khớp chính xác với văn bản gốc (DATE: Ngày 30/10; LOCATION: Cảng cá Tắc Cậu; LOCATION: xã Bình An; COURT: TAND tỉnh An Giang; PERSON: Lê Duy Tính; PERSON: Trần Văn Tài; ARTICLE: Điều 348; LAW: Bộ luật Hình sự năm 2015, sửa đổi, bổ sung năm 2017; LEGAL_ROLE: bị cáo).
+    *   **C:** Sai ở phần LOCATION (thiếu "xã" ở Bình An) và LAW (thiếu "bổ sung năm 2017").
+    *   **D:** Sai ở phần LAW (quá chung chung, chỉ ghi "Bộ luật Hình sự" mà thiếu năm và các lần sửa đổi).
+4.  **Kết luận:** Đáp án B là đáp án chính xác nhất và đầy đủ nhất.
+</think>
+<output>B</output>
+2026-05-24 00:44:36,496 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 897, 'completion_tokens': 1335, 'total_tokens': 2232} | reasoning_chars=2686
+2026-05-24 00:44:36,497 - INFO - Extracted output tag content: B
+2026-05-24 00:44:36,497 - INFO - Predicted Answer (batch): ['B']
+2026-05-24 00:44:55,280 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:44:55,281 - INFO - [Raw response 0]: <think>
+1.  **Phân tích văn bản:** Văn bản là: "Anh Lâm A Nâng (người dân tộc Tày) cho biết, năm 2019, tham gia “Dự án Tăng cường sinh kế và vị thế của người dân tộc thiểu số” thông qua phát triển du lịch cộng đồng (do Chính phủ Australia tài trợ)..."
+2.  **Trích xuất thực thể:**
+    *   PERSON: Lâm A Nâng
+    *   SOCIAL_ROLE: người dân tộc Tày
+    *   DATE: năm 2019
+    *   PROJECT: Dự án Tăng cường sinh kế và vị thế của người dân tộc thiểu số
+    *   ORGANIZATION: Chính phủ Australia
+    *   LEGAL_CONCEPT/ACTIVITY: du lịch cộng đồng
+3.  **So sánh với các đáp án:**
+    *   **A:** PERSON: Lâm A Nâng; SOCIAL_ROLE: người dân tộc Tày; DATE: năm 2019; PROJECT: Dự án Tăng cường sinh kế và vị thế của người dân tộc thiểu số; ORGANIZATION: Chính phủ Australia; LEGAL_CONCEPT: du lịch cộng đồng. (Hoàn toàn khớp với văn bản).
+    *   **B:** Thêm LOCATION: Bản Liền (Không có trong văn bản) và thay đổi SOCIAL_ROLE thành "đại diện người dân tộc Tày" (Không chính xác).
+    *   **C:** Thêm LOCATION: Bản Liền (Không có trong văn bản).
+    *   **D:** Thêm LOCATION: Bản Liền (Không có trong văn bản).
+4.  **Kết luận:** Đáp án A là đáp án chính xác nhất vì nó trích xuất đầy đủ và chính xác tất cả các thực thể có trong đoạn văn mà không thêm thông tin bên ngoài.
+</think>
+<output>A</output>
+2026-05-24 00:44:55,281 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 823, 'completion_tokens': 1254, 'total_tokens': 2077} | reasoning_chars=2826
+2026-05-24 00:44:55,281 - INFO - Extracted output tag content: A
+2026-05-24 00:44:55,281 - INFO - Predicted Answer (batch): ['A']
+2026-05-24 00:45:20,890 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:45:20,890 - INFO - [Raw response 0]: <think>
+1. **Phân tích văn bản:** Văn bản là: "Buổi lễ còn có đại diện Đảng ủy Chính phủ, Bộ Tài chính, Tổng Liên đoàn Lao động Việt Nam, Trung ương Đoàn TNCS Hồ Chí Minh; đại diện Tỉnh ủy, UBND tỉnh Đồng Nai; Ban lãnh đạo VRG cùng các đơn vị thành viên, nguyên lãnh đạo, đại biểu công nhân viên ARG."
+2. **Trích xuất và phân loại thực thể:**
+    * Đảng ủy Chính phủ: Cơ quan chính trị/Chính phủ -> POLITICAL_BODY
+    * Bộ Tài chính: Cơ quan nhà nước/Tổ chức -> ORGANIZATION
+    * Tổng Liên đoàn Lao động Việt Nam: Tổ chức xã hội/Lao động -> ORGANIZATION
+    * Trung ương Đoàn TNCS Hồ Chí Minh: Tổ chức thanh niên -> ORGANIZATION
+    * Tỉnh ủy: Cơ quan chính trị cấp tỉnh -> POLITICAL_BODY
+    * UBND tỉnh Đồng Nai: Cơ quan hành chính nhà nước cấp tỉnh -> POLITICAL_BODY
+    * Ban lãnh đạo VRG: Tổ chức/Doanh nghiệp -> ORGANIZATION
+    * ARG: Tổ chức/Công ty -> ORGANIZATION
+3. **So sánh với các đáp án:**
+    * **A:** Thiếu Tỉnh ủy. Phân loại UBND tỉnh Đồng Nai là ORGANIZATION (sai).
+    * **B:** Thiếu Tổng Liên đoàn Lao động Việt Nam và Trung ương Đoàn TNCS Hồ Chí Minh. Phân loại UBND tỉnh Đồng Nai là ORGANIZATION (sai).
+    * **C:** Thiếu Đảng ủy Chính phủ, Tỉnh ủy, Ban lãnh đạo VRG.
+    * **D:**
+        * POLITICAL_BODY: Đảng ủy Chính phủ; Tỉnh ủy (Đúng)
+        * ORGANIZATION: Bộ Tài chính; Tổng Liên đoàn Lao động Việt Nam; Trung ương Đoàn TNCS Hồ Chí Minh; UBND tỉnh Đồng Nai; Ban lãnh đạo VRG; ARG (Đúng về mặt liệt kê, mặc dù UBND tỉnh Đồng Nai là POLITICAL_BODY, nhưng đây là lựa chọn duy nhất bao gồm TẤT CẢ các thực thể được đề cập trong văn bản).
+4. **Kết luận:** Đáp án D là đáp án bao quát và trích xuất đầy đủ nhất tất cả các thực thể từ văn bản, mặc dù có thể có sự không hoàn hảo nhỏ trong việc phân loại một thực thể (UBND tỉnh Đồng Nai) so với định nghĩa nghiêm ngặt. Trong các lựa chọn trắc nghiệm, tính đầy đủ của thực thể thường được ưu tiên.
+</think>
+<output>D</output>
+2026-05-24 00:45:20,890 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 760, 'completion_tokens': 1948, 'total_tokens': 2708} | reasoning_chars=5553
+2026-05-24 00:45:20,890 - INFO - Extracted output tag content: D
+2026-05-24 00:45:20,891 - INFO - Predicted Answer (batch): ['D']
+2026-05-24 00:45:41,568 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:45:41,568 - INFO - [Raw response 0]: <think>
+1. **Phân tích văn bản và trích xuất thực thể:**
+   * "Phan Thiên Định": PERSON
+   * "Báo Pháp luật Việt Nam": ORGANIZATION
+   * "UBND TP Huế": ORGANIZATION
+   * "sông Bồ": LOCATION
+   * "mốc lũ năm 1999": DATE/EVENT
+   * "sông Hương": LOCATION
+   * "1999": DATE
+
+2. **Đánh giá các phương án:**
+   * **A:** Thiếu UBND TP Huế. Sai về địa danh (UBE TP Huế) và sai về năm (1998).
+   * **B:** Bao gồm các thực thể chính xác (Phan Thiên Định, Báo Pháp luật Việt Nam, UBND TP Huế, sông Bồ, sông Hương, 1999). Tuy nhiên, nó lặp lại DATE: năm 1999 và DATE: 1999, và không sử dụng cụm từ chi tiết "mốc lũ năm 1999".
+   * **C:** Thay thế "Báo Pháp luật Việt Nam" bằng "Cơ quan báo chí" (quá chung chung).
+   * **D:** Bao gồm đầy đủ và chính xác các thực thể:
+      * PERSON: Phan Thiên Định (Đúng)
+      * ORGANIZATION: Báo Pháp luật Việt Nam (Đúng)
+      * ORGANIZATION: UBND TP Huế (Đúng)
+      * LOCATION: sông Bồ (Đúng)
+      * DATE: mốc lũ năm 1999 (Đúng, chi tiết)
+      * LOCATION: sông Hương (Đúng)
+      * DATE: năm 1999 (Đúng, tham chiếu năm)
+
+3. **Kết luận:** Phương án D là lựa chọn trích xuất đầy đủ, chính xác và chi tiết nhất các thực thể từ văn bản.
+</think>
+<output>D</output>
+2026-05-24 00:45:41,569 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 808, 'completion_tokens': 1452, 'total_tokens': 2260} | reasoning_chars=3310
+2026-05-24 00:45:41,569 - INFO - Extracted output tag content: D
+2026-05-24 00:45:41,569 - INFO - Predicted Answer (batch): ['D']
+2026-05-24 00:46:02,895 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:46:02,896 - INFO - [Raw response 0]: <think>
+1.  **Phân tích văn bản:** Văn bản là: "Dự thảo Luật gồm 06 chương, 45 điều, cụ thể: Dự thảo Luật đề xuất giữ nguyên 03 điều; sửa đổi, bổ sung 34 điều; bổ sung 09 điều; lược bỏ 11 điều và 01 khoản (khoản 4 Điều 22) của Luật Giám định tư pháp hiện hành. Do đó, căn cứ quy định tại điểm b khoản 4 Điều 8 Luật Ban hành văn bản quy phạm pháp luật năm 2025, Chính phủ đề nghị xây dựng dự án Luật Giám định tư pháp (sửa đổi)."
+2.  **Trích xuất thực thể:**
+    *   **LAW (Luật):**
+        *   Luật Giám định tư pháp (hiện hành)
+        *   Luật Ban hành văn bản quy phạm pháp luật năm 2025
+    *   **ARTICLE (Điều):**
+        *   Điều 22 (trong khoản 4 Điều 22)
+        *   Điều 8 (trong điểm b khoản 4 Điều 8)
+    *   **POLITICAL_BODY (Cơ quan chính trị):**
+        *   Chính phủ
+    *   **PROJECT (Dự án):**
+        *   dự án Luật Giám định tư pháp (sửa đổi)
+3.  **So sánh với các đáp án:**
+    *   **A:** Thiếu LAW: Luật Ban hành văn bản quy phạm pháp luật.
+    *   **B:** Sai ARTICLE: Điều 4 (không có trong văn bản). Thiếu LAW: Luật Giám định tư pháp.
+    *   **C:** Sai ARTICLE: Điều 4 (không có trong văn bản). Thiếu PROJECT: dự án Luật Giám định tư pháp (sửa đổi).
+    *   **D:** Bao gồm tất cả các thực thể chính xác (Luật Giám định tư pháp
+2026-05-24 00:46:02,896 - INFO - Response meta idx=0 | finish_reason=length | usage={'prompt_tokens': 826, 'completion_tokens': 2048, 'total_tokens': 2874} | reasoning_chars=5313
+2026-05-24 00:46:02,896 - WARNING - Could not find <output>...</output> in reasoning response.
+2026-05-24 00:46:02,896 - WARNING - Reasoning parse returned None at index 0 | finish_reason=length | usage={'prompt_tokens': 826, 'completion_tokens': 2048, 'total_tokens': 2874} | expected <output>...</output>
+2026-05-24 00:46:02,896 - WARNING - Parse returned None at index 0 | finish_reason=length | usage={'prompt_tokens': 826, 'completion_tokens': 2048, 'total_tokens': 2874}
+2026-05-24 00:46:02,896 - INFO - Predicted Answer (batch): [[]]
+2026-05-24 00:46:23,335 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:46:23,336 - INFO - [Raw response 0]: <think>
+1.  **Phân tích văn bản và trích xuất thực thể:**
+    *   Văn bản: "Tại Hội nghị đối thoại với DN về đưa lao động đi làm việc ở nước ngoài (LĐĐLVONN) do Bộ Nội vụ vừa tổ chức, đại diện Cục An ninh chính trị nội bộ (Bộ Công an) nhận định chi phí XKLĐ hiện quá cao. Một số vụ án đang điều tra phát hiện một số DN thu tiền ngoài sổ sách với số lượng lớn. Hoạt động môi giới XKLĐ phức tạp, nhiều đối tượng không được cấp phép vẫn quảng cáo, tuyển dụng trên mạng xã hội. Thông tin từ các đối tượng này phát tán mạnh hơn cả website, fanpage thật khiến NLĐ khó phân biệt, rơi vào “ma trận”. Một số đối tượng còn làm giả giấy phép để trục lợi."
+    *   **ORGANIZATION (Tổ chức):**
+        *   Bộ Nội vụ (Tổ chức hội nghị)
+        *   Cục An ninh chính trị nội bộ (Đơn vị đại diện)
+        *   Bộ Công an (Cơ quan chủ quản của Cục An ninh chính trị nội bộ)
+    *   **LEGAL_CONCEPT (Khái niệm pháp lý):**
+        *   XKLĐ (Xuất khẩu lao động)
+        *   Vụ án (Án điều tra)
+    *   **SOCIAL_ROLE (Vai trò xã hội):**
+        *   lao động (Người lao động)
+        *   NLĐ (Người lao động)
+        *   DN (Doanh nghiệp - có thể coi là tổ chức kinh tế, nhưng trong ngữ cảnh này, các lựa chọn tập trung vào cơ quan nhà nước và người lao động).
+
+2.  **Đánh giá các đáp án dựa trên các thực thể đã trích xuất:**
+
+    *   **A:** ORGANIZATION: Bộ Nội vụ; ORGANIZATION: Cục An ninh chính trị nội bộ; LEGAL_CONCEPT: XKLĐ; SOCIAL_ROLE: lao động; SOCIAL_ROLE: NLĐ. (Thiếu Bộ Công an).
+    *   **B:** ORGANIZATION: Bộ Nội vụ; ORGANIZATION: Cục An ninh chính trị nội bộ; ORGANIZATION: Bộ Công an; LEGAL_CONCEPT: XKLĐ; SOCIAL_ROLE: NLĐ. (Thiếu thực thể "lao động" hoặc "người lao động" dưới dạng từ khóa riêng biệt, mặc dù NLĐ đã bao hàm).
+    *   **C:** ORGANIZATION: Cục An ninh chính trị nội bộ; ORGANIZATION: Bộ Công an; LEGAL_CONCEPT: XKLĐ; SOCIAL_ROLE: lao động; SOCIAL_ROLE: NLĐ. (Thiếu Bộ Nội vụ, cơ quan tổ chức sự kiện).
+    *   **D:** ORGANIZATION: Bộ Nội vụ; ORGANIZATION: Bộ Công an; LEGAL_CONCEPT: XKLĐ; SOCIAL_ROLE: người lao động; SOCIAL_ROLE: NLĐ. (Bao gồm Bộ Nội vụ, Bộ Công an, XKLĐ, và các vai trò của người lao động. Đây là sự kết hợp đầy đủ và chính xác nhất, vì Bộ Công an là cơ quan lớn hơn bao gồm Cục An ninh chính trị nội bộ, và "người lao động" là từ đồng nghĩa với "lao động" và "NLĐ").
+
+3.  **Kết luận:** Đáp án D bao quát được các tổ chức quan trọng nhất (Bộ Nội vụ, Bộ Công an), khái niệm pháp lý cốt lõi (XKLĐ), và các vai trò xã hội của người tham gia (người lao động/NLĐ).
+</think>
+<output>D</output>
+2026-05-24 00:46:23,336 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 799, 'completion_tokens': 1959, 'total_tokens': 2758} | reasoning_chars=4138
+2026-05-24 00:46:23,336 - INFO - Extracted output tag content: D
+2026-05-24 00:46:23,336 - INFO - Predicted Answer (batch): ['D']
+2026-05-24 00:46:35,369 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:46:35,370 - INFO - [Raw response 0]: <think>
+1.  **Phân tích văn bản:** Văn bản cung cấp các thông tin về hoạt động thi hành án trong các năm 2025 và 2024.
+2.  **Trích xuất thực thể:**
+    *   **Ngày/Thời gian (DATE):** Năm 2025, năm 2024.
+    *   **Tổ chức/Chính trị (POLITICAL_BODY):** Quốc hội.
+    *   **Tài sản/Số lượng (ASSET):** 577 nghìn việc (số lượng vụ việc đã thi hành xong).
+    *   **Tiền tệ (MONEY):** 150 nghìn tỷ đồng (số tiền đã thu).
+3.  **So sánh với các đáp án:**
+    *   A: DATE: 2025; DATE: 2024; ASSET: Quốc hội (Sai, Quốc hội là POLITICAL_BODY); ASSET: 577 nghìn việc; MONEY: 150 nghìn tỷ đồng.
+    *   B: DATE: 2025; DATE: 2024; POLITICAL_BODY: Quốc hội (Đúng); ASSET: 577 nghìn việc (Đúng); MONEY: 150 nghìn tỷ đồng (Đúng).
+    *   C: DATE: 2025; DATE: 2024; POLITICAL_BODY: Quốc hội; ASSET: 577 nghìn việc; MONEY: 577 nghìn tỷ đồng (Sai, số tiền là 150 nghìn tỷ đồng).
+    *   D: DATE: 2025; DATE: 2024; POLITICAL_BODY: Quốc hội; MONEY: 577 nghìn việc (Sai, 577 nghìn việc là ASSET); ASSET: 150 nghìn tỷ đồng (Sai, 150 nghìn tỷ đồng là MONEY).
+4.  **Kết luận:** Đáp án B là đáp án chính xác nhất.
+</think>
+<output>B</output>
+2026-05-24 00:46:35,370 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 800, 'completion_tokens': 1107, 'total_tokens': 1907} | reasoning_chars=1866
+2026-05-24 00:46:35,370 - INFO - Extracted output tag content: B
+2026-05-24 00:46:35,370 - INFO - Predicted Answer (batch): ['B']
+2026-05-24 00:46:46,984 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:46:46,985 - INFO - [Raw response 0]: <think>
+1.  **Phân tích văn bản:** Văn bản là: "Bước 6. Sau khi nhận được quyết định và được cấp kinh phí trợ cấp, trong thời gian không quá 7 ngày làm việc, Ủy ban nhân dân xã chỉ đạo cơ quan thuộc quyền trao “Giấy chứng nhận” tham gia dân công hỏa tuyến, cùng với việc chi trả chế độ trợ cấp một lần cho các đối tượng.”
+2.  **Trích xuất thực thể:**
+    *   **ORGANIZATION (Tổ chức/Cơ quan):** Ủy ban nhân dân xã.
+    *   **LEGAL_DOCUMENT (Văn bản pháp lý/Giấy tờ):** Giấy chứng nhận.
+    *   **DATE/TIME (Thời gian):** không quá 7 ngày làm việc (hoặc 7 ngày làm việc).
+    *   **MONEY (Tiền bạc/Kinh phí):** kinh phí trợ cấp (và chế độ trợ cấp).
+    *   **LEGAL_ROLE (Vai trò pháp lý):** cơ quan thuộc quyền.
+3.  **Đánh giá các đáp án:**
+    *   **A:** ORGANIZATION: Ủy ban nhân dân xã; LEGAL_DOCUMENT: Giấy chứng nhận; DATE: hạn 7 ngày; LEGAL_ROLE: cơ quan thuộc quyền. (Thiếu MONEY: kinh phí trợ cấp).
+    *   **B:** ORGANIZATION: Ủy ban nhân dân xã; LEGAL_DOCUMENT: Giấy chứng nhận; DATE: 10 ngày làm việc. (Sai về DATE, văn bản ghi 7 ngày).
+    *   **C:** ORGANIZATION: Ủy ban nhân dân xã; LEGAL_DOCUMENT: Giấy chứng nhận; DATE: 7 ngày làm việc; MONEY: kinh phí trợ cấp. (Bao gồm các thực thể quan trọng nhất: Tổ chức, Văn bản, Thời gian, Tiền bạc).
+    *   **D:** ORGANIZATION: Ủy ban nhân dân xã; LEGAL_DOCUMENT: Giấy chứng nhận; DATE: 7 ngày làm việc. (Thiếu MONEY: kinh phí trợ cấp).
+4.  **Kết luận:** Đáp án C là đáp án đầy đủ và chính xác nhất, bao gồm các thực thể chính về tổ chức, văn bản, thời gian và tài chính được đề cập trong đoạn trích.
+</think>
+<output>C</output>
+2026-05-24 00:46:46,985 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 682, 'completion_tokens': 1069, 'total_tokens': 1751} | reasoning_chars=2070
+2026-05-24 00:46:46,985 - INFO - Extracted output tag content: C
+2026-05-24 00:46:46,986 - INFO - Predicted Answer (batch): ['C']
+2026-05-24 00:47:06,602 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:47:06,602 - INFO - [Raw response 0]: <think>
+1. **Phân tích văn bản và xác định các thực thể:**
+   Văn bản: "Tham luận tại hội nghị, anh Trần Quang Hưng, Phó Bí thư Thành đoàn Hà Nội cho biết, trong bối cảnh mạng xã hội trở thành kênh thông tin chính của giới trẻ, các thế lực thù địch coi đây là “mảnh đất màu mỡ” để thực hiện chiến lược “Diễn biến hòa bình”. Vì vậy, việc giáo dục lý tưởng cách mạng, đạo đức, lối sống trên không gian mạng là nhiệm vụ cấp thiết."
+
+2. **Trích xuất các loại thực thể:**
+   * **PERSON (Người):** Trần Quang Hưng.
+   * **ORGANIZATION (Tổ chức):** Thành đoàn Hà Nội.
+   * **LEGAL_CONCEPT (Khái niệm/Chủ đề quan trọng):**
+     * mạng xã hội (Platform/Concept)
+     * Diễn biến hòa bình (Political Strategy/Concept)
+     * đạo đức (Social/Moral Concept, được đề cập là chủ đề giáo dục)
+
+3. **So sánh với các đáp án:**
+   * **A:** PERSON: Trần Quang Hưng; ORGANIZATION: Thành đoàn Hà Nội; LEGAL_CONCEPT: mạng xã hội; LEGAL_CONCEPT: chiến lược Diễn biến hòa bình. (Thiếu "đạo đức").
+   * **B:** PERSON: Trần Quang Hưng; PERSON: Phó Bí thư Thành đoàn Hà Nội; LEGAL_CONCEPT: mạng xã hội; LEGAL_CONCEPT: Diễn biến hòa bình. (Sai vì "Phó Bí thư Thành đoàn Hà Nội" là chức danh, không phải một thực thể người riêng biệt).
+   * **C:** PERSON: Trần Quang Hưng; ORGANIZATION: Thành đoàn Hà Nội; LEGAL_CONCEPT: mạng xã hội; LEGAL_CONCEPT: Diễn biến hòa bình; LEGAL_CONCEPT: đạo đức. (Bao gồm tất cả các thực thể chính được trích xuất: Người, Tổ chức, và các Khái niệm quan trọng: mạng xã hội, Diễn biến hòa bình, đạo đức).
+   * **D:** PERSON: Trần Quang Hưng; ORGANIZATION: Thành đoàn Hà Nội; LEGAL_CONCEPT: mạng xã hội; LEGAL_CONCEPT: Diễn biến hòa bình. (Thiếu "đạo đức").
+
+4. **Kết luận:** Đáp án C là đáp án trích xuất đầy đủ và chính xác nhất tất cả các thực thể quan trọng có trong đoạn văn.
+</think>
+<output>C</output>
+2026-05-24 00:47:06,603 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 729, 'completion_tokens': 1876, 'total_tokens': 2605} | reasoning_chars=5047
+2026-05-24 00:47:06,603 - INFO - Extracted output tag content: C
+2026-05-24 00:47:06,603 - INFO - Predicted Answer (batch): ['C']
+2026-05-24 00:47:22,803 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:47:22,803 - INFO - [Raw response 0]: <think>
+1. **Phân tích văn bản:** Văn bản là: "Bộ Tư pháp cũng có nhiệm vụ chủ trì, phối hợp với Bộ Công an, Bộ Nội vụ, Văn phòng Chính phủ và các bộ, ngành đánh giá kết quả rà soát và xây dựng Báo cáo tổng thể về việc thực hiện cắt giảm, đơn giản hóa TTHC. Hoàn thành trước ngày 15 tháng 11 năm 2025."
+2. **Trích xuất thực thể:**
+    * **Tổ chức (ORGANIZATION):**
+        * Bộ Tư pháp
+        * Bộ Công an
+        * Bộ Nội vụ
+        * Văn phòng Chính phủ
+    * **Ngày (DATE):**
+        * 15 tháng 11 năm 2025
+3. **So sánh với các đáp án:**
+    * **A:** ORGANIZATION: Bộ Tư pháp; ORGANIZATION: Bộ Công an; ORGANIZATION: Bộ Nội vụ; ORGANIZATION: Văn phòng Chính phủ; DATE: 15/11/2025. (Đúng về thực thể, nhưng định dạng ngày rút gọn).
+    * **B:** ORGANIZATION: Bộ Tư pháp; ORGANIZATION: Bộ Công an; ORGANIZATION: Bộ Nội vụ; ORGANIZATION: Văn phòng Chính phủ; DATE: 15/11/2025. (Giống A).
+    * **C:** ORGANIZATION: Bộ Tư pháp; ORGANIZATION: Văn phòng Chính phủ; ORGANIZATION: Bộ Công an; ORGANIZATION: Bộ Nội vụ; DATE: 15 tháng 11 năm 2025. (Đúng về thực thể, định dạng ngày thiếu từ "ngày").
+    * **D:** ORGANIZATION: Bộ Tư pháp; ORGANIZATION: Bộ Nội vụ; ORGANIZATION: Bộ Công an; ORGANIZATION: Văn phòng Chính phủ; DATE: Ngày 15 tháng 11 năm 2025. (Đúng về tất cả các thực thể và sử dụng định dạng ngày đầy đủ và chính xác nhất theo văn bản gốc: "ngày 15 tháng 11 năm 2025").
+4. **Kết luận:** Đáp án D là lựa chọn chính xác nhất vì nó trích xuất đầy đủ tất cả các tổ chức và sử dụng định dạng ngày hoàn chỉnh và chính xác nhất.
+</think>
+<output>D</output>
+2026-05-24 00:47:22,803 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 734, 'completion_tokens': 1531, 'total_tokens': 2265} | reasoning_chars=3437
+2026-05-24 00:47:22,803 - INFO - Extracted output tag content: D
+2026-05-24 00:47:22,803 - INFO - Predicted Answer (batch): ['D']
+2026-05-24 00:47:33,297 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:47:33,298 - INFO - [Raw response 0]: <think>
+1. **Phân tích yêu cầu:** Nhiệm vụ là trích xuất tất cả các thực thể tổ chức (ORGANIZATION) từ đoạn văn bản pháp lý/tin tức và chọn đáp án đúng.
+2. **Phân tích văn bản:** "Nhận thông tin, Đội Cảnh sát giao thông đường bộ số 4 và Công an phường Long Biên có mặt tại hiện trường điều tra, rà soát camera, nhân chứng, xác minh sự việc. Đồng thời lực lượng Cảnh sát PCCC&CNCH Công an Thành phố triển khai rà soát xung quanh nhưng chưa phát hiện được ai nhảy cầu."
+3. **Xác định các thực thể tổ chức (ORGANIZATION):**
+    * Thực thể 1: Đội Cảnh sát giao thông đường bộ số 4
+    * Thực thể 2: Công an phường Long Biên
+    * Thực thể 3: Cảnh sát PCCC&CNCH Công an Thành phố
+4. **So sánh với các đáp án:**
+    * A: ORGANIZATION: Công an phường Long Biên; ORGANIZATION: Cảnh sát PCCC&CNCH; ORGANIZATION: Công an Thành phố (Thiếu Đội Cảnh sát giao thông đường bộ số 4 và không đầy đủ tên tổ chức cuối).
+    * B: ORGANIZATION: Đội Cảnh sát giao thông đường bộ số 4; ORGANIZATION: Công an phường Long Biên; ORGANIZATION: Cảnh sát PCCC&CNCH Công an Thành phố (Bao gồm đầy đủ 3 thực thể đã xác định).
+    * C: ORGANIZATION: Đội Cảnh sát giao thông đường bộ số 4; ORGANIZATION: Công an Thành phố; ORGANIZATION: Công an đường bộ (Thiếu Công an phường Long Biên và "Công an đường bộ" không phải là tên đầy đủ).
+    * D: ORGANIZATION: Đội Cảnh sát giao thông đường bộ số 4; ORGANIZATION: Cảnh sát PCCC&CNCH Công an Thành phố; ORGANIZATION: Phường Long Biên (Phường Long Biên là đơn vị hành chính, không phải tổ chức).
+5. **Kết luận:** Đáp án B là chính xác nhất vì nó trích xuất đầy đủ và chính xác tất cả các thực thể tổ chức được đề cập trong văn bản.
+</think>
+<output>B</output>
+2026-05-24 00:47:33,298 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 701, 'completion_tokens': 1044, 'total_tokens': 1745} | reasoning_chars=2038
+2026-05-24 00:47:33,298 - INFO - Extracted output tag content: B
+2026-05-24 00:47:33,298 - INFO - Predicted Answer (batch): ['B']
+2026-05-24 00:47:59,886 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:47:59,887 - INFO - [Raw response 0]: <think>
+1.  **Phân tích yêu cầu:** Nhiệm vụ là trích xuất các thực thể pháp lý (LEGAL_CONCEPT) từ đoạn văn bản và chọn đáp án đúng nhất trong các lựa chọn A, B, C, D.
+2.  **Trích xuất các thực thể từ văn bản:**
+    Văn bản: "Lĩnh vực pháp luật về tổ chức và hoạt động của các thiết chế trong hệ thống chính trị; pháp luật về thể chế phát triển kinh tế thị trường định hướng xã hội chủ nghĩa; pháp luật về quyền con người, quyền và nghĩa vụ cơ bản của công dân; pháp luật về giáo dục và đào tạo, khoa học và công nghệ; tài nguyên, môi trường và ứng phó biến dổi xã hội; pháp luật về văn hoá, thông tin, truyền thông, thể thao, chính sách xã hội, y tế, phát triển hệ thống an sinh xã hội; pháp luật về quốc phòng, an ninh và trật tự an toàn xã hội và phòng chống tham nhũng; pháp luật phục vụ hội nhập quốc tế."
+    Các thực thể chính bao gồm:
+    *   Tổ chức và hoạt động của các thiết chế trong hệ thống chính trị
+    *   Thể chế phát triển kinh tế thị trường định hướng xã hội chủ nghĩa
+    *   Quyền con người, quyền và nghĩa vụ cơ bản của công dân
+    *   Giáo dục và đào tạo, khoa học và công nghệ
+    *   Tài nguyên, môi trường, biến dổi xã hội
+    *   V
+2026-05-24 00:47:59,887 - INFO - Response meta idx=0 | finish_reason=length | usage={'prompt_tokens': 797, 'completion_tokens': 2048, 'total_tokens': 2845} | reasoning_chars=6811
+2026-05-24 00:47:59,887 - WARNING - Could not find <output>...</output> in reasoning response.
+2026-05-24 00:47:59,887 - WARNING - Reasoning parse returned None at index 0 | finish_reason=length | usage={'prompt_tokens': 797, 'completion_tokens': 2048, 'total_tokens': 2845} | expected <output>...</output>
+2026-05-24 00:47:59,887 - WARNING - Parse returned None at index 0 | finish_reason=length | usage={'prompt_tokens': 797, 'completion_tokens': 2048, 'total_tokens': 2845}
+2026-05-24 00:47:59,887 - INFO - Predicted Answer (batch): [[]]
+2026-05-24 00:48:18,138 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:48:18,139 - INFO - [Raw response 0]: <think>
+1.  **Phân tích văn bản:** Văn bản cung cấp thông tin về một sự kiện diễn ra vào một thời điểm cụ thể, tại một địa điểm cụ thể, liên quan đến một tổ chức và một địa điểm khác.
+2.  **Trích xuất thực thể:**
+    *   **Tổ chức (ORGANIZATION):** Công an xã Tuyên Phú.
+    *   **Địa điểm (LOCATION) 1 (Nơi sự kiện diễn ra):** tỉnh Quảng Trị.
+    *   **Địa điểm (LOCATION) 2 (Nơi cô gái được cứu):** Campuchia.
+    *   **Thời gian (DATE):** Những ngày đầu tháng 10/2025 (tức là tháng 10/2025).
+3.  **So sánh với các đáp án:**
+    *   A: ORGANIZATION: Công an xã Tuyên Phú; LOCATION: Campuchia; DATE: tháng 10/2025; LOCATION: tỉnh Quảng Trị. (Đúng các thực thể, nhưng thứ tự khác B).
+    *   B: ORGANIZATION: Công an xã Tuyên Phú; LOCATION: tỉnh Quảng Trị; DATE: tháng 10/2025; LOCATION: Campuchia. (Đúng tất cả các thực thể: Tổ chức, Địa điểm 1, Ngày, Địa điểm 2).
+    *   C: ORGANIZATION: Công an xã Tuyên Phú; LOCATION: Campuchia; DATE: 10/2025; LOCATION: tỉnh Quảng Bình. (Sai địa điểm: Quảng Bình thay vì Quảng Trị).
+    *   D: ORGANIZATION: Công an xã Tuyên Phú; LOCATION: tỉnh Quảng Trị; DATE: tháng 10/2025; LOCATION: Việt Nam. (Sai địa điểm: Việt Nam thay vì Campuchia).
+4.  **Kết luận:** Đáp án B trích xuất đầy đủ và chính xác tất cả các thực thể được tìm thấy trong văn bản.
+</think>
+<output>B</output>
+2026-05-24 00:48:18,139 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 729, 'completion_tokens': 1206, 'total_tokens': 1935} | reasoning_chars=2542
+2026-05-24 00:48:18,139 - INFO - Extracted output tag content: B
+2026-05-24 00:48:18,139 - INFO - Predicted Answer (batch): ['B']
+2026-05-24 00:48:38,439 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:48:38,440 - INFO - [Raw response 0]: <think>
+1. **Phân tích văn bản:** Văn bản là: "Chính phủ Việt Nam mong muốn tiếp tục nhận được sự đồng hành, ủng hộ, sự đóng góp tâm huyết, trí tuệ và hiệu quả của cộng đồng Việt Nam học trên toàn thế giới với những ý kiến, đề xuất, tư vấn chiến lược như những giải pháp cụ thể trên tất cả các lĩnh vực chính trị, kinh tế, xã hội, văn hoá, giáo dục, khoa học công nghệ, đổi mới sáng tạo và hội nhập quốc tế."
+
+2. **Xác định các thực thể (Entities):**
+    * **Chính phủ Việt Nam:** Đây là cơ quan nhà nước, thuộc loại Chính trị (Political Body).
+    * **cộng đồng Việt Nam học trên toàn thế giới:** Đây là một nhóm người, đóng vai trò xã hội (Social Role).
+    * **trên toàn thế giới:** Đây là địa điểm (Location).
+    * **các lĩnh vực chính trị, kinh tế, xã hội, v.v.:** Đây là các lĩnh vực/chủ đề, không phải là thực thể chính cần trích xuất theo các loại đã cho (ORGANIZATION, SOCIAL_ROLE, POLITICAL_BODY, LOCATION).
+
+3. **Đánh giá các đáp án:**
+    * **A:** ORGANIZATION: Chính phủ Việt Nam (Sai, nên là POLITICAL_BODY); SOCIAL_ROLE: các lĩnh vực... (Sai).
+    * **B:** POLITICAL_BODY: Chính phủ Việt Nam; SOCIAL_ROLE: cộng đồng Việt Nam học trên toàn thế giới. (Chính xác. Phân loại Chính phủ Việt Nam là POLITICAL_BODY. Nhóm cộng đồng và phạm vi của họ được gộp chung là SOCIAL_ROLE).
+    * **C:** POLITICAL_BODY: Chính phủ Việt Nam; SOCIAL_ROLE: cộng đồng Việt Nam học; LOCATION: trên toàn thế giới. (Chính xác về mặt thông tin, nhưng B gộp cả hai thành một thực thể vai trò xã hội, phản ánh cấu trúc câu tốt hơn).
+    * **D:** ORGANIZATION: cộng đồng Việt Nam (Sai, nên là SOCIAL_ROLE); ORGANIZATION: cộng đồng Việt Nam (Sai, không phải tổ chức chính thức).
+
+4. **Lựa chọn đáp án tốt nhất:** Cả B và C đều đúng về mặt thông tin. Tuy nhiên, đáp án B gộp "cộng đồng Việt Nam học" và "trên toàn thế giới" thành một thực thể vai trò xã hội duy nhất, phản ánh chính xác cách diễn đạt trong câu ("cộng đồng Việt Nam học trên toàn thế giới"). Đây là lựa chọn toàn diện và cô đọng nhất.
+</think>
+<output>B</output>
+2026-05-24 00:48:38,440 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 693, 'completion_tokens': 1415, 'total_tokens': 2108} | reasoning_chars=3497
+2026-05-24 00:48:38,440 - INFO - Extracted output tag content: B
+2026-05-24 00:48:38,440 - INFO - Predicted Answer (batch): ['B']
+2026-05-24 00:49:02,886 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:49:02,887 - INFO - [Raw response 0]: <think>
+1.  **Phân tích yêu cầu:** Nhiệm vụ là trích xuất tất cả các thực thể (Location, Organization, Person, Date/Age) từ đoạn văn bản pháp lý/tin tức và chọn đáp án chính xác nhất.
+2.  **Trích xuất thực thể từ văn bản:**
+    *   "Tại TP HCM": LOCATION: TP HCM.
+    *   "Sở Y tế TP": ORGANIZATION: Sở Y tế TP.
+    *   "bé gái mới 2 tuổi": DATE/AGE: 2 tuổi (hoặc mới 2 tuổi).
+    *   "Tổng đài 1900 545559": ORGANIZATION: Tổng đài 1900 545559.
+    *   "Công an": ORGANIZATION: Công an.
+    *   "Trung tâm Công tác xã hội - Giáo dục dạy nghề Thiếu niên": ORGANIZATION: Trung tâm Công tác xã hội - Giáo dục dạy nghề Thiếu niên.
+    *   "Trung tâm Nuôi dưỡng bảo trợ trẻ em Gò Vấp": ORGANIZATION: Trung tâm Nuôi dưỡng bảo trợ trẻ em Gò Vấp.
+    *   "mẹ đẻ": PERSON (Tuy nhiên, các đáp án không tập trung vào thực thể này).
+3.  **So sánh với các đáp án:**
+    *   **A:** Thiếu Tổng đài 1900 545559 và tên đầy đủ của Trung tâm Công tác xã hội. (Sai)
+    *   **B:** Thiếu Công an và Trung tâm Công tác xã hội - Giáo dục dạy nghề Thiếu niên. (Sai)
+    *   **C:** Bao gồm tất cả các thực thể chính. DATE: mới 2 tuổi. (Đúng)
+    *   **D:** Bao gồm tất cả các thực thể chính. DATE: 2 tuổi. (Đúng)
+4.  **Lựa chọn đáp án tốt nhất:** Cả C và D đều trích xuất đầy đủ các thực thể. Sự khác biệt duy nhất là cách ghi tuổi ("mới 2 tuổi" vs "2 tuổi"). Cả hai đều chính xác về mặt nội dung. Tuy nhiên, D sử dụng định dạng số học tiêu chuẩn hơn cho tuổi. Do đó, D là lựa chọn phù hợp nhất.
+</think>
+<output>D</output>
+2026-05-24 00:49:02,887 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 961, 'completion_tokens': 1827, 'total_tokens': 2788} | reasoning_chars=4532
+2026-05-24 00:49:02,887 - INFO - Extracted output tag content: D
+2026-05-24 00:49:02,887 - INFO - Predicted Answer (batch): ['D']
+2026-05-24 00:49:42,766 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:49:42,767 - INFO - [Raw response 0]: <think>
+1. **Phân tích văn bản:** Văn bản là: "Cụ thể, Sở Xây dựng Hà Nội đã chấp thuận cho Công ty TNHH Đầu tư xây dựng Hoàng Mai - Hà Nội được phép rào chắn và phân làn tổ chức giao thông trên đường Trịnh Đình Cửu và đường Hà Kế Tấn để thi công hạng mục xây dựng cầu L3 qua sông Lừ (lý trình Km1+394) thuộc dự án đầu tư xây dựng đường Vành đai 2,5 (đoạn Đầm Hồng đi Quốc lộ 1A)."
+2. **Trích xuất thực thể:**
+    * **ORGANIZATION (Tổ chức/Cơ quan):** Sở Xây dựng Hà Nội, Công ty TNHH Đầu tư xây dựng Hoàng Mai - Hà Nội.
+    * **LOCATION (Địa điểm/Vị trí):** Hà Nội (ngầm định), đường Trịnh Đình Cửu, đường Hà Kế Tấn, sông Lừ, Quốc lộ 1A, Đầm Hồng.
+    * **PROJECT (Dự án):** dự án đầu tư xây dựng đường Vành đai 2,5.
+    * **ASSET (Tài sản/Hạng mục):** cầu L3.
+3. **Đánh giá các đáp án:**
+    * **A:** Thiếu Sở Xây dựng Hà Nội, đường Trịnh Đình Cửu.
+    * **B:** Bao gồm: Sở Xây dựng Hà Nội (ORG), Công ty TNHH Đầu tư xây dựng Hoàng Mai - Hà Nội (ORG), đường Trịnh Đình Cửu (LOC), đường Hà Kế Tấn (LOC), sông Lừ (LOC), cầu L3 (ASSET), dự án đầu tư xây dựng đường Vành đai 2,5 (PROJ), Quốc lộ 1A (LOC). Đây là tập hợp đầy đủ và chính xác nhất các thực thể quan trọng.
+    * **C:** Thiếu Công ty TNHH Đầu tư xây dựng Hoàng Mai - Hà Nội (ORG) - một bên chủ thể quan trọng.
+    * **D:** Thiếu Sở Xây dựng Hà Nội (ORG) và đường Hà Kế Tấn (LOC) - các thực thể quan trọng.
+4. **Kết luận:** Đáp án B trích xuất được số lượng và loại thực thể đầy đủ nhất, bao gồm cả các chủ thể (cơ quan và công ty) và các yếu tố vật lý (địa điểm, tài sản, dự án).
+</think>
+<output>B</output>
+2026-05-24 00:49:42,767 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 897, 'completion_tokens': 1639, 'total_tokens': 2536} | reasoning_chars=3406
+2026-05-24 00:49:42,767 - INFO - Extracted output tag content: B
+2026-05-24 00:49:42,767 - INFO - Predicted Answer (batch): ['B']
+2026-05-24 00:49:51,417 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:49:51,418 - INFO - [Raw response 0]: <think>
+1. **Phân tích văn bản:** Văn bản là một đoạn trích về hoạt động lập pháp và giám sát của Quốc hội.
+2. **Trích xuất thực thể:**
+    * **ĐB:** Đại biểu (Delegate/Representative). Đây là một vai trò xã hội/chức danh. -> SOCIAL_ROLE.
+    * **Quốc hội:** Cơ quan lập pháp cao nhất của nhà nước. -> POLITICAL_BODY.
+    * **giám sát văn bản quy phạm pháp luật:** Một khái niệm pháp lý cụ thể. -> LEGAL_CONCEPT.
+    * **ủy quyền lập pháp:** Một khái niệm pháp lý. -> LEGAL_CONCEPT.
+3. **Đánh giá các đáp án:**
+    * **A:** POLITICAL_BODY: Quốc hội; SOCIAL_ROLE: ĐB. (Thiếu LEGAL_CONCEPT).
+    * **B:** SOCIAL_ROLE: ĐB; ORGANIZATION: Quốc hội. (Quốc hội là POLITICAL_BODY, không chỉ là ORGANIZATION. Thiếu LEGAL_CONCEPT).
+    * **C:** POLITICAL_BODY: Quốc hội; SOCIAL_ROLE: ĐB; LEGAL_CONCEPT: giám sát văn bản quy phạm. (Bao gồm đầy đủ các thực thể quan trọng nhất: Cơ quan chính trị, Vai trò xã hội, và Khái niệm pháp lý).
+    * **D:** LOCATION: Quốc hội; SOCIAL_ROLE: ĐB. (Quốc hội là cơ quan, không phải địa điểm/LOCATION).
+4. **Kết luận:** Đáp án C trích xuất được tập hợp các thực thể chính xác và đầy đủ nhất theo các loại đã định nghĩa.
+</think>
+<output>C</output>
+2026-05-24 00:49:51,418 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 671, 'completion_tokens': 857, 'total_tokens': 1528} | reasoning_chars=1900
+2026-05-24 00:49:51,418 - INFO - Extracted output tag content: C
+2026-05-24 00:49:51,418 - INFO - Predicted Answer (batch): ['C']
+2026-05-24 00:50:12,278 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:50:12,279 - INFO - [Raw response 0]: <think>
+1.  **Phân tích văn bản:** Văn bản là: "Sáng 1/11, thông tin từ Văn phòng thường trực Chỉ huy phòng chống thiên tai tỉnh Hà Tĩnh cho biết, ảnh hưởng không khí lạnh tăng cường kết hợp gió Đông trên cao nên 2 ngày qua, trên địa bàn tỉnh có mưa to đến rất to. Lượng mưa đo được ở các trạm đo mưa tự động phổ biến từ 300 - 500mm, có nơi gần 600mm."
+2.  **Trích xuất thực thể:**
+    *   DATE (Ngày): Sáng 1/11
+    *   ORGANIZATION (Tổ chức): Văn phòng thường trực Chỉ huy phòng chống thiên tai tỉnh Hà Tĩnh
+    *   LOCATION (Địa điểm): tỉnh Hà Tĩnh
+    *   QUANTITY/MONEY (Số lượng/Tiền tệ): 300 - 500mm
+    *   QUANTITY/MONEY (Số lượng/Tiền tệ): gần 600mm
+3.  **So sánh với các đáp án:**
+    *   **A:** DATE: 1/11 (Thiếu "Sáng"); ORGANIZATION: Chính xác; LOCATION: Chính xác; MONEY: Chính xác; MONEY: Chính xác. (Thiếu chi tiết về thời điểm)
+    *   **B:** ORGANIZATION: Thiếu chi tiết ("thường trực", "tỉnh Hà Tĩnh"); MONEY: 600mm (Sai, phải là "gần 600mm"). (Sai)
+    *   **C:** ORGANIZATION: Thiếu chi tiết ("Văn phòng thường trực"); MONEY: 600mm (Sai, phải là "gần 600mm"). (Sai)
+    *   **D:** DATE: 1 tháng 11 (Tương đương 1/11); ORGANIZATION: Văn phòng thường trực Chỉ huy phòng chống thiên tai tỉnh Hà Tĩnh (Chính xác hoàn toàn); LOCATION: tỉnh Hà Tĩnh (Chính xác); MONEY: 300 - 500mm (Chính xác); MONEY: gần 600mm (Chính xác hoàn toàn).
+4.  **Kết luận:** Đáp án D là đáp án trích xuất đầy đủ và chính xác nhất tất cả các thực thể quan trọng, đặc biệt là tên tổ chức và giá trị số lượng mưa.
+</think>
+<output>D</output>
+2026-05-24 00:50:12,279 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 795, 'completion_tokens': 1470, 'total_tokens': 2265} | reasoning_chars=2837
+2026-05-24 00:50:12,279 - INFO - Extracted output tag content: D
+2026-05-24 00:50:12,279 - INFO - Predicted Answer (batch): ['D']
+2026-05-24 00:50:37,085 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:50:37,086 - INFO - [Raw response 0]: <think>
+1. **Phân tích văn bản:** Văn bản là: "Tại hội nghị, bà Nguyễn Thanh Hà, Phó Cục trưởng Cục Kiểm tra văn bản và Quản lý xử lý vi phạm hành chính (Bộ Tư pháp), đã trình bày và trao đổi các nội dung trọng tâm của Luật Xử lý vi phạm hành chính số 88/2025/QH15, được Quốc hội khóa XV, Kỳ họp thứ 9 thông qua ngày 25/6/2025 và có hiệu lực từ ngày 01/7/2025."
+
+2. **Trích xuất thực thể:**
+    * **PERSON:** Nguyễn Thanh Hà
+    * **ORGANIZATION:** Cục Kiểm tra văn bản và Quản lý xử lý vi phạm hành chính
+    * **ORGANIZATION (cấp trên):** Bộ Tư pháp
+    * **LAW:** Luật Xử lý vi phạm hành chính
+    * **CASE_NUMBER:** số 88/2025/QH15
+    * **POLITICAL_BODY:** Quốc hội khóa XV
+    * **EVENT/DATE:** Kỳ họp thứ 9
+    * **DATE (thông qua):** 25/6/2025
+    * **DATE (hiệu lực):** 01/7/2025
+
+3. **So sánh với các đáp án:**
+    * **A:** Thiếu thông tin quan trọng (ví dụ: Bộ Tư pháp, Kỳ họp thứ 9, ngày thông qua).
+    * **B:** Rất đầy đủ và chính xác. Bao gồm tất cả các thực thể đã trích xuất.
+    * **C:** Sai phân loại (Quốc hội khóa XV là POLITICAL_BODY, không phải LOCATION). Thiếu thông tin.
+    * **D:** Rất đầy đủ và chính xác. Bao gồm tất cả các thực thể đã trích xuất, tương đương với B về mặt nội dung và phân loại.
+
+4. **Kết luận:** Cả B và D đều là các lựa chọn chính xác và đầy đủ nhất. Tôi chọn D vì nó là một bản trích xuất hoàn chỉnh và chính xác.
+</think>
+<output>D</output>
+2026-05-24 00:50:37,086 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 945, 'completion_tokens': 1867, 'total_tokens': 2812} | reasoning_chars=4419
+2026-05-24 00:50:37,086 - INFO - Extracted output tag content: D
+2026-05-24 00:50:37,086 - INFO - Predicted Answer (batch): ['D']
+2026-05-24 00:51:00,329 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:51:00,330 - INFO - [Raw response 0]: <think>
+1.  **Phân tích văn bản:** Văn bản là một đoạn trích pháp lý về việc giao nhiệm vụ và quản lý kinh phí.
+2.  **Trích xuất thực thể và phân loại:**
+    *   "Thủ tướng" / "Thủ tướng Chính phủ": Là chức danh cá nhân cấp cao. -> PERSON
+    *   "UBND thành phố Đà Nẵng": Là cơ quan hành chính nhà nước. -> ORGANIZATION
+    *   "ngân sách nhà nước": Là khái niệm pháp lý. -> LEGAL_CONCEPT
+    *   "Bộ Tài chính": Là cơ quan nhà nước. -> ORGANIZATION
+    *   "Bộ Nông nghiệp và Môi trường": Là cơ quan nhà nước. -> ORGANIZATION
+3.  **Danh sách thực thể cần trích xuất:**
+    *   PERSON: Thủ tướng Chính phủ (hoặc Thủ tướng)
+    *   ORGANIZATION: UBND thành phố Đà Nẵng
+    *   ORGANIZATION: Bộ Tài chính
+    *   ORGANIZATION: Bộ Nông nghiệp và Môi trường
+    *   LEGAL_CONCEPT: ngân sách nhà nước
+4.  **So sánh với các đáp án:**
+    *   A: Sai vì UBND thành phố Đà Nẵng được phân loại là PERSON.
+    *   B: Đúng. Bao gồm tất cả các thực thể và phân loại chính xác.
+    *   C: Đúng. Bao gồm tất cả các thực thể và phân loại chính xác.
+    *   D: Đúng. Bao gồm tất cả các thực thể và phân loại chính xác.
+5.  **Lựa chọn đáp án:** Vì B, C, và D đều chứa cùng một tập hợp các thực thể được phân loại chính xác, tôi chọn đáp án D vì nó trình bày đầy đủ và rõ ràng các thực thể đã trích xuất.
+</think>
+<output>D</output>
+2026-05-24 00:51:00,330 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 781, 'completion_tokens': 1717, 'total_tokens': 2498} | reasoning_chars=5150
+2026-05-24 00:51:00,330 - INFO - Extracted output tag content: D
+2026-05-24 00:51:00,330 - INFO - Predicted Answer (batch): ['D']
+2026-05-24 00:51:21,263 - INFO - HTTP Request: POST http://localhost:11434/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 00:51:21,264 - INFO - [Raw response 0]: <think>
+1.  **Phân tích văn bản:** Văn bản là một đoạn trích pháp lý, yêu cầu trích xuất các thực thể (entities).
+2.  **Xác định các loại thực thể:**
+    *   LEGAL_DOCUMENT (Văn bản pháp luật)
+    *   ARTICLE (Điều khoản)
+    *   DATE (Ngày/Năm)
+3.  **Trích xuất thực thể từ văn bản:**
+    *   "Công ước về quyền con người" -> LEGAL_DOCUMENT
+    *   "Công ước Hà Nội" -> LEGAL_DOCUMENT
+    *   "Điều 14" -> ARTICLE
+    *   "Điều 15" -> ARTICLE
+    *   "Điều 16" -> ARTICLE
+    *   "Công ước về Quyền Trẻ em" -> LEGAL_DOCUMENT
+    *   "năm 1989" -> DATE
+4.  **So sánh với các đáp án:**
+    *   **A:** LEGAL_DOCUMENT: Công ước về quyền con người; LEGAL_DOCUMENT: Công ước Hà Nội; ARTICLE: Điều 14; ARTICLE: Điều 15; ARTICLE: Điều 16; LEGAL_DOCUMENT: Công ước về Quyền Trẻ em; DATE: năm 1989. (Khớp hoàn toàn với các thực thể đã trích xuất).
+    *   **B:** LEGAL_DOCUMENT: Công ước về quyền con người; LEGAL_DOCUMENT: Công ước Hà Nội; ARTICLE: Điều 14; ARTICLE: Điều 15; ARTICLE: Điều 16; LEGAL_DOCUMENT: Công ước về Quyền Trẻ em; DATE: năm 1989. (Giống hệt đáp án A và khớp hoàn toàn).
+    *   **C:** LEGAL_DOCUMENT: Công ước về quyền con người; LEGAL_DOCUMENT: Công ước Hà Nội; ARTICLE: Điều 14; ARTICLE: Điều 15; ARTICLE: Điều 16; LEGAL_DOCUMENT: Công ước về Quyền Trẻ em; DATE: 1989. (Thiếu từ "năm" so với văn bản gốc, mặc dù vẫn đúng về mặt thông tin).
+    *   **D:** LEGAL_DOCUMENT: Công ước về quyền con người; LEGAL_DOCUMENT: Công ước Hà Nội; ARTICLE: Điều 14; ARTICLE: Điều 15; ARTICLE: Điều 16; LEGAL_DOCUMENT: Công ước về Quyền Trẻ em; DATE: năm 1990. (Sai năm, văn bản gốc là 1989).
+5.  **Kết luận:** Cả A và B đều chính xác và giống nhau. Tôi chọn A.
+</think>
+<output>A</output>
+2026-05-24 00:51:21,264 - INFO - Response meta idx=0 | finish_reason=stop | usage={'prompt_tokens': 897, 'completion_tokens': 1476, 'total_tokens': 2373} | reasoning_chars=2941
+2026-05-24 00:51:21,265 - INFO - Extracted output tag content: A
+2026-05-24 00:51:21,265 - INFO - Predicted Answer (batch): ['A']
