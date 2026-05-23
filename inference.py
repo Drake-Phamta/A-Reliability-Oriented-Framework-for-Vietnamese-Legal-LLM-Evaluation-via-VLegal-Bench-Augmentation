@@ -38,7 +38,7 @@ class VLLM:
         dataset_path: str,
         prompt_mode: str = "fewshot",
         base_url: Optional[str] = None,
-        batch_size: int = 4,
+        batch_size: int = 1,
         max_model_len: Optional[int] = 4096,
         reasoning_max_tokens: int = 2048,
         delay_between_requests: float = 1.0,
@@ -159,7 +159,12 @@ class VLLM:
             "response_format": {"type": "text"},
         }
         if self.is_ollama:
-            request_kwargs["extra_body"] = {"reasoning_effort": "none"}
+            request_kwargs["extra_body"] = {
+                "options": {
+                    "num_ctx": 8192,  # Nới rộng ngữ cảnh lên 8k tokens để gánh prompt dài + 2k token output
+                    "num_predict": self._max_completion_tokens()
+                }
+            }
 
         try:
             response = await self.client.chat.completions.create(**request_kwargs)
