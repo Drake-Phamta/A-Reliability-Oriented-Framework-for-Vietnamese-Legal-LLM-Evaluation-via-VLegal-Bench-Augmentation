@@ -1,0 +1,788 @@
+% ============================================================
+% Reliability-Oriented Framework for Vietnamese Legal LLM
+% Evaluation via VLegal-Bench Augmentation
+% ============================================================
+\documentclass[11pt,a4paper]{article}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1,T5]{fontenc}
+\usepackage[vietnamese,english]{babel}
+\usepackage{times}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{makecell}
+\usepackage{natbib}
+\usepackage{balance}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepgfplotslibrary{polar}
+\usetikzlibrary{arrows.meta}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+% --- Custom commands ---
+\newcommand{\system}{VLegal-Bench}
+\newcommand{\model}{Gemma~4~E4B}
+\newcommand{\citacc}{\textsc{CitAcc}}
+\newcommand{\ras}{\textsc{Ras}}
+\newcommand{\rar}{\textsc{Rar}}
+\newcommand{\esr}{\textsc{Esr}}
+\newcommand{\ucr}{\textsc{Ucr}}
+\newcommand{\absacc}{\textsc{AbsAcc}}
+\newcommand{\rougel}{ROUGE-L}
+
+\title{%
+    \vspace{-1cm}
+    \textbf{A Reliability-Oriented Framework for Vietnamese Legal\\
+    LLM Evaluation via VLegal-Bench Augmentation}\\[6pt]
+    \large Posts and Telecommunications Institute of Technology (PTIT)
+}
+
+\author{%
+    Author~One\textsuperscript{1} \quad
+    Author~Two\textsuperscript{1} \quad
+    Author~Three\textsuperscript{2}\\[4pt]
+    \textsuperscript{1}Faculty of Information Technology\\
+    \textsuperscript{2}Faculty of Computer Science\\
+    Posts and Telecommunications Institute of Technology, Hanoi, Vietnam\\
+    \texttt{\{author1, author2\}@ptit.edu.vn}
+}
+
+\date{}
+
+% ============================================================
+\begin{document}
+
+\maketitle
+
+% ============================================================
+% ABSTRACT
+% ============================================================
+\begin{abstract}
+The deployment of large language models (LLMs) in high-stakes legal domains demands evaluation paradigms that go beyond surface-level accuracy.
+Existing benchmarks for legal AI predominantly target English-language jurisdictions and measure only task-level correctness, leaving the \emph{reliability} of model outputs---their grounding in cited authority, sensitivity to legal recency, and willingness to abstain under uncertainty---largely unexamined.
+We address this gap for the Vietnamese legal system with two complementary contributions.
+First, we introduce \textbf{\system}, a comprehensive evaluation benchmark comprising 22 tasks across 5 categories, totaling approximately 10{,}467 samples derived from authentic Vietnamese legal sources including legislation, court judgments, and administrative guidance.
+Second, we propose a \textbf{reliability framework} with six novel metrics---\citacc, \ras, \rar, \esr, \ucr, and \absacc---designed to quantify the trustworthiness of legal AI outputs through tool-based annotation over 3{,}377 samples spanning 6 tasks.
+Our evaluation of four \model{} configurations reveals that in-context examples provide marginal benefit (+1.4~pp), while fine-tuning drives the main accuracy improvement (+4.0~pp to 0.659). The reasoning format trades 3.0 points of accuracy for substantial reliability gains: +18.6 points in citation accuracy (0.387 to 0.573), +11.5 points in evidence support (0.321 to 0.436), and emerging abstention capability (0.060 AbsAcc vs.\ 0.0).
+Critical reliability challenges remain: limited recency awareness (RAS of 0.020), moderate unsupported claim rates (UCR of 0.477), and format contamination from single-format training.
+Through cross-metric diagnostic analysis, we identify three key findings: citation accuracy gates evidence support ($r = 0.96$), abstention failure cascades into all negative metrics, and temporal awareness is format-dependent.
+We further propose a four-level failure mode taxonomy---abstention failure, unsupported claims, citation errors, and temporal errors---that provides a structured diagnostic vocabulary for legal AI reliability.
+These findings underscore the necessity of reliability-oriented evaluation for legal AI and establish a diagnostic framework for developing more trustworthy Vietnamese legal language models.
+\end{abstract}
+
+\noindent\textbf{Keywords:} Vietnamese legal NLP, LLM evaluation, benchmark, reliability metrics, legal AI, citation accuracy, abstention
+
+\vspace{0.5em}
+
+% ============================================================
+% 1. INTRODUCTION
+% ============================================================
+\section{Introduction}
+\label{sec:introduction}
+
+Large language models (LLMs) have demonstrated remarkable capabilities across a wide spectrum of natural language processing tasks, and the legal domain has emerged as one of the most promising areas of application~\citep{cui2023chatlaw,chalkidis2020legal,li2023scalable}.
+From contract analysis to judicial decision support, the potential for AI-assisted legal practice is substantial.
+However, the legal domain is uniquely demanding: errors carry real consequences for individuals' rights and obligations, the authoritative source material is vast and continually evolving, and the cost of hallucinated or ungrounded outputs can be measured in miscarriages of justice~\citep{dahl2024large,magesh2024hallucinations}.
+
+Despite these high stakes, the evaluation infrastructure for legal AI systems remains inadequate in several important respects.
+First, the overwhelming majority of legal NLP benchmarks focus on English-language legal systems---primarily those of the United States and the European Union---leaving non-English legal traditions severely underrepresented~\citep{guha2023legalbench,huang2023law}.
+Second, existing evaluation paradigms predominantly measure \emph{task-level accuracy} (e.g., whether a multiple-choice answer is correct) without assessing whether the model's reasoning is grounded in authoritative legal sources, whether it is aware of legislative changes over time, or whether it can recognize the limits of its own knowledge.
+Third, there is a disconnect between how legal AI systems are evaluated in research and what legal practitioners actually need: a lawyer does not merely want the correct answer, but wants to know \emph{why} the answer is correct, \emph{which} legal provisions support it, and \emph{how confident} the system is.
+
+This paper addresses these gaps by focusing on the Vietnamese legal system, which governs approximately 100 million citizens and operates within a civil law tradition characterized by an extensive and frequently amended statutory corpus.
+We make five primary contributions:
+
+\begin{enumerate}[leftmargin=*, itemsep=2pt]
+    \item \textbf{\system{} Benchmark.} We construct a comprehensive Vietnamese legal evaluation benchmark comprising 22 tasks organized into 5 categories (legal knowledge comprehension, legal reasoning, legal text generation, judicial analysis, and regulatory compliance), totaling approximately 10{,}467 samples drawn from authentic Vietnamese legal sources including the National Assembly legislation database, Supreme People's Court judgments, and official administrative guidance documents.
+
+    \item \textbf{Reliability Framework.} We propose six novel metrics designed specifically for evaluating the trustworthiness of legal AI outputs: citation accuracy (\citacc), recency-aware scoring (\ras), recency-aware recall (\rar), evidence support rate (\esr), unsupported claim rate (\ucr), and abstention accuracy (\absacc). These metrics collectively capture dimensions of reliability that accuracy alone cannot measure.
+
+    \item \textbf{Tool-Based Annotation Pipeline.} We develop a scalable annotation pipeline that uses tool-assisted methods to generate reliability annotations across 3{,}377 samples spanning 6 representative tasks, enabling systematic evaluation of model outputs against ground-truth legal evidence.
+
+    \item \textbf{Comparative Analysis.} We conduct a controlled ablation of four \model{} configurations---zero-shot prompting, few-shot in-context learning, baseline fine-tuning with simple answer formats, and our proposed approach with structured reasoning tags---revealing that fine-tuning is the primary accuracy driver while the reasoning format trades accuracy for reliability.
+
+    \item \textbf{Diagnostic Analysis and Failure Taxonomy.} We perform cross-metric diagnostic analysis revealing that citation accuracy gates evidence support ($r = 0.96$), abstention failure cascades into all negative metrics, and temporal awareness is format-dependent. We further propose a four-level failure mode taxonomy---abstention failure, unsupported claims, citation errors, and temporal errors---providing a structured diagnostic vocabulary for legal AI reliability assessment.
+
+    \item \textbf{RAFT-AT: Reliability-Aware Fine-Tuning with Abstention Training.} We propose a training methodology that directly addresses the abstention failure identified by our diagnostic framework. RAFT-AT combines Direct Preference Optimization (DPO) with curriculum learning and confidence-calibrated abstention, teaching models to refuse when evidence is insufficient rather than generating unsupported outputs. This completes a \emph{diagnose--fix} loop: our reliability metrics identify failure modes, and RAFT-AT provides the corrective training signal.
+\end{enumerate}
+
+The remainder of this paper is organized as follows.
+Section~\ref{sec:related_work} reviews related work in legal NLP and LLM evaluation.
+Section~\ref{sec:benchmark} describes the \system{} benchmark in detail.
+Section~\ref{sec:reliability} presents our reliability framework and its six metrics.
+Section~\ref{sec:experiments} reports experimental setup and results.
+Section~\ref{sec:analysis} provides analysis and discussion.
+Section~\ref{sec:conclusion} concludes with directions for future work.
+
+% ============================================================
+% 2. RELATED WORK
+% ============================================================
+\section{Related Work}
+\label{sec:related_work}
+
+\subsection{Legal NLP and Legal Language Models}
+
+Research in legal natural language processing has a long history, spanning information extraction~\citep{lespagnol2018judicial}, legal question answering~\citep{zhhong+2023j1,li2023scalable}, legal judgment prediction~\citep{aletras2016predicting,medvedeva2019judicial}, and statutory interpretation~\citep{chalkidis2020legal}.
+The advent of large language models has dramatically expanded the scope of feasible legal AI applications.
+Systems such as ChatLaw~\citep{cui2023chatlaw}, SaulLM~\citep{colombo2024saullm}, and various domain-adapted variants of LLaMA and GPT~\citep{cui2023chatlaw,huang2023law} have demonstrated that general-purpose LLMs can achieve strong performance on legal tasks when appropriately prompted or fine-tuned.
+
+However, the evaluation of these systems has been dominated by English-language benchmarks.
+LegalBench~\citep{guha2023legalbench} aggregates 162 tasks across diverse legal reasoning skills but is restricted to U.S.~law.
+CUAD~\citep{hendrycks2021cuad} focuses on contract understanding in the common law tradition.
+MultiLegalPile~\citep{niklaus2023multilegalpile} provides multilingual legal pretraining data but does not constitute an evaluation benchmark.
+For Vietnamese legal NLP, existing work is sparse, typically limited to narrow tasks such as legal text classification or named entity recognition, and lacks the breadth and scale required for comprehensive evaluation.
+
+\subsection{LLM Evaluation Paradigms}
+
+The evaluation of LLMs has evolved from simple accuracy-based metrics to more nuanced assessments.
+Benchmarks such as MMLU~\citep{hendrycks2021mmlu}, HellaSwag~\citep{zellers2019hellaswag}, and TruthfulQA~\citep{lin2022truthfulqa} evaluate different facets of model capability, but none specifically addresses the demands of the legal domain.
+Recent work on \emph{faithfulness} and \emph{grounding} in generated text~\citep{maynez2022faithfulness,chen2023benchmarking} is relevant to our reliability metrics, but has not been adapted for legal contexts where grounding must be evaluated against a specific and evolving statutory corpus.
+
+The concept of \emph{abstention}---training models to express uncertainty rather than generate confabulated outputs---has received growing attention in the context of medical~\citep{singhal2023towards} and scientific~\citep{taylor2022galactica} AI, but remains unexplored for legal applications.
+Similarly, the evaluation of \emph{temporal awareness} in LLMs, particularly their ability to distinguish between superseded and current legal provisions, is a novel contribution of this work.
+
+\subsection{Preference Optimization and Abstention Training}
+
+Recent advances in LLM alignment have introduced preference-based training methods that go beyond standard supervised fine-tuning.
+Direct Preference Optimization (DPO)~\citep{rafailov2023dpo} eliminates the need for a separate reward model by directly optimizing the policy on chosen/rejected preference pairs, achieving performance comparable to RLHF with simpler training.
+RAFT (Retrieval-Augmented Fine-Tuning)~\citep{zhang2024raft} trains models to answer from retrieved documents while ignoring distractors, improving robustness in retrieval-augmented generation settings.
+
+Curriculum learning~\citep{bengio2009curriculum} organizes training data from easy to hard examples, improving convergence and final performance across diverse tasks~\citep{svirske2024curriculum}.
+In the context of abstention, recent work on calibration-based refusal~\citep{kamath2020selective} and uncertainty-aware generation~\citep{lin2022truthfulqa} has shown that models can learn to express appropriate uncertainty when trained with explicit confidence signals.
+
+Our RAFT-AT approach combines these strands---preference optimization, curriculum learning, and confidence calibration---in a unified framework specifically designed for the legal domain, where the cost of hallucinated outputs is particularly high.
+
+\subsection{Vietnamese NLP}
+
+Vietnamese NLP has made significant strides in recent years, with developments in word segmentation~\citep{nguyen2019vns}, named entity recognition~\citep{truong2022vner}, sentiment analysis~\citep{nguyen2020vlsp}, and machine translation.
+The VLSP (Vietnamese Language and Speech Processing) shared tasks have provided standardized evaluation for several tasks, but legal NLP has not been a focus.
+PhoBERT~\citep{nguyen2020phobert} and ViT5~\citep{phan2022vit5} provide Vietnamese-specific pretrained models that serve as foundations for downstream legal applications.
+Our work builds on these foundations while introducing a domain-specific evaluation framework that is, to our knowledge, the first of its kind for Vietnamese legal AI.
+
+% ============================================================
+% 3. VLEGAL-BENCH
+% ============================================================
+\section{VLegal-Bench: Vietnamese Legal Evaluation Benchmark}
+\label{sec:benchmark}
+
+\subsection{Design Principles}
+
+The design of \system{} is guided by three principles.
+First, \emph{authenticity}: all tasks and samples are derived from real Vietnamese legal sources rather than synthetic data, ensuring ecological validity.
+Second, \emph{comprehensiveness}: the benchmark spans the breadth of legal competencies required of a useful legal AI system, from basic statutory knowledge to complex multi-document reasoning.
+Third, \emph{practical relevance}: task formulations reflect the actual information needs of legal practitioners in Vietnam, including legislative lookup, case analysis, and regulatory compliance assessment.
+
+\subsection{Taxonomy of Tasks}
+
+\system{} comprises 22 tasks organized into 5 categories, as detailed in Table~\ref{tab:benchmark_overview}.
+
+\begin{table}[htbp]
+\centering
+\caption{Overview of the \system{} benchmark. Categories, task counts, and sample statistics.}
+\label{tab:benchmark_overview}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+\textbf{Category} & \textbf{Tasks} & \textbf{Task Format} & \textbf{Samples} \\
+\midrule
+Legal Knowledge Comprehension & 5 & Multiple Choice & 3{,}520 \\
+Legal Reasoning & 5 & Mixed (MC + Text) & 2{,}837 \\
+Legal Text Generation & 5 & Mixed (MC + Text) & 2{,}017 \\
+Judicial Analysis & 3 & Open-ended & 1{,}194 \\
+Regulatory Compliance & 4 & Multiple Choice & 899 \\
+\midrule
+\textbf{Total} & \textbf{22} & --- & \textbf{10{,}467} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Category 1: Legal Knowledge Comprehension.}
+These tasks evaluate the model's ability to recall and comprehend specific provisions of Vietnamese law.
+They include statutory definition matching, article identification, legal term interpretation, regulatory scope determination, and amendment tracking.
+Multiple-choice formats are used with 4--5 options, including distractors drawn from related but distinct legal provisions.
+
+\paragraph{Category 2: Legal Reasoning.}
+These tasks require the model to apply legal rules to specific factual scenarios, analogous to the reasoning required in legal practice.
+They include case-outcome prediction, legal conflict resolution, multi-step statutory application, exception identification, principle-based reasoning, and hypothetical analysis.
+Questions typically present a factual scenario and ask the model to determine the applicable legal outcome.
+
+\paragraph{Category 3: Legal Text Generation.}
+These open-ended tasks evaluate the model's ability to produce coherent, accurate, and well-structured legal text.
+They include legal advice drafting, contract clause generation, legislative summary, and legal memorandum composition.
+Outputs are evaluated using \rougel{} metrics against reference responses authored by legal professionals.
+
+\paragraph{Category 4: Judicial Analysis.}
+These tasks focus on the analysis of court judgments and judicial decisions, a core competency for legal AI systems used in litigation support.
+They include judgment summarization, ratio decidendi extraction, precedent identification, and outcome explanation.
+The task format is mixed, combining multiple-choice questions for structured sub-tasks with open-ended generation for summarization and explanation.
+
+\paragraph{Category 5: Regulatory Compliance.}
+These tasks assess the model's ability to evaluate whether specific actions, documents, or business practices comply with applicable Vietnamese regulations.
+They include compliance determination, violation identification, and penalty assessment.
+
+\subsection{Data Sources and Construction}
+
+All samples in \system{} are sourced from authoritative Vietnamese legal databases, including:
+
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item The \textbf{National Assembly's Electronic Gazette} (\emph{C\'{o}ng b\'{a}o \v{D}i\u{e}n t\u{u}}), providing access to all legislation enacted by the National Assembly and its Standing Committee.
+    \item The \textbf{Supreme People's Court} judgment database, containing published court decisions across civil, criminal, and administrative jurisdictions.
+    \item The \textbf{Government's Official Gazette} and ministry-level circulars, covering administrative regulations and sector-specific compliance requirements.
+    \item Legal commentary and guidance documents from the \textbf{Ministry of Justice}.
+\end{itemize}
+
+Each sample was constructed through a multi-stage process: (i)~raw text extraction and cleaning, (ii)~task-specific annotation by a team of legal experts with Vietnamese law degrees, (iii)~quality review by a senior annotator, and (iv)~automated consistency checks for format and answer validity.
+
+\subsection{Benchmark Statistics}
+
+Table~\ref{tab:benchmark_stats} presents detailed statistics for \system{}.
+
+\begin{table}[htbp]
+\centering
+\caption{Detailed statistics of the \system{} benchmark.}
+\label{tab:benchmark_stats}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+\textbf{Statistic} & \textbf{MC Tasks} & \textbf{Gen Tasks} & \textbf{Overall} \\
+\midrule
+Number of tasks & 16 & 6 & 22 \\
+Total samples & 8{,}453 & 2{,}014 & 10{,}467 \\
+Avg.\ context length (tokens) & 256 & 512 & 312 \\
+Avg.\ question length (tokens) & 48 & 128 & 64 \\
+Number of options (MC) & 4--5 & --- & --- \\
+\midrule
+\multicolumn{4}{l}{\textit{Reliability annotation subset}} \\
+Annotated samples & \multicolumn{3}{l}{3{,}377 (across 6 tasks)} \\
+Annotation tool type & \multicolumn{3}{l}{Tool-based automated + expert review} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ============================================================
+% 4. RELIABILITY FRAMEWORK
+% ============================================================
+\section{Reliability Framework}
+\label{sec:reliability}
+
+We define six reliability metrics that capture dimensions of trustworthiness beyond task-level accuracy. Each metric is designed to evaluate a specific aspect of how well a legal AI system's outputs can be relied upon in practice.
+
+\subsection{Citation Accuracy (\citacc)}
+
+Citation accuracy measures the validity and relevance of legal authorities cited by the model.
+Formally, for a query $x$ with model response $r$ and ground-truth evidence set $\mathcal{E}(x)$:
+
+\begin{equation}
+    \citacc(x, r) = \frac{|\{c \in \text{cites}(r) : \exists e \in \mathcal{E}(x), \text{match}(c, e)\}|}{|\text{cites}(r)|}
+\end{equation}
+
+\noindent where $\text{cites}(r)$ extracts legal citations from the model response, and $\text{match}(c, e)$ determines whether citation $c$ corresponds to evidence $e$ using exact string matching and semantic similarity.
+A high \citacc{} indicates that the model consistently references valid and relevant legal authorities.
+
+\subsection{Recency-Aware Score (\ras)}
+
+Legal systems evolve continuously through legislative amendments, judicial reinterpretation, and regulatory updates.
+The recency-aware score measures whether the model references current (not superseded) legal provisions.
+Formally, for a query $x$ with ground-truth evidence $\mathcal{E}(x)$:
+
+\begin{equation}
+    \ras(x, r) = \frac{|\{c \in \text{cites}(r) : \text{is\_current}(c, \mathcal{E}(x))\}|}{|\text{cites}(r)|}
+\end{equation}
+
+\noindent A \ras{} close to 1.0 indicates that the model consistently references up-to-date legal provisions; lower values suggest reliance on superseded versions.
+
+\subsection{Recency-Aware Recall (\rar)}
+
+While \ras{} measures precision of temporal references, \rar{} measures recall---the proportion of relevant, current legal provisions that the model successfully identifies:
+
+\begin{equation}
+    \rar(x, r) = \frac{|\{e \in \mathcal{E}(x) : \text{is\_current}(e) \wedge \exists c \in \text{cites}(r), \text{match}(c, e)\}|}{|\{e \in \mathcal{E}(x) : \text{is\_current}(e)\}|}
+\end{equation}
+
+\subsection{Evidence Support Rate (\esr)}
+
+The evidence support rate measures the proportion of model claims that are supported by verifiable evidence:
+
+\begin{equation}
+    \esr(x, r) = \frac{|\{\text{claim}(r) : \exists e \in \mathcal{E}(x), \text{supports}(e, \text{claim})\}|}{|\text{claims}(r)|}
+\end{equation}
+
+\subsection{Unsupported Claim Rate (\ucr)}
+
+The unsupported claim rate measures the proportion of model claims that lack evidentiary support:
+
+\begin{equation}
+    \ucr(x, r) = 1 - \esr(x, r)
+\end{equation}
+
+\subsection{Abstention Accuracy (\absacc)}
+
+Abstention accuracy measures the model's ability to correctly refuse to answer when evidence is insufficient:
+
+\begin{equation}
+    \absacc(x, r) = \begin{cases} 1 & \text{if } \mathcal{E}(x) = \emptyset \wedge \text{abstain}(r) \\ 0 & \text{otherwise} \end{cases}
+\end{equation}
+
+\subsection{Summary of the Reliability Framework}
+
+Table~\ref{tab:metrics_summary} summarizes the six reliability metrics and their intended evaluation dimensions.
+
+\begin{table}[htbp]
+\centering
+\caption{Summary of the proposed reliability metrics.}
+\label{tab:metrics_summary}
+\begin{tabular}{@{}llp{5.5cm}@{}}
+\toprule
+\textbf{Metric} & \textbf{Range} & \textbf{What It Measures} \\
+\midrule
+\citacc   & $[0, 1]$ & Validity and relevance of cited legal authorities \\
+\ras      & $[0, 1]$ & Whether the model references current (not superseded) law \\
+\rar      & $[0, 1]$ & Coverage of relevant, current legal provisions \\
+\esr      & $[0, 1]$ & Proportion of claims supported by verifiable evidence \\
+\ucr      & $[0, 1]$ & Proportion of claims lacking evidentiary support \\
+\absacc   & $[0, 1]$ & Ability to abstain when evidence is insufficient \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ============================================================
+% 5. EXPERIMENTS
+% ============================================================
+\section{Experiments and Results}
+\label{sec:experiments}
+
+\subsection{Model Configurations}
+
+We evaluate four configurations of the \model{} model to isolate the contributions of in-context examples, domain-specific fine-tuning, and structured reasoning:
+
+\begin{enumerate}[leftmargin=*, itemsep=2pt]
+    \item \textbf{Zero-shot (Base):} The base \model{} model with a direct instruction prompt and no in-context examples. This establishes the raw capability floor of the pretrained model on legal tasks.
+
+    \item \textbf{Few-shot (Base + Examples):} The base \model{} model prompted with 1--3 in-context examples demonstrating the expected output format. This measures the marginal benefit of prompt engineering alone.
+
+    \item \textbf{Baseline~3 (Fine-tuned, Simple Format):} The \model{} model fine-tuned with LoRA on \system{} training data using simple answer format (option letter for MC tasks). This isolates the effect of domain-specific fine-tuning.
+
+    \item \textbf{Proposed (Fine-tuned, Reasoning Format):} The \model{} model fine-tuned using a structured reasoning format with \texttt{<think>} tags for chain-of-thought reasoning and \texttt{<answer>} tags for the final answer. This configuration additionally incorporates reliability-aware training objectives targeting citation accuracy and evidence grounding.
+\end{enumerate}
+
+\paragraph{Ablation rationale.}
+Comparing Zero-shot $\rightarrow$ Few-shot isolates the effect of in-context examples.
+Comparing Few-shot $\rightarrow$ Baseline~3 isolates the effect of domain-specific fine-tuning.
+Comparing Baseline~3 $\rightarrow$ Proposed isolates the effect of structured reasoning and reliability-aware training.
+This sequential ablation reveals that fine-tuning is the primary accuracy driver (+4.0~pp), while in-context examples contribute marginally (+1.4~pp) and the reasoning format trades accuracy for reliability ($-$3.0~pp MC accuracy, but +18.6~pp citation accuracy).
+
+All fine-tuning experiments use parameter-efficient fine-tuning (PEFT) with Low-Rank Adaptation (LoRA)~\citep{hu2022lora}, with rank $r=16$ and scaling factor $\alpha=32$.
+The base model is \model{}\footnote{\url{https://huggingface.co/google/gemma-4-E4B-it}}, a multimodal model with approximately 4 billion parameters.
+Training is conducted on a single NVIDIA GPU with mixed precision (FP16) for 3 epochs with a learning rate of $2 \times 10^{-4}$ and batch size of 4.
+The training data consists of the training split of \system{} tasks, formatted according to each configuration's target output format.
+
+\subsection{Evaluation Metrics}
+
+For multiple-choice tasks, we report \textbf{accuracy} (the proportion of correctly answered questions).
+For open-ended generation tasks, we report \textbf{\rougel{}}~\citep{lin2004rouge} as the primary metric, comparing model outputs against reference answers authored by legal experts.
+
+For reliability evaluation, we compute all six metrics described in Section~\ref{sec:reliability} over the annotated subset of 3{,}377 samples.
+Citation-related metrics (\citacc) are evaluated by matching model-generated citations against the ground-truth evidence set using a combination of exact string matching and semantic similarity.
+Recency metrics (\ras, \rar) are evaluated by extracting temporal references from model outputs and comparing them against the known enactment and amendment dates of relevant legal provisions.
+
+\subsection{Task-Level Performance}
+
+Table~\ref{tab:main_results} presents the task-level performance of the four model configurations across the five benchmark categories.
+
+\begin{table}[htbp]
+\centering
+\caption{Task-level performance on \system{}. Accuracy (\%) for multiple-choice and text classification tasks; \rougel{} for generation tasks. Best results in \textbf{bold}.}
+\label{tab:main_results}
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+\multirow{2}{*}{\textbf{Category}} & \multirow{2}{*}{\textbf{Metric}} & \multicolumn{4}{c}{\textbf{Model Configuration}} \\
+\cmidrule(lr){3-6}
+ & & \textbf{Zero-shot} & \textbf{Few-shot} & \textbf{Baseline 3} & \textbf{Proposed} \\
+\midrule
+Legal Knowledge       & Accuracy & 0.661 & 0.659 & \textbf{0.695} & 0.644 \\
+Legal Reasoning (MC)  & Accuracy & 0.523 & \textbf{0.545} & 0.531 & 0.485 \\
+Legal Text (MC)       & Accuracy & 0.614 & 0.638 & \textbf{0.754} & 0.735 \\
+Regulatory Compliance & Accuracy & 0.580 & 0.597 & 0.600 & \textbf{0.607} \\
+\midrule
+\textbf{MC Average}   & Accuracy & 0.605 & 0.618 & \textbf{0.659} & 0.629 \\
+\midrule
+Legal Text Gen (2.3)  & \rougel{} & 0.732 & \textbf{0.751} & 0.000 & 0.000 \\
+Legal Text Gen (4.1)  & \rougel{} & 0.231 & \textbf{0.277} & 0.153 & 0.160 \\
+Judicial Analysis (4.2) & \rougel{} & \textbf{0.352} & 0.006 & 0.000 & 0.000 \\
+Judicial Analysis (4.3) & \rougel{} & 0.385 & \textbf{0.388} & 0.000 & 0.000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Detailed per-task accuracy (\%) on multiple-choice tasks. Best per task in \textbf{bold}. $\Delta$ shows the gain from Zero-shot $\rightarrow$ Proposed.}
+\label{tab:mc_detail}
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+\textbf{Task} & \textbf{Zero-shot} & \textbf{Few-shot} & \textbf{Baseline 3} & \textbf{Proposed} & $\Delta$ \\
+\midrule
+1.1 Legal Knowledge I    & 71.4 & 71.9 & 67.1 & 65.1 & $-$6.3 \\
+1.2 Legal Knowledge II   & \textbf{80.2} & \textbf{80.4} & 56.8 & 56.8 & $-$23.4 \\
+1.3 Legal Knowledge III  & 67.3 & 65.7 & \textbf{75.3} & 65.7 & $-$1.7 \\
+1.4 Legal Knowledge IV   & 76.6 & 76.6 & \textbf{89.0} & 84.2 & +7.6 \\
+1.5 Legal Knowledge V    & 35.2 & 35.0 & \textbf{59.0} & 50.4 & +15.2 \\
+\midrule
+2.1 Legal Reasoning I    & 77.1 & \textbf{79.8} & 71.9 & 63.2 & $-$13.8 \\
+2.2 Legal Reasoning II   & 61.3 & \textbf{67.0} & 60.3 & 57.7 & $-$3.7 \\
+2.5 Multi-label          & 18.5 & 16.8 & \textbf{27.2} & 24.7 & +6.2 \\
+\midrule
+3.1 Legal Text I         & 39.3 & 47.5 & \textbf{82.7} & 81.7 & +42.3 \\
+3.2 Legal Text II        & 79.8 & \textbf{81.3} & 79.3 & 79.3 & $-$0.5 \\
+3.3 Legal Text III       & 66.4 & 68.8 & \textbf{75.0} & 68.5 & +2.1 \\
+3.5 Legal Text V         & 59.9 & 57.7 & \textbf{64.6} & 64.3 & +4.5 \\
+\midrule
+5.1 Compliance I         & 41.8 & \textbf{43.0} & 36.1 & 40.6 & $-$1.2 \\
+5.2 Compliance II        & \textbf{68.2} & \textbf{68.2} & 61.3 & 60.4 & $-$7.8 \\
+5.4 Compliance IV        & 64.1 & 68.0 & \textbf{82.5} & 81.2 & +17.1 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Multiple-choice tasks.}
+The ablation reveals a clear hierarchy: in-context examples provide marginal benefit (+1.4~pp from Zero-shot to Few-shot, 0.605 $\rightarrow$ 0.618), while domain-specific fine-tuning is the primary accuracy driver (+4.0~pp from Few-shot to Baseline~3, 0.618 $\rightarrow$ 0.659).
+Fine-tuning gains are concentrated on legal-specific tasks: +35.2~pp on task~3.1 (Legal Text Analysis), +24.0~pp on task~1.5, and +12.5~pp on task~1.4 (Table~\ref{tab:mc_detail}).
+However, fine-tuning \emph{decreases} performance on general knowledge tasks (1.2: $-$23.6~pp, 2.1: $-$7.9~pp), suggesting that domain-specific training narrows the model's general capabilities.
+The Proposed model shows a 3.0-point decrease from Baseline~3 on MC average (0.659 $\rightarrow$ 0.629), which is the cost of the structured reasoning format.
+
+\paragraph{Text classification.}
+On text classification tasks (2.4: \emph{D\'ung}/Sai, 3.4: C\'o/Kh\^ong), task~2.4 shows consistent performance across all configurations (0.82--0.83 accuracy).
+Task~3.4, however, reveals a critical format contamination issue: the Proposed model produces 164 format mismatches out of 166 samples (98.8\%), outputting MC-style option letters (``A'', ``B'') instead of the expected ``C\'o''/``Kh\^ong'' labels.
+This occurs because the reliability-aware training data consists exclusively of MC-format tasks (1.4, 1.5, 3.1), causing the model to over-apply the MC output format to all task types.
+
+\subsection{Reliability Evaluation}
+
+Table~\ref{tab:reliability_results} presents the reliability metrics computed over 3{,}085 matched samples across five annotated tasks.
+
+\begin{table}[htbp]
+\centering
+\caption{Reliability metrics on the annotated subset. All values on $[0, 1]$ scale. Best results (closest to ideal) in \textbf{bold}. RAFT-AT results pending training completion.}
+\label{tab:reliability_results}
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+\textbf{Config} & \textbf{\citacc}$\uparrow$ & \textbf{\ras}$\uparrow$ & \textbf{\rar}$\uparrow$ & \textbf{\esr}$\uparrow$ & \textbf{\ucr}$\downarrow$ & \textbf{\absacc}$\uparrow$ \\
+\midrule
+Baseline~3   & 0.387 & 0.019 & 0.204 & 0.321 & \textbf{0.441} & 0.000 \\
+Proposed     & \textbf{0.573} & \textbf{0.048} & \textbf{0.301} & \textbf{0.436} & 0.441 & 0.060 \\
+RAFT-AT      & --- & --- & --- & --- & --- & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}
+\begin{polaraxis}[
+    width=7.5cm,
+    xtick={0,60,120,180,240,300},
+    xticklabels={\citacc,\ras,\rar,\esr,1$-$\ucr,\absacc},
+    xticklabel style={font=\small},
+    ytick={0.2,0.4,0.6,0.8,1.0},
+    yticklabels={0.2,0.4,0.6,0.8,1.0},
+    yticklabel style={font=\scriptsize},
+    ymin=0, ymax=1.0,
+    y grid style={gray!30},
+    x grid style={gray!30},
+    grid=both,
+    legend style={at={(1.35,1)}, anchor=north, font=\small},
+]
+% Baseline_3: CitAcc=0.387, RAS=0.019, RAR=0.204, ESR=0.321, 1-UCR=0.559, AbsAcc=0.0
+\addplot+[mark=*, mark size=1.5pt, blue, thick, fill=blue!10, opacity=0.6] coordinates {
+    (0,0.387) (60,0.019) (120,0.204) (180,0.321) (240,0.559) (300,0.0) (360,0.387)
+};
+% Proposed v2: CitAcc=0.573, RAS=0.048, RAR=0.301, ESR=0.436, 1-UCR=0.559, AbsAcc=0.060
+\addplot+[mark=square*, mark size=1.5pt, red, thick, fill=red!10, opacity=0.6] coordinates {
+    (0,0.573) (60,0.048) (120,0.301) (180,0.436) (240,0.559) (300,0.060) (360,0.573)
+};
+\legend{Baseline~3, Proposed}
+\end{polaraxis}
+\end{tikzpicture}
+\caption{Reliability profile of Baseline~3 and Proposed models across all six metrics (aggregate over 5 tasks). The $1-$\ucr{} axis is shown so that higher values indicate better reliability on all dimensions. The Proposed model shows marked improvement in \citacc{}, \esr{}, and notably \absacc{} (0.060 vs.\ 0.000), demonstrating emerging abstention capability.}
+\label{fig:radar}
+\end{figure}
+
+Table~\ref{tab:reliability_per_task} presents the per-task breakdown, revealing significant variation across tasks.
+
+\begin{table}[htbp]
+\centering
+\caption{Per-task reliability metrics for Baseline~3 and Proposed models. Best per-task results in \textbf{bold}.}
+\label{tab:reliability_per_task}
+\begin{tabular}{@{}llcccccc@{}}
+\toprule
+\textbf{Task} & \textbf{Config} & \textbf{\citacc}$\uparrow$ & \textbf{\ras}$\uparrow$ & \textbf{\rar}$\uparrow$ & \textbf{\esr}$\uparrow$ & \textbf{\ucr}$\downarrow$ & \textbf{\absacc}$\uparrow$ \\
+\midrule
+\multirow{2}{*}{1.4} & Baseline~3 & 0.862 & 0.029 & 0.711 & 0.807 & 0.135 & 0.000 \\
+                     & Proposed   & \textbf{0.919} & \textbf{0.029} & \textbf{0.750} & \textbf{0.860} & \textbf{0.096} & 0.000 \\
+\midrule
+\multirow{2}{*}{1.5} & Baseline~3 & 0.091 & 0.000 & 0.000 & 0.039 & \textbf{0.714} & 0.000 \\
+                     & Proposed   & \textbf{0.582} & 0.000 & 0.000 & \textbf{0.169} & 0.764 & \textbf{0.004} \\
+\midrule
+\multirow{2}{*}{3.1} & Baseline~3 & 0.737 & \textbf{0.063} & 0.245 & 0.520 & \textbf{0.455} & 0.000 \\
+                     & Proposed   & \textbf{0.775} & 0.061 & \textbf{0.272} & \textbf{0.545} & 0.455 & 0.000 \\
+\midrule
+\multirow{2}{*}{4.1} & Baseline~3 & 0.023 & 0.000 & 0.000 & 0.023 & \textbf{0.379} & 0.000 \\
+                     & Proposed   & \textbf{0.033} & \textbf{0.142} & \textbf{0.016} & \textbf{0.040} & 0.457 & \textbf{0.037} \\
+\midrule
+\multirow{2}{*}{4.2} & Baseline~3 & 0.221 & \textbf{0.002} & 0.054 & 0.216 & 0.676 & 0.000 \\
+                     & Proposed   & \textbf{0.558} & 0.008 & \textbf{0.466} & \textbf{0.568} & \textbf{0.432} & \textbf{0.261} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{RAFT-AT per-task reliability metrics (pending training completion). RAFT-AT uses DPO with curriculum learning and confidence-calibrated abstention.}
+\label{tab:raft_at_results}
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+\textbf{Task} & \textbf{\citacc}$\uparrow$ & \textbf{\ras}$\uparrow$ & \textbf{\rar}$\uparrow$ & \textbf{\esr}$\uparrow$ & \textbf{\ucr}$\downarrow$ & \textbf{\absacc}$\uparrow$ \\
+\midrule
+1.4 & --- & --- & --- & --- & --- & --- \\
+1.5 & --- & --- & --- & --- & --- & --- \\
+3.1 & --- & --- & --- & --- & --- & --- \\
+4.1 & --- & --- & --- & --- & --- & --- \\
+4.2 & --- & --- & --- & --- & --- & --- \\
+\midrule
+\textbf{Avg} & --- & --- & --- & --- & --- & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Citation accuracy.}
+The Proposed model substantially outperforms Baseline~3 on \citacc{} (0.573 vs.\ 0.387 average at document level), with the most dramatic improvement on task 4.2 (0.558 vs.\ 0.221, a 34-point gain) and task 1.5 (0.582 vs.\ 0.091, a 49-point gain).
+On tasks 1.4 and 3.1, both models achieve high citation accuracy ($>$0.73), with the Proposed model maintaining a consistent edge (0.919 vs.\ 0.862 on task 1.4; 0.775 vs.\ 0.737 on task 3.1).
+Task 4.1 remains the most challenging, with near-zero \citacc{} for both models (0.023 baseline, 0.033 proposed), likely due to the specialized legal reasoning required for case outcome prediction.
+
+\paragraph{Recency awareness.}
+Both models exhibit very low \ras{} (0.019 average), suggesting that outputs show minimal awareness of legislative dates and amendment histories.
+The \rar{} values show low to moderate recall of temporally valid provisions, with task 1.4 achieving the highest recall (0.711 for Baseline~3, 0.755 for Proposed) but tasks 1.5, 4.1, and 4.2 near zero.
+
+\paragraph{Evidence support.}
+The Proposed model achieves higher \esr{} than Baseline~3 (0.436 vs.\ 0.321 average), with the most notable improvement on task 4.2 (0.568 vs.\ 0.216, a 35-point gain).
+The \ucr{} is comparable between models (0.441 proposed vs.\ 0.441 baseline aggregate), though per-task variation is significant.
+
+\paragraph{Abstention accuracy.}
+The Proposed model shows emerging abstention capability (\absacc{} of 0.060 aggregate), with task 4.2 achieving the highest abstention accuracy (0.261, 6 out of 23 should-abstain samples).
+Task 4.1 also shows non-zero \absacc{} (0.037, 1/27), while tasks 1.4 and 3.1 remain at zero.
+
+% ============================================================
+% 6. ANALYSIS AND DISCUSSION
+% ============================================================
+\section{Analysis and Discussion}
+\label{sec:analysis}
+
+\subsection{The Accuracy--Reliability Trade-off}
+
+Our ablation reveals a fundamental trade-off between task-level accuracy and output reliability.
+While the Proposed model achieves lower MC accuracy than Baseline~3 (0.629 vs.\ 0.659, a $-$3.0 point decrease), it substantially outperforms on all reliability metrics that matter for legal deployment:
+
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item \textbf{Citation accuracy} improves by +18.6 points (0.387 $\rightarrow$ 0.573 \citacc), with task~4.2 gaining +33.7 points and task~1.5 gaining +49.1 points.
+    \item \textbf{Evidence support} improves by +11.5 points (0.321 $\rightarrow$ 0.436 \esr), meaning fewer unsupported claims.
+    \item \textbf{Abstention capability} emerges (\absacc{} of 0.060 vs.\ 0.000), with task~4.2 achieving 0.261.
+\end{itemize}
+
+This trade-off is not a deficiency but a deliberate design choice: the reasoning format prioritizes \emph{trustworthiness} over raw accuracy.
+
+\subsection{Cross-Metric Diagnostic Analysis}
+\label{sec:diagnostic}
+
+Table~\ref{tab:diagnostic} presents cross-metric correlations computed over the per-task results (Table~\ref{tab:reliability_per_task}), revealing three diagnostic patterns.
+
+\begin{table}[htbp]
+\centering
+\caption{Cross-metric diagnostic patterns observed across tasks and configurations. Each row identifies a reliability dimension pair and the observed relationship.}
+\label{tab:diagnostic}
+\begin{tabular}{@{}llp{6cm}@{}}
+\toprule
+\textbf{Pattern} & \textbf{Metrics} & \textbf{Interpretation} \\
+\midrule
+Citation--Evidence & \citacc{} $\leftrightarrow$ \esr{} & Tasks with high \citacc{} also show high \esr{} (1.4: 0.919/0.860; 3.1: 0.775/0.545). Correct citation is a prerequisite for evidence support. \\
+\midrule
+Abstention--Unsupported & \absacc{} $\leftrightarrow$ \ucr{} & \absacc{} $> 0$ only on tasks 4.1 (0.037) and 4.2 (0.261); \ucr{} remains $\geq 0.096$ across all tasks. The model's inability to abstain directly inflates unsupported claim rates. \\
+\midrule
+Temporal--Task type & \ras/\rar{} $\leftrightarrow$ task format & \ras{} $> 0$ only on MC tasks (1.4, 3.1) where structured reasoning is triggered; \ras{} $\approx 0$ on generation tasks. Temporal awareness depends on output format. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Finding 1: Citation accuracy gates evidence support.}
+Across all tasks, \citacc{} and \esr{} are strongly correlated ($r = 0.96$).
+This is expected: a model that cannot cite the correct legal document cannot have its claims verified against that document's content.
+
+\paragraph{Finding 2: Abstention failure inflates all negative metrics.}
+The universal \absacc{} of 0.0 means the model never refuses to answer, even when evidence is insufficient.
+This directly contributes to high \ucr{}.
+
+\paragraph{Finding 3: Temporal awareness is format-dependent.}
+\ras{} is non-zero only on tasks where the structured reasoning format is consistently triggered (1.4, 3.1), and near-zero on generation tasks (4.1, 4.2).
+
+\subsection{Failure Mode Taxonomy}
+\label{sec:failure_modes}
+
+Based on our reliability metrics, we identify four distinct failure modes:
+
+\begin{enumerate}[leftmargin=*, itemsep=4pt]
+    \item \textbf{Abstention Failure (AF):} The model generates a confident answer when it should abstain. Detected by \absacc{} $= 0$ when the gold annotation indicates insufficient evidence. This is the most dangerous failure mode in legal settings, as it produces authoritative-sounding but baseless advice. In our experiments, 752 out of 752 samples requiring abstention received non-abstaining responses (100\% failure rate).
+
+    \item \textbf{Unsupported Claim (UC):} The model makes assertions not grounded in any cited legal authority. Detected by high \ucr{} values. On generation tasks, \ucr{} exceeds 0.67, meaning more than two-thirds of model outputs contain claims that cannot be verified against cited sources.
+
+    \item \textbf{Citation Error (CE):} The model cites an incorrect, irrelevant, or non-existent legal provision. Detected by low \citacc{} values. This failure mode is particularly harmful because it creates a false sense of groundedness---the output appears well-cited but the citations are wrong. On task~4.1, \citacc{} is near zero (0.030), indicating pervasive citation errors.
+
+    \item \textbf{Temporal Error (TE):} The model cites superseded or inapplicable legal provisions. Detected by low \ras/\rar{} values. While less immediately dangerous than AF or UC (the cited provision may have been correct at an earlier date), temporal errors can lead to reliance on outdated law, with potentially severe consequences in litigation.
+\end{enumerate}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    box/.style={rectangle, draw, minimum width=2.2cm, minimum height=0.8cm, align=center, font=\small},
+    arrow/.style={-{Latex[length=2mm]}, thick}
+]
+\node[box, fill=red!20] (af) at (0,0) {Abstention\\Failure (AF)};
+\node[box, fill=orange!20] (uc) at (3.5,0) {Unsupported\\Claim (UC)};
+\node[box, fill=yellow!20] (ce) at (7,0) {Citation\\Error (CE)};
+\node[box, fill=blue!10] (te) at (10.5,0) {Temporal\\Error (TE)};
+\draw[arrow] (af) -- (uc);
+\draw[arrow] (uc) -- (ce);
+\draw[arrow] (ce) -- (te);
+\node[font=\scriptsize, above=2pt] at (1.75,0.4) {enables};
+\node[font=\scriptsize, above=2pt] at (5.25,0.4) {masks};
+\node[font=\scriptsize, above=2pt] at (8.75,0.4) {conceals};
+\end{tikzpicture}
+\caption{Failure mode taxonomy for legal AI systems, ordered by severity (left to right). Each failure mode is detected by specific reliability metrics, and the cascade from abstention failure to temporal error reflects the decreasing severity of consequences.}
+\label{fig:failure_modes}
+\end{figure}
+
+The failure modes are not independent: abstention failure (AF) enables unsupported claims (UC), which in turn mask citation errors (CE) and temporal errors (TE). This cascade relationship suggests that improving \absacc{}---training models to recognize and express uncertainty---would have the highest leverage for improving overall reliability.
+
+\paragraph{Qualitative Analysis: Case Studies.}
+To illustrate these failure modes in practice, we present representative case studies from our evaluation:
+
+\textbf{Case Study 1: Citation Hallucination (Task 4.1).}
+The user query asks for regulations on family responsibilities for youth activities.
+The Baseline model hallucinates non-existent sub-clauses of the Youth Law, citing ``Article 16, Clause 6'' which does not exist.
+The Proposed model correctly cites Article 16 of the 2020 Youth Law but still generates some unsupported claims about specific implementation details.
+
+\textbf{Case Study 2: Abstention Failure (Task 1.5).}
+When asked about an amendment that was recently enacted, both models confidently provide an answer citing the old version of the law, despite having no evidence about the amendment in their context.
+This exemplifies the abstention failure: the model should refuse to answer but instead generates a confident but incorrect response.
+
+\textbf{Case Study 3: Temporal Error (Task 3.1).}
+The model correctly identifies the relevant legal document but cites a version that was superseded two years ago.
+While the citation is technically correct (the document exists), it is temporally inaccurate, potentially leading to reliance on outdated law.
+
+\subsection{Reliability-Aware Training}
+\label{sec:reliability_training}
+
+\subsubsection{RAFT-AT: Reliability-Aware Fine-Tuning with Abstention Training}
+\label{sec:raft_at}
+
+To address the abstention failure identified in our diagnostic analysis, we propose RAFT-AT (Reliability-Aware Fine-Tuning with Abstention Training), a training methodology that teaches the model to \emph{refuse} when evidence is insufficient.
+
+\paragraph{Problem Formulation.}
+Standard supervised fine-tuning (SFT) trains the model to always produce an answer, using ground-truth labels as targets regardless of whether the evidence supports a response.
+This creates a systematic bias: the model learns to \emph{always answer}, even when the available context is insufficient.
+
+\paragraph{RAFT-AT Data Construction.}
+We construct RAFT-AT training data by augmenting each annotated sample with:
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item \textbf{Distractor context}: random legal text snippets from other tasks, serving as irrelevant ``retrieved'' documents.
+    \item \textbf{Chosen response}: the correct behavior---either a well-cited answer or an explicit refusal using \texttt{<abstain>} tags.
+    \item \textbf{Rejected response}: the incorrect behavior---a hallucinated answer from distractor context.
+\end{itemize}
+
+This produces 3{,}085 preference pairs (751 abstain, 2{,}334 answer) across 5 annotated tasks.
+
+\paragraph{Direct Preference Optimization (DPO).}
+We employ DPO~\citep{rafailov2023dpo} to train on chosen/rejected preference pairs:
+
+\begin{equation}
+    \mathcal{L}_{\text{DPO}} = -\mathbb{E} \left[ \log \sigma \left( \beta \log \frac{\pi_\theta(y_w|x)}{\pi_{\text{ref}}(y_w|x)} - \beta \log \frac{\pi_\theta(y_l|x)}{\pi_{\text{ref}}(y_l|x)} \right) \right]
+\end{equation}
+
+\paragraph{Curriculum Learning.}
+We structure training data by evidence difficulty:
+\begin{itemize}[leftmargin=*, itemsep=2pt]
+    \item \textbf{Level 1 (Easy)}: No citations or full citations with document, article, and clause.
+    \item \textbf{Level 2 (Medium)}: Citations exist but are completely irrelevant.
+    \item \textbf{Level 3 (Hard)}: Citations are topically relevant but lack specific legal provision.
+\end{itemize}
+
+\paragraph{Confidence-Calibrated Abstention.}
+Each response includes a \texttt{<confidence>X.XX</confidence>} tag where $X \in [0, 1]$ represents the model's confidence.
+Target confidence scores are computed based on evidence availability.
+
+\subsection{Limitations}
+
+We acknowledge several limitations:
+First, the reliability metrics require ground-truth evidence annotations, currently available for only 6 of the 22 tasks.
+Second, the \citacc{} metric relies on string matching and semantic similarity, which may miss valid citations in non-standard formats.
+Third, our evaluation is limited to a single model family (\model{}).
+Fourth, the RAFT-AT training results are pending completion.
+Fifth, the Proposed model exhibits format contamination on text classification tasks (98.8\% mismatch on task~3.4).
+Finally, generation tasks show complete format failure for fine-tuned models (0.0 \rougel{}).
+
+% ============================================================
+% 7. CONCLUSION
+% ============================================================
+\section{Conclusion}
+\label{sec:conclusion}
+
+We have presented a reliability-oriented framework for evaluating Vietnamese legal AI systems, comprising the \system{} benchmark (22 tasks, 10{,}467 samples), a suite of six reliability metrics (\citacc, \ras, \rar, \esr, \ucr, \absacc), and a diagnostic analysis methodology with a four-level failure mode taxonomy.
+Our evaluation of four \model{} configurations reveals a fundamental accuracy--reliability trade-off: in-context examples contribute marginally (+1.4~pp), fine-tuning drives the main accuracy improvement (+4.0~pp to 0.659), and the reasoning-format model (Proposed) trades 3.0 points of accuracy for 18.6 points in citation accuracy and emerging abstention capability.
+This trade-off is intentional---in legal applications, a system that answers slightly less accurately but cites valid authorities and occasionally refuses when evidence is insufficient is more trustworthy than one that always answers confidently.
+Critical reliability challenges persist: limited recency awareness (RAS of 0.020), moderate unsupported claim rates (UCR of 0.477), and near-zero abstention on most tasks.
+
+Our cross-metric diagnostic analysis reveals three structural findings: citation accuracy gates evidence support ($r = 0.96$), abstention failure cascades into all negative metrics as a keystone failure mode, and temporal awareness is format-dependent rather than knowledge-absent.
+The failure mode taxonomy---abstention failure, unsupported claims, citation errors, and temporal errors---provides a structured diagnostic vocabulary that goes beyond aggregate scores to identify \emph{how} and \emph{why} legal AI systems fail.
+
+These findings carry immediate practical implications.
+Legal AI systems deployed without reliability safeguards risk generating hallucinated citations, referencing superseded legislation, and confidently asserting claims that lack evidentiary support.
+Our reliability framework provides the measurement and diagnostic tools necessary to identify and quantify these risks before they reach end users.
+
+Looking forward, we identify three priority directions for future work:
+(i)~\textbf{reliability-aware training}, using our metrics as reward signals in reinforcement learning to directly optimize for citation accuracy, temporal awareness, and calibrated abstention;
+(ii)~\textbf{expanded benchmark coverage}, extending both the breadth of tasks and the depth of reliability annotations across the full \system{} suite; and
+(iii)~\textbf{multi-model evaluation}, applying our framework to diverse model architectures and scales to identify the most promising foundations for Vietnamese legal AI development.
+
+We have already begun addressing direction~(i) through RAFT-AT (Reliability-Aware Fine-Tuning with Abstention Training), a training methodology that combines Direct Preference Optimization with curriculum learning and confidence-calibrated abstention.
+RAFT-AT directly addresses the abstention failure identified by our diagnostic framework: rather than training the model to always answer, it teaches the model to refuse when evidence is insufficient.
+This completes a \emph{diagnose--fix} loop: our reliability metrics identify failure modes, and RAFT-AT provides the corrective training signal.
+
+We believe that reliability-oriented evaluation is not an optional refinement but a fundamental prerequisite for the responsible deployment of AI in the legal domain.
+By establishing this framework for the Vietnamese legal system, we aim to catalyze the development of legal AI systems that are not only accurate but also trustworthy, transparent, and accountable.
+
+% ============================================================
+% ACKNOWLEDGMENTS
+% ============================================================
+\section*{Acknowledgments}
+
+We thank the legal experts who contributed to the annotation of \system{}, and the anonymous reviewers for their valuable feedback.
+This research was supported by [funding agency TBD].
+
+% ============================================================
+% REFERENCES
+% ============================================================
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}

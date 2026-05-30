@@ -34,6 +34,20 @@ experiments/logs/*.log
 annotations/*_annotated_*.jsonl
 annotations/test_*.jsonl
 
+# LaTeX temp files (regenerated on compile)
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.run.xml
+
+# Organized temp/corrupted directories
+_corrupted/
+_temp_scripts/
+
 # Keep these
 !annotations/*_subset.jsonl
 !annotations/annotation_guideline.md
