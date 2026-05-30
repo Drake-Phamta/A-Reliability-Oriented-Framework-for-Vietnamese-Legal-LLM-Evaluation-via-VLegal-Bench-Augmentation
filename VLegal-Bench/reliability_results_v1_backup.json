@@ -1,0 +1,16 @@
+﻿{
+  "baseline_3": {
+    "1.4": {"task":"1.4","mode":"baseline_3","matched_samples":968,"CitAcc_document":0.8617,"CitAcc_article":0.8463,"CitAcc_clause":0.6984,"RAS":0.0291,"RAR":0.7114,"ESR":0.8068,"UCR":0.1353,"AbsAcc":0.0},
+    "1.5": {"task":"1.5","mode":"baseline_3","matched_samples":821,"CitAcc_document":0.0908,"CitAcc_article":0.0,"CitAcc_clause":0.0,"RAS":0.0,"RAR":0.0,"ESR":0.0390,"UCR":0.7138,"AbsAcc":0.0},
+    "3.1": {"task":"3.1","mode":"baseline_3","matched_samples":600,"CitAcc_document":0.7367,"CitAcc_article":0.5893,"CitAcc_clause":0.2904,"RAS":0.0628,"RAR":0.2471,"ESR":0.5200,"UCR":0.4800,"AbsAcc":0.0},
+    "4.1": {"task":"4.1","mode":"baseline_3","matched_samples":396,"CitAcc_document":0.0227,"CitAcc_article":0.0,"CitAcc_clause":0.0,"RAS":0.0,"RAR":0.0,"ESR":0.0227,"UCR":0.3788,"AbsAcc":0.0},
+    "4.2": {"task":"4.2","mode":"baseline_3","matched_samples":300,"CitAcc_document":0.2211,"CitAcc_article":0.0714,"CitAcc_clause":0.0255,"RAS":0.0015,"RAR":0.0606,"ESR":0.2162,"UCR":0.6757,"AbsAcc":0.0}
+  },
+  "proposed": {
+    "1.4": {"task":"1.4","mode":"proposed","matched_samples":968,"CitAcc_document":0.9272,"CitAcc_article":0.8935,"CitAcc_clause":0.7361,"RAS":0.0294,"RAR":0.7551,"ESR":0.8688,"UCR":0.0919,"AbsAcc":0.0},
+    "1.5": {"task":"1.5","mode":"proposed","matched_samples":821,"CitAcc_document":0.6626,"CitAcc_article":0.0,"CitAcc_clause":0.0,"RAS":0.0,"RAR":0.0,"ESR":0.1839,"UCR":0.7893,"AbsAcc":0.0},
+    "3.1": {"task":"3.1","mode":"proposed","matched_samples":600,"CitAcc_document":0.7750,"CitAcc_article":0.6512,"CitAcc_clause":0.3826,"RAS":0.0610,"RAR":0.2756,"ESR":0.5467,"UCR":0.4533,"AbsAcc":0.0},
+    "4.1": {"task":"4.1","mode":"proposed","matched_samples":396,"CitAcc_document":0.0303,"CitAcc_article":0.0099,"CitAcc_clause":0.0,"RAS":0.0087,"RAR":0.0078,"ESR":0.0303,"UCR":0.3460,"AbsAcc":0.0},
+    "4.2": {"task":"4.2","mode":"proposed","matched_samples":300,"CitAcc_document":0.2347,"CitAcc_article":0.0630,"CitAcc_clause":0.0340,"RAS":0.0017,"RAR":0.0492,"ESR":0.2264,"UCR":0.7027,"AbsAcc":0.0}
+  }
+}
